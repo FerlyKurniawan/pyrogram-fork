@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Account" href="account/index.html" /><link rel="prev" title="SetClientDHParams" href="../functions/set-client-dh-params.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Raw Types - PyroTGFork 2.2.10 Layer 201</title>
+        <title>Raw Types - PyroTGFork 2.2.10 Layer 202</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.10 Layer 201</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.10 Layer 202</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.10 Layer 201</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.10 Layer 202</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -1594,6 +1594,8 @@
 <li class="toctree-l1"><a class="reference internal" href="input-geo-point.html">InputGeoPoint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-geo-point-empty.html">InputGeoPointEmpty</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-group-call.html">InputGroupCall</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-group-call-invite-message.html">InputGroupCallInviteMessage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-group-call-slug.html">InputGroupCallSlug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-group-call-stream.html">InputGroupCallStream</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-invoice-business-bot-transfer-stars.html">InputInvoiceBusinessBotTransferStars</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-invoice-chat-invite-subscription.html">InputInvoiceChatInviteSubscription</a></li>
@@ -1816,6 +1818,7 @@
 <li class="toctree-l1"><a class="reference internal" href="message-action-chat-joined-by-link.html">MessageActionChatJoinedByLink</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-chat-joined-by-request.html">MessageActionChatJoinedByRequest</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-chat-migrate-to.html">MessageActionChatMigrateTo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message-action-conference-call.html">MessageActionConferenceCall</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-contact-sign-up.html">MessageActionContactSignUp</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-custom-action.html">MessageActionCustomAction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-empty.html">MessageActionEmpty</a></li>
@@ -1995,6 +1998,7 @@
 <li class="toctree-l1"><a class="reference internal" href="phone-call-discard-reason-busy.html">PhoneCallDiscardReasonBusy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phone-call-discard-reason-disconnect.html">PhoneCallDiscardReasonDisconnect</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phone-call-discard-reason-hangup.html">PhoneCallDiscardReasonHangup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phone-call-discard-reason-migrate-conference-call.html">PhoneCallDiscardReasonMigrateConferenceCall</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phone-call-discard-reason-missed.html">PhoneCallDiscardReasonMissed</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phone-call-discarded.html">PhoneCallDiscarded</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phone-call-empty.html">PhoneCallEmpty</a></li>
@@ -2309,6 +2313,7 @@
 <li class="toctree-l1"><a class="reference internal" href="update-folder-peers.html">UpdateFolderPeers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-geo-live-viewed.html">UpdateGeoLiveViewed</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-group-call.html">UpdateGroupCall</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-group-call-chain-blocks.html">UpdateGroupCallChainBlocks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-group-call-connection.html">UpdateGroupCallConnection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-group-call-participants.html">UpdateGroupCallParticipants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-inline-bot-callback-query.html">UpdateInlineBotCallbackQuery</a></li>
@@ -2466,7 +2471,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/46b3622" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/1dc63ff" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

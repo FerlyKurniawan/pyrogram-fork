@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="GroupCallDiscarded" href="group-call-discarded.html" /><link rel="prev" title="GlobalPrivacySettings" href="global-privacy-settings.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>GroupCall - PyroTGFork 2.2.10 Layer 201</title>
+        <title>GroupCall - PyroTGFork 2.2.10 Layer 202</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.10 Layer 201</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.10 Layer 202</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.10 Layer 201</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.10 Layer 202</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -911,8 +911,8 @@
 <p>Constructor of <a class="reference internal" href="../base/group-call.html#pyrogram.raw.base.GroupCall" title="pyrogram.raw.base.GroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GroupCall</span></code></a>.</p>
 <dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">201</span></code></p></li>
-<li><p>ID: <code class="docutils literal notranslate"><span class="pre">CDF8D3E3</span></code></p></li>
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">202</span></code></p></li>
+<li><p>ID: <code class="docutils literal notranslate"><span class="pre">553B0BA1</span></code></p></li>
 </ul>
 </dd>
 </dl>
@@ -932,12 +932,14 @@
 <li><p><strong>record_video_active</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the group call is currently being recorded</p></li>
 <li><p><strong>rtmp_stream</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether RTMP streams are allowed</p></li>
 <li><p><strong>listeners_hidden</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the listeners list is hidden and cannot be fetched using phone.getGroupParticipants. The phone.groupParticipants.count and groupCall.participants_count counters will still include listeners.</p></li>
+<li><p><strong>conference</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
+<li><p><strong>creator</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
 <li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Group call title</p></li>
 <li><p><strong>stream_dc_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – DC ID to be used for livestream chunks</p></li>
 <li><p><strong>record_start_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – When was the recording started</p></li>
 <li><p><strong>schedule_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – When is the call scheduled to start</p></li>
 <li><p><strong>unmuted_video_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Number of people currently streaming video into the call</p></li>
-<li><p><strong>conference_from_call</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – N/A</p></li>
+<li><p><strong>invite_link</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – N/A</p></li>
 </ul>
 </dd>
 </dl>
@@ -981,7 +983,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/46b3622" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/1dc63ff" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               
