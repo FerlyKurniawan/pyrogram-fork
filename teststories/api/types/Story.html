@@ -687,6 +687,10 @@
 <li class="toctree-l2"><a class="reference internal" href="StoryAreaTypeWeather.html">StoryAreaTypeWeather</a></li>
 <li class="toctree-l2"><a class="reference internal" href="StoryAreaTypeUniqueGift.html">StoryAreaTypeUniqueGift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="StoryArea.html">StoryArea</a></li>
+<li class="toctree-l2"><a class="reference internal" href="StoryRepostInfo.html">StoryRepostInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="StoryOrigin.html">StoryOrigin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="StoryOriginHiddenUser.html">StoryOriginHiddenUser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="StoryOriginPublicStory.html">StoryOriginPublicStory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="StoryPrivacySettings.html">StoryPrivacySettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="StoryPrivacySettingsEveryone.html">StoryPrivacySettingsEveryone</a></li>
 <li class="toctree-l2"><a class="reference internal" href="StoryPrivacySettingsContacts.html">StoryPrivacySettingsContacts</a></li>
@@ -956,8 +960,8 @@
 <li><p><strong>is_edited</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the story was edited.</p></li>
 <li><p><strong>is_posted_to_chat_page</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the story is saved in the sender’s profile and will be available there after expiration</p></li>
 <li><p><strong>is_visible_only_for_self</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the story is visible only for the current user.</p></li>
+<li><p><strong>repost_info</strong> (<a class="reference internal" href="StoryRepostInfo.html#pyrogram.types.StoryRepostInfo" title="pyrogram.types.StoryRepostInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StoryRepostInfo</span></code></a>, <em>optional</em>) – Information about the original story; may be None if the story wasn’t reposted.</p></li>
 <li><p><strong>privacy_settings</strong> (<a class="reference internal" href="StoryPrivacySettings.html#pyrogram.types.StoryPrivacySettings" title="pyrogram.types.StoryPrivacySettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StoryPrivacySettings</span></code></a>, <em>optional</em>) – Privacy rules affecting story visibility; may be approximate for non-owned stories.</p></li>
-<li><p><strong>TODO</strong> – <a class="reference external" href="mailto://&#37;&#52;&#48;content">//<span>&#64;</span>content</a> Content of the story</p></li>
 <li><p><strong>media</strong> (<a class="reference internal" href="../enums/MessageMediaType.html#pyrogram.enums.MessageMediaType" title="pyrogram.enums.MessageMediaType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaType</span></code></a>, <em>optional</em>) – The media type of the Story.
 This field will contain the enumeration type of the media message.
 You can use <code class="docutils literal notranslate"><span class="pre">media</span> <span class="pre">=</span> <span class="pre">getattr(story,</span> <span class="pre">story.media.value)</span></code> to access the media message.</p></li>
@@ -975,13 +979,6 @@ A story can be skipped in case it was skipped.</p></li>
 <li><p><strong>deleted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – The story is deleted.
 A story can be deleted in case it was deleted or you tried to retrieve a story that doesn’t exist yet.</p></li>
 <li><p><strong>link</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>property</em>) – Generate a link to this story, only for Telegram Premium chats having usernames. Can be None if the story cannot have a link.</p></li>
-<li><p><strong>can_be_deleted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>property</em>) – True, if the story can be deleted</p></li>
-<li><p><strong>can_be_edited</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>property</em>) – True, if the story can be edited</p></li>
-<li><p><strong>can_be_forwarded</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>property</em>) – True, if the story can be forwarded as a message. Otherwise, screenshots and saving of the story content must be also forbidden</p></li>
-<li><p><strong>can_be_replied</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>property</em>) – True, if the story can be replied in the chat with the story sender</p></li>
-<li><p><strong>can_toggle_is_posted_to_chat_page</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>property</em>) – True, if the story’s is_posted_to_chat_page value can be changed</p></li>
-<li><p><strong>can_get_statistics</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>property</em>) – True, if the story statistics are available through getStoryStatistics</p></li>
-<li><p><strong>can_get_interactions</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>property</em>) – True, if interactions with the story can be received through getStoryInteractions</p></li>
 </ul>
 </dd>
 </dl>
@@ -1025,7 +1022,7 @@ A story can be deleted in case it was deleted or you tried to retrieve a story t
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/2272f40" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/e63849e" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               
