@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Account" href="account/index.html" /><link rel="prev" title="Release Notes" href="../../releases/index.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Raw Functions - PyroTGFork 2.2.13 Layer 205</title>
+        <title>Raw Functions - PyroTGFork 2.2.14 Layer 211</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.13 Layer 205</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.14 Layer 211</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.13 Layer 205</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.14 Layer 211</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -878,7 +878,6 @@
 <ul class="current">
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Raw Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../types/index.html">Raw Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../base/index.html">Raw Base</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
@@ -1136,6 +1135,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="channels/index.html">Channels</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="channels/check-search-posts-flood.html">CheckSearchPostsFlood</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/check-username.html">CheckUsername</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/convert-to-gigagroup.html">ConvertToGigagroup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="channels/create-channel.html">CreateChannel</a></li>
@@ -1511,6 +1511,7 @@
 <li class="toctree-l2"><a class="reference internal" href="messages/toggle-peer-translations.html">TogglePeerTranslations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/toggle-saved-dialog-pin.html">ToggleSavedDialogPin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/toggle-sticker-sets.html">ToggleStickerSets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="messages/toggle-suggested-post-approval.html">ToggleSuggestedPostApproval</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/toggle-todo-completed.html">ToggleTodoCompleted</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/transcribe-audio.html">TranscribeAudio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="messages/translate-text.html">TranslateText</a></li>
@@ -1537,6 +1538,8 @@
 <li class="toctree-l2"><a class="reference internal" href="payments/clear-saved-info.html">ClearSavedInfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/connect-star-ref-bot.html">ConnectStarRefBot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/convert-star-gift.html">ConvertStarGift</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/create-star-gift-collection.html">CreateStarGiftCollection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/delete-star-gift-collection.html">DeleteStarGiftCollection</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/edit-connected-star-ref-bot.html">EditConnectedStarRefBot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/export-invoice.html">ExportInvoice</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/fulfill-stars-subscription.html">FulfillStarsSubscription</a></li>
@@ -1551,6 +1554,7 @@
 <li class="toctree-l2"><a class="reference internal" href="payments/get-saved-info.html">GetSavedInfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/get-saved-star-gift.html">GetSavedStarGift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/get-saved-star-gifts.html">GetSavedStarGifts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/get-star-gift-collections.html">GetStarGiftCollections</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/get-star-gift-upgrade-preview.html">GetStarGiftUpgradePreview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/get-star-gift-withdrawal-url.html">GetStarGiftWithdrawalUrl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/get-star-gifts.html">GetStarGifts</a></li>
@@ -1568,12 +1572,14 @@
 <li class="toctree-l2"><a class="reference internal" href="payments/get-unique-star-gift.html">GetUniqueStarGift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/launch-prepaid-giveaway.html">LaunchPrepaidGiveaway</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/refund-stars-charge.html">RefundStarsCharge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/reorder-star-gift-collections.html">ReorderStarGiftCollections</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/save-star-gift.html">SaveStarGift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/send-payment-form.html">SendPaymentForm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/send-stars-form.html">SendStarsForm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/toggle-chat-star-gift-notifications.html">ToggleChatStarGiftNotifications</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/toggle-star-gifts-pinned-to-top.html">ToggleStarGiftsPinnedToTop</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/transfer-star-gift.html">TransferStarGift</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/update-star-gift-collection.html">UpdateStarGiftCollection</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/update-star-gift-price.html">UpdateStarGiftPrice</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/upgrade-star-gift.html">UpgradeStarGift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/validate-requested-info.html">ValidateRequestedInfo</a></li>
@@ -1646,9 +1652,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="stats/index.html">Stats</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="stats/get-broadcast-revenue-stats.html">GetBroadcastRevenueStats</a></li>
-<li class="toctree-l2"><a class="reference internal" href="stats/get-broadcast-revenue-transactions.html">GetBroadcastRevenueTransactions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="stats/get-broadcast-revenue-withdrawal-url.html">GetBroadcastRevenueWithdrawalUrl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stats/get-broadcast-stats.html">GetBroadcastStats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stats/get-megagroup-stats.html">GetMegagroupStats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stats/get-message-public-forwards.html">GetMessagePublicForwards</a></li>
@@ -1675,9 +1678,13 @@
 <li class="toctree-l1"><a class="reference internal" href="stories/index.html">Stories</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="stories/activate-stealth-mode.html">ActivateStealthMode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/can-send-story.html">CanSendStory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stories/create-album.html">CreateAlbum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stories/delete-album.html">DeleteAlbum</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/delete-stories.html">DeleteStories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/edit-story.html">EditStory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/export-story-link.html">ExportStoryLink</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stories/get-album-stories.html">GetAlbumStories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stories/get-albums.html">GetAlbums</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/get-all-read-peer-stories.html">GetAllReadPeerStories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/get-all-stories.html">GetAllStories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/get-chats-to-send.html">GetChatsToSend</a></li>
@@ -1691,6 +1698,7 @@
 <li class="toctree-l2"><a class="reference internal" href="stories/get-story-views-list.html">GetStoryViewsList</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/increment-story-views.html">IncrementStoryViews</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/read-stories.html">ReadStories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stories/reorder-albums.html">ReorderAlbums</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/report.html">Report</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/search-posts.html">SearchPosts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/send-reaction.html">SendReaction</a></li>
@@ -1699,6 +1707,7 @@
 <li class="toctree-l2"><a class="reference internal" href="stories/toggle-peer-stories-hidden.html">TogglePeerStoriesHidden</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/toggle-pinned.html">TogglePinned</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stories/toggle-pinned-to-top.html">TogglePinnedToTop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stories/update-album.html">UpdateAlbum</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="updates/index.html">Updates</a><ul>
@@ -1786,7 +1795,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/49b4ba1" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/eecca8a" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

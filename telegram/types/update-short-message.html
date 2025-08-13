@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="UpdateShortSentMessage" href="update-short-sent-message.html" /><link rel="prev" title="UpdateShortChatMessage" href="update-short-chat-message.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>UpdateShortMessage - PyroTGFork 2.2.13 Layer 205</title>
+        <title>UpdateShortMessage - PyroTGFork 2.2.14 Layer 211</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.13 Layer 205</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.14 Layer 211</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.13 Layer 205</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.14 Layer 211</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -878,7 +878,6 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Raw Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Raw Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../base/index.html">Raw Base</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
@@ -960,10 +959,10 @@
 <dt class="sig sig-object py" id="pyrogram.raw.types.UpdateShortMessage">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">UpdateShortMessage</span></span><a class="headerlink" href="#pyrogram.raw.types.UpdateShortMessage" title="Link to this definition">#</a></dt>
 <dd><p>Info about a message sent to (received from) another user</p>
-<p>Constructor of <a class="reference internal" href="../base/updates.html#pyrogram.raw.base.Updates" title="pyrogram.raw.base.Updates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Updates</span></code></a>.</p>
+<p>Constructor of <code class="xref py py-obj docutils literal notranslate"><span class="pre">Updates</span></code>.</p>
 <dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">205</span></code></p></li>
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">211</span></code></p></li>
 <li><p>ID: <code class="docutils literal notranslate"><span class="pre">313BC7F8</span></code></p></li>
 </ul>
 </dd>
@@ -981,16 +980,16 @@
 <li><p><strong>mentioned</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether we were mentioned in the message</p></li>
 <li><p><strong>media_unread</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether there are some unread mentions in this message</p></li>
 <li><p><strong>silent</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If true, the message is a silent message, no notifications should be triggered</p></li>
-<li><p><strong>fwd_from</strong> (<a class="reference internal" href="../base/message-fwd-header.html#pyrogram.raw.base.MessageFwdHeader" title="pyrogram.raw.base.MessageFwdHeader"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageFwdHeader</span></code></a>, <em>optional</em>) – Info about a forwarded message</p></li>
+<li><p><strong>fwd_from</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageFwdHeader</span></code>, <em>optional</em>) – Info about a forwarded message</p></li>
 <li><p><strong>via_bot_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – Info about the inline bot used to generate this message</p></li>
-<li><p><strong>reply_to</strong> (<a class="reference internal" href="../base/message-reply-header.html#pyrogram.raw.base.MessageReplyHeader" title="pyrogram.raw.base.MessageReplyHeader"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageReplyHeader</span></code></a>, <em>optional</em>) – Reply and thread information</p></li>
-<li><p><strong>entities</strong> (List of <a class="reference internal" href="../base/message-entity.html#pyrogram.raw.base.MessageEntity" title="pyrogram.raw.base.MessageEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – Entities for styled text</p></li>
+<li><p><strong>reply_to</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageReplyHeader</span></code>, <em>optional</em>) – Reply and thread information</p></li>
+<li><p><strong>entities</strong> (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code>, <em>optional</em>) – Entities for styled text</p></li>
 <li><p><strong>ttl_period</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Time To Live of the message, once message.date+message.ttl_period === time(), the message will be deleted on the server, and must be deleted locally as well.</p></li>
 </ul>
 </dd>
 </dl>
 <dl>
-<dt>Functions:</dt><dd><p>This object can be returned by 118 functions.</p>
+<dt>Functions:</dt><dd><p>This object can be returned by 119 functions.</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
@@ -1136,216 +1135,219 @@
 <td><p>Fetches an updatePaidReactionPrivacy update with the current default paid reaction privacy, see here » for more info.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/toggle-todo-completed.html#pyrogram.raw.functions.messages.ToggleTodoCompleted" title="pyrogram.raw.functions.messages.ToggleTodoCompleted"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.ToggleTodoCompleted</span></code></a></p></td>
-<td><p>Details:</p></td>
+<td><p>{schema}</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../functions/messages/append-todo-list.html#pyrogram.raw.functions.messages.AppendTodoList" title="pyrogram.raw.functions.messages.AppendTodoList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.AppendTodoList</span></code></a></p></td>
-<td><p>Details:</p></td>
+<td><p>{schema}</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/create-channel.html#pyrogram.raw.functions.channels.CreateChannel" title="pyrogram.raw.functions.channels.CreateChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.CreateChannel</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/toggle-suggested-post-approval.html#pyrogram.raw.functions.messages.ToggleSuggestedPostApproval" title="pyrogram.raw.functions.messages.ToggleSuggestedPostApproval"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.ToggleSuggestedPostApproval</span></code></a></p></td>
+<td><p>{schema}</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/create-channel.html#pyrogram.raw.functions.channels.CreateChannel" title="pyrogram.raw.functions.channels.CreateChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.CreateChannel</span></code></a></p></td>
 <td><p>Create a supergroup/channel.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/edit-admin.html#pyrogram.raw.functions.channels.EditAdmin" title="pyrogram.raw.functions.channels.EditAdmin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditAdmin</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/edit-admin.html#pyrogram.raw.functions.channels.EditAdmin" title="pyrogram.raw.functions.channels.EditAdmin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditAdmin</span></code></a></p></td>
 <td><p>Modify the admin rights of a user in a supergroup/channel.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/edit-title.html#pyrogram.raw.functions.channels.EditTitle" title="pyrogram.raw.functions.channels.EditTitle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditTitle</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/edit-title.html#pyrogram.raw.functions.channels.EditTitle" title="pyrogram.raw.functions.channels.EditTitle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditTitle</span></code></a></p></td>
 <td><p>Edit the name of a channel/supergroup</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/edit-photo.html#pyrogram.raw.functions.channels.EditPhoto" title="pyrogram.raw.functions.channels.EditPhoto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditPhoto</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/edit-photo.html#pyrogram.raw.functions.channels.EditPhoto" title="pyrogram.raw.functions.channels.EditPhoto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditPhoto</span></code></a></p></td>
 <td><p>Change the photo of a channel/supergroup</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/join-channel.html#pyrogram.raw.functions.channels.JoinChannel" title="pyrogram.raw.functions.channels.JoinChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.JoinChannel</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/join-channel.html#pyrogram.raw.functions.channels.JoinChannel" title="pyrogram.raw.functions.channels.JoinChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.JoinChannel</span></code></a></p></td>
 <td><p>Join a channel/supergroup</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/leave-channel.html#pyrogram.raw.functions.channels.LeaveChannel" title="pyrogram.raw.functions.channels.LeaveChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.LeaveChannel</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/leave-channel.html#pyrogram.raw.functions.channels.LeaveChannel" title="pyrogram.raw.functions.channels.LeaveChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.LeaveChannel</span></code></a></p></td>
 <td><p>Leave a channel/supergroup</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/delete-channel.html#pyrogram.raw.functions.channels.DeleteChannel" title="pyrogram.raw.functions.channels.DeleteChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.DeleteChannel</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/delete-channel.html#pyrogram.raw.functions.channels.DeleteChannel" title="pyrogram.raw.functions.channels.DeleteChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.DeleteChannel</span></code></a></p></td>
 <td><p>Delete a channel/supergroup</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-signatures.html#pyrogram.raw.functions.channels.ToggleSignatures" title="pyrogram.raw.functions.channels.ToggleSignatures"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleSignatures</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-signatures.html#pyrogram.raw.functions.channels.ToggleSignatures" title="pyrogram.raw.functions.channels.ToggleSignatures"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleSignatures</span></code></a></p></td>
 <td><p>Enable/disable message signatures in channels</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/edit-banned.html#pyrogram.raw.functions.channels.EditBanned" title="pyrogram.raw.functions.channels.EditBanned"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditBanned</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/edit-banned.html#pyrogram.raw.functions.channels.EditBanned" title="pyrogram.raw.functions.channels.EditBanned"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditBanned</span></code></a></p></td>
 <td><p>Ban/unban/kick a user in a supergroup/channel.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/delete-history.html#pyrogram.raw.functions.channels.DeleteHistory" title="pyrogram.raw.functions.channels.DeleteHistory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.DeleteHistory</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/delete-history.html#pyrogram.raw.functions.channels.DeleteHistory" title="pyrogram.raw.functions.channels.DeleteHistory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.DeleteHistory</span></code></a></p></td>
 <td><p>Delete the history of a supergroup</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-pre-history-hidden.html#pyrogram.raw.functions.channels.TogglePreHistoryHidden" title="pyrogram.raw.functions.channels.TogglePreHistoryHidden"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.TogglePreHistoryHidden</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-pre-history-hidden.html#pyrogram.raw.functions.channels.TogglePreHistoryHidden" title="pyrogram.raw.functions.channels.TogglePreHistoryHidden"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.TogglePreHistoryHidden</span></code></a></p></td>
 <td><p>Hide/unhide message history for new channel/supergroup users</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/edit-creator.html#pyrogram.raw.functions.channels.EditCreator" title="pyrogram.raw.functions.channels.EditCreator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditCreator</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/edit-creator.html#pyrogram.raw.functions.channels.EditCreator" title="pyrogram.raw.functions.channels.EditCreator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditCreator</span></code></a></p></td>
 <td><p>Transfer channel ownership</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-slow-mode.html#pyrogram.raw.functions.channels.ToggleSlowMode" title="pyrogram.raw.functions.channels.ToggleSlowMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleSlowMode</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-slow-mode.html#pyrogram.raw.functions.channels.ToggleSlowMode" title="pyrogram.raw.functions.channels.ToggleSlowMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleSlowMode</span></code></a></p></td>
 <td><p>Toggle supergroup slow mode: if enabled, users will only be able to send one message every seconds seconds</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/convert-to-gigagroup.html#pyrogram.raw.functions.channels.ConvertToGigagroup" title="pyrogram.raw.functions.channels.ConvertToGigagroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ConvertToGigagroup</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/convert-to-gigagroup.html#pyrogram.raw.functions.channels.ConvertToGigagroup" title="pyrogram.raw.functions.channels.ConvertToGigagroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ConvertToGigagroup</span></code></a></p></td>
 <td><p>Convert a supergroup to a gigagroup, when requested by channel suggestions.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-join-to-send.html#pyrogram.raw.functions.channels.ToggleJoinToSend" title="pyrogram.raw.functions.channels.ToggleJoinToSend"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleJoinToSend</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-join-to-send.html#pyrogram.raw.functions.channels.ToggleJoinToSend" title="pyrogram.raw.functions.channels.ToggleJoinToSend"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleJoinToSend</span></code></a></p></td>
 <td><p>Set whether all users should join a discussion group in order to comment on a post »</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-join-request.html#pyrogram.raw.functions.channels.ToggleJoinRequest" title="pyrogram.raw.functions.channels.ToggleJoinRequest"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleJoinRequest</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-join-request.html#pyrogram.raw.functions.channels.ToggleJoinRequest" title="pyrogram.raw.functions.channels.ToggleJoinRequest"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleJoinRequest</span></code></a></p></td>
 <td><p>Set whether all users should request admin approval to join the group ».</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-forum.html#pyrogram.raw.functions.channels.ToggleForum" title="pyrogram.raw.functions.channels.ToggleForum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleForum</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-forum.html#pyrogram.raw.functions.channels.ToggleForum" title="pyrogram.raw.functions.channels.ToggleForum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleForum</span></code></a></p></td>
 <td><p>Enable or disable forum functionality in a supergroup.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/create-forum-topic.html#pyrogram.raw.functions.channels.CreateForumTopic" title="pyrogram.raw.functions.channels.CreateForumTopic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.CreateForumTopic</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/create-forum-topic.html#pyrogram.raw.functions.channels.CreateForumTopic" title="pyrogram.raw.functions.channels.CreateForumTopic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.CreateForumTopic</span></code></a></p></td>
 <td><p>Create a forum topic; requires manage_topics rights.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/edit-forum-topic.html#pyrogram.raw.functions.channels.EditForumTopic" title="pyrogram.raw.functions.channels.EditForumTopic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditForumTopic</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/edit-forum-topic.html#pyrogram.raw.functions.channels.EditForumTopic" title="pyrogram.raw.functions.channels.EditForumTopic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.EditForumTopic</span></code></a></p></td>
 <td><p>Edit forum topic; requires manage_topics rights.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/update-pinned-forum-topic.html#pyrogram.raw.functions.channels.UpdatePinnedForumTopic" title="pyrogram.raw.functions.channels.UpdatePinnedForumTopic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.UpdatePinnedForumTopic</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/update-pinned-forum-topic.html#pyrogram.raw.functions.channels.UpdatePinnedForumTopic" title="pyrogram.raw.functions.channels.UpdatePinnedForumTopic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.UpdatePinnedForumTopic</span></code></a></p></td>
 <td><p>Pin or unpin forum topics</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/reorder-pinned-forum-topics.html#pyrogram.raw.functions.channels.ReorderPinnedForumTopics" title="pyrogram.raw.functions.channels.ReorderPinnedForumTopics"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ReorderPinnedForumTopics</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/reorder-pinned-forum-topics.html#pyrogram.raw.functions.channels.ReorderPinnedForumTopics" title="pyrogram.raw.functions.channels.ReorderPinnedForumTopics"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ReorderPinnedForumTopics</span></code></a></p></td>
 <td><p>Reorder pinned forum topics</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-anti-spam.html#pyrogram.raw.functions.channels.ToggleAntiSpam" title="pyrogram.raw.functions.channels.ToggleAntiSpam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleAntiSpam</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-anti-spam.html#pyrogram.raw.functions.channels.ToggleAntiSpam" title="pyrogram.raw.functions.channels.ToggleAntiSpam"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleAntiSpam</span></code></a></p></td>
 <td><p>Enable or disable the native antispam system.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-participants-hidden.html#pyrogram.raw.functions.channels.ToggleParticipantsHidden" title="pyrogram.raw.functions.channels.ToggleParticipantsHidden"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleParticipantsHidden</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-participants-hidden.html#pyrogram.raw.functions.channels.ToggleParticipantsHidden" title="pyrogram.raw.functions.channels.ToggleParticipantsHidden"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleParticipantsHidden</span></code></a></p></td>
 <td><p>Hide or display the participants list in a supergroup.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/update-color.html#pyrogram.raw.functions.channels.UpdateColor" title="pyrogram.raw.functions.channels.UpdateColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.UpdateColor</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/update-color.html#pyrogram.raw.functions.channels.UpdateColor" title="pyrogram.raw.functions.channels.UpdateColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.UpdateColor</span></code></a></p></td>
 <td><p>Update the accent color and background custom emoji » of a channel.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-view-forum-as-messages.html#pyrogram.raw.functions.channels.ToggleViewForumAsMessages" title="pyrogram.raw.functions.channels.ToggleViewForumAsMessages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleViewForumAsMessages</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-view-forum-as-messages.html#pyrogram.raw.functions.channels.ToggleViewForumAsMessages" title="pyrogram.raw.functions.channels.ToggleViewForumAsMessages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleViewForumAsMessages</span></code></a></p></td>
 <td><p>Users may also choose to display messages from all topics of a forum as if they were sent to a normal group, using a &quot;View as messages&quot; setting in the local client: this setting only affects the current account, and is synced to other logged in sessions using this method.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/update-emoji-status.html#pyrogram.raw.functions.channels.UpdateEmojiStatus" title="pyrogram.raw.functions.channels.UpdateEmojiStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.UpdateEmojiStatus</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/update-emoji-status.html#pyrogram.raw.functions.channels.UpdateEmojiStatus" title="pyrogram.raw.functions.channels.UpdateEmojiStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.UpdateEmojiStatus</span></code></a></p></td>
 <td><p>Set an emoji status for a channel or supergroup.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/set-boosts-to-unblock-restrictions.html#pyrogram.raw.functions.channels.SetBoostsToUnblockRestrictions" title="pyrogram.raw.functions.channels.SetBoostsToUnblockRestrictions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.SetBoostsToUnblockRestrictions</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/set-boosts-to-unblock-restrictions.html#pyrogram.raw.functions.channels.SetBoostsToUnblockRestrictions" title="pyrogram.raw.functions.channels.SetBoostsToUnblockRestrictions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.SetBoostsToUnblockRestrictions</span></code></a></p></td>
 <td><p>Admins with ban_users admin rights » may allow users that apply a certain number of booosts » to the group to bypass slow mode » and other » supergroup restrictions, see here » for more info.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/restrict-sponsored-messages.html#pyrogram.raw.functions.channels.RestrictSponsoredMessages" title="pyrogram.raw.functions.channels.RestrictSponsoredMessages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.RestrictSponsoredMessages</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/restrict-sponsored-messages.html#pyrogram.raw.functions.channels.RestrictSponsoredMessages" title="pyrogram.raw.functions.channels.RestrictSponsoredMessages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.RestrictSponsoredMessages</span></code></a></p></td>
 <td><p>Disable ads on the specified channel, for all users.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/update-paid-messages-price.html#pyrogram.raw.functions.channels.UpdatePaidMessagesPrice" title="pyrogram.raw.functions.channels.UpdatePaidMessagesPrice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.UpdatePaidMessagesPrice</span></code></a></p></td>
-<td><p>Details:</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/update-paid-messages-price.html#pyrogram.raw.functions.channels.UpdatePaidMessagesPrice" title="pyrogram.raw.functions.channels.UpdatePaidMessagesPrice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.UpdatePaidMessagesPrice</span></code></a></p></td>
+<td><p>Enable or disable paid messages » in this supergroup or monoforum.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/toggle-autotranslation.html#pyrogram.raw.functions.channels.ToggleAutotranslation" title="pyrogram.raw.functions.channels.ToggleAutotranslation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleAutotranslation</span></code></a></p></td>
-<td><p>Details:</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-autotranslation.html#pyrogram.raw.functions.channels.ToggleAutotranslation" title="pyrogram.raw.functions.channels.ToggleAutotranslation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleAutotranslation</span></code></a></p></td>
+<td><p>{schema}</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/bots/allow-send-message.html#pyrogram.raw.functions.bots.AllowSendMessage" title="pyrogram.raw.functions.bots.AllowSendMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bots.AllowSendMessage</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/bots/allow-send-message.html#pyrogram.raw.functions.bots.AllowSendMessage" title="pyrogram.raw.functions.bots.AllowSendMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bots.AllowSendMessage</span></code></a></p></td>
 <td><p>Allow the specified bot to send us messages</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/assign-app-store-transaction.html#pyrogram.raw.functions.payments.AssignAppStoreTransaction" title="pyrogram.raw.functions.payments.AssignAppStoreTransaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.AssignAppStoreTransaction</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/assign-app-store-transaction.html#pyrogram.raw.functions.payments.AssignAppStoreTransaction" title="pyrogram.raw.functions.payments.AssignAppStoreTransaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.AssignAppStoreTransaction</span></code></a></p></td>
 <td><p>Informs server about a purchase made through the App Store: for official applications only.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/assign-play-market-transaction.html#pyrogram.raw.functions.payments.AssignPlayMarketTransaction" title="pyrogram.raw.functions.payments.AssignPlayMarketTransaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.AssignPlayMarketTransaction</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/assign-play-market-transaction.html#pyrogram.raw.functions.payments.AssignPlayMarketTransaction" title="pyrogram.raw.functions.payments.AssignPlayMarketTransaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.AssignPlayMarketTransaction</span></code></a></p></td>
 <td><p>Informs server about a purchase made through the Play Store: for official applications only.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/apply-gift-code.html#pyrogram.raw.functions.payments.ApplyGiftCode" title="pyrogram.raw.functions.payments.ApplyGiftCode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.ApplyGiftCode</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/apply-gift-code.html#pyrogram.raw.functions.payments.ApplyGiftCode" title="pyrogram.raw.functions.payments.ApplyGiftCode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.ApplyGiftCode</span></code></a></p></td>
 <td><p>Apply a Telegram Premium giftcode »</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/launch-prepaid-giveaway.html#pyrogram.raw.functions.payments.LaunchPrepaidGiveaway" title="pyrogram.raw.functions.payments.LaunchPrepaidGiveaway"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.LaunchPrepaidGiveaway</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/launch-prepaid-giveaway.html#pyrogram.raw.functions.payments.LaunchPrepaidGiveaway" title="pyrogram.raw.functions.payments.LaunchPrepaidGiveaway"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.LaunchPrepaidGiveaway</span></code></a></p></td>
 <td><p>Launch a prepaid giveaway ».</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/refund-stars-charge.html#pyrogram.raw.functions.payments.RefundStarsCharge" title="pyrogram.raw.functions.payments.RefundStarsCharge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.RefundStarsCharge</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/refund-stars-charge.html#pyrogram.raw.functions.payments.RefundStarsCharge" title="pyrogram.raw.functions.payments.RefundStarsCharge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.RefundStarsCharge</span></code></a></p></td>
 <td><p>Refund a Telegram Stars transaction, see here » for more info.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/upgrade-star-gift.html#pyrogram.raw.functions.payments.UpgradeStarGift" title="pyrogram.raw.functions.payments.UpgradeStarGift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.UpgradeStarGift</span></code></a></p></td>
-<td><p>Details:</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/upgrade-star-gift.html#pyrogram.raw.functions.payments.UpgradeStarGift" title="pyrogram.raw.functions.payments.UpgradeStarGift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.UpgradeStarGift</span></code></a></p></td>
+<td><p>{schema}</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/transfer-star-gift.html#pyrogram.raw.functions.payments.TransferStarGift" title="pyrogram.raw.functions.payments.TransferStarGift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.TransferStarGift</span></code></a></p></td>
-<td><p>Details:</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/transfer-star-gift.html#pyrogram.raw.functions.payments.TransferStarGift" title="pyrogram.raw.functions.payments.TransferStarGift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.TransferStarGift</span></code></a></p></td>
+<td><p>{schema}</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/update-star-gift-price.html#pyrogram.raw.functions.payments.UpdateStarGiftPrice" title="pyrogram.raw.functions.payments.UpdateStarGiftPrice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.UpdateStarGiftPrice</span></code></a></p></td>
-<td><p>Details:</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/update-star-gift-price.html#pyrogram.raw.functions.payments.UpdateStarGiftPrice" title="pyrogram.raw.functions.payments.UpdateStarGiftPrice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.UpdateStarGiftPrice</span></code></a></p></td>
+<td><p>{schema}</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/discard-call.html#pyrogram.raw.functions.phone.DiscardCall" title="pyrogram.raw.functions.phone.DiscardCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DiscardCall</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/discard-call.html#pyrogram.raw.functions.phone.DiscardCall" title="pyrogram.raw.functions.phone.DiscardCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DiscardCall</span></code></a></p></td>
 <td><p>Refuse or end running call</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/set-call-rating.html#pyrogram.raw.functions.phone.SetCallRating" title="pyrogram.raw.functions.phone.SetCallRating"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.SetCallRating</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/set-call-rating.html#pyrogram.raw.functions.phone.SetCallRating" title="pyrogram.raw.functions.phone.SetCallRating"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.SetCallRating</span></code></a></p></td>
 <td><p>Rate a call, returns info about the rating message sent to the official VoIP bot.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/create-group-call.html#pyrogram.raw.functions.phone.CreateGroupCall" title="pyrogram.raw.functions.phone.CreateGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.CreateGroupCall</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/create-group-call.html#pyrogram.raw.functions.phone.CreateGroupCall" title="pyrogram.raw.functions.phone.CreateGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.CreateGroupCall</span></code></a></p></td>
 <td><p>Create a group call or livestream</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/join-group-call.html#pyrogram.raw.functions.phone.JoinGroupCall" title="pyrogram.raw.functions.phone.JoinGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.JoinGroupCall</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/join-group-call.html#pyrogram.raw.functions.phone.JoinGroupCall" title="pyrogram.raw.functions.phone.JoinGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.JoinGroupCall</span></code></a></p></td>
 <td><p>Join a group call</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/leave-group-call.html#pyrogram.raw.functions.phone.LeaveGroupCall" title="pyrogram.raw.functions.phone.LeaveGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.LeaveGroupCall</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/leave-group-call.html#pyrogram.raw.functions.phone.LeaveGroupCall" title="pyrogram.raw.functions.phone.LeaveGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.LeaveGroupCall</span></code></a></p></td>
 <td><p>Leave a group call</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/invite-to-group-call.html#pyrogram.raw.functions.phone.InviteToGroupCall" title="pyrogram.raw.functions.phone.InviteToGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.InviteToGroupCall</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/invite-to-group-call.html#pyrogram.raw.functions.phone.InviteToGroupCall" title="pyrogram.raw.functions.phone.InviteToGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.InviteToGroupCall</span></code></a></p></td>
 <td><p>Invite a set of users to a group call.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/discard-group-call.html#pyrogram.raw.functions.phone.DiscardGroupCall" title="pyrogram.raw.functions.phone.DiscardGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DiscardGroupCall</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/discard-group-call.html#pyrogram.raw.functions.phone.DiscardGroupCall" title="pyrogram.raw.functions.phone.DiscardGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DiscardGroupCall</span></code></a></p></td>
 <td><p>Terminate a group call</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/toggle-group-call-settings.html#pyrogram.raw.functions.phone.ToggleGroupCallSettings" title="pyrogram.raw.functions.phone.ToggleGroupCallSettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.ToggleGroupCallSettings</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/toggle-group-call-settings.html#pyrogram.raw.functions.phone.ToggleGroupCallSettings" title="pyrogram.raw.functions.phone.ToggleGroupCallSettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.ToggleGroupCallSettings</span></code></a></p></td>
 <td><p>Change group call settings</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/toggle-group-call-record.html#pyrogram.raw.functions.phone.ToggleGroupCallRecord" title="pyrogram.raw.functions.phone.ToggleGroupCallRecord"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.ToggleGroupCallRecord</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/toggle-group-call-record.html#pyrogram.raw.functions.phone.ToggleGroupCallRecord" title="pyrogram.raw.functions.phone.ToggleGroupCallRecord"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.ToggleGroupCallRecord</span></code></a></p></td>
 <td><p>Start or stop recording a group call: the recorded audio and video streams will be automatically sent to Saved messages (the chat with ourselves).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/edit-group-call-participant.html#pyrogram.raw.functions.phone.EditGroupCallParticipant" title="pyrogram.raw.functions.phone.EditGroupCallParticipant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.EditGroupCallParticipant</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/edit-group-call-participant.html#pyrogram.raw.functions.phone.EditGroupCallParticipant" title="pyrogram.raw.functions.phone.EditGroupCallParticipant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.EditGroupCallParticipant</span></code></a></p></td>
 <td><p>Edit information about a given group call participant</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/edit-group-call-title.html#pyrogram.raw.functions.phone.EditGroupCallTitle" title="pyrogram.raw.functions.phone.EditGroupCallTitle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.EditGroupCallTitle</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/edit-group-call-title.html#pyrogram.raw.functions.phone.EditGroupCallTitle" title="pyrogram.raw.functions.phone.EditGroupCallTitle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.EditGroupCallTitle</span></code></a></p></td>
 <td><p>Edit the title of a group call or livestream</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/toggle-group-call-start-subscription.html#pyrogram.raw.functions.phone.ToggleGroupCallStartSubscription" title="pyrogram.raw.functions.phone.ToggleGroupCallStartSubscription"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.ToggleGroupCallStartSubscription</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/toggle-group-call-start-subscription.html#pyrogram.raw.functions.phone.ToggleGroupCallStartSubscription" title="pyrogram.raw.functions.phone.ToggleGroupCallStartSubscription"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.ToggleGroupCallStartSubscription</span></code></a></p></td>
 <td><p>Subscribe or unsubscribe to a scheduled group call</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/start-scheduled-group-call.html#pyrogram.raw.functions.phone.StartScheduledGroupCall" title="pyrogram.raw.functions.phone.StartScheduledGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.StartScheduledGroupCall</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/start-scheduled-group-call.html#pyrogram.raw.functions.phone.StartScheduledGroupCall" title="pyrogram.raw.functions.phone.StartScheduledGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.StartScheduledGroupCall</span></code></a></p></td>
 <td><p>Start a scheduled group call.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/join-group-call-presentation.html#pyrogram.raw.functions.phone.JoinGroupCallPresentation" title="pyrogram.raw.functions.phone.JoinGroupCallPresentation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.JoinGroupCallPresentation</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/join-group-call-presentation.html#pyrogram.raw.functions.phone.JoinGroupCallPresentation" title="pyrogram.raw.functions.phone.JoinGroupCallPresentation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.JoinGroupCallPresentation</span></code></a></p></td>
 <td><p>Start screen sharing in a call</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/leave-group-call-presentation.html#pyrogram.raw.functions.phone.LeaveGroupCallPresentation" title="pyrogram.raw.functions.phone.LeaveGroupCallPresentation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.LeaveGroupCallPresentation</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/leave-group-call-presentation.html#pyrogram.raw.functions.phone.LeaveGroupCallPresentation" title="pyrogram.raw.functions.phone.LeaveGroupCallPresentation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.LeaveGroupCallPresentation</span></code></a></p></td>
 <td><p>Stop screen sharing in a group call</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/create-conference-call.html#pyrogram.raw.functions.phone.CreateConferenceCall" title="pyrogram.raw.functions.phone.CreateConferenceCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.CreateConferenceCall</span></code></a></p></td>
-<td><p>Details:</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/create-conference-call.html#pyrogram.raw.functions.phone.CreateConferenceCall" title="pyrogram.raw.functions.phone.CreateConferenceCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.CreateConferenceCall</span></code></a></p></td>
+<td><p>Create and optionally join a new conference call.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/delete-conference-call-participants.html#pyrogram.raw.functions.phone.DeleteConferenceCallParticipants" title="pyrogram.raw.functions.phone.DeleteConferenceCallParticipants"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DeleteConferenceCallParticipants</span></code></a></p></td>
-<td><p>Details:</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/delete-conference-call-participants.html#pyrogram.raw.functions.phone.DeleteConferenceCallParticipants" title="pyrogram.raw.functions.phone.DeleteConferenceCallParticipants"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DeleteConferenceCallParticipants</span></code></a></p></td>
+<td><p>{schema}</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/send-conference-call-broadcast.html#pyrogram.raw.functions.phone.SendConferenceCallBroadcast" title="pyrogram.raw.functions.phone.SendConferenceCallBroadcast"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.SendConferenceCallBroadcast</span></code></a></p></td>
-<td><p>Details:</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/send-conference-call-broadcast.html#pyrogram.raw.functions.phone.SendConferenceCallBroadcast" title="pyrogram.raw.functions.phone.SendConferenceCallBroadcast"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.SendConferenceCallBroadcast</span></code></a></p></td>
+<td><p>{schema}</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/invite-conference-call-participant.html#pyrogram.raw.functions.phone.InviteConferenceCallParticipant" title="pyrogram.raw.functions.phone.InviteConferenceCallParticipant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.InviteConferenceCallParticipant</span></code></a></p></td>
-<td><p>Details:</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/invite-conference-call-participant.html#pyrogram.raw.functions.phone.InviteConferenceCallParticipant" title="pyrogram.raw.functions.phone.InviteConferenceCallParticipant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.InviteConferenceCallParticipant</span></code></a></p></td>
+<td><p>{schema}</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/decline-conference-call-invite.html#pyrogram.raw.functions.phone.DeclineConferenceCallInvite" title="pyrogram.raw.functions.phone.DeclineConferenceCallInvite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DeclineConferenceCallInvite</span></code></a></p></td>
-<td><p>Details:</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/decline-conference-call-invite.html#pyrogram.raw.functions.phone.DeclineConferenceCallInvite" title="pyrogram.raw.functions.phone.DeclineConferenceCallInvite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DeclineConferenceCallInvite</span></code></a></p></td>
+<td><p>{schema}</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/get-group-call-chain-blocks.html#pyrogram.raw.functions.phone.GetGroupCallChainBlocks" title="pyrogram.raw.functions.phone.GetGroupCallChainBlocks"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.GetGroupCallChainBlocks</span></code></a></p></td>
-<td><p>Details:</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/get-group-call-chain-blocks.html#pyrogram.raw.functions.phone.GetGroupCallChainBlocks" title="pyrogram.raw.functions.phone.GetGroupCallChainBlocks"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.GetGroupCallChainBlocks</span></code></a></p></td>
+<td><p>{schema}</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/folders/edit-peer-folders.html#pyrogram.raw.functions.folders.EditPeerFolders" title="pyrogram.raw.functions.folders.EditPeerFolders"><code class="xref py py-obj docutils literal notranslate"><span class="pre">folders.EditPeerFolders</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/folders/edit-peer-folders.html#pyrogram.raw.functions.folders.EditPeerFolders" title="pyrogram.raw.functions.folders.EditPeerFolders"><code class="xref py py-obj docutils literal notranslate"><span class="pre">folders.EditPeerFolders</span></code></a></p></td>
 <td><p>Edit peers in peer folder</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/chatlists/join-chatlist-invite.html#pyrogram.raw.functions.chatlists.JoinChatlistInvite" title="pyrogram.raw.functions.chatlists.JoinChatlistInvite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chatlists.JoinChatlistInvite</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/chatlists/join-chatlist-invite.html#pyrogram.raw.functions.chatlists.JoinChatlistInvite" title="pyrogram.raw.functions.chatlists.JoinChatlistInvite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chatlists.JoinChatlistInvite</span></code></a></p></td>
 <td><p>Import a chat folder deep link », joining some or all the chats in the folder.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/chatlists/join-chatlist-updates.html#pyrogram.raw.functions.chatlists.JoinChatlistUpdates" title="pyrogram.raw.functions.chatlists.JoinChatlistUpdates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chatlists.JoinChatlistUpdates</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/chatlists/join-chatlist-updates.html#pyrogram.raw.functions.chatlists.JoinChatlistUpdates" title="pyrogram.raw.functions.chatlists.JoinChatlistUpdates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chatlists.JoinChatlistUpdates</span></code></a></p></td>
 <td><p>Join channels and supergroups recently added to a chat folder deep link ».</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/chatlists/leave-chatlist.html#pyrogram.raw.functions.chatlists.LeaveChatlist" title="pyrogram.raw.functions.chatlists.LeaveChatlist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chatlists.LeaveChatlist</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/chatlists/leave-chatlist.html#pyrogram.raw.functions.chatlists.LeaveChatlist" title="pyrogram.raw.functions.chatlists.LeaveChatlist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chatlists.LeaveChatlist</span></code></a></p></td>
 <td><p>Delete a folder imported using a chat folder deep link »</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/stories/send-story.html#pyrogram.raw.functions.stories.SendStory" title="pyrogram.raw.functions.stories.SendStory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.SendStory</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/stories/send-story.html#pyrogram.raw.functions.stories.SendStory" title="pyrogram.raw.functions.stories.SendStory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.SendStory</span></code></a></p></td>
 <td><p>Uploads a Telegram Story.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/stories/edit-story.html#pyrogram.raw.functions.stories.EditStory" title="pyrogram.raw.functions.stories.EditStory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.EditStory</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/stories/edit-story.html#pyrogram.raw.functions.stories.EditStory" title="pyrogram.raw.functions.stories.EditStory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.EditStory</span></code></a></p></td>
 <td><p>Edit an uploaded story</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/stories/activate-stealth-mode.html#pyrogram.raw.functions.stories.ActivateStealthMode" title="pyrogram.raw.functions.stories.ActivateStealthMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.ActivateStealthMode</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/stories/activate-stealth-mode.html#pyrogram.raw.functions.stories.ActivateStealthMode" title="pyrogram.raw.functions.stories.ActivateStealthMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.ActivateStealthMode</span></code></a></p></td>
 <td><p>Activates stories stealth mode, see here » for more info.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/stories/send-reaction.html#pyrogram.raw.functions.stories.SendReaction" title="pyrogram.raw.functions.stories.SendReaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.SendReaction</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/stories/send-reaction.html#pyrogram.raw.functions.stories.SendReaction" title="pyrogram.raw.functions.stories.SendReaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.SendReaction</span></code></a></p></td>
 <td><p>React to a story.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/stories/get-all-read-peer-stories.html#pyrogram.raw.functions.stories.GetAllReadPeerStories" title="pyrogram.raw.functions.stories.GetAllReadPeerStories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.GetAllReadPeerStories</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/stories/get-all-read-peer-stories.html#pyrogram.raw.functions.stories.GetAllReadPeerStories" title="pyrogram.raw.functions.stories.GetAllReadPeerStories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.GetAllReadPeerStories</span></code></a></p></td>
 <td><p>Obtain the latest read story ID for all peers when first logging in, returned as a list of updateReadStories updates, see here » for more info.</p></td>
 </tr>
 </tbody>
@@ -1393,7 +1395,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/49b4ba1" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/eecca8a" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

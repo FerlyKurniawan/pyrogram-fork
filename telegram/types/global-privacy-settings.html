@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="GroupCall" href="group-call.html" /><link rel="prev" title="GeoPointEmpty" href="geo-point-empty.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>GlobalPrivacySettings - PyroTGFork 2.2.13 Layer 205</title>
+        <title>GlobalPrivacySettings - PyroTGFork 2.2.14 Layer 211</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.13 Layer 205</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.14 Layer 211</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.13 Layer 205</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.14 Layer 211</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -878,7 +878,6 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Raw Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Raw Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../base/index.html">Raw Base</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
@@ -960,29 +959,18 @@
 <dt class="sig sig-object py" id="pyrogram.raw.types.GlobalPrivacySettings">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">GlobalPrivacySettings</span></span><a class="headerlink" href="#pyrogram.raw.types.GlobalPrivacySettings" title="Link to this definition">#</a></dt>
 <dd><p>Global privacy settings</p>
-<p>Constructor of <a class="reference internal" href="../base/global-privacy-settings.html#pyrogram.raw.base.GlobalPrivacySettings" title="pyrogram.raw.base.GlobalPrivacySettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GlobalPrivacySettings</span></code></a>.</p>
-<dl class="simple">
-<dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">205</span></code></p></li>
-<li><p>ID: <code class="docutils literal notranslate"><span class="pre">FE41B34F</span></code></p></li>
-</ul>
-</dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>archive_and_mute_new_noncontact_peers</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether to archive and mute new chats from non-contacts</p></li>
-<li><p><strong>keep_archived_unmuted</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether unmuted chats will be kept in the Archive chat list when they get a new message.</p></li>
-<li><p><strong>keep_archived_folders</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether unmuted chats that are always included or pinned in a folder, will be kept in the Archive chat list when they get a new message. Ignored if keep_archived_unmuted is set.</p></li>
-<li><p><strong>hide_read_marks</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If this flag is set, the inputPrivacyKeyStatusTimestamp key will also apply to the ability to use messages.getOutboxReadDate on messages sent to us. Meaning, users that cannot see our exact last online date due to the current value of the inputPrivacyKeyStatusTimestamp key will receive a 403 USER_PRIVACY_RESTRICTED error when invoking messages.getOutboxReadDate to fetch the exact read date of a message they sent to us. The userFull.read_dates_private flag will be set for users that have this flag enabled.</p></li>
-<li><p><strong>new_noncontact_peers_require_premium</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, only users that have a premium account, are in our contact list, or already have a private chat with us can write to us; a 403 PRIVACY_PREMIUM_REQUIRED error will be emitted otherwise.  The userFull.contact_require_premium flag will be set for users that have this flag enabled.  To check whether we can write to a user with this flag enabled, if we haven’t yet cached all the required information (for example we don’t have the userFull or history of all users while displaying the chat list in the sharing UI) the users.getIsPremiumRequiredToContact method may be invoked, passing the list of users currently visible in the UI, returning a list of booleans that directly specify whether we can or cannot write to each user. This option may be enabled by both non-Premium and Premium users only if the new_noncontact_peers_require_premium_without_ownpremium client configuration flag » is equal to true, otherwise it may be enabled only by Premium users and non-Premium users will receive a PREMIUM_ACCOUNT_REQUIRED error when trying to enable this flag.</p></li>
-<li><p><strong>display_gifts_button</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>noncontact_peers_paid_stars</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>disallowed_gifts</strong> (<a class="reference internal" href="../base/disallowed-gifts-settings.html#pyrogram.raw.base.DisallowedGiftsSettings" title="pyrogram.raw.base.DisallowedGiftsSettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisallowedGiftsSettings</span></code></a>, <em>optional</em>) – N/A</p></li>
-</ul>
-</dd>
-</dl>
 <dl>
+<dt>Constructors:</dt><dd><p>This base type has 1 constructor available.</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrogram.raw.types.GlobalPrivacySettings" title="pyrogram.raw.types.GlobalPrivacySettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GlobalPrivacySettings</span></code></a></p></td>
+<td><p>Global privacy settings</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd>
 <dt>Functions:</dt><dd><p>This object can be returned by 2 functions.</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1038,7 +1026,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/49b4ba1" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/eecca8a" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

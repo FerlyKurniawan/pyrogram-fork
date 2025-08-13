@@ -12,10 +12,10 @@
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="https://t.me/PyroTGFork/2" />
     <meta property="article:author" content="@PyroTGFork" />
-    <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="StarsTransaction" href="stars-transaction.html" /><link rel="prev" title="StarsSubscriptionPricing" href="stars-subscription-pricing.html" />
+    <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="StarsTransaction" href="stars-transaction.html" /><link rel="prev" title="StarsTonAmount" href="stars-ton-amount.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>StarsTopupOption - PyroTGFork 2.2.13 Layer 205</title>
+        <title>StarsTopupOption - PyroTGFork 2.2.14 Layer 211</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.13 Layer 205</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.14 Layer 211</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.13 Layer 205</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.14 Layer 211</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -878,7 +878,6 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Raw Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Raw Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../base/index.html">Raw Base</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
@@ -960,26 +959,18 @@
 <dt class="sig sig-object py" id="pyrogram.raw.types.StarsTopupOption">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">StarsTopupOption</span></span><a class="headerlink" href="#pyrogram.raw.types.StarsTopupOption" title="Link to this definition">#</a></dt>
 <dd><p>Telegram Stars topup option.</p>
-<p>Constructor of <a class="reference internal" href="../base/stars-topup-option.html#pyrogram.raw.base.StarsTopupOption" title="pyrogram.raw.base.StarsTopupOption"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsTopupOption</span></code></a>.</p>
-<dl class="simple">
-<dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">205</span></code></p></li>
-<li><p>ID: <code class="docutils literal notranslate"><span class="pre">BD915C0</span></code></p></li>
-</ul>
-</dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>stars</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – Amount of Telegram stars.</p></li>
-<li><p><strong>currency</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Three-letter ISO 4217 currency code</p></li>
-<li><p><strong>amount</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – Price of the product in the smallest units of the currency (integer, not float/double). For example, for a price of US$ 1.45 pass amount = 145. See the exp parameter in currencies.json, it shows the number of digits past the decimal point for each currency (2 for the majority of currencies).</p></li>
-<li><p><strong>extended</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, the option must only be shown in the full list of topup options.</p></li>
-<li><p><strong>store_product</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Identifier of the store product associated with the option, official apps only.</p></li>
-</ul>
-</dd>
-</dl>
 <dl>
+<dt>Constructors:</dt><dd><p>This base type has 1 constructor available.</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrogram.raw.types.StarsTopupOption" title="pyrogram.raw.types.StarsTopupOption"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsTopupOption</span></code></a></p></td>
+<td><p>Telegram Stars topup option.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd>
 <dt>Functions:</dt><dd><p>This object can be returned by 1 function.</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1011,14 +1002,14 @@
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="stars-subscription-pricing.html">
+          <a class="prev-page" href="stars-ton-amount.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">StarsSubscriptionPricing</div>
+                <div class="title">StarsTonAmount</div>
                 
               </div>
             </a>
@@ -1032,7 +1023,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/49b4ba1" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/eecca8a" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

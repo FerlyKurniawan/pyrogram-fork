@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="ReadParticipantDate" href="read-participant-date.html" /><link rel="prev" title="ReactionPaid" href="reaction-paid.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>ReactionsNotifySettings - PyroTGFork 2.2.13 Layer 205</title>
+        <title>ReactionsNotifySettings - PyroTGFork 2.2.14 Layer 211</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.13 Layer 205</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.14 Layer 211</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.13 Layer 205</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.14 Layer 211</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -878,7 +878,6 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Raw Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Raw Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../base/index.html">Raw Base</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
@@ -960,25 +959,18 @@
 <dt class="sig sig-object py" id="pyrogram.raw.types.ReactionsNotifySettings">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">ReactionsNotifySettings</span></span><a class="headerlink" href="#pyrogram.raw.types.ReactionsNotifySettings" title="Link to this definition">#</a></dt>
 <dd><p>Reaction notification settings, see here » for more info.</p>
-<p>Constructor of <a class="reference internal" href="../base/reactions-notify-settings.html#pyrogram.raw.base.ReactionsNotifySettings" title="pyrogram.raw.base.ReactionsNotifySettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReactionsNotifySettings</span></code></a>.</p>
-<dl class="simple">
-<dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">205</span></code></p></li>
-<li><p>ID: <code class="docutils literal notranslate"><span class="pre">56E34970</span></code></p></li>
-</ul>
-</dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>sound</strong> (<a class="reference internal" href="../base/notification-sound.html#pyrogram.raw.base.NotificationSound" title="pyrogram.raw.base.NotificationSound"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NotificationSound</span></code></a>) – Notification sound for reactions »</p></li>
-<li><p><strong>show_previews</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – If false, push notifications » about message/story reactions will only be of type REACT_HIDDEN/REACT_STORY_HIDDEN, without any information about the reacted-to story or the reaction itself.</p></li>
-<li><p><strong>messages_notify_from</strong> (<a class="reference internal" href="../base/reaction-notifications-from.html#pyrogram.raw.base.ReactionNotificationsFrom" title="pyrogram.raw.base.ReactionNotificationsFrom"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReactionNotificationsFrom</span></code></a>, <em>optional</em>) – Message reaction notification settings, if not set completely disables notifications/updates about message reactions.</p></li>
-<li><p><strong>stories_notify_from</strong> (<a class="reference internal" href="../base/reaction-notifications-from.html#pyrogram.raw.base.ReactionNotificationsFrom" title="pyrogram.raw.base.ReactionNotificationsFrom"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReactionNotificationsFrom</span></code></a>, <em>optional</em>) – Story reaction notification settings, if not set completely disables notifications/updates about reactions to stories.</p></li>
-</ul>
-</dd>
-</dl>
 <dl>
+<dt>Constructors:</dt><dd><p>This base type has 1 constructor available.</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrogram.raw.types.ReactionsNotifySettings" title="pyrogram.raw.types.ReactionsNotifySettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReactionsNotifySettings</span></code></a></p></td>
+<td><p>Reaction notification settings, see here » for more info.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd>
 <dt>Functions:</dt><dd><p>This object can be returned by 2 functions.</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -1034,7 +1026,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/49b4ba1" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/eecca8a" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

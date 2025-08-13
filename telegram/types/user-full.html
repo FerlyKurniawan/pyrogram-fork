@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="UserProfilePhoto" href="user-profile-photo.html" /><link rel="prev" title="UserEmpty" href="user-empty.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>UserFull - PyroTGFork 2.2.13 Layer 205</title>
+        <title>UserFull - PyroTGFork 2.2.14 Layer 211</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.13 Layer 205</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.14 Layer 211</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.13 Layer 205</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.14 Layer 211</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -878,7 +878,6 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Raw Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Raw Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../base/index.html">Raw Base</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
@@ -959,67 +958,18 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.types.UserFull">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">UserFull</span></span><a class="headerlink" href="#pyrogram.raw.types.UserFull" title="Link to this definition">#</a></dt>
-<dd><p>Extended user info</p>
-<p>Constructor of <a class="reference internal" href="../base/user-full.html#pyrogram.raw.base.UserFull" title="pyrogram.raw.base.UserFull"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UserFull</span></code></a>.</p>
-<dl class="simple">
-<dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">205</span></code></p></li>
-<li><p>ID: <code class="docutils literal notranslate"><span class="pre">99E78045</span></code></p></li>
-</ul>
-</dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – User ID</p></li>
-<li><p><strong>settings</strong> (<a class="reference internal" href="../base/peer-settings.html#pyrogram.raw.base.PeerSettings" title="pyrogram.raw.base.PeerSettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerSettings</span></code></a>) – Peer settings</p></li>
-<li><p><strong>notify_settings</strong> (<a class="reference internal" href="../base/peer-notify-settings.html#pyrogram.raw.base.PeerNotifySettings" title="pyrogram.raw.base.PeerNotifySettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerNotifySettings</span></code></a>) – Notification settings</p></li>
-<li><p><strong>common_chats_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Chats in common with this user</p></li>
-<li><p><strong>blocked</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether you have blocked this user</p></li>
-<li><p><strong>phone_calls_available</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this user can make VoIP calls</p></li>
-<li><p><strong>phone_calls_private</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this user’s privacy settings allow you to call them</p></li>
-<li><p><strong>can_pin_message</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether you can pin messages in the chat with this user, you can do this only for a chat with yourself</p></li>
-<li><p><strong>has_scheduled</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether scheduled messages are available</p></li>
-<li><p><strong>video_calls_available</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the user can receive video calls</p></li>
-<li><p><strong>voice_messages_forbidden</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this user doesn’t allow sending voice messages in a private chat with them</p></li>
-<li><p><strong>translations_disabled</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the real-time chat translation popup should be hidden.</p></li>
-<li><p><strong>stories_pinned_available</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this user has some pinned stories.</p></li>
-<li><p><strong>blocked_my_stories_from</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether we’ve blocked this user, preventing them from seeing our stories ».</p></li>
-<li><p><strong>wallpaper_overridden</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the other user has chosen a custom wallpaper for us using messages.setChatWallPaper and the for_both flag, see here » for more info.</p></li>
-<li><p><strong>contact_require_premium</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, we cannot write to this user: subscribe to Telegram Premium to get permission to write to this user. To set this flag for ourselves invoke account.setGlobalPrivacySettings, setting the settings.new_noncontact_peers_require_premium flag, see here » for more info.</p></li>
-<li><p><strong>read_dates_private</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, we cannot fetch the exact read date of messages we send to this user using messages.getOutboxReadDate.  The exact read date of messages might still be unavailable for other reasons, see here » for more info.  To set this flag for ourselves invoke account.setGlobalPrivacySettings, setting the settings.hide_read_marks flag.</p></li>
-<li><p><strong>sponsored_enabled</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether ads were re-enabled for the current account (only accessible to the currently logged-in user), see here » for more info.</p></li>
-<li><p><strong>can_view_revenue</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, this user can view ad revenue statistics » for this bot.</p></li>
-<li><p><strong>bot_can_manage_emoji_status</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, this is a bot that can change our emoji status »</p></li>
-<li><p><strong>display_gifts_button</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>about</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Bio of the user</p></li>
-<li><p><strong>personal_photo</strong> (<a class="reference internal" href="../base/photo.html#pyrogram.raw.base.Photo" title="pyrogram.raw.base.Photo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code></a>, <em>optional</em>) – Personal profile photo, to be shown instead of profile_photo.</p></li>
-<li><p><strong>profile_photo</strong> (<a class="reference internal" href="../base/photo.html#pyrogram.raw.base.Photo" title="pyrogram.raw.base.Photo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code></a>, <em>optional</em>) – Profile photo</p></li>
-<li><p><strong>fallback_photo</strong> (<a class="reference internal" href="../base/photo.html#pyrogram.raw.base.Photo" title="pyrogram.raw.base.Photo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code></a>, <em>optional</em>) – Fallback profile photo, displayed if no photo is present in profile_photo or personal_photo, due to privacy settings.</p></li>
-<li><p><strong>bot_info</strong> (<a class="reference internal" href="../base/bot-info.html#pyrogram.raw.base.BotInfo" title="pyrogram.raw.base.BotInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BotInfo</span></code></a>, <em>optional</em>) – For bots, info about the bot (bot commands, etc)</p></li>
-<li><p><strong>pinned_msg_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Message ID of the last pinned message</p></li>
-<li><p><strong>folder_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Peer folder ID, for more info click here</p></li>
-<li><p><strong>ttl_period</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Time To Live of all messages in this chat; once a message is this many seconds old, it must be deleted.</p></li>
-<li><p><strong>theme_emoticon</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Emoji associated with chat theme</p></li>
-<li><p><strong>private_forward_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Anonymized text to be shown instead of the user’s name on forwarded messages</p></li>
-<li><p><strong>bot_group_admin_rights</strong> (<a class="reference internal" href="../base/chat-admin-rights.html#pyrogram.raw.base.ChatAdminRights" title="pyrogram.raw.base.ChatAdminRights"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatAdminRights</span></code></a>, <em>optional</em>) – A suggested set of administrator rights for the bot, to be shown when adding the bot as admin to a group, see here for more info on how to handle them ».</p></li>
-<li><p><strong>bot_broadcast_admin_rights</strong> (<a class="reference internal" href="../base/chat-admin-rights.html#pyrogram.raw.base.ChatAdminRights" title="pyrogram.raw.base.ChatAdminRights"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatAdminRights</span></code></a>, <em>optional</em>) – A suggested set of administrator rights for the bot, to be shown when adding the bot as admin to a channel, see here for more info on how to handle them ».</p></li>
-<li><p><strong>wallpaper</strong> (<a class="reference internal" href="../base/wall-paper.html#pyrogram.raw.base.WallPaper" title="pyrogram.raw.base.WallPaper"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WallPaper</span></code></a>, <em>optional</em>) – Wallpaper to use in the private chat with the user.</p></li>
-<li><p><strong>stories</strong> (<a class="reference internal" href="../base/peer-stories.html#pyrogram.raw.base.PeerStories" title="pyrogram.raw.base.PeerStories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerStories</span></code></a>, <em>optional</em>) – Active stories »</p></li>
-<li><p><strong>business_work_hours</strong> (<a class="reference internal" href="../base/business-work-hours.html#pyrogram.raw.base.BusinessWorkHours" title="pyrogram.raw.base.BusinessWorkHours"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BusinessWorkHours</span></code></a>, <em>optional</em>) – Telegram Business working hours ».</p></li>
-<li><p><strong>business_location</strong> (<a class="reference internal" href="../base/business-location.html#pyrogram.raw.base.BusinessLocation" title="pyrogram.raw.base.BusinessLocation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BusinessLocation</span></code></a>, <em>optional</em>) – Telegram Business location ».</p></li>
-<li><p><strong>business_greeting_message</strong> (<a class="reference internal" href="../base/business-greeting-message.html#pyrogram.raw.base.BusinessGreetingMessage" title="pyrogram.raw.base.BusinessGreetingMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BusinessGreetingMessage</span></code></a>, <em>optional</em>) – Telegram Business greeting message ».</p></li>
-<li><p><strong>business_away_message</strong> (<a class="reference internal" href="../base/business-away-message.html#pyrogram.raw.base.BusinessAwayMessage" title="pyrogram.raw.base.BusinessAwayMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BusinessAwayMessage</span></code></a>, <em>optional</em>) – Telegram Business away message ».</p></li>
-<li><p><strong>business_intro</strong> (<a class="reference internal" href="../base/business-intro.html#pyrogram.raw.base.BusinessIntro" title="pyrogram.raw.base.BusinessIntro"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BusinessIntro</span></code></a>, <em>optional</em>) – Specifies a custom Telegram Business profile introduction ».</p></li>
-<li><p><strong>birthday</strong> (<a class="reference internal" href="../base/birthday.html#pyrogram.raw.base.Birthday" title="pyrogram.raw.base.Birthday"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Birthday</span></code></a>, <em>optional</em>) – Contains info about the user’s birthday ».</p></li>
-<li><p><strong>personal_channel_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – ID of the associated personal channel », that should be shown in the profile page.</p></li>
-<li><p><strong>personal_channel_message</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – ID of the latest message of the associated personal channel », that should be previewed in the profile page.</p></li>
-<li><p><strong>stargifts_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Number of gifts the user has chosen to display on their profile</p></li>
-<li><p><strong>starref_program</strong> (<a class="reference internal" href="../base/star-ref-program.html#pyrogram.raw.base.StarRefProgram" title="pyrogram.raw.base.StarRefProgram"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarRefProgram</span></code></a>, <em>optional</em>) – This bot has an active referral program »</p></li>
-<li><p><strong>bot_verification</strong> (<a class="reference internal" href="../base/bot-verification.html#pyrogram.raw.base.BotVerification" title="pyrogram.raw.base.BotVerification"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BotVerification</span></code></a>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>send_paid_messages_stars</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>disallowed_gifts</strong> (<a class="reference internal" href="../base/disallowed-gifts-settings.html#pyrogram.raw.base.DisallowedGiftsSettings" title="pyrogram.raw.base.DisallowedGiftsSettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisallowedGiftsSettings</span></code></a>, <em>optional</em>) – N/A</p></li>
-</ul>
+<dd><p>Object contains extended user info.</p>
+<dl>
+<dt>Constructors:</dt><dd><p>This base type has 1 constructor available.</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrogram.raw.types.UserFull" title="pyrogram.raw.types.UserFull"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UserFull</span></code></a></p></td>
+<td><p>Object contains extended user info.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </dd>
 </dl>
 </dd></dl>
@@ -1062,7 +1012,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/49b4ba1" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/eecca8a" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

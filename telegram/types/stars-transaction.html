@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="StarsTransactionPeer" href="stars-transaction-peer.html" /><link rel="prev" title="StarsTopupOption" href="stars-topup-option.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>StarsTransaction - PyroTGFork 2.2.13 Layer 205</title>
+        <title>StarsTransaction - PyroTGFork 2.2.14 Layer 211</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.13 Layer 205</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.14 Layer 211</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.13 Layer 205</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.14 Layer 211</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -878,7 +878,6 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Raw Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Raw Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../base/index.html">Raw Base</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
@@ -960,47 +959,17 @@
 <dt class="sig sig-object py" id="pyrogram.raw.types.StarsTransaction">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">StarsTransaction</span></span><a class="headerlink" href="#pyrogram.raw.types.StarsTransaction" title="Link to this definition">#</a></dt>
 <dd><p>Represents a Telegram Stars transaction ».</p>
-<p>Constructor of <a class="reference internal" href="../base/stars-transaction.html#pyrogram.raw.base.StarsTransaction" title="pyrogram.raw.base.StarsTransaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsTransaction</span></code></a>.</p>
-<dl class="simple">
-<dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">205</span></code></p></li>
-<li><p>ID: <code class="docutils literal notranslate"><span class="pre">A39FD94A</span></code></p></li>
-</ul>
-</dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Transaction ID.</p></li>
-<li><p><strong>stars</strong> (<a class="reference internal" href="../base/stars-amount.html#pyrogram.raw.base.StarsAmount" title="pyrogram.raw.base.StarsAmount"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsAmount</span></code></a>) – Amount of Stars (negative for outgoing transactions).</p></li>
-<li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Date of the transaction (unixtime).</p></li>
-<li><p><strong>peer</strong> (<a class="reference internal" href="../base/stars-transaction-peer.html#pyrogram.raw.base.StarsTransactionPeer" title="pyrogram.raw.base.StarsTransactionPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsTransactionPeer</span></code></a>) – Source of the incoming transaction, or its recipient for outgoing transactions.</p></li>
-<li><p><strong>refund</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this transaction is a refund.</p></li>
-<li><p><strong>pending</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – The transaction is currently pending.</p></li>
-<li><p><strong>failed</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – This transaction has failed.</p></li>
-<li><p><strong>gift</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – This transaction was a gift from the user in peer.peer.</p></li>
-<li><p><strong>reaction</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – This transaction is a paid reaction ».</p></li>
-<li><p><strong>stargift_upgrade</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>business_transfer</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>stargift_resale</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – For transactions with bots, title of the bought product.</p></li>
-<li><p><strong>description</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – For transactions with bots, description of the bought product.</p></li>
-<li><p><strong>photo</strong> (<a class="reference internal" href="../base/web-document.html#pyrogram.raw.base.WebDocument" title="pyrogram.raw.base.WebDocument"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebDocument</span></code></a>, <em>optional</em>) – For transactions with bots, photo of the bought product.</p></li>
-<li><p><strong>transaction_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – If neither pending nor failed are set, the transaction was completed successfully, and this field will contain the point in time (Unix timestamp) when the withdrawal was completed successfully.</p></li>
-<li><p><strong>transaction_url</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – If neither pending nor failed are set, the transaction was completed successfully, and this field will contain a URL where the withdrawal transaction can be viewed.</p></li>
-<li><p><strong>bot_payload</strong> (<code class="docutils literal notranslate"><span class="pre">bytes</span></code>, <em>optional</em>) – Bot specified invoice payload (i.e. the payload passed to inputMediaInvoice when creating the invoice).</p></li>
-<li><p><strong>msg_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – For paid media transactions », message ID of the paid media posted to peer.peer (can point to a deleted message; either way, extended_media will always contain the bought media).</p></li>
-<li><p><strong>extended_media</strong> (List of <a class="reference internal" href="../base/message-media.html#pyrogram.raw.base.MessageMedia" title="pyrogram.raw.base.MessageMedia"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMedia</span></code></a>, <em>optional</em>) – The purchased paid media ».</p></li>
-<li><p><strong>subscription_period</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – The number of seconds between consecutive Telegram Star debiting for Telegram Star subscriptions ».</p></li>
-<li><p><strong>giveaway_post_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – ID of the message containing the messageMediaGiveaway, for incoming star giveaway prizes.</p></li>
-<li><p><strong>stargift</strong> (<a class="reference internal" href="../base/star-gift.html#pyrogram.raw.base.StarGift" title="pyrogram.raw.base.StarGift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarGift</span></code></a>, <em>optional</em>) – This transaction indicates a purchase or a sale (conversion back to Stars) of a gift ».</p></li>
-<li><p><strong>floodskip_number</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – This transaction is payment for paid bot broadcasts.  Paid broadcasts are only allowed if the allow_paid_floodskip parameter of messages.sendMessage and other message sending methods is set while trying to broadcast more than 30 messages per second to bot users. The integer value returned by this flag indicates the number of billed API calls.</p></li>
-<li><p><strong>starref_commission_permille</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – This transaction is the receival (or refund) of an affiliate commission (i.e. this is the transaction received by the peer that created the referral link, flag 17 is for transactions made by users that imported the referral link).</p></li>
-<li><p><strong>starref_peer</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>) – For transactions made by referred users, the peer that received the affiliate commission.</p></li>
-<li><p><strong>starref_amount</strong> (<a class="reference internal" href="../base/stars-amount.html#pyrogram.raw.base.StarsAmount" title="pyrogram.raw.base.StarsAmount"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsAmount</span></code></a>, <em>optional</em>) – For transactions made by referred users, the amount of Telegram Stars received by the affiliate, can be negative for refunds.</p></li>
-<li><p><strong>paid_messages</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-<li><p><strong>premium_gift_months</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-</ul>
+<dl>
+<dt>Constructors:</dt><dd><p>This base type has 1 constructor available.</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#pyrogram.raw.types.StarsTransaction" title="pyrogram.raw.types.StarsTransaction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StarsTransaction</span></code></a></p></td>
+<td><p>Represents a Telegram Stars transaction ».</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </dd>
 </dl>
 </dd></dl>
@@ -1043,7 +1012,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/49b4ba1" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/eecca8a" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               
