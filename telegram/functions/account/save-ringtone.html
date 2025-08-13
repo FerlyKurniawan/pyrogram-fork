@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="account.SaveSecureValue" href="save-secure-value.html" /><link rel="prev" title="account.SaveAutoSaveSettings" href="save-auto-save-settings.html" />
 
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>account.SaveRingtone - PyroTGFork 2.2.14 Layer 211</title>
+        <title>account.SaveRingtone - PyroTGFork 2.2.15 Layer 211</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.14 Layer 211</div></a>
+      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.15 Layer 211</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.14 Layer 211</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.15 Layer 211</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -958,25 +958,27 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.functions.account.SaveRingtone">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.account.</span></span><span class="sig-name descname"><span class="pre">SaveRingtone</span></span><a class="headerlink" href="#pyrogram.raw.functions.account.SaveRingtone" title="Link to this definition">#</a></dt>
-<dd><p>Save or remove saved notification sound.</p>
-<dl class="simple">
+<dd><p>Save or remove saved notification sound.
+If the notification sound is already in MP3 format, account.savedRingtone will be returned.
+Otherwise, it will be automatically converted and a account.savedRingtoneConverted will be returned, containing a new document object that should be used to refer to the ringtone from now on (ie when deleting it using the unsave parameter, or when downloading it).</p>
+<blockquote>
+<div><dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
 <li><p>Layer: <code class="docutils literal notranslate"><span class="pre">211</span></code></p></li>
 <li><p>ID: <code class="docutils literal notranslate"><span class="pre">3DEA5B03</span></code></p></li>
 </ul>
 </dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputDocument</span></code>) – Notification sound uploaded using account.uploadRingtone</p></li>
-<li><p><strong>unsave</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – Whether to add or delete the notification sound</p></li>
-</ul>
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>id (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputDocument</span></code>):</dt><dd><p>Notification sound uploaded using account.uploadRingtone</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">account.SavedRingtone</span></code></p>
+<dt>unsave (<code class="docutils literal notranslate"><span class="pre">bool</span></code>):</dt><dd><p>Whether to add or delete the notification sound</p>
 </dd>
 </dl>
+</dd>
+<dt>Returns:</dt><dd><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">account.SavedRingtone</span></code></p>
+</dd>
+</dl>
+</div></blockquote>
 </dd></dl>
 
 </section>
@@ -1017,7 +1019,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/eecca8a" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/12cb4e2" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

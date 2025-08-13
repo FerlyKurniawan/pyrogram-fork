@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="ChannelLocation" href="channel-location.html" /><link rel="prev" title="ChannelForbidden" href="channel-forbidden.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>ChannelFull - PyroTGFork 2.2.14 Layer 211</title>
+        <title>ChannelFull - PyroTGFork 2.2.15 Layer 211</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.14 Layer 211</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.15 Layer 211</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.14 Layer 211</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.15 Layer 211</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -958,86 +958,151 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.types.ChannelFull">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">ChannelFull</span></span><a class="headerlink" href="#pyrogram.raw.types.ChannelFull" title="Link to this definition">#</a></dt>
-<dd><p>Full info about a channel, supergroup or gigagroup.</p>
-<p>Constructor of <code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatFull</span></code>.</p>
-<dl class="simple">
+<dd><p>Full info about a channel, supergroup or gigagroup.
+When updating the local peer database , all fields from the newly received constructor take priority over the old constructor cached locally (including by removing fields that aren’t set in the new constructor).</p>
+<blockquote>
+<div><p>Constructor of <code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatFull</span></code>.</p>
+<dl>
 <dt>Details:</dt><dd><ul class="simple">
 <li><p>Layer: <code class="docutils literal notranslate"><span class="pre">211</span></code></p></li>
 <li><p>ID: <code class="docutils literal notranslate"><span class="pre">E07429DE</span></code></p></li>
 </ul>
 </dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – ID of the channel</p></li>
-<li><p><strong>about</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Info about the channel</p></li>
-<li><p><strong>read_inbox_max_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Position up to which all incoming messages are read.</p></li>
-<li><p><strong>read_outbox_max_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Position up to which all outgoing messages are read.</p></li>
-<li><p><strong>unread_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Count of unread messages</p></li>
-<li><p><strong>chat_photo</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code>) – Channel picture</p></li>
-<li><p><strong>notify_settings</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerNotifySettings</span></code>) – Notification settings</p></li>
-<li><p><strong>bot_info</strong> (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">BotInfo</span></code>) – Info about bots in the channel/supergroup</p></li>
-<li><p><strong>pts</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Latest PTS for this channel</p></li>
-<li><p><strong>can_view_participants</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Can we view the participant list?</p></li>
-<li><p><strong>can_set_username</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Can we set the channel’s username?</p></li>
-<li><p><strong>can_set_stickers</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Can we associate a stickerpack to the supergroup?</p></li>
-<li><p><strong>hidden_prehistory</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Is the history before we joined hidden to us?</p></li>
-<li><p><strong>can_set_location</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Can we set the geolocation of this group (for geogroups)</p></li>
-<li><p><strong>has_scheduled</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether scheduled messages are available</p></li>
-<li><p><strong>can_view_stats</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Can the user view channel/supergroup statistics</p></li>
-<li><p><strong>blocked</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether any anonymous admin of this supergroup was blocked: if set, you won’t receive messages from anonymous group admins in discussion replies via &#64;replies</p></li>
-<li><p><strong>can_delete_channel</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Can we delete this channel?</p></li>
-<li><p><strong>antispam</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether native antispam functionality is enabled in this supergroup.</p></li>
-<li><p><strong>participants_hidden</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the participant list is hidden.</p></li>
-<li><p><strong>translations_disabled</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the real-time chat translation popup should be hidden.</p></li>
-<li><p><strong>stories_pinned_available</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this user has some pinned stories.</p></li>
-<li><p><strong>view_forum_as_messages</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Users may also choose to display messages from all topics of a forum as if they were sent to a normal group, using a “View as messages” setting in the local client.  This setting only affects the current account, and is synced to other logged in sessions using the channels.toggleViewForumAsMessages method; invoking this method will update the value of this flag.</p></li>
-<li><p><strong>restricted_sponsored</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether ads on this channel were disabled as specified here » (this flag is only visible to the owner of the channel).</p></li>
-<li><p><strong>can_view_revenue</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, this user can view ad revenue statistics » for this channel.</p></li>
-<li><p><strong>paid_media_allowed</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the current user can send or forward paid media » to this channel.</p></li>
-<li><p><strong>can_view_stars_revenue</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, this user can view Telegram Star revenue statistics » for this channel.</p></li>
-<li><p><strong>paid_reactions_available</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, users may send paid Telegram Star reactions » to messages of this channel.</p></li>
-<li><p><strong>stargifts_available</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>)</p></li>
-<li><p><strong>paid_messages_available</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>)</p></li>
-<li><p><strong>participants_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Number of participants of the channel</p></li>
-<li><p><strong>admins_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Number of channel admins</p></li>
-<li><p><strong>kicked_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Number of users kicked from the channel</p></li>
-<li><p><strong>banned_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Number of users banned from the channel</p></li>
-<li><p><strong>online_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Number of users currently online</p></li>
-<li><p><strong>exported_invite</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ExportedChatInvite</span></code>, <em>optional</em>) – Invite link</p></li>
-<li><p><strong>migrated_from_chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – The chat ID from which this group was migrated</p></li>
-<li><p><strong>migrated_from_max_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – The message ID in the original chat at which this group was migrated</p></li>
-<li><p><strong>pinned_msg_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Message ID of the last pinned message</p></li>
-<li><p><strong>stickerset</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">StickerSet</span></code>, <em>optional</em>) – Associated stickerset</p></li>
-<li><p><strong>available_min_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Identifier of a maximum unavailable message in a channel due to hidden history.</p></li>
-<li><p><strong>folder_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Peer folder ID, for more info click here</p></li>
-<li><p><strong>linked_chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – ID of the linked discussion chat for channels (and vice versa, the ID of the linked channel for discussion chats).</p></li>
-<li><p><strong>location</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelLocation</span></code>, <em>optional</em>) – Location of the geogroup</p></li>
-<li><p><strong>slowmode_seconds</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – If specified, users in supergroups will only be able to send one message every slowmode_seconds seconds</p></li>
-<li><p><strong>slowmode_next_send_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Indicates when the user will be allowed to send another message in the supergroup (unixtime)</p></li>
-<li><p><strong>stats_dc</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – If set, specifies the DC to use for fetching channel statistics</p></li>
-<li><p><strong>call</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputGroupCall</span></code>, <em>optional</em>) – Livestream or group call information</p></li>
-<li><p><strong>ttl_period</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Time-To-Live of messages in this channel or supergroup</p></li>
-<li><p><strong>pending_suggestions</strong> (List of <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – A list of suggested actions for the supergroup admin, see here for more info ».</p></li>
-<li><p><strong>groupcall_default_join_as</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code>, <em>optional</em>) – When using phone.getGroupCallJoinAs to get a list of peers that can be used to join a group call, this field indicates the peer that should be selected by default.</p></li>
-<li><p><strong>theme_emoticon</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Emoji representing a specific chat theme</p></li>
-<li><p><strong>requests_pending</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Pending join requests »</p></li>
-<li><p><strong>recent_requesters</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – IDs of users who requested to join recently</p></li>
-<li><p><strong>default_send_as</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code>, <em>optional</em>) – Default peer used for sending messages to this channel</p></li>
-<li><p><strong>available_reactions</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatReactions</span></code>, <em>optional</em>) – Allowed message reactions »</p></li>
-<li><p><strong>reactions_limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – This flag may be used to impose a custom limit of unique reactions (i.e. a customizable version of appConfig.reactions_uniq_max).</p></li>
-<li><p><strong>stories</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerStories</span></code>, <em>optional</em>) – Channel stories</p></li>
-<li><p><strong>wallpaper</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">WallPaper</span></code>, <em>optional</em>) – Wallpaper</p></li>
-<li><p><strong>boosts_applied</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – The number of boosts the current user has applied to the current supergroup.</p></li>
-<li><p><strong>boosts_unrestrict</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – The number of boosts this supergroup requires to bypass slowmode and other restrictions, see here » for more info.</p></li>
-<li><p><strong>emojiset</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">StickerSet</span></code>, <em>optional</em>) – Custom emoji stickerset associated to the current supergroup, set using channels.setEmojiStickers after reaching the appropriate boost level, see here » for more info.</p></li>
-<li><p><strong>bot_verification</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">BotVerification</span></code>, <em>optional</em>)</p></li>
-<li><p><strong>stargifts_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>)</p></li>
-<li><p><strong>send_paid_messages_stars</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – If set and bigger than 0, this supergroup, monoforum or the monoforum associated to this channel has enabled paid messages » and we must pay the specified amount of Stars to send messages to it, see here » for the full flow. This flag will be set both for the monoforum and for channelFull of the associated channel). If set and equal to 0, the monoforum requires payment in general but we were exempted from paying.</p></li>
-</ul>
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>):</dt><dd><p>ID of the channel</p>
+</dd>
+<dt>about (<code class="docutils literal notranslate"><span class="pre">str</span></code>):</dt><dd><p>Info about the channel</p>
+</dd>
+<dt>read_inbox_max_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>):</dt><dd><p>Position up to which all incoming messages are read.</p>
+</dd>
+<dt>read_outbox_max_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>):</dt><dd><p>Position up to which all outgoing messages are read.</p>
+</dd>
+<dt>unread_count (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>):</dt><dd><p>Count of unread messages</p>
+</dd>
+<dt>chat_photo (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code>):</dt><dd><p>Channel picture</p>
+</dd>
+<dt>notify_settings (<code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerNotifySettings</span></code>):</dt><dd><p>Notification settings</p>
+</dd>
+<dt>bot_info (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">BotInfo</span></code>):</dt><dd><p>Info about bots in the channel/supergroup</p>
+</dd>
+<dt>pts (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>):</dt><dd><p>Latest PTS for this channel</p>
+</dd>
+<dt>can_view_participants (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Can we view the participant list?</p>
+</dd>
+<dt>can_set_username (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Can we set the channel’s username?</p>
+</dd>
+<dt>can_set_stickers (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Can we associate a stickerpack to the supergroup?</p>
+</dd>
+<dt>hidden_prehistory (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Is the history before we joined hidden to us?</p>
+</dd>
+<dt>can_set_location (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Can we set the geolocation of this group (for geogroups)</p>
+</dd>
+<dt>has_scheduled (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether scheduled messages are available</p>
+</dd>
+<dt>can_view_stats (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Can the user view channel/supergroup statistics</p>
+</dd>
+<dt>blocked (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether any anonymous admin of this supergroup was blocked: if set, you won’t receive messages from anonymous group admins in discussion replies via &#64;replies</p>
+</dd>
+<dt>can_delete_channel (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Can we delete this channel?</p>
+</dd>
+<dt>antispam (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether native antispam functionality is enabled in this supergroup.</p>
+</dd>
+<dt>participants_hidden (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether the participant list is hidden.</p>
+</dd>
+<dt>translations_disabled (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether the real-time chat translation popup should be hidden.</p>
+</dd>
+<dt>stories_pinned_available (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether this user has some pinned stories.</p>
+</dd>
+<dt>view_forum_as_messages (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Users may also choose to display messages from all topics of a forum as if they were sent to a normal group, using a “View as messages” setting in the local client.  This setting only affects the current account, and is synced to other logged in sessions using the channels.toggleViewForumAsMessages method; invoking this method will update the value of this flag.</p>
+</dd>
+<dt>restricted_sponsored (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether ads on this channel were disabled as specified here » (this flag is only visible to the owner of the channel).</p>
+</dd>
+<dt>can_view_revenue (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If set, this user can view ad revenue statistics » for this channel.</p>
+</dd>
+<dt>paid_media_allowed (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether the current user can send or forward paid media » to this channel.</p>
+</dd>
+<dt>can_view_stars_revenue (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If set, this user can view Telegram Star revenue statistics » for this channel.</p>
+</dd>
+<dt>paid_reactions_available (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If set, users may send paid Telegram Star reactions » to messages of this channel.</p>
 </dd>
 </dl>
+<p>stargifts_available (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</p>
+<p>paid_messages_available (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</p>
+<dl class="simple">
+<dt>participants_count (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Number of participants of the channel</p>
+</dd>
+<dt>admins_count (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Number of channel admins</p>
+</dd>
+<dt>kicked_count (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Number of users kicked from the channel</p>
+</dd>
+<dt>banned_count (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Number of users banned from the channel</p>
+</dd>
+<dt>online_count (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Number of users currently online</p>
+</dd>
+<dt>exported_invite (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ExportedChatInvite</span></code>, <em>optional</em>):</dt><dd><p>Invite link</p>
+</dd>
+<dt>migrated_from_chat_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>The chat ID from which this group was migrated</p>
+</dd>
+<dt>migrated_from_max_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>The message ID in the original chat at which this group was migrated</p>
+</dd>
+<dt>pinned_msg_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Message ID of the last pinned message</p>
+</dd>
+<dt>stickerset (<code class="xref py py-obj docutils literal notranslate"><span class="pre">StickerSet</span></code>, <em>optional</em>):</dt><dd><p>Associated stickerset</p>
+</dd>
+<dt>available_min_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Identifier of a maximum unavailable message in a channel due to hidden history.</p>
+</dd>
+<dt>folder_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Peer folder ID, for more info click here</p>
+</dd>
+<dt>linked_chat_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>ID of the linked discussion chat for channels (and vice versa, the ID of the linked channel for discussion chats).</p>
+</dd>
+<dt>location (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelLocation</span></code>, <em>optional</em>):</dt><dd><p>Location of the geogroup</p>
+</dd>
+<dt>slowmode_seconds (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>If specified, users in supergroups will only be able to send one message every slowmode_seconds seconds</p>
+</dd>
+<dt>slowmode_next_send_date (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Indicates when the user will be allowed to send another message in the supergroup (unixtime)</p>
+</dd>
+<dt>stats_dc (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>If set, specifies the DC to use for fetching channel statistics</p>
+</dd>
+<dt>call (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputGroupCall</span></code>, <em>optional</em>):</dt><dd><p>Livestream or group call information</p>
+</dd>
+<dt>ttl_period (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Time-To-Live of messages in this channel or supergroup</p>
+</dd>
+<dt>pending_suggestions (List of <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>A list of suggested actions for the supergroup admin, see here for more info ».</p>
+</dd>
+<dt>groupcall_default_join_as (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code>, <em>optional</em>):</dt><dd><p>When using phone.getGroupCallJoinAs to get a list of peers that can be used to join a group call, this field indicates the peer that should be selected by default.</p>
+</dd>
+<dt>theme_emoticon (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>Emoji representing a specific chat theme</p>
+</dd>
+<dt>requests_pending (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Pending join requests »</p>
+</dd>
+<dt>recent_requesters (List of <code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>IDs of users who requested to join recently</p>
+</dd>
+<dt>default_send_as (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code>, <em>optional</em>):</dt><dd><p>Default peer used for sending messages to this channel</p>
+</dd>
+<dt>available_reactions (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatReactions</span></code>, <em>optional</em>):</dt><dd><p>Allowed message reactions »</p>
+</dd>
+<dt>reactions_limit (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>This flag may be used to impose a custom limit of unique reactions (i.e. a customizable version of appConfig.reactions_uniq_max).</p>
+</dd>
+<dt>stories (<code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerStories</span></code>, <em>optional</em>):</dt><dd><p>Channel stories</p>
+</dd>
+<dt>wallpaper (<code class="xref py py-obj docutils literal notranslate"><span class="pre">WallPaper</span></code>, <em>optional</em>):</dt><dd><p>Wallpaper</p>
+</dd>
+<dt>boosts_applied (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>The number of boosts the current user has applied to the current supergroup.</p>
+</dd>
+<dt>boosts_unrestrict (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>The number of boosts this supergroup requires to bypass slowmode and other restrictions, see here » for more info.</p>
+</dd>
+<dt>emojiset (<code class="xref py py-obj docutils literal notranslate"><span class="pre">StickerSet</span></code>, <em>optional</em>):</dt><dd><p>Custom emoji stickerset associated to the current supergroup, set using channels.setEmojiStickers after reaching the appropriate boost level, see here » for more info.</p>
+</dd>
+</dl>
+<p>bot_verification (<code class="xref py py-obj docutils literal notranslate"><span class="pre">BotVerification</span></code>, <em>optional</em>):</p>
+<p>stargifts_count (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</p>
+<dl class="simple">
+<dt>send_paid_messages_stars (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>If set and bigger than 0, this supergroup, monoforum or the monoforum associated to this channel has enabled paid messages » and we must pay the specified amount of Stars to send messages to it, see here » for the full flow. This flag will be set both for the monoforum and for channelFull of the associated channel). If set and equal to 0, the monoforum requires payment in general but we were exempted from paying.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
 </dd></dl>
 
 </section>
@@ -1078,7 +1143,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/eecca8a" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/12cb4e2" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

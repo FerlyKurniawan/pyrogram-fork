@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="ChatAdminRights" href="chat-admin-rights.html" /><link rel="prev" title="ChannelParticipantsSearch" href="channel-participants-search.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Chat - PyroTGFork 2.2.14 Layer 211</title>
+        <title>Chat - PyroTGFork 2.2.15 Layer 211</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.14 Layer 211</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.15 Layer 211</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.14 Layer 211</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.15 Layer 211</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -958,36 +958,52 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.types.Chat">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">Chat</span></span><a class="headerlink" href="#pyrogram.raw.types.Chat" title="Link to this definition">#</a></dt>
-<dd><p>Info about a group.</p>
-<p>Constructor of <code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code>.</p>
+<dd><p>Info about a group.
+When updating the local peer database, all fields from the newly received constructor take priority over the old constructor cached locally (including by removing fields that aren’t set in the new constructor).
+See here  for an implementation of the logic to use when updating the local user peer database.</p>
+<blockquote>
+<div><p>Constructor of <code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code>.</p>
 <dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
 <li><p>Layer: <code class="docutils literal notranslate"><span class="pre">211</span></code></p></li>
 <li><p>ID: <code class="docutils literal notranslate"><span class="pre">41CBF256</span></code></p></li>
 </ul>
 </dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – ID of the group, see here » for more info</p></li>
-<li><p><strong>title</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Title</p></li>
-<li><p><strong>photo</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPhoto</span></code>) – Chat photo</p></li>
-<li><p><strong>participants_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Participant count</p></li>
-<li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Date of creation of the group</p></li>
-<li><p><strong>version</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Used in basic groups to reorder updates and make sure that all of them were received.</p></li>
-<li><p><strong>creator</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the current user is the creator of the group</p></li>
-<li><p><strong>left</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the current user has left the group</p></li>
-<li><p><strong>deactivated</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the group was migrated</p></li>
-<li><p><strong>call_active</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether a group call is currently active</p></li>
-<li><p><strong>call_not_empty</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether there’s anyone in the group call</p></li>
-<li><p><strong>noforwards</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this group is protected, thus does not allow forwarding messages from it</p></li>
-<li><p><strong>migrated_to</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputChannel</span></code>, <em>optional</em>) – Means this chat was upgraded to a supergroup</p></li>
-<li><p><strong>admin_rights</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatAdminRights</span></code>, <em>optional</em>) – Admin rights of the user in the group</p></li>
-<li><p><strong>default_banned_rights</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatBannedRights</span></code>, <em>optional</em>) – Default banned rights of all users in the group</p></li>
-</ul>
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>):</dt><dd><p>ID of the group, see here » for more info</p>
+</dd>
+<dt>title (<code class="docutils literal notranslate"><span class="pre">str</span></code>):</dt><dd><p>Title</p>
+</dd>
+<dt>photo (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPhoto</span></code>):</dt><dd><p>Chat photo</p>
+</dd>
+<dt>participants_count (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>):</dt><dd><p>Participant count</p>
+</dd>
+<dt>date (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>):</dt><dd><p>Date of creation of the group</p>
+</dd>
+<dt>version (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>):</dt><dd><p>Used in basic groups to reorder updates and make sure that all of them were received.</p>
+</dd>
+<dt>creator (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether the current user is the creator of the group</p>
+</dd>
+<dt>left (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether the current user has left the group</p>
+</dd>
+<dt>deactivated (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether the group was migrated</p>
+</dd>
+<dt>call_active (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether a group call is currently active</p>
+</dd>
+<dt>call_not_empty (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether there’s anyone in the group call</p>
+</dd>
+<dt>noforwards (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether this group is protected, thus does not allow forwarding messages from it</p>
+</dd>
+<dt>migrated_to (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputChannel</span></code>, <em>optional</em>):</dt><dd><p>Means this chat was upgraded to a supergroup</p>
+</dd>
+<dt>admin_rights (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatAdminRights</span></code>, <em>optional</em>):</dt><dd><p>Admin rights of the user in the group</p>
+</dd>
+<dt>default_banned_rights (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatBannedRights</span></code>, <em>optional</em>):</dt><dd><p>Default banned rights of all users in the group</p>
 </dd>
 </dl>
+</dd>
+</dl>
+</div></blockquote>
 </dd></dl>
 
 </section>
@@ -1028,7 +1044,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/eecca8a" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/12cb4e2" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

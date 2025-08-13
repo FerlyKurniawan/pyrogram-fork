@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="payments.GiveawayInfoResults" href="giveaway-info-results.html" /><link rel="prev" title="payments.ExportedInvoice" href="exported-invoice.html" />
 
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>payments.GiveawayInfo - PyroTGFork 2.2.14 Layer 211</title>
+        <title>payments.GiveawayInfo - PyroTGFork 2.2.15 Layer 211</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.14 Layer 211</div></a>
+      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.15 Layer 211</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.14 Layer 211</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.15 Layer 211</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -958,40 +958,44 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.types.payments.GiveawayInfo">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.payments.</span></span><span class="sig-name descname"><span class="pre">GiveawayInfo</span></span><a class="headerlink" href="#pyrogram.raw.types.payments.GiveawayInfo" title="Link to this definition">#</a></dt>
-<dd><p>Contains info about an ongoing giveaway.</p>
-<p>Constructor of <code class="xref py py-obj docutils literal notranslate"><span class="pre">GiveawayInfo</span></code>.</p>
-<dl class="simple">
+<dd><p>Contains info about an ongoing giveaway.
+If neither the participating, joined_too_early_date, admin_disallowed_chat_id or disallowed_country flags are set, the user is not currently participating in the giveaway but could participate by joining all the channels specified in the messageMediaGiveaway.channels field.</p>
+<blockquote>
+<div><p>Constructor of <code class="xref py py-obj docutils literal notranslate"><span class="pre">GiveawayInfo</span></code>.</p>
+<dl>
 <dt>Details:</dt><dd><ul class="simple">
 <li><p>Layer: <code class="docutils literal notranslate"><span class="pre">211</span></code></p></li>
 <li><p>ID: <code class="docutils literal notranslate"><span class="pre">4367DAA0</span></code></p></li>
 </ul>
 </dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>start_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – When was the giveaway started</p></li>
-<li><p><strong>participating</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – The current user is participating in the giveaway.</p></li>
-<li><p><strong>preparing_results</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, the giveaway has ended and the results are being prepared.</p></li>
-<li><p><strong>joined_too_early_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – The current user can’t participate in the giveaway, because they were already a member of the channel when the giveaway started, and the only_new_subscribers was set when starting the giveaway.</p></li>
-<li><p><strong>admin_disallowed_chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – If set, the current user can’t participate in the giveaway, because they are an administrator in one of the channels (ID specified in this flag) that created the giveaway.</p></li>
-<li><p><strong>disallowed_country</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – If set, the current user can’t participate in this giveaway, because their phone number is from the specified disallowed country (specified as a two-letter ISO 3166-1 alpha-2 country code).</p></li>
-</ul>
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>start_date (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>):</dt><dd><p>When was the giveaway started</p>
+</dd>
+<dt>participating (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>The current user is participating in the giveaway.</p>
+</dd>
+<dt>preparing_results (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If set, the giveaway has ended and the results are being prepared.</p>
+</dd>
+<dt>joined_too_early_date (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>The current user can’t participate in the giveaway, because they were already a member of the channel when the giveaway started, and the only_new_subscribers was set when starting the giveaway.</p>
+</dd>
+<dt>admin_disallowed_chat_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>If set, the current user can’t participate in the giveaway, because they are an administrator in one of the channels (ID specified in this flag) that created the giveaway.</p>
+</dd>
+<dt>disallowed_country (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>If set, the current user can’t participate in this giveaway, because their phone number is from the specified disallowed country (specified as a two-letter ISO 3166-1 alpha-2 country code).</p>
 </dd>
 </dl>
-<dl>
+</dd>
 <dt>Functions:</dt><dd><p>This object can be returned by 1 function.</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../functions/payments/get-giveaway-info.html#pyrogram.raw.functions.payments.GetGiveawayInfo" title="pyrogram.raw.functions.payments.GetGiveawayInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.GetGiveawayInfo</span></code></a></p></td>
-<td><p>Obtain information about a Telegram Premium giveaway ».</p></td>
+<td><p>Obtain information about a Telegram Premium giveaway .</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </dd>
 </dl>
+</div></blockquote>
 </dd></dl>
 
 </section>
@@ -1032,7 +1036,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/eecca8a" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/12cb4e2" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="payments.GetStarsTransactionsByID" href="get-stars-transactions-by-id.html" /><link rel="prev" title="payments.GetStarsTopupOptions" href="get-stars-topup-options.html" />
 
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>payments.GetStarsTransactions - PyroTGFork 2.2.14 Layer 211</title>
+        <title>payments.GetStarsTransactions - PyroTGFork 2.2.15 Layer 211</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.14 Layer 211</div></a>
+      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.15 Layer 211</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.14 Layer 211</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.15 Layer 211</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -958,31 +958,39 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.functions.payments.GetStarsTransactions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.payments.</span></span><span class="sig-name descname"><span class="pre">GetStarsTransactions</span></span><a class="headerlink" href="#pyrogram.raw.functions.payments.GetStarsTransactions" title="Link to this definition">#</a></dt>
-<dd><p>Fetch Telegram Stars transactions.</p>
-<dl class="simple">
+<dd><p>Fetch Telegram Stars transactions.
+The inbound and outbound flags are mutually exclusive: if none of the two are set, both incoming and outgoing transactions are fetched.</p>
+<blockquote>
+<div><dl>
 <dt>Details:</dt><dd><ul class="simple">
 <li><p>Layer: <code class="docutils literal notranslate"><span class="pre">211</span></code></p></li>
 <li><p>ID: <code class="docutils literal notranslate"><span class="pre">69DA4557</span></code></p></li>
 </ul>
 </dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>peer</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPeer</span></code>) – Fetch the transaction history of the peer (inputPeerSelf or a bot we own).</p></li>
-<li><p><strong>offset</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Offset for pagination, obtained from the returned next_offset, initially an empty string ».</p></li>
-<li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Maximum number of results to return, see pagination</p></li>
-<li><p><strong>inbound</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, fetches only incoming transactions.</p></li>
-<li><p><strong>outbound</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, fetches only outgoing transactions.</p></li>
-<li><p><strong>ascending</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Return transactions in ascending order by date (instead of descending order by date).</p></li>
-<li><p><strong>ton</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>)</p></li>
-<li><p><strong>subscription_id</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – If set, fetches only transactions for the specified Telegram Star subscription ».</p></li>
-</ul>
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>peer (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPeer</span></code>):</dt><dd><p>Fetch the transaction history of the peer (inputPeerSelf or a bot we own).</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.StarsStatus</span></code></p>
+<dt>offset (<code class="docutils literal notranslate"><span class="pre">str</span></code>):</dt><dd><p>Offset for pagination, obtained from the returned next_offset, initially an empty string ».</p>
+</dd>
+<dt>limit (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>):</dt><dd><p>Maximum number of results to return, see pagination</p>
+</dd>
+<dt>inbound (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If set, fetches only incoming transactions.</p>
+</dd>
+<dt>outbound (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If set, fetches only outgoing transactions.</p>
+</dd>
+<dt>ascending (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Return transactions in ascending order by date (instead of descending order by date).</p>
 </dd>
 </dl>
+<p>ton (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</p>
+<dl class="simple">
+<dt>subscription_id (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>If set, fetches only transactions for the specified Telegram Star subscription ».</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.StarsStatus</span></code></p>
+</dd>
+</dl>
+</div></blockquote>
 </dd></dl>
 
 </section>
@@ -1023,7 +1031,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/eecca8a" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/12cb4e2" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="photos.UploadProfilePhoto" href="upload-profile-photo.html" /><link rel="prev" title="photos.UpdateProfilePhoto" href="update-profile-photo.html" />
 
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>photos.UploadContactProfilePhoto - PyroTGFork 2.2.14 Layer 211</title>
+        <title>photos.UploadContactProfilePhoto - PyroTGFork 2.2.15 Layer 211</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.14 Layer 211</div></a>
+      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.15 Layer 211</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.14 Layer 211</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.15 Layer 211</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -958,30 +958,36 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.functions.photos.UploadContactProfilePhoto">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.photos.</span></span><span class="sig-name descname"><span class="pre">UploadContactProfilePhoto</span></span><a class="headerlink" href="#pyrogram.raw.functions.photos.UploadContactProfilePhoto" title="Link to this definition">#</a></dt>
-<dd><p>Upload a custom profile picture for a contact, or suggest a new profile picture to a contact.</p>
-<dl class="simple">
+<dd><p>Upload a custom profile picture for a contact, or suggest a new profile picture to a contact.
+The file, video and video_emoji_markup flags are mutually exclusive.</p>
+<blockquote>
+<div><dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
 <li><p>Layer: <code class="docutils literal notranslate"><span class="pre">211</span></code></p></li>
 <li><p>ID: <code class="docutils literal notranslate"><span class="pre">E14C4A71</span></code></p></li>
 </ul>
 </dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>user_id</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputUser</span></code>) – The contact</p></li>
-<li><p><strong>suggest</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, will send a messageActionSuggestProfilePhoto service message to user_id, suggesting them to use the specified profile picture; otherwise, will set a personal profile picture for the user (only visible to the current user).</p></li>
-<li><p><strong>save</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, removes a previously set personal profile picture (does not affect suggested profile pictures, to remove them simply delete the messageActionSuggestProfilePhoto service message with messages.deleteMessages).</p></li>
-<li><p><strong>file</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputFile</span></code>, <em>optional</em>) – Profile photo</p></li>
-<li><p><strong>video</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputFile</span></code>, <em>optional</em>) – Animated profile picture video</p></li>
-<li><p><strong>video_start_ts</strong> (<code class="docutils literal notranslate"><span class="pre">float</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – Floating point UNIX timestamp in seconds, indicating the frame of the video/sticker that should be used as static preview; can only be used if video or video_emoji_markup is set.</p></li>
-<li><p><strong>video_emoji_markup</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">VideoSize</span></code>, <em>optional</em>) – Animated sticker profile picture, must contain either a videoSizeEmojiMarkup or a videoSizeStickerMarkup constructor.</p></li>
-</ul>
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>user_id (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputUser</span></code>):</dt><dd><p>The contact</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">photos.Photo</span></code></p>
+<dt>suggest (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If set, will send a messageActionSuggestProfilePhoto service message to user_id, suggesting them to use the specified profile picture; otherwise, will set a personal profile picture for the user (only visible to the current user).</p>
+</dd>
+<dt>save (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If set, removes a previously set personal profile picture (does not affect suggested profile pictures, to remove them simply delete the messageActionSuggestProfilePhoto service message with messages.deleteMessages).</p>
+</dd>
+<dt>file (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputFile</span></code>, <em>optional</em>):</dt><dd><p>Profile photo</p>
+</dd>
+<dt>video (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputFile</span></code>, <em>optional</em>):</dt><dd><p>Animated profile picture video</p>
+</dd>
+<dt>video_start_ts (<code class="docutils literal notranslate"><span class="pre">float</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>Floating point UNIX timestamp in seconds, indicating the frame of the video/sticker that should be used as static preview; can only be used if video or video_emoji_markup is set.</p>
+</dd>
+<dt>video_emoji_markup (<code class="xref py py-obj docutils literal notranslate"><span class="pre">VideoSize</span></code>, <em>optional</em>):</dt><dd><p>Animated sticker profile picture, must contain either a videoSizeEmojiMarkup or a videoSizeStickerMarkup constructor.</p>
 </dd>
 </dl>
+</dd>
+<dt>Returns:</dt><dd><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">photos.Photo</span></code></p>
+</dd>
+</dl>
+</div></blockquote>
 </dd></dl>
 
 </section>
@@ -1022,7 +1028,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/eecca8a" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/12cb4e2" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               
