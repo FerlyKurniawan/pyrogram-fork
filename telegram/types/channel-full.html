@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="ChannelLocation" href="channel-location.html" /><link rel="prev" title="ChannelForbidden" href="channel-forbidden.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>ChannelFull - PyroTGFork 2.2.15 Layer 211</title>
+        <title>ChannelFull - PyroTGFork 2.2.16 Layer 214</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.15 Layer 211</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.15 Layer 211</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -322,6 +322,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_direct_messages_group.html">set_chat_direct_messages_group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_dialogs.html">get_dialogs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_dialogs_count.html">get_dialogs_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_username.html">set_chat_username</a></li>
@@ -572,6 +575,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/InviteLinkImporter.html">InviteLinkImporter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Restriction.html">Restriction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/RtmpUrl.html">RtmpUrl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/DirectMessagesTopic.html">DirectMessagesTopic</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CallbackGame.html">CallbackGame</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CallbackQuery.html">CallbackQuery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CopyTextButton.html">CopyTextButton</a></li>
@@ -878,6 +882,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Raw Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Raw Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../base/index.html">Raw Base</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
@@ -961,11 +966,11 @@
 <dd><p>Full info about a channel, supergroup or gigagroup.
 When updating the local peer database , all fields from the newly received constructor take priority over the old constructor cached locally (including by removing fields that aren’t set in the new constructor).</p>
 <blockquote>
-<div><p>Constructor of <code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatFull</span></code>.</p>
+<div><p>Constructor of <a class="reference internal" href="../base/chat-full.html#pyrogram.raw.base.ChatFull" title="pyrogram.raw.base.ChatFull"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatFull</span></code></a>.</p>
 <dl>
 <dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">211</span></code></p></li>
-<li><p>ID: <code class="docutils literal notranslate"><span class="pre">E07429DE</span></code></p></li>
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">214</span></code></p></li>
+<li><p>ID: <code class="docutils literal notranslate"><span class="pre">E4E0B29D</span></code></p></li>
 </ul>
 </dd>
 <dt>Parameters:</dt><dd><dl class="simple">
@@ -979,11 +984,11 @@ When updating the local peer database , all fields from the newly received const
 </dd>
 <dt>unread_count (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>):</dt><dd><p>Count of unread messages</p>
 </dd>
-<dt>chat_photo (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code>):</dt><dd><p>Channel picture</p>
+<dt>chat_photo (<a class="reference internal" href="../base/photo.html#pyrogram.raw.base.Photo" title="pyrogram.raw.base.Photo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code></a>):</dt><dd><p>Channel picture</p>
 </dd>
-<dt>notify_settings (<code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerNotifySettings</span></code>):</dt><dd><p>Notification settings</p>
+<dt>notify_settings (<a class="reference internal" href="../base/peer-notify-settings.html#pyrogram.raw.base.PeerNotifySettings" title="pyrogram.raw.base.PeerNotifySettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerNotifySettings</span></code></a>):</dt><dd><p>Notification settings</p>
 </dd>
-<dt>bot_info (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">BotInfo</span></code>):</dt><dd><p>Info about bots in the channel/supergroup</p>
+<dt>bot_info (List of <a class="reference internal" href="../base/bot-info.html#pyrogram.raw.base.BotInfo" title="pyrogram.raw.base.BotInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BotInfo</span></code></a>):</dt><dd><p>Info about bots in the channel/supergroup</p>
 </dd>
 <dt>pts (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>):</dt><dd><p>Latest PTS for this channel</p>
 </dd>
@@ -1025,8 +1030,9 @@ When updating the local peer database , all fields from the newly received const
 </dd>
 <dt>paid_reactions_available (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If set, users may send paid Telegram Star reactions » to messages of this channel.</p>
 </dd>
+<dt>stargifts_available (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If set, users may send Gifts » to this channel.</p>
+</dd>
 </dl>
-<p>stargifts_available (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</p>
 <p>paid_messages_available (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</p>
 <dl class="simple">
 <dt>participants_count (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Number of participants of the channel</p>
@@ -1039,7 +1045,7 @@ When updating the local peer database , all fields from the newly received const
 </dd>
 <dt>online_count (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Number of users currently online</p>
 </dd>
-<dt>exported_invite (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ExportedChatInvite</span></code>, <em>optional</em>):</dt><dd><p>Invite link</p>
+<dt>exported_invite (<a class="reference internal" href="../base/exported-chat-invite.html#pyrogram.raw.base.ExportedChatInvite" title="pyrogram.raw.base.ExportedChatInvite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExportedChatInvite</span></code></a>, <em>optional</em>):</dt><dd><p>Invite link</p>
 </dd>
 <dt>migrated_from_chat_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>The chat ID from which this group was migrated</p>
 </dd>
@@ -1047,7 +1053,7 @@ When updating the local peer database , all fields from the newly received const
 </dd>
 <dt>pinned_msg_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Message ID of the last pinned message</p>
 </dd>
-<dt>stickerset (<code class="xref py py-obj docutils literal notranslate"><span class="pre">StickerSet</span></code>, <em>optional</em>):</dt><dd><p>Associated stickerset</p>
+<dt>stickerset (<a class="reference internal" href="../base/sticker-set.html#pyrogram.raw.base.StickerSet" title="pyrogram.raw.base.StickerSet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StickerSet</span></code></a>, <em>optional</em>):</dt><dd><p>Associated stickerset</p>
 </dd>
 <dt>available_min_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Identifier of a maximum unavailable message in a channel due to hidden history.</p>
 </dd>
@@ -1055,7 +1061,7 @@ When updating the local peer database , all fields from the newly received const
 </dd>
 <dt>linked_chat_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>ID of the linked discussion chat for channels (and vice versa, the ID of the linked channel for discussion chats).</p>
 </dd>
-<dt>location (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelLocation</span></code>, <em>optional</em>):</dt><dd><p>Location of the geogroup</p>
+<dt>location (<a class="reference internal" href="../base/channel-location.html#pyrogram.raw.base.ChannelLocation" title="pyrogram.raw.base.ChannelLocation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChannelLocation</span></code></a>, <em>optional</em>):</dt><dd><p>Location of the geogroup</p>
 </dd>
 <dt>slowmode_seconds (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>If specified, users in supergroups will only be able to send one message every slowmode_seconds seconds</p>
 </dd>
@@ -1063,13 +1069,13 @@ When updating the local peer database , all fields from the newly received const
 </dd>
 <dt>stats_dc (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>If set, specifies the DC to use for fetching channel statistics</p>
 </dd>
-<dt>call (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputGroupCall</span></code>, <em>optional</em>):</dt><dd><p>Livestream or group call information</p>
+<dt>call (<a class="reference internal" href="../base/input-group-call.html#pyrogram.raw.base.InputGroupCall" title="pyrogram.raw.base.InputGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputGroupCall</span></code></a>, <em>optional</em>):</dt><dd><p>Livestream or group call information</p>
 </dd>
 <dt>ttl_period (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Time-To-Live of messages in this channel or supergroup</p>
 </dd>
 <dt>pending_suggestions (List of <code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>A list of suggested actions for the supergroup admin, see here for more info ».</p>
 </dd>
-<dt>groupcall_default_join_as (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code>, <em>optional</em>):</dt><dd><p>When using phone.getGroupCallJoinAs to get a list of peers that can be used to join a group call, this field indicates the peer that should be selected by default.</p>
+<dt>groupcall_default_join_as (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>):</dt><dd><p>When using phone.getGroupCallJoinAs to get a list of peers that can be used to join a group call, this field indicates the peer that should be selected by default.</p>
 </dd>
 <dt>theme_emoticon (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>Emoji representing a specific chat theme</p>
 </dd>
@@ -1077,27 +1083,29 @@ When updating the local peer database , all fields from the newly received const
 </dd>
 <dt>recent_requesters (List of <code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>IDs of users who requested to join recently</p>
 </dd>
-<dt>default_send_as (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code>, <em>optional</em>):</dt><dd><p>Default peer used for sending messages to this channel</p>
+<dt>default_send_as (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>):</dt><dd><p>Default peer used for sending messages to this channel</p>
 </dd>
-<dt>available_reactions (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatReactions</span></code>, <em>optional</em>):</dt><dd><p>Allowed message reactions »</p>
+<dt>available_reactions (<a class="reference internal" href="../base/chat-reactions.html#pyrogram.raw.base.ChatReactions" title="pyrogram.raw.base.ChatReactions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatReactions</span></code></a>, <em>optional</em>):</dt><dd><p>Allowed message reactions »</p>
 </dd>
 <dt>reactions_limit (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>This flag may be used to impose a custom limit of unique reactions (i.e. a customizable version of appConfig.reactions_uniq_max).</p>
 </dd>
-<dt>stories (<code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerStories</span></code>, <em>optional</em>):</dt><dd><p>Channel stories</p>
+<dt>stories (<a class="reference internal" href="../base/peer-stories.html#pyrogram.raw.base.PeerStories" title="pyrogram.raw.base.PeerStories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerStories</span></code></a>, <em>optional</em>):</dt><dd><p>Channel stories</p>
 </dd>
-<dt>wallpaper (<code class="xref py py-obj docutils literal notranslate"><span class="pre">WallPaper</span></code>, <em>optional</em>):</dt><dd><p>Wallpaper</p>
+<dt>wallpaper (<a class="reference internal" href="../base/wall-paper.html#pyrogram.raw.base.WallPaper" title="pyrogram.raw.base.WallPaper"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WallPaper</span></code></a>, <em>optional</em>):</dt><dd><p>Wallpaper</p>
 </dd>
 <dt>boosts_applied (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>The number of boosts the current user has applied to the current supergroup.</p>
 </dd>
 <dt>boosts_unrestrict (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>The number of boosts this supergroup requires to bypass slowmode and other restrictions, see here » for more info.</p>
 </dd>
-<dt>emojiset (<code class="xref py py-obj docutils literal notranslate"><span class="pre">StickerSet</span></code>, <em>optional</em>):</dt><dd><p>Custom emoji stickerset associated to the current supergroup, set using channels.setEmojiStickers after reaching the appropriate boost level, see here » for more info.</p>
+<dt>emojiset (<a class="reference internal" href="../base/sticker-set.html#pyrogram.raw.base.StickerSet" title="pyrogram.raw.base.StickerSet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StickerSet</span></code></a>, <em>optional</em>):</dt><dd><p>Custom emoji stickerset associated to the current supergroup, set using channels.setEmojiStickers after reaching the appropriate boost level, see here » for more info.</p>
 </dd>
-</dl>
-<p>bot_verification (<code class="xref py py-obj docutils literal notranslate"><span class="pre">BotVerification</span></code>, <em>optional</em>):</p>
-<p>stargifts_count (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</p>
-<dl class="simple">
+<dt>bot_verification (<a class="reference internal" href="../base/bot-verification.html#pyrogram.raw.base.BotVerification" title="pyrogram.raw.base.BotVerification"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BotVerification</span></code></a>, <em>optional</em>):</dt><dd><p>Bot verification icon</p>
+</dd>
+<dt>stargifts_count (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Admins with chatAdminRights.post_messages rights will see the total number of received gifts, everyone else will see the number of gifts added to the channel’s profile.</p>
+</dd>
 <dt>send_paid_messages_stars (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>If set and bigger than 0, this supergroup, monoforum or the monoforum associated to this channel has enabled paid messages » and we must pay the specified amount of Stars to send messages to it, see here » for the full flow. This flag will be set both for the monoforum and for channelFull of the associated channel). If set and equal to 0, the monoforum requires payment in general but we were exempted from paying.</p>
+</dd>
+<dt>main_tab (<a class="reference internal" href="../base/profile-tab.html#pyrogram.raw.base.ProfileTab" title="pyrogram.raw.base.ProfileTab"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ProfileTab</span></code></a>, <em>optional</em>):</dt><dd><p>N/A</p>
 </dd>
 </dl>
 </dd>
@@ -1143,7 +1151,7 @@ When updating the local peer database , all fields from the newly received const
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/12cb4e2" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

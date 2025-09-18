@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="DialogPeer" href="dialog-peer.html" /><link rel="prev" title="DialogFilterSuggested" href="dialog-filter-suggested.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>DialogFolder - PyroTGFork 2.2.15 Layer 211</title>
+        <title>DialogFolder - PyroTGFork 2.2.16 Layer 214</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.15 Layer 211</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.15 Layer 211</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -322,6 +322,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_direct_messages_group.html">set_chat_direct_messages_group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_dialogs.html">get_dialogs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_dialogs_count.html">get_dialogs_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_username.html">set_chat_username</a></li>
@@ -572,6 +575,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/InviteLinkImporter.html">InviteLinkImporter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Restriction.html">Restriction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/RtmpUrl.html">RtmpUrl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/DirectMessagesTopic.html">DirectMessagesTopic</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CallbackGame.html">CallbackGame</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CallbackQuery.html">CallbackQuery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CopyTextButton.html">CopyTextButton</a></li>
@@ -878,6 +882,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Raw Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Raw Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../base/index.html">Raw Base</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
@@ -959,10 +964,10 @@
 <dt class="sig sig-object py" id="pyrogram.raw.types.DialogFolder">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">DialogFolder</span></span><a class="headerlink" href="#pyrogram.raw.types.DialogFolder" title="Link to this definition">#</a></dt>
 <dd><p>Dialog in folder</p>
-<p>Constructor of <code class="xref py py-obj docutils literal notranslate"><span class="pre">Dialog</span></code>.</p>
+<p>Constructor of <a class="reference internal" href="../base/dialog.html#pyrogram.raw.base.Dialog" title="pyrogram.raw.base.Dialog"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dialog</span></code></a>.</p>
 <dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">211</span></code></p></li>
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">214</span></code></p></li>
 <li><p>ID: <code class="docutils literal notranslate"><span class="pre">71BD134C</span></code></p></li>
 </ul>
 </dd>
@@ -970,8 +975,8 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>folder</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Folder</span></code>) – The folder</p></li>
-<li><p><strong>peer</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code>) – Peer in folder</p></li>
+<li><p><strong>folder</strong> (<a class="reference internal" href="../base/folder.html#pyrogram.raw.base.Folder" title="pyrogram.raw.base.Folder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Folder</span></code></a>) – The folder</p></li>
+<li><p><strong>peer</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>) – Peer in folder</p></li>
 <li><p><strong>top_message</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Latest message ID of dialog</p></li>
 <li><p><strong>unread_muted_peers_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Number of unread muted peers in folder</p></li>
 <li><p><strong>unread_unmuted_peers_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Number of unread unmuted peers in folder</p></li>
@@ -1021,7 +1026,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/12cb4e2" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

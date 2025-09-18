@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="UserEmpty" href="user-empty.html" /><link rel="prev" title="UrlAuthResultRequest" href="url-auth-result-request.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>User - PyroTGFork 2.2.15 Layer 211</title>
+        <title>User - PyroTGFork 2.2.16 Layer 214</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.15 Layer 211</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.15 Layer 211</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -322,6 +322,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_direct_messages_group.html">set_chat_direct_messages_group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_dialogs.html">get_dialogs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_dialogs_count.html">get_dialogs_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_username.html">set_chat_username</a></li>
@@ -572,6 +575,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/InviteLinkImporter.html">InviteLinkImporter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Restriction.html">Restriction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/RtmpUrl.html">RtmpUrl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/DirectMessagesTopic.html">DirectMessagesTopic</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CallbackGame.html">CallbackGame</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CallbackQuery.html">CallbackQuery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CopyTextButton.html">CopyTextButton</a></li>
@@ -878,6 +882,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Raw Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Raw Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../base/index.html">Raw Base</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
@@ -962,10 +967,10 @@
 Unless specified otherwise, when updating the local peer database, all fields from the newly received constructor take priority over the old constructor cached locally (including by removing fields that aren’t set in the new constructor).
 See here  for an implementation of the logic to use when updating the local user peer database.</p>
 <blockquote>
-<div><p>Constructor of <code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code>.</p>
+<div><p>Constructor of <a class="reference internal" href="../base/user.html#pyrogram.raw.base.User" title="pyrogram.raw.base.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>.</p>
 <dl>
 <dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">211</span></code></p></li>
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">214</span></code></p></li>
 <li><p>ID: <code class="docutils literal notranslate"><span class="pre">20B1422</span></code></p></li>
 </ul>
 </dd>
@@ -1032,27 +1037,27 @@ See here  for an implementation of the logic to use when updating the local user
 </dd>
 <dt>phone (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>Phone number. When updating the local peer database, apply changes to this field only if: - The min flag is not set OR - The min flag is set AND – The min flag of the locally cached user entry is set.</p>
 </dd>
-<dt>photo (<code class="xref py py-obj docutils literal notranslate"><span class="pre">UserProfilePhoto</span></code>, <em>optional</em>):</dt><dd><p>Profile picture of user. When updating the local peer database, apply changes to this field only if: - The min flag is not set OR - The min flag is set AND – The apply_min_photo flag is set OR – The min flag of the locally cached user entry is set.</p>
+<dt>photo (<a class="reference internal" href="../base/user-profile-photo.html#pyrogram.raw.base.UserProfilePhoto" title="pyrogram.raw.base.UserProfilePhoto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UserProfilePhoto</span></code></a>, <em>optional</em>):</dt><dd><p>Profile picture of user. When updating the local peer database, apply changes to this field only if: - The min flag is not set OR - The min flag is set AND – The apply_min_photo flag is set OR – The min flag of the locally cached user entry is set.</p>
 </dd>
-<dt>status (<code class="xref py py-obj docutils literal notranslate"><span class="pre">UserStatus</span></code>, <em>optional</em>):</dt><dd><p>Online status of user. When updating the local peer database, apply changes to this field only if: - The min flag is not set OR - The min flag is set AND – The min flag of the locally cached user entry is set OR – The locally cached user entry is equal to userStatusEmpty.</p>
+<dt>status (<a class="reference internal" href="../base/user-status.html#pyrogram.raw.base.UserStatus" title="pyrogram.raw.base.UserStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UserStatus</span></code></a>, <em>optional</em>):</dt><dd><p>Online status of user. When updating the local peer database, apply changes to this field only if: - The min flag is not set OR - The min flag is set AND – The min flag of the locally cached user entry is set OR – The locally cached user entry is equal to userStatusEmpty.</p>
 </dd>
 <dt>bot_info_version (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Version of the bot_info field in userFull, incremented every time it changes. Changes to this flag should invalidate the local userFull cache for this user ID, see here » for more info.</p>
 </dd>
-<dt>restriction_reason (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">RestrictionReason</span></code>, <em>optional</em>):</dt><dd><p>Contains the reason why access to this user must be restricted.</p>
+<dt>restriction_reason (List of <a class="reference internal" href="../base/restriction-reason.html#pyrogram.raw.base.RestrictionReason" title="pyrogram.raw.base.RestrictionReason"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RestrictionReason</span></code></a>, <em>optional</em>):</dt><dd><p>Contains the reason why access to this user must be restricted.</p>
 </dd>
 <dt>bot_inline_placeholder (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>Inline placeholder for this inline bot</p>
 </dd>
 <dt>lang_code (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>Language code of the user</p>
 </dd>
-<dt>emoji_status (<code class="xref py py-obj docutils literal notranslate"><span class="pre">EmojiStatus</span></code>, <em>optional</em>):</dt><dd><p>Emoji status</p>
+<dt>emoji_status (<a class="reference internal" href="../base/emoji-status.html#pyrogram.raw.base.EmojiStatus" title="pyrogram.raw.base.EmojiStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EmojiStatus</span></code></a>, <em>optional</em>):</dt><dd><p>Emoji status</p>
 </dd>
-<dt>usernames (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">Username</span></code>, <em>optional</em>):</dt><dd><p>Additional usernames. When updating the local peer database, apply changes to this field only if: - The min flag is not set OR - The min flag is set AND – The min flag of the locally cached user entry is set. Changes to this flag (if the above conditions are respected) should invalidate the local userFull cache for this user ID.</p>
+<dt>usernames (List of <a class="reference internal" href="../base/username.html#pyrogram.raw.base.Username" title="pyrogram.raw.base.Username"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Username</span></code></a>, <em>optional</em>):</dt><dd><p>Additional usernames. When updating the local peer database, apply changes to this field only if: - The min flag is not set OR - The min flag is set AND – The min flag of the locally cached user entry is set. Changes to this flag (if the above conditions are respected) should invalidate the local userFull cache for this user ID.</p>
 </dd>
 <dt>stories_max_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>ID of the maximum read story.  When updating the local peer database, do not apply changes to this field if the min flag of the incoming constructor is set.</p>
 </dd>
-<dt>color (<code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code>, <em>optional</em>):</dt><dd><p>The user’s accent color.</p>
+<dt>color (<a class="reference internal" href="../base/peer-color.html#pyrogram.raw.base.PeerColor" title="pyrogram.raw.base.PeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code></a>, <em>optional</em>):</dt><dd><p>The user’s accent color.</p>
 </dd>
-<dt>profile_color (<code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code>, <em>optional</em>):</dt><dd><p>The user’s profile color.</p>
+<dt>profile_color (<a class="reference internal" href="../base/peer-color.html#pyrogram.raw.base.PeerColor" title="pyrogram.raw.base.PeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code></a>, <em>optional</em>):</dt><dd><p>The user’s profile color.</p>
 </dd>
 <dt>bot_active_users (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Monthly Active Users (MAU) of this bot (may be absent for small bots).</p>
 </dd>
@@ -1134,7 +1139,7 @@ See here  for an implementation of the logic to use when updating the local user
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/12cb4e2" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

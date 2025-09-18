@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Username" href="Username.html" /><link rel="prev" title="User" href="User.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Chat - PyroTGFork 2.2.15 Layer 211</title>
+        <title>Chat - PyroTGFork 2.2.16 Layer 214</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.15 Layer 211</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.15 Layer 211</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -322,6 +322,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_chat_members_count.html">get_chat_members_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_chat_member.html">get_chat_member</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methods/set_chat_direct_messages_group.html">set_chat_direct_messages_group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_dialogs.html">get_dialogs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_dialogs_count.html">get_dialogs_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/set_chat_username.html">set_chat_username</a></li>
@@ -572,6 +575,7 @@
 <li class="toctree-l2"><a class="reference internal" href="InviteLinkImporter.html">InviteLinkImporter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Restriction.html">Restriction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="RtmpUrl.html">RtmpUrl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DirectMessagesTopic.html">DirectMessagesTopic</a></li>
 <li class="toctree-l2"><a class="reference internal" href="CallbackGame.html">CallbackGame</a></li>
 <li class="toctree-l2"><a class="reference internal" href="CallbackQuery.html">CallbackQuery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="CopyTextButton.html">CopyTextButton</a></li>
@@ -878,6 +882,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../telegram/functions/index.html">Raw Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../telegram/types/index.html">Raw Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../telegram/base/index.html">Raw Base</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
@@ -969,6 +974,7 @@
 <li><p><strong>first_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – First name of the other party in a private chat, for private chats and bots.</p></li>
 <li><p><strong>last_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Last name of the other party in a private chat, for private chats.</p></li>
 <li><p><strong>is_forum</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the supergroup chat is a forum</p></li>
+<li><p><strong>is_direct_messages</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – True, if the chat is the direct messages chat of a channel.</p></li>
 <li><p><strong>max_reaction_count</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – The maximum number of reactions that can be set on a message in the chat</p></li>
 <li><p><strong>photo</strong> (<a class="reference internal" href="ChatPhoto.html#pyrogram.types.ChatPhoto" title="pyrogram.types.ChatPhoto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPhoto</span></code></a>, <em>optional</em>) – Chat photo. Suitable for downloads only.</p></li>
 <li><p><strong>active_usernames</strong> (List of <a class="reference internal" href="Username.html#pyrogram.types.Username" title="pyrogram.types.Username"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Username</span></code></a>, <em>optional</em>) – If non-empty, the list of all <a class="reference external" href="https://telegram.org/blog/topics-in-groups-collectible-usernames#collectible-usernames">active chat usernames</a>; for private chats, supergroups and channels.</p></li>
@@ -978,6 +984,9 @@
 <li><p><strong>business_opening_hours</strong> (<a class="reference internal" href="BusinessOpeningHours.html#pyrogram.types.BusinessOpeningHours" title="pyrogram.types.BusinessOpeningHours"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BusinessOpeningHours</span></code></a>, <em>optional</em>) – For private chats with business accounts, the opening hours of the business.</p></li>
 <li><p><strong>personal_chat</strong> (<a class="reference internal" href="#pyrogram.types.Chat" title="pyrogram.types.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – For private chats, the personal channel of the user.</p></li>
 <li><p><strong>personal_chat_message</strong> (<a class="reference internal" href="Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>, <em>optional</em>) – <strong>TEMPORARY</strong>: For private chats, the personal message_id in the <code class="docutils literal notranslate"><span class="pre">personal_chat</span></code>.</p></li>
+<li><p><strong>parent_chat</strong> (<a class="reference internal" href="#pyrogram.types.Chat" title="pyrogram.types.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>, <em>optional</em>) – Information about the corresponding channel chat; for direct messages chats only.
+Returned only in <a class="reference internal" href="../methods/get_chat.html#pyrogram.Client.get_chat" title="pyrogram.Client.get_chat"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_chat()</span></code></a>.</p></li>
+<li><p><strong>direct_messages_chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Information about the corresponding Direct Messages chat; for channel chats only.</p></li>
 <li><p><strong>available_reactions</strong> (<a class="reference internal" href="ChatReactions.html#pyrogram.types.ChatReactions" title="pyrogram.types.ChatReactions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatReactions</span></code></a>, <em>optional</em>) – Available reactions in the chat.
 Returned only in <a class="reference internal" href="../methods/get_chat.html#pyrogram.Client.get_chat" title="pyrogram.Client.get_chat"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_chat()</span></code></a>.</p></li>
 <li><p><strong>accent_color</strong> (<a class="reference internal" href="ChatColor.html#pyrogram.types.ChatColor" title="pyrogram.types.ChatColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatColor</span></code></a>, <em>optional</em>) – Chat accent color.</p></li>
@@ -1086,7 +1095,7 @@ Number of saved to profile gifts for channels without <code class="docutils lite
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/12cb4e2" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

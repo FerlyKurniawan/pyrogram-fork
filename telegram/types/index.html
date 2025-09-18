@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Account" href="account/index.html" /><link rel="prev" title="SetClientDHParams" href="../functions/set-client-dh-params.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Raw Types - PyroTGFork 2.2.15 Layer 211</title>
+        <title>Raw Types - PyroTGFork 2.2.16 Layer 214</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.15 Layer 211</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.15 Layer 211</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -322,6 +322,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_direct_messages_group.html">set_chat_direct_messages_group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_dialogs.html">get_dialogs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_dialogs_count.html">get_dialogs_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_username.html">set_chat_username</a></li>
@@ -572,6 +575,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/InviteLinkImporter.html">InviteLinkImporter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Restriction.html">Restriction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/RtmpUrl.html">RtmpUrl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/DirectMessagesTopic.html">DirectMessagesTopic</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CallbackGame.html">CallbackGame</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CallbackQuery.html">CallbackQuery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CopyTextButton.html">CopyTextButton</a></li>
@@ -878,6 +882,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Raw Functions</a></li>
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Raw Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../base/index.html">Raw Base</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
@@ -963,6 +968,8 @@
 <li class="toctree-l2"><a class="reference internal" href="account/auto-download-settings.html">AutoDownloadSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/auto-save-settings.html">AutoSaveSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/business-chat-links.html">BusinessChatLinks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/chat-themes.html">ChatThemes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/chat-themes-not-modified.html">ChatThemesNotModified</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/connected-bots.html">ConnectedBots</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/content-settings.html">ContentSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/email-verified.html">EmailVerified</a></li>
@@ -978,6 +985,8 @@
 <li class="toctree-l2"><a class="reference internal" href="account/reset-password-ok.html">ResetPasswordOk</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/reset-password-requested-wait.html">ResetPasswordRequestedWait</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/resolved-business-chat-links.html">ResolvedBusinessChatLinks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/saved-music-ids.html">SavedMusicIds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/saved-music-ids-not-modified.html">SavedMusicIdsNotModified</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/saved-ringtone.html">SavedRingtone</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/saved-ringtone-converted.html">SavedRingtoneConverted</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/saved-ringtones.html">SavedRingtones</a></li>
@@ -1195,6 +1204,8 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="payments/index.html">Payments</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="payments/bank-card-data.html">BankCardData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/check-can-send-gift-result-fail.html">CheckCanSendGiftResultFail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/check-can-send-gift-result-ok.html">CheckCanSendGiftResultOk</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/checked-gift-code.html">CheckedGiftCode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/connected-star-ref-bots.html">ConnectedStarRefBots</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/exported-invoice.html">ExportedInvoice</a></li>
@@ -1222,6 +1233,7 @@
 <li class="toctree-l2"><a class="reference internal" href="payments/stars-status.html">StarsStatus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/suggested-star-ref-bots.html">SuggestedStarRefBots</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/unique-star-gift.html">UniqueStarGift</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/unique-star-gift-value-info.html">UniqueStarGiftValueInfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/validated-requested-info.html">ValidatedRequestedInfo</a></li>
 </ul>
 </li>
@@ -1311,6 +1323,8 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="users/index.html">Users</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="users/saved-music.html">SavedMusic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="users/saved-music-not-modified.html">SavedMusicNotModified</a></li>
 <li class="toctree-l2"><a class="reference internal" href="users/user-full.html">UserFull</a></li>
 <li class="toctree-l2"><a class="reference internal" href="users/users.html">Users</a></li>
 <li class="toctree-l2"><a class="reference internal" href="users/users-slice.html">UsersSlice</a></li>
@@ -1487,6 +1501,8 @@
 <li class="toctree-l1"><a class="reference internal" href="chat-reactions-all.html">ChatReactionsAll</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chat-reactions-none.html">ChatReactionsNone</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chat-reactions-some.html">ChatReactionsSome</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chat-theme.html">ChatTheme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chat-theme-unique-gift.html">ChatThemeUniqueGift</a></li>
 <li class="toctree-l1"><a class="reference internal" href="client-dh-inner-data.html">ClientDHInnerData</a></li>
 <li class="toctree-l1"><a class="reference internal" href="code-settings.html">CodeSettings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="config.html">Config</a></li>
@@ -1616,6 +1632,9 @@
 <li class="toctree-l1"><a class="reference internal" href="input-channel-from-message.html">InputChannelFromMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-chat-photo.html">InputChatPhoto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-chat-photo-empty.html">InputChatPhotoEmpty</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-chat-theme.html">InputChatTheme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-chat-theme-empty.html">InputChatThemeEmpty</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-chat-theme-unique-gift.html">InputChatThemeUniqueGift</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-chat-uploaded-photo.html">InputChatUploadedPhoto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-chatlist-dialog-filter.html">InputChatlistDialogFilter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-check-password-empty.html">InputCheckPasswordEmpty</a></li>
@@ -1655,6 +1674,7 @@
 <li class="toctree-l1"><a class="reference internal" href="input-invoice-premium-gift-stars.html">InputInvoicePremiumGiftStars</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-invoice-slug.html">InputInvoiceSlug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-invoice-star-gift.html">InputInvoiceStarGift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-invoice-star-gift-prepaid-upgrade.html">InputInvoiceStarGiftPrepaidUpgrade</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-invoice-star-gift-resale.html">InputInvoiceStarGiftResale</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-invoice-star-gift-transfer.html">InputInvoiceStarGiftTransfer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-invoice-star-gift-upgrade.html">InputInvoiceStarGiftUpgrade</a></li>
@@ -2118,6 +2138,14 @@
 <li class="toctree-l1"><a class="reference internal" href="privacy-value-disallow-chat-participants.html">PrivacyValueDisallowChatParticipants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="privacy-value-disallow-contacts.html">PrivacyValueDisallowContacts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="privacy-value-disallow-users.html">PrivacyValueDisallowUsers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profile-tab-files.html">ProfileTabFiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profile-tab-gifs.html">ProfileTabGifs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profile-tab-gifts.html">ProfileTabGifts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profile-tab-links.html">ProfileTabLinks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profile-tab-media.html">ProfileTabMedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profile-tab-music.html">ProfileTabMusic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profile-tab-posts.html">ProfileTabPosts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profile-tab-voice.html">ProfileTabVoice</a></li>
 <li class="toctree-l1"><a class="reference internal" href="public-forward-message.html">PublicForwardMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="public-forward-story.html">PublicForwardStory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quick-reply.html">QuickReply</a></li>
@@ -2552,7 +2580,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/12cb4e2" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

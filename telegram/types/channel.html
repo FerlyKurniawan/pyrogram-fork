@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="ChannelAdminLogEvent" href="channel-admin-log-event.html" /><link rel="prev" title="CdnPublicKey" href="cdn-public-key.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Channel - PyroTGFork 2.2.15 Layer 211</title>
+        <title>Channel - PyroTGFork 2.2.16 Layer 214</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.15 Layer 211</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.15 Layer 211</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -322,6 +322,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_direct_messages_group.html">set_chat_direct_messages_group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_dialogs.html">get_dialogs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_dialogs_count.html">get_dialogs_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_username.html">set_chat_username</a></li>
@@ -572,6 +575,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/InviteLinkImporter.html">InviteLinkImporter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Restriction.html">Restriction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/RtmpUrl.html">RtmpUrl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/DirectMessagesTopic.html">DirectMessagesTopic</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CallbackGame.html">CallbackGame</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CallbackQuery.html">CallbackQuery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CopyTextButton.html">CopyTextButton</a></li>
@@ -878,6 +882,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Raw Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Raw Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../base/index.html">Raw Base</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
@@ -1033,11 +1038,14 @@ See here  for an implementation of the logic to use when updating the local user
 <div class="line-block">
 <div class="line">signature_profiles</div>
 </div>
+<div class="line-block">
+<div class="line">autotranslation</div>
+</div>
 </div></blockquote>
-<p>Constructor of <code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code>.</p>
+<p>Constructor of <a class="reference internal" href="../base/chat.html#pyrogram.raw.base.Chat" title="pyrogram.raw.base.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>.</p>
 <dl>
 <dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">211</span></code></p></li>
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">214</span></code></p></li>
 <li><p>ID: <code class="docutils literal notranslate"><span class="pre">FE685355</span></code></p></li>
 </ul>
 </dd>
@@ -1046,7 +1054,7 @@ See here  for an implementation of the logic to use when updating the local user
 </dd>
 <dt>title (<code class="docutils literal notranslate"><span class="pre">str</span></code>):</dt><dd><p>Title</p>
 </dd>
-<dt>photo (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPhoto</span></code>):</dt><dd><p>Profile photo</p>
+<dt>photo (<a class="reference internal" href="../base/chat-photo.html#pyrogram.raw.base.ChatPhoto" title="pyrogram.raw.base.ChatPhoto"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPhoto</span></code></a>):</dt><dd><p>Profile photo</p>
 </dd>
 <dt>date (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>):</dt><dd><p>Date when the user joined the supergroup/channel, or if the user isn’t a member, its creation date</p>
 </dd>
@@ -1108,25 +1116,25 @@ See here  for an implementation of the logic to use when updating the local user
 </dd>
 <dt>username (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>Main active username.</p>
 </dd>
-<dt>restriction_reason (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">RestrictionReason</span></code>, <em>optional</em>):</dt><dd><p>Contains the reason why access to this channel must be restricted. Changes to this flag should invalidate the local channelFull cache for this channel/supergroup ID, see here » for more info.</p>
+<dt>restriction_reason (List of <a class="reference internal" href="../base/restriction-reason.html#pyrogram.raw.base.RestrictionReason" title="pyrogram.raw.base.RestrictionReason"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RestrictionReason</span></code></a>, <em>optional</em>):</dt><dd><p>Contains the reason why access to this channel must be restricted. Changes to this flag should invalidate the local channelFull cache for this channel/supergroup ID, see here » for more info.</p>
 </dd>
-<dt>admin_rights (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatAdminRights</span></code>, <em>optional</em>):</dt><dd><p>Admin rights of the user in this channel (see rights)</p>
+<dt>admin_rights (<a class="reference internal" href="../base/chat-admin-rights.html#pyrogram.raw.base.ChatAdminRights" title="pyrogram.raw.base.ChatAdminRights"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatAdminRights</span></code></a>, <em>optional</em>):</dt><dd><p>Admin rights of the user in this channel (see rights)</p>
 </dd>
-<dt>banned_rights (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatBannedRights</span></code>, <em>optional</em>):</dt><dd><p>Banned rights of the user in this channel (see rights)</p>
+<dt>banned_rights (<a class="reference internal" href="../base/chat-banned-rights.html#pyrogram.raw.base.ChatBannedRights" title="pyrogram.raw.base.ChatBannedRights"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatBannedRights</span></code></a>, <em>optional</em>):</dt><dd><p>Banned rights of the user in this channel (see rights)</p>
 </dd>
-<dt>default_banned_rights (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatBannedRights</span></code>, <em>optional</em>):</dt><dd><p>Default chat rights (see rights)</p>
+<dt>default_banned_rights (<a class="reference internal" href="../base/chat-banned-rights.html#pyrogram.raw.base.ChatBannedRights" title="pyrogram.raw.base.ChatBannedRights"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatBannedRights</span></code></a>, <em>optional</em>):</dt><dd><p>Default chat rights (see rights)</p>
 </dd>
 <dt>participants_count (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Participant count</p>
 </dd>
-<dt>usernames (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">Username</span></code>, <em>optional</em>):</dt><dd><p>Additional usernames</p>
+<dt>usernames (List of <a class="reference internal" href="../base/username.html#pyrogram.raw.base.Username" title="pyrogram.raw.base.Username"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Username</span></code></a>, <em>optional</em>):</dt><dd><p>Additional usernames</p>
 </dd>
 <dt>stories_max_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>ID of the maximum read story.</p>
 </dd>
-<dt>color (<code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code>, <em>optional</em>):</dt><dd><p>The channel’s accent color.</p>
+<dt>color (<a class="reference internal" href="../base/peer-color.html#pyrogram.raw.base.PeerColor" title="pyrogram.raw.base.PeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code></a>, <em>optional</em>):</dt><dd><p>The channel’s accent color.</p>
 </dd>
-<dt>profile_color (<code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code>, <em>optional</em>):</dt><dd><p>The channel’s profile color.</p>
+<dt>profile_color (<a class="reference internal" href="../base/peer-color.html#pyrogram.raw.base.PeerColor" title="pyrogram.raw.base.PeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code></a>, <em>optional</em>):</dt><dd><p>The channel’s profile color.</p>
 </dd>
-<dt>emoji_status (<code class="xref py py-obj docutils literal notranslate"><span class="pre">EmojiStatus</span></code>, <em>optional</em>):</dt><dd><p>Emoji status</p>
+<dt>emoji_status (<a class="reference internal" href="../base/emoji-status.html#pyrogram.raw.base.EmojiStatus" title="pyrogram.raw.base.EmojiStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EmojiStatus</span></code></a>, <em>optional</em>):</dt><dd><p>Emoji status</p>
 </dd>
 <dt>level (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Boost level. Changes to this flag should invalidate the local channelFull cache for this channel/supergroup ID, see here » for more info.</p>
 </dd>
@@ -1182,7 +1190,7 @@ See here  for an implementation of the logic to use when updating the local user
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/12cb4e2" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

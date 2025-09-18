@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Changes in this Fork - PyroTGFork 2.2.15 Layer 211</title>
+        <title>Changes in this Fork - PyroTGFork 2.2.16 Layer 214</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../index.html"><div class="brand">PyroTGFork 2.2.15 Layer 211</div></a>
+      <a href="../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.15 Layer 211</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -322,6 +322,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/get_chat_member.html">get_chat_member</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/methods/set_chat_direct_messages_group.html">set_chat_direct_messages_group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/get_dialogs.html">get_dialogs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/get_dialogs_count.html">get_dialogs_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/set_chat_username.html">set_chat_username</a></li>
@@ -572,6 +575,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../api/types/InviteLinkImporter.html">InviteLinkImporter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/Restriction.html">Restriction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/RtmpUrl.html">RtmpUrl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/types/DirectMessagesTopic.html">DirectMessagesTopic</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/CallbackGame.html">CallbackGame</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/CallbackQuery.html">CallbackQuery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/CopyTextButton.html">CopyTextButton</a></li>
@@ -878,6 +882,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../telegram/functions/index.html">Raw Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../telegram/types/index.html">Raw Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../telegram/base/index.html">Raw Base</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
@@ -982,12 +987,36 @@ it can take advantage of new goodies!</p>
 <div class="table-wrapper docutils container">
 <table class="docutils align-default">
 <tbody>
+<tr class="row-odd"><td><p>Scheme layer used: 214</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p><cite>fix get_chat_photos &lt;https://github.com/TelegramPlayground/pyrogram/pull/203&gt;</cite>.</p></li>
+<li><p><a class="reference external" href="https://github.com/TelegramPlayground/pyrogram/pull/198">support filters.regex for ChosenInlineResult</a>.</p></li>
+<li><p>Update <a class="reference internal" href="../api/bound-methods/Message.reply_game.html#pyrogram.types.Message.reply_game" title="pyrogram.types.Message.reply_game"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_game()</span></code></a>, <a class="reference internal" href="../api/bound-methods/Message.reply_text.html#pyrogram.types.Message.reply_text" title="pyrogram.types.Message.reply_text"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_text()</span></code></a>, <a class="reference internal" href="../api/bound-methods/Message.reply_animation.html#pyrogram.types.Message.reply_animation" title="pyrogram.types.Message.reply_animation"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_animation()</span></code></a>, <a class="reference internal" href="../api/bound-methods/Message.reply_audio.html#pyrogram.types.Message.reply_audio" title="pyrogram.types.Message.reply_audio"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_audio()</span></code></a>, <a class="reference internal" href="../api/bound-methods/Message.reply_contact.html#pyrogram.types.Message.reply_contact" title="pyrogram.types.Message.reply_contact"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_contact()</span></code></a>, <a class="reference internal" href="../api/bound-methods/Message.reply_document.html#pyrogram.types.Message.reply_document" title="pyrogram.types.Message.reply_document"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_document()</span></code></a>, <a class="reference internal" href="../api/bound-methods/Message.reply_location.html#pyrogram.types.Message.reply_location" title="pyrogram.types.Message.reply_location"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_location()</span></code></a>, <a class="reference internal" href="../api/bound-methods/Message.reply_media_group.html#pyrogram.types.Message.reply_media_group" title="pyrogram.types.Message.reply_media_group"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_media_group()</span></code></a>, <a class="reference internal" href="../api/bound-methods/Message.reply_photo.html#pyrogram.types.Message.reply_photo" title="pyrogram.types.Message.reply_photo"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_photo()</span></code></a>, <a class="reference internal" href="../api/bound-methods/Message.reply_poll.html#pyrogram.types.Message.reply_poll" title="pyrogram.types.Message.reply_poll"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_poll()</span></code></a>, <a class="reference internal" href="../api/bound-methods/Message.reply_sticker.html#pyrogram.types.Message.reply_sticker" title="pyrogram.types.Message.reply_sticker"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_sticker()</span></code></a>, <a class="reference internal" href="../api/bound-methods/Message.reply_venue.html#pyrogram.types.Message.reply_venue" title="pyrogram.types.Message.reply_venue"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_venue()</span></code></a>, <a class="reference internal" href="../api/bound-methods/Message.reply_video.html#pyrogram.types.Message.reply_video" title="pyrogram.types.Message.reply_video"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_video()</span></code></a>, <a class="reference internal" href="../api/bound-methods/Message.reply_video_note.html#pyrogram.types.Message.reply_video_note" title="pyrogram.types.Message.reply_video_note"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_video_note()</span></code></a>, <a class="reference internal" href="../api/bound-methods/Message.reply_voice.html#pyrogram.types.Message.reply_voice" title="pyrogram.types.Message.reply_voice"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_voice()</span></code></a>, <a class="reference internal" href="../api/bound-methods/Message.reply_invoice.html#pyrogram.types.Message.reply_invoice" title="pyrogram.types.Message.reply_invoice"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_invoice()</span></code></a>, <a class="reference internal" href="../api/bound-methods/Message.forward.html#pyrogram.types.Message.forward" title="pyrogram.types.Message.forward"><code class="xref py py-meth docutils literal notranslate"><span class="pre">forward()</span></code></a>, <a class="reference internal" href="../api/bound-methods/Message.copy.html#pyrogram.types.Message.copy" title="pyrogram.types.Message.copy"><code class="xref py py-meth docutils literal notranslate"><span class="pre">copy()</span></code></a>, <a class="reference internal" href="../api/bound-methods/Message.reply_cached_media.html#pyrogram.types.Message.reply_cached_media" title="pyrogram.types.Message.reply_cached_media"><code class="xref py py-meth docutils literal notranslate"><span class="pre">reply_cached_media()</span></code></a> methods to support direct_messages_topic_id.</p></li>
+<li><p><a class="reference external" href="https://github.com/TelegramPlayground/pyrogram/pull/195">Fix get_dialogs</a>.</p></li>
+<li><p><a class="reference external" href="https://github.com/TelegramPlayground/pyrogram/commit/fc838cf">Fix timestamp_to_datetime to correctly handle timezone conversion</a>.</p></li>
+<li><p>View <a class="reference external" href="https://telegramplayground.github.io/TG-APIs/TL/diff/tdlib.html?from=211&amp;to=214">new and changed</a> <a class="reference external" href="https://telegramplayground.github.io/TG-APIs/TL/diff/tdesktop.html?from=211&amp;to=214">raw API methods</a>.</p></li>
+</ul>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
 <tr class="row-odd"><td><p>Scheme layer used: 211</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <ul class="simple">
+<li><p>Rename direct_message_topic_id to <code class="docutils literal notranslate"><span class="pre">direct_messages_topic_id</span></code> in <a class="reference internal" href="../api/types/ReplyParameters.html#pyrogram.types.ReplyParameters" title="pyrogram.types.ReplyParameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyParameters</span></code></a>. This parameter can be used to send a message to a direct messages chat topic.</p></li>
+<li><p>Added the field <code class="docutils literal notranslate"><span class="pre">checklist_task_id</span></code> to the class <a class="reference internal" href="../api/types/ReplyParameters.html#pyrogram.types.ReplyParameters" title="pyrogram.types.ReplyParameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyParameters</span></code></a>, allowing bots to reply to a specific checklist task.</p></li>
+<li><p>Added the field <code class="docutils literal notranslate"><span class="pre">reply_to_checklist_task_id</span></code> to the class <a class="reference internal" href="../api/types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>.</p></li>
+<li><p>Added the field <code class="docutils literal notranslate"><span class="pre">can_manage_direct_messages</span></code> to <a class="reference internal" href="../api/types/ChatPrivileges.html#pyrogram.types.ChatPrivileges" title="pyrogram.types.ChatPrivileges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPrivileges</span></code></a>.</p></li>
+<li><p>Added the field <code class="docutils literal notranslate"><span class="pre">is_direct_messages</span></code> to the classes <a class="reference internal" href="../api/types/Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a> which can be used to identify supergroups that are used as channel direct messages chats.</p></li>
+<li><p>Added the fields <code class="docutils literal notranslate"><span class="pre">parent_chat</span></code> and <code class="docutils literal notranslate"><span class="pre">direct_messages_chat_id</span></code> to the class <a class="reference internal" href="../api/types/Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a> which indicates the parent channel chat for a channel direct messages chat.</p></li>
+<li><p>Added the class <a class="reference internal" href="../api/types/DirectMessagesTopic.html#pyrogram.types.DirectMessagesTopic" title="pyrogram.types.DirectMessagesTopic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DirectMessagesTopic</span></code></a> and the field <code class="docutils literal notranslate"><span class="pre">direct_messages_topic</span></code> to the class <a class="reference internal" href="../api/types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>, describing a topic of a direct messages chat.</p></li>
+<li><p>Added <a class="reference internal" href="../api/methods/get_direct_messages_topics_by_id.html#pyrogram.Client.get_direct_messages_topics_by_id" title="pyrogram.Client.get_direct_messages_topics_by_id"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_direct_messages_topics_by_id()</span></code></a>, <a class="reference internal" href="../api/methods/get_direct_messages_topics.html#pyrogram.Client.get_direct_messages_topics" title="pyrogram.Client.get_direct_messages_topics"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_direct_messages_topics()</span></code></a>, <a class="reference internal" href="../api/methods/set_chat_direct_messages_group.html#pyrogram.Client.set_chat_direct_messages_group" title="pyrogram.Client.set_chat_direct_messages_group"><code class="xref py py-meth docutils literal notranslate"><span class="pre">set_chat_direct_messages_group()</span></code></a>.</p></li>
 <li><p>View <a class="reference external" href="https://telegramplayground.github.io/TG-APIs/TL/diff/tdlib.html?from=205&amp;to=211">new and changed</a> <a class="reference external" href="https://telegramplayground.github.io/TG-APIs/TL/diff/tdesktop.html?from=205&amp;to=211">raw API methods</a>.</p></li>
 </ul>
 <div class="table-wrapper docutils container">
@@ -1671,7 +1700,7 @@ it can take advantage of new goodies!</p>
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/12cb4e2" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

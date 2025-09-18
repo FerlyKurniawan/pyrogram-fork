@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="MessageActionBoostApply" href="message-action-boost-apply.html" /><link rel="prev" title="MediaAreaWeather" href="media-area-weather.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Message - PyroTGFork 2.2.15 Layer 211</title>
+        <title>Message - PyroTGFork 2.2.16 Layer 214</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.15 Layer 211</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.15 Layer 211</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -322,6 +322,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_direct_messages_group.html">set_chat_direct_messages_group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_dialogs.html">get_dialogs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_dialogs_count.html">get_dialogs_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_username.html">set_chat_username</a></li>
@@ -572,6 +575,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/InviteLinkImporter.html">InviteLinkImporter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Restriction.html">Restriction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/RtmpUrl.html">RtmpUrl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/DirectMessagesTopic.html">DirectMessagesTopic</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CallbackGame.html">CallbackGame</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CallbackQuery.html">CallbackQuery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CopyTextButton.html">CopyTextButton</a></li>
@@ -878,6 +882,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Raw Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Raw Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../base/index.html">Raw Base</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
@@ -959,10 +964,10 @@
 <dt class="sig sig-object py" id="pyrogram.raw.types.Message">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">Message</span></span><a class="headerlink" href="#pyrogram.raw.types.Message" title="Link to this definition">#</a></dt>
 <dd><p>A message</p>
-<p>Constructor of <code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code>.</p>
+<p>Constructor of <a class="reference internal" href="../base/message.html#pyrogram.raw.base.Message" title="pyrogram.raw.base.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>.</p>
 <dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">211</span></code></p></li>
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">214</span></code></p></li>
 <li><p>ID: <code class="docutils literal notranslate"><span class="pre">9815CEC8</span></code></p></li>
 </ul>
 </dd>
@@ -971,7 +976,7 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – ID of the message</p></li>
-<li><p><strong>peer_id</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code>) – Peer ID, the chat where this message was sent</p></li>
+<li><p><strong>peer_id</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>) – Peer ID, the chat where this message was sent</p></li>
 <li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Date of the message</p></li>
 <li><p><strong>message</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – The message</p></li>
 <li><p><strong>out</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Is this an outgoing message</p></li>
@@ -989,31 +994,31 @@
 <li><p><strong>video_processing_pending</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – The video contained in the message is currently being processed by the server (i.e. to generate alternative qualities, that will be contained in the final messageMediaDocument.alt_document), and will be sent once the video is processed, which will happen approximately at the specified date (i.e. messages with this flag set should be treated similarly to scheduled messages, but instead of the scheduled date, date contains the estimated conversion date). See here » for more info.</p></li>
 <li><p><strong>paid_suggested_post_stars</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>)</p></li>
 <li><p><strong>paid_suggested_post_ton</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>)</p></li>
-<li><p><strong>from_id</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code>, <em>optional</em>) – ID of the sender of the message</p></li>
+<li><p><strong>from_id</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>) – ID of the sender of the message</p></li>
 <li><p><strong>from_boosts_applied</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Supergroups only, contains the number of boosts this user has given the current supergroup, and should be shown in the UI in the header of the message. Only present for incoming messages from non-anonymous supergroup members that have boosted the supergroup. Note that this counter should be locally overridden for non-anonymous outgoing messages, according to the current value of channelFull.boosts_applied, to ensure the value is correct even for messages sent by the current user before a supergroup was boosted (or after a boost has expired or the number of boosts has changed); do not update this value for incoming messages from other users, even if their boosts have changed.</p></li>
-<li><p><strong>saved_peer_id</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code>, <em>optional</em>) – Messages fetched from a saved messages dialog » will have peer=inputPeerSelf and the saved_peer_id flag set to the ID of the saved dialog.</p></li>
-<li><p><strong>fwd_from</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageFwdHeader</span></code>, <em>optional</em>) – Info about forwarded messages</p></li>
+<li><p><strong>saved_peer_id</strong> (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>) – Messages fetched from a saved messages dialog » will have peer=inputPeerSelf and the saved_peer_id flag set to the ID of the saved dialog.</p></li>
+<li><p><strong>fwd_from</strong> (<a class="reference internal" href="../base/message-fwd-header.html#pyrogram.raw.base.MessageFwdHeader" title="pyrogram.raw.base.MessageFwdHeader"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageFwdHeader</span></code></a>, <em>optional</em>) – Info about forwarded messages</p></li>
 <li><p><strong>via_bot_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – ID of the inline bot that generated the message</p></li>
 <li><p><strong>via_business_bot_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – Whether the message was sent by the business bot specified in via_bot_id on behalf of the user.</p></li>
-<li><p><strong>reply_to</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageReplyHeader</span></code>, <em>optional</em>) – Reply information</p></li>
-<li><p><strong>media</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMedia</span></code>, <em>optional</em>) – Media attachment</p></li>
-<li><p><strong>reply_markup</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyMarkup</span></code>, <em>optional</em>) – Reply markup (bot/inline keyboards)</p></li>
-<li><p><strong>entities</strong> (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code>, <em>optional</em>) – Message entities for styled text</p></li>
+<li><p><strong>reply_to</strong> (<a class="reference internal" href="../base/message-reply-header.html#pyrogram.raw.base.MessageReplyHeader" title="pyrogram.raw.base.MessageReplyHeader"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageReplyHeader</span></code></a>, <em>optional</em>) – Reply information</p></li>
+<li><p><strong>media</strong> (<a class="reference internal" href="../base/message-media.html#pyrogram.raw.base.MessageMedia" title="pyrogram.raw.base.MessageMedia"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMedia</span></code></a>, <em>optional</em>) – Media attachment</p></li>
+<li><p><strong>reply_markup</strong> (<a class="reference internal" href="../base/reply-markup.html#pyrogram.raw.base.ReplyMarkup" title="pyrogram.raw.base.ReplyMarkup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyMarkup</span></code></a>, <em>optional</em>) – Reply markup (bot/inline keyboards)</p></li>
+<li><p><strong>entities</strong> (List of <a class="reference internal" href="../base/message-entity.html#pyrogram.raw.base.MessageEntity" title="pyrogram.raw.base.MessageEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – Message entities for styled text</p></li>
 <li><p><strong>views</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – View count for channel posts</p></li>
 <li><p><strong>forwards</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Forward counter</p></li>
-<li><p><strong>replies</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageReplies</span></code>, <em>optional</em>) – Info about post comments (for channels) or message replies (for groups)</p></li>
+<li><p><strong>replies</strong> (<a class="reference internal" href="../base/message-replies.html#pyrogram.raw.base.MessageReplies" title="pyrogram.raw.base.MessageReplies"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageReplies</span></code></a>, <em>optional</em>) – Info about post comments (for channels) or message replies (for groups)</p></li>
 <li><p><strong>edit_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Last edit date of this message</p></li>
 <li><p><strong>post_author</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Name of the author of this message for channel posts (with signatures enabled)</p></li>
 <li><p><strong>grouped_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – Multiple media messages sent using messages.sendMultiMedia with the same grouped ID indicate an album or media group</p></li>
-<li><p><strong>reactions</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageReactions</span></code>, <em>optional</em>) – Reactions to this message</p></li>
-<li><p><strong>restriction_reason</strong> (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">RestrictionReason</span></code>, <em>optional</em>) – Contains the reason why access to this message must be restricted.</p></li>
+<li><p><strong>reactions</strong> (<a class="reference internal" href="../base/message-reactions.html#pyrogram.raw.base.MessageReactions" title="pyrogram.raw.base.MessageReactions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageReactions</span></code></a>, <em>optional</em>) – Reactions to this message</p></li>
+<li><p><strong>restriction_reason</strong> (List of <a class="reference internal" href="../base/restriction-reason.html#pyrogram.raw.base.RestrictionReason" title="pyrogram.raw.base.RestrictionReason"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RestrictionReason</span></code></a>, <em>optional</em>) – Contains the reason why access to this message must be restricted.</p></li>
 <li><p><strong>ttl_period</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Time To Live of the message, once message.date+message.ttl_period === time(), the message will be deleted on the server, and must be deleted locally as well.</p></li>
 <li><p><strong>quick_reply_shortcut_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – If set, this message is a quick reply shortcut message » (note that quick reply shortcut messages sent to a private chat will not have this field set).</p></li>
 <li><p><strong>effect</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – A message effect that should be played as specified here ».</p></li>
-<li><p><strong>factcheck</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">FactCheck</span></code>, <em>optional</em>) – Represents a fact-check ».</p></li>
+<li><p><strong>factcheck</strong> (<a class="reference internal" href="../base/fact-check.html#pyrogram.raw.base.FactCheck" title="pyrogram.raw.base.FactCheck"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FactCheck</span></code></a>, <em>optional</em>) – Represents a fact-check ».</p></li>
 <li><p><strong>report_delivery_until_date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Used for Telegram Gateway verification messages: if set and the current unixtime is bigger than the specified unixtime, invoke messages.reportMessagesDelivery passing the ID and the peer of this message as soon as it is received by the client (optionally batching requests for the same peer).</p></li>
 <li><p><strong>paid_message_stars</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – The amount of stars the sender has paid to send the message, see here » for more info.</p></li>
-<li><p><strong>suggested_post</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">SuggestedPost</span></code>, <em>optional</em>)</p></li>
+<li><p><strong>suggested_post</strong> (<a class="reference internal" href="../base/suggested-post.html#pyrogram.raw.base.SuggestedPost" title="pyrogram.raw.base.SuggestedPost"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SuggestedPost</span></code></a>, <em>optional</em>)</p></li>
 </ul>
 </dd>
 </dl>
@@ -1057,7 +1062,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/12cb4e2" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

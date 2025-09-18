@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="UpdatesTooLong" href="updates-too-long.html" /><link rel="prev" title="Updates" href="updates.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>UpdatesCombined - PyroTGFork 2.2.15 Layer 211</title>
+        <title>UpdatesCombined - PyroTGFork 2.2.16 Layer 214</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.15 Layer 211</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.15 Layer 211</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -322,6 +322,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_direct_messages_group.html">set_chat_direct_messages_group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_dialogs.html">get_dialogs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_dialogs_count.html">get_dialogs_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_username.html">set_chat_username</a></li>
@@ -572,6 +575,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/InviteLinkImporter.html">InviteLinkImporter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Restriction.html">Restriction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/RtmpUrl.html">RtmpUrl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/DirectMessagesTopic.html">DirectMessagesTopic</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CallbackGame.html">CallbackGame</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CallbackQuery.html">CallbackQuery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CopyTextButton.html">CopyTextButton</a></li>
@@ -878,6 +882,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Raw Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Raw Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../base/index.html">Raw Base</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
@@ -959,10 +964,10 @@
 <dt class="sig sig-object py" id="pyrogram.raw.types.UpdatesCombined">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">UpdatesCombined</span></span><a class="headerlink" href="#pyrogram.raw.types.UpdatesCombined" title="Link to this definition">#</a></dt>
 <dd><p>Constructor for a group of updates.</p>
-<p>Constructor of <code class="xref py py-obj docutils literal notranslate"><span class="pre">Updates</span></code>.</p>
+<p>Constructor of <a class="reference internal" href="../base/updates.html#pyrogram.raw.base.Updates" title="pyrogram.raw.base.Updates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Updates</span></code></a>.</p>
 <dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">211</span></code></p></li>
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">214</span></code></p></li>
 <li><p>ID: <code class="docutils literal notranslate"><span class="pre">725B04C3</span></code></p></li>
 </ul>
 </dd>
@@ -970,9 +975,9 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>updates</strong> (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">Update</span></code>) – List of updates</p></li>
-<li><p><strong>users</strong> (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code>) – List of users mentioned in updates</p></li>
-<li><p><strong>chats</strong> (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code>) – List of chats mentioned in updates</p></li>
+<li><p><strong>updates</strong> (List of <a class="reference internal" href="../base/update.html#pyrogram.raw.base.Update" title="pyrogram.raw.base.Update"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Update</span></code></a>) – List of updates</p></li>
+<li><p><strong>users</strong> (List of <a class="reference internal" href="../base/user.html#pyrogram.raw.base.User" title="pyrogram.raw.base.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>) – List of users mentioned in updates</p></li>
+<li><p><strong>chats</strong> (List of <a class="reference internal" href="../base/chat.html#pyrogram.raw.base.Chat" title="pyrogram.raw.base.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>) – List of chats mentioned in updates</p></li>
 <li><p><strong>date</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Current date</p></li>
 <li><p><strong>seq_start</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Value seq for the earliest update in a group</p></li>
 <li><p><strong>seq</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Value seq for the latest update in a group</p></li>
@@ -1222,7 +1227,7 @@
 <td><p>Enable or disable paid messages  in this supergroup or monoforum.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/toggle-autotranslation.html#pyrogram.raw.functions.channels.ToggleAutotranslation" title="pyrogram.raw.functions.channels.ToggleAutotranslation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.ToggleAutotranslation</span></code></a></p></td>
-<td><p>Details:</p></td>
+<td><p>Toggle autotranslation in a channel, for all users: see here  for more info.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../functions/bots/allow-send-message.html#pyrogram.raw.functions.bots.AllowSendMessage" title="pyrogram.raw.functions.bots.AllowSendMessage"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bots.AllowSendMessage</span></code></a></p></td>
 <td><p>Allow the specified bot to send us messages</p></td>
@@ -1243,13 +1248,13 @@
 <td><p>Refund a Telegram Stars transaction, see here  for more info.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/upgrade-star-gift.html#pyrogram.raw.functions.payments.UpgradeStarGift" title="pyrogram.raw.functions.payments.UpgradeStarGift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.UpgradeStarGift</span></code></a></p></td>
-<td><p>Details:</p></td>
+<td><p>Upgrade a gift to a collectible gift: can only be used if the upgrade was already paid by the gift sender; see here  for more info on the full flow (including the different flow to use in case the upgrade was not paid by the gift sender).</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../functions/payments/transfer-star-gift.html#pyrogram.raw.functions.payments.TransferStarGift" title="pyrogram.raw.functions.payments.TransferStarGift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.TransferStarGift</span></code></a></p></td>
-<td><p>Details:</p></td>
+<td><p>Transfer a collectible gift to another user or channel: can only be used if transfer is free (i.e. messageActionStarGiftUnique.transfer_stars is not set); see here  for more info on the full flow (including the different flow to use in case the transfer isn't free).</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../functions/payments/update-star-gift-price.html#pyrogram.raw.functions.payments.UpdateStarGiftPrice" title="pyrogram.raw.functions.payments.UpdateStarGiftPrice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">payments.UpdateStarGiftPrice</span></code></a></p></td>
-<td><p>Details:</p></td>
+<td><p>A collectible gift we own  can be put up for sale on the gift marketplace  with this method, see here  for more info.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/discard-call.html#pyrogram.raw.functions.phone.DiscardCall" title="pyrogram.raw.functions.phone.DiscardCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DiscardCall</span></code></a></p></td>
 <td><p>Refuse or end running call</p></td>
@@ -1300,19 +1305,19 @@
 <td><p>Create and optionally join a new conference call.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/delete-conference-call-participants.html#pyrogram.raw.functions.phone.DeleteConferenceCallParticipants" title="pyrogram.raw.functions.phone.DeleteConferenceCallParticipants"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DeleteConferenceCallParticipants</span></code></a></p></td>
-<td><p>Details:</p></td>
+<td><p>Remove participants from a conference call.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/send-conference-call-broadcast.html#pyrogram.raw.functions.phone.SendConferenceCallBroadcast" title="pyrogram.raw.functions.phone.SendConferenceCallBroadcast"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.SendConferenceCallBroadcast</span></code></a></p></td>
-<td><p>Details:</p></td>
+<td><p>Broadcast a blockchain block to all members of a conference call, see here  for more info.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/invite-conference-call-participant.html#pyrogram.raw.functions.phone.InviteConferenceCallParticipant" title="pyrogram.raw.functions.phone.InviteConferenceCallParticipant"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.InviteConferenceCallParticipant</span></code></a></p></td>
-<td><p>Details:</p></td>
+<td><p>Invite a user to a conference call.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../functions/phone/decline-conference-call-invite.html#pyrogram.raw.functions.phone.DeclineConferenceCallInvite" title="pyrogram.raw.functions.phone.DeclineConferenceCallInvite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.DeclineConferenceCallInvite</span></code></a></p></td>
-<td><p>Details:</p></td>
+<td><p>Declines a conference call invite.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../functions/phone/get-group-call-chain-blocks.html#pyrogram.raw.functions.phone.GetGroupCallChainBlocks" title="pyrogram.raw.functions.phone.GetGroupCallChainBlocks"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phone.GetGroupCallChainBlocks</span></code></a></p></td>
-<td><p>Details:</p></td>
+<td><p>Fetch the blocks of a conference blockchain .</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../functions/folders/edit-peer-folders.html#pyrogram.raw.functions.folders.EditPeerFolders" title="pyrogram.raw.functions.folders.EditPeerFolders"><code class="xref py py-obj docutils literal notranslate"><span class="pre">folders.EditPeerFolders</span></code></a></p></td>
 <td><p>Edit peers in peer folder</p></td>
@@ -1386,7 +1391,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/12cb4e2" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

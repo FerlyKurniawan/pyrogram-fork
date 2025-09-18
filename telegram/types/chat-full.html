@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="ChatInvite" href="chat-invite.html" /><link rel="prev" title="ChatForbidden" href="chat-forbidden.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>ChatFull - PyroTGFork 2.2.15 Layer 211</title>
+        <title>ChatFull - PyroTGFork 2.2.16 Layer 214</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.15 Layer 211</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.15 Layer 211</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -322,6 +322,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members.html">get_chat_members</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_members_count.html">get_chat_members_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_chat_member.html">get_chat_member</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics_by_id.html">get_direct_messages_topics_by_id</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_direct_messages_topics.html">get_direct_messages_topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_direct_messages_group.html">set_chat_direct_messages_group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_dialogs.html">get_dialogs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_dialogs_count.html">get_dialogs_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_username.html">set_chat_username</a></li>
@@ -572,6 +575,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/InviteLinkImporter.html">InviteLinkImporter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/Restriction.html">Restriction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/RtmpUrl.html">RtmpUrl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/types/DirectMessagesTopic.html">DirectMessagesTopic</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CallbackGame.html">CallbackGame</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CallbackQuery.html">CallbackQuery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/types/CopyTextButton.html">CopyTextButton</a></li>
@@ -878,6 +882,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Raw Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html">Raw Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../base/index.html">Raw Base</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">External Links</span></p>
 <ul>
@@ -961,10 +966,10 @@
 <dd><p>Full info about a basic group.
 When updating the local peer database , all fields from the newly received constructor take priority over the old constructor cached locally (including by removing fields that aren’t set in the new constructor).</p>
 <blockquote>
-<div><p>Constructor of <code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatFull</span></code>.</p>
+<div><p>Constructor of <a class="reference internal" href="../base/chat-full.html#pyrogram.raw.base.ChatFull" title="pyrogram.raw.base.ChatFull"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatFull</span></code></a>.</p>
 <dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">211</span></code></p></li>
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">214</span></code></p></li>
 <li><p>ID: <code class="docutils literal notranslate"><span class="pre">2633421B</span></code></p></li>
 </ul>
 </dd>
@@ -973,9 +978,9 @@ When updating the local peer database , all fields from the newly received const
 </dd>
 <dt>about (<code class="docutils literal notranslate"><span class="pre">str</span></code>):</dt><dd><p>About string for this chat</p>
 </dd>
-<dt>participants (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatParticipants</span></code>):</dt><dd><p>Participant list</p>
+<dt>participants (<a class="reference internal" href="../base/chat-participants.html#pyrogram.raw.base.ChatParticipants" title="pyrogram.raw.base.ChatParticipants"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatParticipants</span></code></a>):</dt><dd><p>Participant list</p>
 </dd>
-<dt>notify_settings (<code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerNotifySettings</span></code>):</dt><dd><p>Notification settings</p>
+<dt>notify_settings (<a class="reference internal" href="../base/peer-notify-settings.html#pyrogram.raw.base.PeerNotifySettings" title="pyrogram.raw.base.PeerNotifySettings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerNotifySettings</span></code></a>):</dt><dd><p>Notification settings</p>
 </dd>
 <dt>can_set_username (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Can we change the username of this chat</p>
 </dd>
@@ -983,21 +988,21 @@ When updating the local peer database , all fields from the newly received const
 </dd>
 <dt>translations_disabled (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether the real-time chat translation popup should be hidden.</p>
 </dd>
-<dt>chat_photo (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code>, <em>optional</em>):</dt><dd><p>Chat photo</p>
+<dt>chat_photo (<a class="reference internal" href="../base/photo.html#pyrogram.raw.base.Photo" title="pyrogram.raw.base.Photo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Photo</span></code></a>, <em>optional</em>):</dt><dd><p>Chat photo</p>
 </dd>
-<dt>exported_invite (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ExportedChatInvite</span></code>, <em>optional</em>):</dt><dd><p>Chat invite</p>
+<dt>exported_invite (<a class="reference internal" href="../base/exported-chat-invite.html#pyrogram.raw.base.ExportedChatInvite" title="pyrogram.raw.base.ExportedChatInvite"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExportedChatInvite</span></code></a>, <em>optional</em>):</dt><dd><p>Chat invite</p>
 </dd>
-<dt>bot_info (List of <code class="xref py py-obj docutils literal notranslate"><span class="pre">BotInfo</span></code>, <em>optional</em>):</dt><dd><p>Info about bots that are in this chat</p>
+<dt>bot_info (List of <a class="reference internal" href="../base/bot-info.html#pyrogram.raw.base.BotInfo" title="pyrogram.raw.base.BotInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BotInfo</span></code></a>, <em>optional</em>):</dt><dd><p>Info about bots that are in this chat</p>
 </dd>
 <dt>pinned_msg_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Message ID of the last pinned message</p>
 </dd>
 <dt>folder_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Peer folder ID, for more info click here</p>
 </dd>
-<dt>call (<code class="xref py py-obj docutils literal notranslate"><span class="pre">InputGroupCall</span></code>, <em>optional</em>):</dt><dd><p>Group call information</p>
+<dt>call (<a class="reference internal" href="../base/input-group-call.html#pyrogram.raw.base.InputGroupCall" title="pyrogram.raw.base.InputGroupCall"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputGroupCall</span></code></a>, <em>optional</em>):</dt><dd><p>Group call information</p>
 </dd>
 <dt>ttl_period (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Time-To-Live of messages sent by the current user to this chat</p>
 </dd>
-<dt>groupcall_default_join_as (<code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code>, <em>optional</em>):</dt><dd><p>When using phone.getGroupCallJoinAs to get a list of peers that can be used to join a group call, this field indicates the peer that should be selected by default.</p>
+<dt>groupcall_default_join_as (<a class="reference internal" href="../base/peer.html#pyrogram.raw.base.Peer" title="pyrogram.raw.base.Peer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Peer</span></code></a>, <em>optional</em>):</dt><dd><p>When using phone.getGroupCallJoinAs to get a list of peers that can be used to join a group call, this field indicates the peer that should be selected by default.</p>
 </dd>
 <dt>theme_emoticon (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>Emoji representing a specific chat theme</p>
 </dd>
@@ -1005,7 +1010,7 @@ When updating the local peer database , all fields from the newly received const
 </dd>
 <dt>recent_requesters (List of <code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>IDs of users who requested to join recently</p>
 </dd>
-<dt>available_reactions (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatReactions</span></code>, <em>optional</em>):</dt><dd><p>Allowed message reactions »</p>
+<dt>available_reactions (<a class="reference internal" href="../base/chat-reactions.html#pyrogram.raw.base.ChatReactions" title="pyrogram.raw.base.ChatReactions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatReactions</span></code></a>, <em>optional</em>):</dt><dd><p>Allowed message reactions »</p>
 </dd>
 <dt>reactions_limit (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>This flag may be used to impose a custom limit of unique reactions (i.e. a customizable version of appConfig.reactions_uniq_max).</p>
 </dd>
@@ -1053,7 +1058,7 @@ When updating the local peer database , all fields from the newly received const
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/12cb4e2" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               
