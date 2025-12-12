@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="UserEmpty" href="user-empty.html" /><link rel="prev" title="UrlAuthResultRequest" href="url-auth-result-request.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>User - PyroTGFork 2.2.16 Layer 214</title>
+        <title>User - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -970,12 +970,12 @@ See here  for an implementation of the logic to use when updating the local user
 <div><p>Constructor of <a class="reference internal" href="../base/user.html#pyrogram.raw.base.User" title="pyrogram.raw.base.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>.</p>
 <dl>
 <dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">214</span></code></p></li>
-<li><p>ID: <code class="docutils literal notranslate"><span class="pre">20B1422</span></code></p></li>
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">220</span></code></p></li>
+<li><p>ID: <code class="docutils literal notranslate"><span class="pre">31774388</span></code></p></li>
 </ul>
 </dd>
 <dt>Parameters:</dt><dd><dl class="simple">
-<dt>id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>):</dt><dd><p>ID of the user, see here » for more info.</p>
+<dt>id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>):</dt><dd><p>ID of the user, see here » for more info and the available ID range.</p>
 </dd>
 <dt>is_self (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>N/A</p>
 </dd>
@@ -1027,6 +1027,8 @@ See here  for an implementation of the logic to use when updating the local user
 </dd>
 <dt>bot_has_main_app (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If set, this bot has configured a Main Mini App ».</p>
 </dd>
+<dt>bot_forum_view (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>N/A</p>
+</dd>
 <dt>access_hash (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>Access hash of the user, see here » for more info. If this flag is set, when updating the local peer database, generate a virtual flag called min_access_hash, which is: - Set to true if min is set AND – The phone flag is not set OR – The phone flag is set and the associated phone number string is non-empty - Set to false otherwise. Then, apply both access_hash and min_access_hash to the local database if: - min_access_hash is false OR - min_access_hash is true AND – There is no locally cached object for this user OR – There is no access_hash in the local cache OR – The cached object’s min_access_hash is also true If the final merged object stored to the database has the min_access_hash field set to true, the related access_hash is only suitable to use in inputPeerPhotoFileLocation », to directly download the profile pictures of users, everywhere else a inputPeer*FromMessage constructor will have to be generated as specified here ». Bots can also use min access hashes in some conditions, by passing 0 instead of the min access hash.</p>
 </dd>
 <dt>first_name (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>First name. When updating the local peer database, apply changes to this field only if: - The min flag is not set OR - The min flag is set AND – The min flag of the locally cached user entry is set.</p>
@@ -1053,7 +1055,7 @@ See here  for an implementation of the logic to use when updating the local user
 </dd>
 <dt>usernames (List of <a class="reference internal" href="../base/username.html#pyrogram.raw.base.Username" title="pyrogram.raw.base.Username"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Username</span></code></a>, <em>optional</em>):</dt><dd><p>Additional usernames. When updating the local peer database, apply changes to this field only if: - The min flag is not set OR - The min flag is set AND – The min flag of the locally cached user entry is set. Changes to this flag (if the above conditions are respected) should invalidate the local userFull cache for this user ID.</p>
 </dd>
-<dt>stories_max_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>ID of the maximum read story.  When updating the local peer database, do not apply changes to this field if the min flag of the incoming constructor is set.</p>
+<dt>stories_max_id (<a class="reference internal" href="../base/recent-story.html#pyrogram.raw.base.RecentStory" title="pyrogram.raw.base.RecentStory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RecentStory</span></code></a>, <em>optional</em>):</dt><dd><p>ID of the maximum read story.  When updating the local peer database, do not apply changes to this field if the min flag of the incoming constructor is set.</p>
 </dd>
 <dt>color (<a class="reference internal" href="../base/peer-color.html#pyrogram.raw.base.PeerColor" title="pyrogram.raw.base.PeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code></a>, <em>optional</em>):</dt><dd><p>The user’s accent color.</p>
 </dd>
@@ -1061,9 +1063,8 @@ See here  for an implementation of the logic to use when updating the local user
 </dd>
 <dt>bot_active_users (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Monthly Active Users (MAU) of this bot (may be absent for small bots).</p>
 </dd>
-</dl>
-<p>bot_verification_icon (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</p>
-<dl class="simple">
+<dt>bot_verification_icon (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>Describes a bot verification icon ».</p>
+</dd>
 <dt>send_paid_messages_stars (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>If set, the user has enabled paid messages », we might need to pay the specified amount of Stars to send them messages, depending on the configured exceptions: check userFull.send_paid_messages_stars or users.getRequirementsToContact to see if the currently logged in user actually has to pay or not, see here » for the full flow.</p>
 </dd>
 </dl>
@@ -1088,7 +1089,7 @@ See here  for an implementation of the logic to use when updating the local user
 <td><p>Obtain user info from a temporary profile link.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/get-message-author.html#pyrogram.raw.functions.channels.GetMessageAuthor" title="pyrogram.raw.functions.channels.GetMessageAuthor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.GetMessageAuthor</span></code></a></p></td>
-<td><p>Details:</p></td>
+<td><p>Can only be invoked by non-bot admins of a monoforum , obtains the original sender of a message sent by other monoforum admins to the monoforum, on behalf of the channel associated to the monoforum.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../functions/bots/get-admined-bots.html#pyrogram.raw.functions.bots.GetAdminedBots" title="pyrogram.raw.functions.bots.GetAdminedBots"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bots.GetAdminedBots</span></code></a></p></td>
 <td><p>Get a list of bots owned by the current user</p></td>
@@ -1139,7 +1140,7 @@ See here  for an implementation of the logic to use when updating the local user
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

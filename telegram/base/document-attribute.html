@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="DraftMessage" href="draft-message.html" /><link rel="prev" title="Document" href="document.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>DocumentAttribute - PyroTGFork 2.2.16 Layer 214</title>
+        <title>DocumentAttribute - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -960,10 +960,44 @@
             <article role="main" id="furo-main-content" class="article__content">
             <section id="documentattribute">
 <h1>DocumentAttribute<a class="headerlink" href="#documentattribute" title="Link to this heading">#</a></h1>
-<dl class="py attribute">
+<dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.base.DocumentAttribute">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.raw.base.</span></span><span class="sig-name descname"><span class="pre">DocumentAttribute</span></span><a class="headerlink" href="#pyrogram.raw.base.DocumentAttribute" title="Link to this definition">#</a></dt>
-<dd><p>alias of <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../types/document-attribute-animated.html#pyrogram.raw.types.DocumentAttributeAnimated" title="pyrogram.raw.types.document_attribute_animated.DocumentAttributeAnimated"><code class="xref py py-class docutils literal notranslate"><span class="pre">DocumentAttributeAnimated</span></code></a>, <a class="reference internal" href="../types/document-attribute-audio.html#pyrogram.raw.types.DocumentAttributeAudio" title="pyrogram.raw.types.document_attribute_audio.DocumentAttributeAudio"><code class="xref py py-class docutils literal notranslate"><span class="pre">DocumentAttributeAudio</span></code></a>, <a class="reference internal" href="../types/document-attribute-custom-emoji.html#pyrogram.raw.types.DocumentAttributeCustomEmoji" title="pyrogram.raw.types.document_attribute_custom_emoji.DocumentAttributeCustomEmoji"><code class="xref py py-class docutils literal notranslate"><span class="pre">DocumentAttributeCustomEmoji</span></code></a>, <a class="reference internal" href="../types/document-attribute-filename.html#pyrogram.raw.types.DocumentAttributeFilename" title="pyrogram.raw.types.document_attribute_filename.DocumentAttributeFilename"><code class="xref py py-class docutils literal notranslate"><span class="pre">DocumentAttributeFilename</span></code></a>, <a class="reference internal" href="../types/document-attribute-has-stickers.html#pyrogram.raw.types.DocumentAttributeHasStickers" title="pyrogram.raw.types.document_attribute_has_stickers.DocumentAttributeHasStickers"><code class="xref py py-class docutils literal notranslate"><span class="pre">DocumentAttributeHasStickers</span></code></a>, <a class="reference internal" href="../types/document-attribute-image-size.html#pyrogram.raw.types.DocumentAttributeImageSize" title="pyrogram.raw.types.document_attribute_image_size.DocumentAttributeImageSize"><code class="xref py py-class docutils literal notranslate"><span class="pre">DocumentAttributeImageSize</span></code></a>, <a class="reference internal" href="../types/document-attribute-sticker.html#pyrogram.raw.types.DocumentAttributeSticker" title="pyrogram.raw.types.document_attribute_sticker.DocumentAttributeSticker"><code class="xref py py-class docutils literal notranslate"><span class="pre">DocumentAttributeSticker</span></code></a>, <a class="reference internal" href="../types/document-attribute-video.html#pyrogram.raw.types.DocumentAttributeVideo" title="pyrogram.raw.types.document_attribute_video.DocumentAttributeVideo"><code class="xref py py-class docutils literal notranslate"><span class="pre">DocumentAttributeVideo</span></code></a>]</p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.base.</span></span><span class="sig-name descname"><span class="pre">DocumentAttribute</span></span><a class="headerlink" href="#pyrogram.raw.base.DocumentAttribute" title="Link to this definition">#</a></dt>
+<dd><p>Various possible attributes of a document (used to define if it’s a sticker, a GIF, a video, a mask sticker, an image, an audio, and so on)</p>
+<dl>
+<dt>Constructors:</dt><dd><p>This base type has 8 constructors available.</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/document-attribute-animated.html#pyrogram.raw.types.DocumentAttributeAnimated" title="pyrogram.raw.types.DocumentAttributeAnimated"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DocumentAttributeAnimated</span></code></a></p></td>
+<td><p>Defines an animated GIF</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/document-attribute-audio.html#pyrogram.raw.types.DocumentAttributeAudio" title="pyrogram.raw.types.DocumentAttributeAudio"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DocumentAttributeAudio</span></code></a></p></td>
+<td><p>Represents an audio file</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/document-attribute-custom-emoji.html#pyrogram.raw.types.DocumentAttributeCustomEmoji" title="pyrogram.raw.types.DocumentAttributeCustomEmoji"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DocumentAttributeCustomEmoji</span></code></a></p></td>
+<td><p>Info about a custom emoji</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/document-attribute-filename.html#pyrogram.raw.types.DocumentAttributeFilename" title="pyrogram.raw.types.DocumentAttributeFilename"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DocumentAttributeFilename</span></code></a></p></td>
+<td><p>A simple document with a file name</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/document-attribute-has-stickers.html#pyrogram.raw.types.DocumentAttributeHasStickers" title="pyrogram.raw.types.DocumentAttributeHasStickers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DocumentAttributeHasStickers</span></code></a></p></td>
+<td><p>Whether the current document has stickers attached</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/document-attribute-image-size.html#pyrogram.raw.types.DocumentAttributeImageSize" title="pyrogram.raw.types.DocumentAttributeImageSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DocumentAttributeImageSize</span></code></a></p></td>
+<td><p>Defines the width and height of an image uploaded as document</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/document-attribute-sticker.html#pyrogram.raw.types.DocumentAttributeSticker" title="pyrogram.raw.types.DocumentAttributeSticker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DocumentAttributeSticker</span></code></a></p></td>
+<td><p>Defines a sticker</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/document-attribute-video.html#pyrogram.raw.types.DocumentAttributeVideo" title="pyrogram.raw.types.DocumentAttributeVideo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DocumentAttributeVideo</span></code></a></p></td>
+<td><p>Defines a video</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
@@ -1004,7 +1038,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

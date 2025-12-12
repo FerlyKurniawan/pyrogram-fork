@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="Stories" href="../stories/index.html" /><link rel="prev" title="Storage" href="index.html" />
 
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>storage.FileType - PyroTGFork 2.2.16 Layer 214</title>
+        <title>storage.FileType - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -960,10 +960,50 @@
             <article role="main" id="furo-main-content" class="article__content">
             <section id="storage-filetype">
 <h1>storage.FileType<a class="headerlink" href="#storage-filetype" title="Link to this heading">#</a></h1>
-<dl class="py attribute">
+<dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.base.storage.FileType">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.raw.base.storage.</span></span><span class="sig-name descname"><span class="pre">FileType</span></span><a class="headerlink" href="#pyrogram.raw.base.storage.FileType" title="Link to this definition">#</a></dt>
-<dd><p>alias of <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../types/storage/file-gif.html#pyrogram.raw.types.storage.FileGif" title="pyrogram.raw.types.storage.file_gif.FileGif"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileGif</span></code></a>, <a class="reference internal" href="../../types/storage/file-jpeg.html#pyrogram.raw.types.storage.FileJpeg" title="pyrogram.raw.types.storage.file_jpeg.FileJpeg"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileJpeg</span></code></a>, <a class="reference internal" href="../../types/storage/file-mov.html#pyrogram.raw.types.storage.FileMov" title="pyrogram.raw.types.storage.file_mov.FileMov"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileMov</span></code></a>, <a class="reference internal" href="../../types/storage/file-mp3.html#pyrogram.raw.types.storage.FileMp3" title="pyrogram.raw.types.storage.file_mp3.FileMp3"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileMp3</span></code></a>, <a class="reference internal" href="../../types/storage/file-mp4.html#pyrogram.raw.types.storage.FileMp4" title="pyrogram.raw.types.storage.file_mp4.FileMp4"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileMp4</span></code></a>, <a class="reference internal" href="../../types/storage/file-partial.html#pyrogram.raw.types.storage.FilePartial" title="pyrogram.raw.types.storage.file_partial.FilePartial"><code class="xref py py-class docutils literal notranslate"><span class="pre">FilePartial</span></code></a>, <a class="reference internal" href="../../types/storage/file-pdf.html#pyrogram.raw.types.storage.FilePdf" title="pyrogram.raw.types.storage.file_pdf.FilePdf"><code class="xref py py-class docutils literal notranslate"><span class="pre">FilePdf</span></code></a>, <a class="reference internal" href="../../types/storage/file-png.html#pyrogram.raw.types.storage.FilePng" title="pyrogram.raw.types.storage.file_png.FilePng"><code class="xref py py-class docutils literal notranslate"><span class="pre">FilePng</span></code></a>, <a class="reference internal" href="../../types/storage/file-unknown.html#pyrogram.raw.types.storage.FileUnknown" title="pyrogram.raw.types.storage.file_unknown.FileUnknown"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileUnknown</span></code></a>, <a class="reference internal" href="../../types/storage/file-webp.html#pyrogram.raw.types.storage.FileWebp" title="pyrogram.raw.types.storage.file_webp.FileWebp"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileWebp</span></code></a>]</p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.base.storage.</span></span><span class="sig-name descname"><span class="pre">FileType</span></span><a class="headerlink" href="#pyrogram.raw.base.storage.FileType" title="Link to this definition">#</a></dt>
+<dd><p>Object describes the file type.</p>
+<dl>
+<dt>Constructors:</dt><dd><p>This base type has 10 constructors available.</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/storage/file-gif.html#pyrogram.raw.types.storage.FileGif" title="pyrogram.raw.types.storage.FileGif"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FileGif</span></code></a></p></td>
+<td><p>GIF image.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/storage/file-jpeg.html#pyrogram.raw.types.storage.FileJpeg" title="pyrogram.raw.types.storage.FileJpeg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FileJpeg</span></code></a></p></td>
+<td><p>JPEG image.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/storage/file-mov.html#pyrogram.raw.types.storage.FileMov" title="pyrogram.raw.types.storage.FileMov"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FileMov</span></code></a></p></td>
+<td><p>Quicktime video.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/storage/file-mp3.html#pyrogram.raw.types.storage.FileMp3" title="pyrogram.raw.types.storage.FileMp3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FileMp3</span></code></a></p></td>
+<td><p>Mp3 audio.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/storage/file-mp4.html#pyrogram.raw.types.storage.FileMp4" title="pyrogram.raw.types.storage.FileMp4"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FileMp4</span></code></a></p></td>
+<td><p>MPEG-4 video.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/storage/file-partial.html#pyrogram.raw.types.storage.FilePartial" title="pyrogram.raw.types.storage.FilePartial"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FilePartial</span></code></a></p></td>
+<td><p>Part of a bigger file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/storage/file-pdf.html#pyrogram.raw.types.storage.FilePdf" title="pyrogram.raw.types.storage.FilePdf"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FilePdf</span></code></a></p></td>
+<td><p>PDF document image.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/storage/file-png.html#pyrogram.raw.types.storage.FilePng" title="pyrogram.raw.types.storage.FilePng"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FilePng</span></code></a></p></td>
+<td><p>PNG image.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/storage/file-unknown.html#pyrogram.raw.types.storage.FileUnknown" title="pyrogram.raw.types.storage.FileUnknown"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FileUnknown</span></code></a></p></td>
+<td><p>Unknown type.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/storage/file-webp.html#pyrogram.raw.types.storage.FileWebp" title="pyrogram.raw.types.storage.FileWebp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">storage.FileWebp</span></code></a></p></td>
+<td><p>WEBP image.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
@@ -1004,7 +1044,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="stories.ExportStoryLink" href="export-story-link.html" /><link rel="prev" title="stories.DeleteStories" href="delete-stories.html" />
 
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>stories.EditStory - PyroTGFork 2.2.16 Layer 214</title>
+        <title>stories.EditStory - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -963,30 +963,36 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.functions.stories.EditStory">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.stories.</span></span><span class="sig-name descname"><span class="pre">EditStory</span></span><a class="headerlink" href="#pyrogram.raw.functions.stories.EditStory" title="Link to this definition">#</a></dt>
-<dd><p>Edit an uploaded story</p>
-<dl class="simple">
+<dd><p>Edit an uploaded story
+May also be used in a business connection, not by wrapping the query in invokeWithBusinessConnection , but rather by specifying the ID of a controlled business user in peer: in this context, the method can only be used to edit stories posted by the same business bot on behalf of the user with stories.sendStory.</p>
+<blockquote>
+<div><dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">214</span></code></p></li>
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">220</span></code></p></li>
 <li><p>ID: <code class="docutils literal notranslate"><span class="pre">B583BA46</span></code></p></li>
 </ul>
 </dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>peer</strong> (<a class="reference internal" href="../../base/input-peer.html#pyrogram.raw.base.InputPeer" title="pyrogram.raw.base.InputPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPeer</span></code></a>) – Peer where the story was posted.</p></li>
-<li><p><strong>id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – ID of story to edit.</p></li>
-<li><p><strong>media</strong> (<a class="reference internal" href="../../base/input-media.html#pyrogram.raw.base.InputMedia" title="pyrogram.raw.base.InputMedia"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMedia</span></code></a>, <em>optional</em>) – If specified, replaces the story media.</p></li>
-<li><p><strong>media_areas</strong> (List of <a class="reference internal" href="../../base/media-area.html#pyrogram.raw.base.MediaArea" title="pyrogram.raw.base.MediaArea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MediaArea</span></code></a>, <em>optional</em>) – Media areas associated to the story, see here » for more info.</p></li>
-<li><p><strong>caption</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – If specified, replaces the story caption.</p></li>
-<li><p><strong>entities</strong> (List of <a class="reference internal" href="../../base/message-entity.html#pyrogram.raw.base.MessageEntity" title="pyrogram.raw.base.MessageEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – Message entities for styled text in the caption, if allowed by the stories_entities client configuration parameter ».</p></li>
-<li><p><strong>privacy_rules</strong> (List of <a class="reference internal" href="../../base/input-privacy-rule.html#pyrogram.raw.base.InputPrivacyRule" title="pyrogram.raw.base.InputPrivacyRule"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPrivacyRule</span></code></a>, <em>optional</em>) – If specified, alters the privacy settings » of the story, changing who can or can’t view the story.</p></li>
-</ul>
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>peer (<a class="reference internal" href="../../base/input-peer.html#pyrogram.raw.base.InputPeer" title="pyrogram.raw.base.InputPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPeer</span></code></a>):</dt><dd><p>Peer where the story was posted.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference internal" href="../../base/updates.html#pyrogram.raw.base.Updates" title="pyrogram.raw.base.Updates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Updates</span></code></a></p>
+<dt>id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>):</dt><dd><p>ID of story to edit.</p>
+</dd>
+<dt>media (<a class="reference internal" href="../../base/input-media.html#pyrogram.raw.base.InputMedia" title="pyrogram.raw.base.InputMedia"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMedia</span></code></a>, <em>optional</em>):</dt><dd><p>If specified, replaces the story media.</p>
+</dd>
+<dt>media_areas (List of <a class="reference internal" href="../../base/media-area.html#pyrogram.raw.base.MediaArea" title="pyrogram.raw.base.MediaArea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MediaArea</span></code></a>, <em>optional</em>):</dt><dd><p>Media areas associated to the story, see here » for more info.</p>
+</dd>
+<dt>caption (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>If specified, replaces the story caption.</p>
+</dd>
+<dt>entities (List of <a class="reference internal" href="../../base/message-entity.html#pyrogram.raw.base.MessageEntity" title="pyrogram.raw.base.MessageEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>):</dt><dd><p>Message entities for styled text in the caption, if allowed by the stories_entities client configuration parameter ».</p>
+</dd>
+<dt>privacy_rules (List of <a class="reference internal" href="../../base/input-privacy-rule.html#pyrogram.raw.base.InputPrivacyRule" title="pyrogram.raw.base.InputPrivacyRule"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPrivacyRule</span></code></a>, <em>optional</em>):</dt><dd><p>If specified, alters the privacy settings » of the story, changing who can or can’t view the story.</p>
 </dd>
 </dl>
+</dd>
+<dt>Returns:</dt><dd><p><a class="reference internal" href="../../base/updates.html#pyrogram.raw.base.Updates" title="pyrogram.raw.base.Updates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Updates</span></code></a></p>
+</dd>
+</dl>
+</div></blockquote>
 </dd></dl>
 
 </section>
@@ -1027,7 +1033,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="MessageExtendedMedia" href="message-extended-media.html" /><link rel="prev" title="MessageAction" href="message-action.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>MessageEntity - PyroTGFork 2.2.16 Layer 214</title>
+        <title>MessageEntity - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -960,10 +960,83 @@
             <article role="main" id="furo-main-content" class="article__content">
             <section id="messageentity">
 <h1>MessageEntity<a class="headerlink" href="#messageentity" title="Link to this heading">#</a></h1>
-<dl class="py attribute">
+<dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.base.MessageEntity">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.raw.base.</span></span><span class="sig-name descname"><span class="pre">MessageEntity</span></span><a class="headerlink" href="#pyrogram.raw.base.MessageEntity" title="Link to this definition">#</a></dt>
-<dd><p>alias of <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../types/input-message-entity-mention-name.html#pyrogram.raw.types.InputMessageEntityMentionName" title="pyrogram.raw.types.input_message_entity_mention_name.InputMessageEntityMentionName"><code class="xref py py-class docutils literal notranslate"><span class="pre">InputMessageEntityMentionName</span></code></a>, <a class="reference internal" href="../types/message-entity-bank-card.html#pyrogram.raw.types.MessageEntityBankCard" title="pyrogram.raw.types.message_entity_bank_card.MessageEntityBankCard"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntityBankCard</span></code></a>, <a class="reference internal" href="../types/message-entity-blockquote.html#pyrogram.raw.types.MessageEntityBlockquote" title="pyrogram.raw.types.message_entity_blockquote.MessageEntityBlockquote"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntityBlockquote</span></code></a>, <a class="reference internal" href="../types/message-entity-bold.html#pyrogram.raw.types.MessageEntityBold" title="pyrogram.raw.types.message_entity_bold.MessageEntityBold"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntityBold</span></code></a>, <a class="reference internal" href="../types/message-entity-bot-command.html#pyrogram.raw.types.MessageEntityBotCommand" title="pyrogram.raw.types.message_entity_bot_command.MessageEntityBotCommand"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntityBotCommand</span></code></a>, <a class="reference internal" href="../types/message-entity-cashtag.html#pyrogram.raw.types.MessageEntityCashtag" title="pyrogram.raw.types.message_entity_cashtag.MessageEntityCashtag"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntityCashtag</span></code></a>, <a class="reference internal" href="../types/message-entity-code.html#pyrogram.raw.types.MessageEntityCode" title="pyrogram.raw.types.message_entity_code.MessageEntityCode"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntityCode</span></code></a>, <a class="reference internal" href="../types/message-entity-custom-emoji.html#pyrogram.raw.types.MessageEntityCustomEmoji" title="pyrogram.raw.types.message_entity_custom_emoji.MessageEntityCustomEmoji"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntityCustomEmoji</span></code></a>, <a class="reference internal" href="../types/message-entity-email.html#pyrogram.raw.types.MessageEntityEmail" title="pyrogram.raw.types.message_entity_email.MessageEntityEmail"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntityEmail</span></code></a>, <a class="reference internal" href="../types/message-entity-hashtag.html#pyrogram.raw.types.MessageEntityHashtag" title="pyrogram.raw.types.message_entity_hashtag.MessageEntityHashtag"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntityHashtag</span></code></a>, <a class="reference internal" href="../types/message-entity-italic.html#pyrogram.raw.types.MessageEntityItalic" title="pyrogram.raw.types.message_entity_italic.MessageEntityItalic"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntityItalic</span></code></a>, <a class="reference internal" href="../types/message-entity-mention.html#pyrogram.raw.types.MessageEntityMention" title="pyrogram.raw.types.message_entity_mention.MessageEntityMention"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntityMention</span></code></a>, <a class="reference internal" href="../types/message-entity-mention-name.html#pyrogram.raw.types.MessageEntityMentionName" title="pyrogram.raw.types.message_entity_mention_name.MessageEntityMentionName"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntityMentionName</span></code></a>, <a class="reference internal" href="../types/message-entity-phone.html#pyrogram.raw.types.MessageEntityPhone" title="pyrogram.raw.types.message_entity_phone.MessageEntityPhone"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntityPhone</span></code></a>, <a class="reference internal" href="../types/message-entity-pre.html#pyrogram.raw.types.MessageEntityPre" title="pyrogram.raw.types.message_entity_pre.MessageEntityPre"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntityPre</span></code></a>, <a class="reference internal" href="../types/message-entity-spoiler.html#pyrogram.raw.types.MessageEntitySpoiler" title="pyrogram.raw.types.message_entity_spoiler.MessageEntitySpoiler"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntitySpoiler</span></code></a>, <a class="reference internal" href="../types/message-entity-strike.html#pyrogram.raw.types.MessageEntityStrike" title="pyrogram.raw.types.message_entity_strike.MessageEntityStrike"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntityStrike</span></code></a>, <a class="reference internal" href="../types/message-entity-text-url.html#pyrogram.raw.types.MessageEntityTextUrl" title="pyrogram.raw.types.message_entity_text_url.MessageEntityTextUrl"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntityTextUrl</span></code></a>, <a class="reference internal" href="../types/message-entity-underline.html#pyrogram.raw.types.MessageEntityUnderline" title="pyrogram.raw.types.message_entity_underline.MessageEntityUnderline"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntityUnderline</span></code></a>, <a class="reference internal" href="../types/message-entity-unknown.html#pyrogram.raw.types.MessageEntityUnknown" title="pyrogram.raw.types.message_entity_unknown.MessageEntityUnknown"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntityUnknown</span></code></a>, <a class="reference internal" href="../types/message-entity-url.html#pyrogram.raw.types.MessageEntityUrl" title="pyrogram.raw.types.message_entity_url.MessageEntityUrl"><code class="xref py py-class docutils literal notranslate"><span class="pre">MessageEntityUrl</span></code></a>]</p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.base.</span></span><span class="sig-name descname"><span class="pre">MessageEntity</span></span><a class="headerlink" href="#pyrogram.raw.base.MessageEntity" title="Link to this definition">#</a></dt>
+<dd><p>Message entities, representing styled text in a message</p>
+<dl>
+<dt>Constructors:</dt><dd><p>This base type has 21 constructors available.</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/input-message-entity-mention-name.html#pyrogram.raw.types.InputMessageEntityMentionName" title="pyrogram.raw.types.InputMessageEntityMentionName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMessageEntityMentionName</span></code></a></p></td>
+<td><p>Message entity that can be used to create a user user mention: received mentions use the messageEntityMentionName constructor, instead.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/message-entity-bank-card.html#pyrogram.raw.types.MessageEntityBankCard" title="pyrogram.raw.types.MessageEntityBankCard"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityBankCard</span></code></a></p></td>
+<td><p>Indicates a credit card number</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/message-entity-blockquote.html#pyrogram.raw.types.MessageEntityBlockquote" title="pyrogram.raw.types.MessageEntityBlockquote"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityBlockquote</span></code></a></p></td>
+<td><p>Message entity representing a block quote.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/message-entity-bold.html#pyrogram.raw.types.MessageEntityBold" title="pyrogram.raw.types.MessageEntityBold"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityBold</span></code></a></p></td>
+<td><p>Message entity representing bold text.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/message-entity-bot-command.html#pyrogram.raw.types.MessageEntityBotCommand" title="pyrogram.raw.types.MessageEntityBotCommand"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityBotCommand</span></code></a></p></td>
+<td><p>Message entity representing a bot /command</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/message-entity-cashtag.html#pyrogram.raw.types.MessageEntityCashtag" title="pyrogram.raw.types.MessageEntityCashtag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityCashtag</span></code></a></p></td>
+<td><p>Message entity representing a $cashtag.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/message-entity-code.html#pyrogram.raw.types.MessageEntityCode" title="pyrogram.raw.types.MessageEntityCode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityCode</span></code></a></p></td>
+<td><p>Message entity representing a codeblock.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/message-entity-custom-emoji.html#pyrogram.raw.types.MessageEntityCustomEmoji" title="pyrogram.raw.types.MessageEntityCustomEmoji"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityCustomEmoji</span></code></a></p></td>
+<td><p>Represents a custom emoji.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/message-entity-email.html#pyrogram.raw.types.MessageEntityEmail" title="pyrogram.raw.types.MessageEntityEmail"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityEmail</span></code></a></p></td>
+<td><p>Message entity representing an <a class="reference external" href="mailto:email&#37;&#52;&#48;example&#46;com">email<span>&#64;</span>example<span>&#46;</span>com</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/message-entity-hashtag.html#pyrogram.raw.types.MessageEntityHashtag" title="pyrogram.raw.types.MessageEntityHashtag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityHashtag</span></code></a></p></td>
+<td><p>#hashtag message entity</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/message-entity-italic.html#pyrogram.raw.types.MessageEntityItalic" title="pyrogram.raw.types.MessageEntityItalic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityItalic</span></code></a></p></td>
+<td><p>Message entity representing italic text.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/message-entity-mention.html#pyrogram.raw.types.MessageEntityMention" title="pyrogram.raw.types.MessageEntityMention"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityMention</span></code></a></p></td>
+<td><p>Message entity mentioning a user by &#64;username; messageEntityMentionName can also be used to mention users by their ID.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/message-entity-mention-name.html#pyrogram.raw.types.MessageEntityMentionName" title="pyrogram.raw.types.MessageEntityMentionName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityMentionName</span></code></a></p></td>
+<td><p>Message entity representing a user mention: for creating a mention use inputMessageEntityMentionName.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/message-entity-phone.html#pyrogram.raw.types.MessageEntityPhone" title="pyrogram.raw.types.MessageEntityPhone"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityPhone</span></code></a></p></td>
+<td><p>Message entity representing a phone number.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/message-entity-pre.html#pyrogram.raw.types.MessageEntityPre" title="pyrogram.raw.types.MessageEntityPre"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityPre</span></code></a></p></td>
+<td><p>Message entity representing a preformatted codeblock, allowing the user to specify a programming language for the codeblock.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/message-entity-spoiler.html#pyrogram.raw.types.MessageEntitySpoiler" title="pyrogram.raw.types.MessageEntitySpoiler"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntitySpoiler</span></code></a></p></td>
+<td><p>Message entity representing a spoiler</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/message-entity-strike.html#pyrogram.raw.types.MessageEntityStrike" title="pyrogram.raw.types.MessageEntityStrike"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityStrike</span></code></a></p></td>
+<td><p>Message entity representing strikethrough text.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/message-entity-text-url.html#pyrogram.raw.types.MessageEntityTextUrl" title="pyrogram.raw.types.MessageEntityTextUrl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityTextUrl</span></code></a></p></td>
+<td><p>Message entity representing a text url: for in-text urls like <a class="reference external" href="https://google.com">https://google.com</a> use messageEntityUrl.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/message-entity-underline.html#pyrogram.raw.types.MessageEntityUnderline" title="pyrogram.raw.types.MessageEntityUnderline"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityUnderline</span></code></a></p></td>
+<td><p>Message entity representing underlined text.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../types/message-entity-unknown.html#pyrogram.raw.types.MessageEntityUnknown" title="pyrogram.raw.types.MessageEntityUnknown"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityUnknown</span></code></a></p></td>
+<td><p>Unknown message entity</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../types/message-entity-url.html#pyrogram.raw.types.MessageEntityUrl" title="pyrogram.raw.types.MessageEntityUrl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityUrl</span></code></a></p></td>
+<td><p>Message entity representing an in-text url: <a class="reference external" href="https://google.com">https://google.com</a>; for text urls, use messageEntityTextUrl.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
@@ -1004,7 +1077,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

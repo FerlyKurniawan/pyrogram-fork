@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Changes in this Fork - PyroTGFork 2.2.16 Layer 214</title>
+        <title>Changes in this Fork - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -987,6 +987,25 @@ it can take advantage of new goodies!</p>
 <div class="table-wrapper docutils container">
 <table class="docutils align-default">
 <tbody>
+<tr class="row-odd"><td><p>Scheme layer used: 220</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>fix: set description correctly in <a class="reference internal" href="../api/types/InlineQueryResultAnimation.html#pyrogram.types.InlineQueryResultAnimation" title="pyrogram.types.InlineQueryResultAnimation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineQueryResultAnimation</span></code></a> (contributed by &#64;Krau in <a class="reference external" href="https://github.com/KurimuzonAkuma/kurigram/pull/262">#262</a>).</p></li>
+<li><p>Add generic return type for <a class="reference internal" href="../api/methods/invoke.html#pyrogram.Client.invoke" title="pyrogram.Client.invoke"><code class="xref py py-meth docutils literal notranslate"><span class="pre">invoke()</span></code></a> (contributed by &#64;ZeN220 in <a class="reference external" href="https://github.com/KurimuzonAkuma/kurigram/pull/252">#252</a>).</p></li>
+<li><p>fix: <a class="reference internal" href="../api/methods/copy_message.html#pyrogram.Client.copy_message" title="pyrogram.Client.copy_message"><code class="xref py py-meth docutils literal notranslate"><span class="pre">copy_message()</span></code></a> and <a class="reference internal" href="../api/bound-methods/Message.copy.html#pyrogram.types.Message.copy" title="pyrogram.types.Message.copy"><code class="xref py py-meth docutils literal notranslate"><span class="pre">copy()</span></code></a> (contributed by &#64;beepsound in <a class="reference external" href="https://github.com/TelegramPlayground/pyrogram/pull/210">#210</a>).</p></li>
+<li><p>fix: file pointer position before returning file (contributed by &#64;anonymousx97)</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">offset_date</span></code> and <code class="docutils literal notranslate"><span class="pre">offset_message_id</span></code> in <a class="reference internal" href="../api/methods/get_dialogs.html#pyrogram.Client.get_dialogs" title="pyrogram.Client.get_dialogs"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_dialogs()</span></code></a> and <a class="reference internal" href="../api/methods/search_global.html#pyrogram.Client.search_global" title="pyrogram.Client.search_global"><code class="xref py py-meth docutils literal notranslate"><span class="pre">search_global()</span></code></a>.</p></li>
+<li><p>Enhance <code class="docutils literal notranslate"><span class="pre">full_name</span></code> property of <a class="reference internal" href="../api/types/Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a> (contributed by &#64;Ling-ex in <a class="reference external" href="https://github.com/TelegramPlayground/pyrogram/pull/206">#206</a>).</p></li>
+<li><p>fix: <a class="reference internal" href="../api/methods/set_chat_permissions.html#pyrogram.Client.set_chat_permissions" title="pyrogram.Client.set_chat_permissions"><code class="xref py py-meth docutils literal notranslate"><span class="pre">set_chat_permissions()</span></code></a> method (contributed by &#64;sudo-py-dev in <a class="reference external" href="https://github.com/TelegramPlayground/pyrogram/pull/204">#204</a>).</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">message_effect_id</span></code> in <a class="reference internal" href="../api/methods/forward_messages.html#pyrogram.Client.forward_messages" title="pyrogram.Client.forward_messages"><code class="xref py py-meth docutils literal notranslate"><span class="pre">forward_messages()</span></code></a> and <a class="reference internal" href="../api/bound-methods/Message.forward.html#pyrogram.types.Message.forward" title="pyrogram.types.Message.forward"><code class="xref py py-meth docutils literal notranslate"><span class="pre">forward()</span></code></a>.</p></li>
+<li><p>View <a class="reference external" href="https://telegramplayground.github.io/TG-APIs/TL/diff/tdlib.html?from=214&amp;to=220">new and changed</a> <a class="reference external" href="https://telegramplayground.github.io/TG-APIs/TL/diff/tdesktop.html?from=214&amp;to=220">raw API methods</a>.</p></li>
+</ul>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
 <tr class="row-odd"><td><p>Scheme layer used: 214</p></td>
 </tr>
 </tbody>
@@ -1700,7 +1719,7 @@ it can take advantage of new goodies!</p>
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

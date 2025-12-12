@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="420 - Flood" href="flood.html" /><link rel="prev" title="403 - Forbidden" href="forbidden.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>406 - NotAcceptable - PyroTGFork 2.2.16 Layer 214</title>
+        <title>406 - NotAcceptable - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -968,6 +968,12 @@
 </tr>
 </thead>
 <tbody>
+<tr class="row-even"><td><p>ALLOW_PAYMENT_REQUIRED</p></td>
+<td><p>This peer only accepts [paid messages](<a class="reference external" href="https://core.telegram.org/api/paid-messages">https://core.telegram.org/api/paid-messages</a>): this error is only emitted for older layers without paid messages support, so the client must be updated in order to use paid messages.  .</p></td>
+</tr>
+<tr class="row-odd"><td><p>API_GIFT_RESTRICTED_UPDATE_APP</p></td>
+<td><p>Please update the app to access the gift API.</p></td>
+</tr>
 <tr class="row-even"><td><p>AUTH_KEY_DUPLICATED</p></td>
 <td><p>Concurrent usage of the current session from multiple connections was detected, the current session was invalidated by the server for security reasons!</p></td>
 </tr>
@@ -993,7 +999,7 @@
 <td><p>You can’t forward messages from a protected chat.</p></td>
 </tr>
 <tr class="row-even"><td><p>FILEREF_UPGRADE_NEEDED</p></td>
-<td><p>The client has to be updated in order to support [file references](<a class="reference external" href="https://core.telegram.org/api/file_reference">https://core.telegram.org/api/file_reference</a>).</p></td>
+<td><p>The client has to be updated in order to support [file references](<a class="reference external" href="https://core.telegram.org/api/file-references">https://core.telegram.org/api/file-references</a>).</p></td>
 </tr>
 <tr class="row-odd"><td><p>FRESH_CHANGE_ADMINS_FORBIDDEN</p></td>
 <td><p>You were just elected admin, you can’t add or modify other admins yet.</p></td>
@@ -1010,11 +1016,17 @@
 <tr class="row-odd"><td><p>PAYMENT_UNSUPPORTED</p></td>
 <td><p>A detailed description of the error will be received separately as described [here](<a class="reference external" href="https://core.telegram.org/api/errors#406-not-acceptable">https://core.telegram.org/api/errors#406-not-acceptable</a>).</p></td>
 </tr>
-<tr class="row-even"><td><p>PHONE_NUMBER_INVALID</p></td>
+<tr class="row-even"><td><p>PEER_ID_INVALID</p></td>
+<td><p>The provided peer id is invalid.</p></td>
+</tr>
+<tr class="row-odd"><td><p>PHONE_NUMBER_INVALID</p></td>
 <td><p>The phone number is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>PHONE_PASSWORD_FLOOD</p></td>
+<tr class="row-even"><td><p>PHONE_PASSWORD_FLOOD</p></td>
 <td><p>You have tried logging in too many times.</p></td>
+</tr>
+<tr class="row-odd"><td><p>PRECHECKOUT_FAILED</p></td>
+<td><p>Precheckout failed, a detailed and localized description for the error will be emitted via an [updateServiceNotification as specified here](<a class="reference external" href="https://core.telegram.org/api/errors#406-not-acceptable">https://core.telegram.org/api/errors#406-not-acceptable</a>).</p></td>
 </tr>
 <tr class="row-even"><td><p>PREMIUM_CURRENTLY_UNAVAILABLE</p></td>
 <td><p>You cannot currently purchase a Premium subscription.</p></td>
@@ -1029,19 +1041,25 @@
 <td><p>Returned when all available options for this type of number were already used (e.g. flash-call, then SMS, then this error might be returned to trigger a second resend).</p></td>
 </tr>
 <tr class="row-even"><td><p>STARGIFT_EXPORT_IN_PROGRESS</p></td>
-<td><p>Gift export in progress.</p></td>
+<td><p>A gift export is in progress, a detailed and localized description for the error will be emitted via an [updateServiceNotification as specified here](<a class="reference external" href="https://core.telegram.org/api/errors#406-not-acceptable">https://core.telegram.org/api/errors#406-not-acceptable</a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p>STICKERSET_INVALID</p></td>
+<tr class="row-odd"><td><p>STARS_FORM_AMOUNT_MISMATCH</p></td>
+<td><p>The form amount has changed, please fetch the new form using [payments.getPaymentForm](<a class="reference external" href="https://core.telegram.org/method/payments.getPaymentForm">https://core.telegram.org/method/payments.getPaymentForm</a>) and restart the process.</p></td>
+</tr>
+<tr class="row-even"><td><p>STICKERSET_INVALID</p></td>
 <td><p>The provided sticker set is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>STICKERSET_OWNER_ANONYMOUS</p></td>
+<tr class="row-odd"><td><p>STICKERSET_OWNER_ANONYMOUS</p></td>
 <td><p>Provided stickerset can’t be installed as group stickerset to prevent admin deanonymization.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TOPIC_CLOSED</p></td>
+<tr class="row-even"><td><p>TOPIC_CLOSED</p></td>
 <td><p>This topic was closed, you can’t send messages to it anymore.</p></td>
 </tr>
-<tr class="row-even"><td><p>TOPIC_DELETED</p></td>
+<tr class="row-odd"><td><p>TOPIC_DELETED</p></td>
 <td><p>The specified topic was deleted.</p></td>
+</tr>
+<tr class="row-even"><td><p>TRANSLATIONS_DISABLED</p></td>
+<td><p>Translations are unavailable, a detailed and localized description for the error will be emitted via an [updateServiceNotification as specified here](<a class="reference external" href="https://core.telegram.org/api/errors#406-not-acceptable">https://core.telegram.org/api/errors#406-not-acceptable</a>).</p></td>
 </tr>
 <tr class="row-odd"><td><p>UPDATE_APP_TO_LOGIN</p></td>
 <td><p>Please update your client to login.</p></td>
@@ -1096,7 +1114,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="BusinessChatLink" href="business-chat-link.html" /><link rel="prev" title="BusinessBotRecipients" href="business-bot-recipients.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>BusinessBotRights - PyroTGFork 2.2.16 Layer 214</title>
+        <title>BusinessBotRights - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -963,25 +963,35 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.types.BusinessBotRights">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">BusinessBotRights</span></span><a class="headerlink" href="#pyrogram.raw.types.BusinessBotRights" title="Link to this definition">#</a></dt>
-<dd><blockquote>
-<div><p>Business bot rights.</p>
-</div></blockquote>
-<p>Business users can connect Telegram bots that will process and answer messages on their behalf. This allows businesses to seamlessly integrate any existing tools and workflows, or add AI assistants that manage their chats.</p>
-<blockquote>
-<div><dl>
-<dt>Constructors:</dt><dd><p>This base type has 1 constructor available.</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrogram.raw.types.BusinessBotRights" title="pyrogram.raw.types.BusinessBotRights"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BusinessBotRights</span></code></a></p></td>
-<td><p>Business bot rights.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<dd><p>Business bot rights.</p>
+<p>Constructor of <a class="reference internal" href="../base/business-bot-rights.html#pyrogram.raw.base.BusinessBotRights" title="pyrogram.raw.base.BusinessBotRights"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BusinessBotRights</span></code></a>.</p>
+<dl class="simple">
+<dt>Details:</dt><dd><ul class="simple">
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">220</span></code></p></li>
+<li><p>ID: <code class="docutils literal notranslate"><span class="pre">A0624CF7</span></code></p></li>
+</ul>
 </dd>
 </dl>
-</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>reply</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the bot can send and edit messages in private chats that had incoming messages in the last 24 hours.</p></li>
+<li><p><strong>read_messages</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the bot can mark incoming private messages as read.</p></li>
+<li><p><strong>delete_sent_messages</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the bot can delete messages sent by the bot.</p></li>
+<li><p><strong>delete_received_messages</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the bot can delete received private messages in managed chats.</p></li>
+<li><p><strong>edit_name</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the bot can edit the first and last name of the business account.</p></li>
+<li><p><strong>edit_bio</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the bot can edit the bio of the business account.</p></li>
+<li><p><strong>edit_profile_photo</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the bot can edit the profile photo of the business account.</p></li>
+<li><p><strong>edit_username</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the bot can edit the username of the business account.</p></li>
+<li><p><strong>view_gifts</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the bot can view gifts and the amount of Telegram Stars owned by the business account.</p></li>
+<li><p><strong>sell_gifts</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the bot can convert regular gifts owned by the business account to Telegram Stars.</p></li>
+<li><p><strong>change_gift_settings</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the bot can change the privacy settings pertaining to gifts for the business account.</p></li>
+<li><p><strong>transfer_and_upgrade_gifts</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the bot can transfer and upgrade gifts owned by the business account.</p></li>
+<li><p><strong>transfer_stars</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the bot can transfer Telegram Stars received by the business account to its own account, or use them to upgrade and transfer gifts.</p></li>
+<li><p><strong>manage_stories</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether the bot can post, edit and delete stories on behalf of the business account.</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
@@ -1022,7 +1032,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

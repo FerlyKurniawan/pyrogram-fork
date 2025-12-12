@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="premium.MyBoosts" href="my-boosts.html" /><link rel="prev" title="premium.BoostsList" href="boosts-list.html" />
 
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>premium.BoostsStatus - PyroTGFork 2.2.16 Layer 214</title>
+        <title>premium.BoostsStatus - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -963,23 +963,32 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.types.premium.BoostsStatus">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.premium.</span></span><span class="sig-name descname"><span class="pre">BoostsStatus</span></span><a class="headerlink" href="#pyrogram.raw.types.premium.BoostsStatus" title="Link to this definition">#</a></dt>
-<dd><blockquote>
-<div><p>Contains info about the current boost status of a peer.</p>
-</div></blockquote>
-<p>Telegram Premium users can grant their favorite channels and supergroups additional features like the ability to post stories by giving them boosts.</p>
-<blockquote>
-<div><dl>
-<dt>Constructors:</dt><dd><p>This base type has 1 constructor available.</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrogram.raw.types.premium.BoostsStatus" title="pyrogram.raw.types.premium.BoostsStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">premium.BoostsStatus</span></code></a></p></td>
-<td><p>Contains info about the current boost status of a peer.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<dd><p>Contains info about the current boost status of a peer.</p>
+<p>Constructor of <a class="reference internal" href="../../base/premium/boosts-status.html#pyrogram.raw.base.premium.BoostsStatus" title="pyrogram.raw.base.premium.BoostsStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BoostsStatus</span></code></a>.</p>
+<dl class="simple">
+<dt>Details:</dt><dd><ul class="simple">
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">220</span></code></p></li>
+<li><p>ID: <code class="docutils literal notranslate"><span class="pre">4959427A</span></code></p></li>
+</ul>
 </dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>level</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – The current boost level of the channel/supergroup.</p></li>
+<li><p><strong>current_level_boosts</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – The number of boosts acquired so far in the current level.</p></li>
+<li><p><strong>boosts</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Total number of boosts acquired so far.</p></li>
+<li><p><strong>boost_url</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Boost deep link » that can be used to boost the chat.</p></li>
+<li><p><strong>my_boost</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether we’re currently boosting this channel/supergroup, my_boost_slots will also be set.</p></li>
+<li><p><strong>gift_boosts</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – The number of boosts acquired from created Telegram Premium gift codes and giveaways; only returned to channel/supergroup admins.</p></li>
+<li><p><strong>next_level_boosts</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Total number of boosts needed to reach the next level; if absent, the next level isn’t available.</p></li>
+<li><p><strong>premium_audience</strong> (<a class="reference internal" href="../../base/stats-percent-value.html#pyrogram.raw.base.StatsPercentValue" title="pyrogram.raw.base.StatsPercentValue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StatsPercentValue</span></code></a>, <em>optional</em>) – Only returned to channel/supergroup admins: contains the approximated number of Premium users subscribed to the channel/supergroup, related to the total number of subscribers.</p></li>
+<li><p><strong>prepaid_giveaways</strong> (List of <a class="reference internal" href="../../base/prepaid-giveaway.html#pyrogram.raw.base.PrepaidGiveaway" title="pyrogram.raw.base.PrepaidGiveaway"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PrepaidGiveaway</span></code></a>, <em>optional</em>) – A list of prepaid giveaways available for the chat; only returned to channel/supergroup admins.</p></li>
+<li><p><strong>my_boost_slots</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Indicates which of our boost slots we’ve assigned to this peer (populated if my_boost is set).</p></li>
+</ul>
+</dd>
+</dl>
+<dl>
 <dt>Functions:</dt><dd><p>This object can be returned by 1 function.</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
@@ -992,7 +1001,6 @@
 </div>
 </dd>
 </dl>
-</div></blockquote>
 </dd></dl>
 
 </section>
@@ -1033,7 +1041,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

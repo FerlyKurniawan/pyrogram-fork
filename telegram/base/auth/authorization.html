@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="auth.CodeType" href="code-type.html" /><link rel="prev" title="Auth" href="index.html" />
 
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>auth.Authorization - PyroTGFork 2.2.16 Layer 214</title>
+        <title>auth.Authorization - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -960,10 +960,58 @@
             <article role="main" id="furo-main-content" class="article__content">
             <section id="auth-authorization">
 <h1>auth.Authorization<a class="headerlink" href="#auth-authorization" title="Link to this heading">#</a></h1>
-<dl class="py attribute">
+<dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.base.auth.Authorization">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.raw.base.auth.</span></span><span class="sig-name descname"><span class="pre">Authorization</span></span><a class="headerlink" href="#pyrogram.raw.base.auth.Authorization" title="Link to this definition">#</a></dt>
-<dd><p>alias of <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../types/auth/authorization.html#pyrogram.raw.types.auth.Authorization" title="pyrogram.raw.types.auth.authorization.Authorization"><code class="xref py py-class docutils literal notranslate"><span class="pre">Authorization</span></code></a>, <a class="reference internal" href="../../types/auth/authorization-sign-up-required.html#pyrogram.raw.types.auth.AuthorizationSignUpRequired" title="pyrogram.raw.types.auth.authorization_sign_up_required.AuthorizationSignUpRequired"><code class="xref py py-class docutils literal notranslate"><span class="pre">AuthorizationSignUpRequired</span></code></a>]</p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.base.auth.</span></span><span class="sig-name descname"><span class="pre">Authorization</span></span><a class="headerlink" href="#pyrogram.raw.base.auth.Authorization" title="Link to this definition">#</a></dt>
+<dd><p>Object contains info on user authorization.</p>
+<dl>
+<dt>Constructors:</dt><dd><p>This base type has 2 constructors available.</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/auth/authorization.html#pyrogram.raw.types.auth.Authorization" title="pyrogram.raw.types.auth.Authorization"><code class="xref py py-obj docutils literal notranslate"><span class="pre">auth.Authorization</span></code></a></p></td>
+<td><p>Contains user authorization info.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/auth/authorization-sign-up-required.html#pyrogram.raw.types.auth.AuthorizationSignUpRequired" title="pyrogram.raw.types.auth.AuthorizationSignUpRequired"><code class="xref py py-obj docutils literal notranslate"><span class="pre">auth.AuthorizationSignUpRequired</span></code></a></p></td>
+<td><p>An account with this phone number doesn't exist on telegram: the user has to enter basic information and sign up</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd>
+<dt>Functions:</dt><dd><p>This object can be returned by 8 functions.</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../functions/auth/sign-up.html#pyrogram.raw.functions.auth.SignUp" title="pyrogram.raw.functions.auth.SignUp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">auth.SignUp</span></code></a></p></td>
+<td><p>Registers a validated phone number in the system.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../functions/auth/sign-in.html#pyrogram.raw.functions.auth.SignIn" title="pyrogram.raw.functions.auth.SignIn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">auth.SignIn</span></code></a></p></td>
+<td><p>Signs in a user with a validated phone number.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../functions/auth/import-authorization.html#pyrogram.raw.functions.auth.ImportAuthorization" title="pyrogram.raw.functions.auth.ImportAuthorization"><code class="xref py py-obj docutils literal notranslate"><span class="pre">auth.ImportAuthorization</span></code></a></p></td>
+<td><p>Logs in a user using a key transmitted from his native data-center.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../functions/auth/import-bot-authorization.html#pyrogram.raw.functions.auth.ImportBotAuthorization" title="pyrogram.raw.functions.auth.ImportBotAuthorization"><code class="xref py py-obj docutils literal notranslate"><span class="pre">auth.ImportBotAuthorization</span></code></a></p></td>
+<td><p>Login as a bot</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../functions/auth/check-password.html#pyrogram.raw.functions.auth.CheckPassword" title="pyrogram.raw.functions.auth.CheckPassword"><code class="xref py py-obj docutils literal notranslate"><span class="pre">auth.CheckPassword</span></code></a></p></td>
+<td><p>Try logging to an account protected by a 2FA password.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../functions/auth/recover-password.html#pyrogram.raw.functions.auth.RecoverPassword" title="pyrogram.raw.functions.auth.RecoverPassword"><code class="xref py py-obj docutils literal notranslate"><span class="pre">auth.RecoverPassword</span></code></a></p></td>
+<td><p>Reset the 2FA password using the recovery code sent using auth.requestPasswordRecovery.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../functions/auth/import-web-token-authorization.html#pyrogram.raw.functions.auth.ImportWebTokenAuthorization" title="pyrogram.raw.functions.auth.ImportWebTokenAuthorization"><code class="xref py py-obj docutils literal notranslate"><span class="pre">auth.ImportWebTokenAuthorization</span></code></a></p></td>
+<td><p>Login by importing an authorization token</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../functions/auth/finish-passkey-login.html#pyrogram.raw.functions.auth.FinishPasskeyLogin" title="pyrogram.raw.functions.auth.FinishPasskeyLogin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">auth.FinishPasskeyLogin</span></code></a></p></td>
+<td><p>Details:</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
@@ -1004,7 +1052,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

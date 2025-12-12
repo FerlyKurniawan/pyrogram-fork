@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="401 - Unauthorized" href="unauthorized.html" /><link rel="prev" title="303 - SeeOther" href="see-other.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>400 - BadRequest - PyroTGFork 2.2.16 Layer 214</title>
+        <title>400 - BadRequest - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -1094,92 +1094,98 @@
 <tr class="row-odd"><td><p>BOT_DOMAIN_INVALID</p></td>
 <td><p>Bot domain invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>BOT_GAMES_DISABLED</p></td>
+<tr class="row-even"><td><p>BOT_FALLBACK_UNSUPPORTED</p></td>
+<td><p>The fallback flag can’t be set for bots.</p></td>
+</tr>
+<tr class="row-odd"><td><p>BOT_GAMES_DISABLED</p></td>
 <td><p>Games can’t be sent to channels.</p></td>
 </tr>
-<tr class="row-odd"><td><p>BOT_GROUPS_BLOCKED</p></td>
+<tr class="row-even"><td><p>BOT_GROUPS_BLOCKED</p></td>
 <td><p>This bot can’t be added to groups.</p></td>
 </tr>
-<tr class="row-even"><td><p>BOT_INLINE_DISABLED</p></td>
+<tr class="row-odd"><td><p>BOT_INLINE_DISABLED</p></td>
 <td><p>This bot can’t be used in inline mode.</p></td>
 </tr>
-<tr class="row-odd"><td><p>BOT_INVALID</p></td>
+<tr class="row-even"><td><p>BOT_INVALID</p></td>
 <td><p>This is not a valid bot.</p></td>
 </tr>
-<tr class="row-even"><td><p>BOT_INVOICE_INVALID</p></td>
+<tr class="row-odd"><td><p>BOT_INVOICE_INVALID</p></td>
 <td><p>The specified invoice is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>BOT_METHOD_INVALID</p></td>
+<tr class="row-even"><td><p>BOT_METHOD_INVALID</p></td>
 <td><p>The specified method cannot be used by bots.</p></td>
 </tr>
-<tr class="row-even"><td><p>BOT_MISSING</p></td>
+<tr class="row-odd"><td><p>BOT_MISSING</p></td>
 <td><p>This method can only be run by a bot</p></td>
 </tr>
-<tr class="row-odd"><td><p>BOT_NOT_CONNECTED_YET</p></td>
+<tr class="row-even"><td><p>BOT_NOT_CONNECTED_YET</p></td>
 <td><p>No [business bot](<a class="reference external" href="https://core.telegram.org/api/business#connected-bots">https://core.telegram.org/api/business#connected-bots</a>) is connected to the currently logged in user.</p></td>
 </tr>
-<tr class="row-even"><td><p>BOT_ONESIDE_NOT_AVAIL</p></td>
+<tr class="row-odd"><td><p>BOT_ONESIDE_NOT_AVAIL</p></td>
 <td><p>Bots can’t pin messages in PM just for themselves.</p></td>
 </tr>
-<tr class="row-odd"><td><p>BOT_PAYMENTS_DISABLED</p></td>
+<tr class="row-even"><td><p>BOT_PAYMENTS_DISABLED</p></td>
 <td><p>Please enable bot payments in botfather before calling this method.</p></td>
 </tr>
-<tr class="row-even"><td><p>BOT_POLLS_DISABLED</p></td>
+<tr class="row-odd"><td><p>BOT_POLLS_DISABLED</p></td>
 <td><p>Sending polls by bots has been disabled</p></td>
 </tr>
-<tr class="row-odd"><td><p>BOT_RESPONSE_TIMEOUT</p></td>
+<tr class="row-even"><td><p>BOT_RESPONSE_TIMEOUT</p></td>
 <td><p>A timeout occurred while fetching data from the bot.</p></td>
 </tr>
-<tr class="row-even"><td><p>BOT_SCORE_NOT_MODIFIED</p></td>
+<tr class="row-odd"><td><p>BOT_SCORE_NOT_MODIFIED</p></td>
 <td><p>The score wasn’t modified.</p></td>
 </tr>
-<tr class="row-odd"><td><p>BOT_WEBVIEW_DISABLED</p></td>
+<tr class="row-even"><td><p>BOT_WEBVIEW_DISABLED</p></td>
 <td><p>A webview cannot be opened in the specified conditions: emitted for example if <cite>from_bot_menu</cite> or <cite>url</cite> are set and <cite>peer</cite> is not the chat with the bot.</p></td>
 </tr>
-<tr class="row-even"><td><p>BROADCAST_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>BROADCAST_ID_INVALID</p></td>
 <td><p>Broadcast ID invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>BROADCAST_PUBLIC_VOTERS_FORBIDDEN</p></td>
+<tr class="row-even"><td><p>BROADCAST_PUBLIC_VOTERS_FORBIDDEN</p></td>
 <td><p>You can’t forward polls with public voters.</p></td>
 </tr>
-<tr class="row-even"><td><p>BROADCAST_REQUIRED</p></td>
+<tr class="row-odd"><td><p>BROADCAST_REQUIRED</p></td>
 <td><p>This method can only be called on a channel, please use stats.getMegagroupStats for supergroups.</p></td>
 </tr>
-<tr class="row-odd"><td><p>BUSINESS_BOT_MISSING</p></td>
+<tr class="row-even"><td><p>BUSINESS_BOT_MISSING</p></td>
 <td><p>The business bot is missing.</p></td>
 </tr>
-<tr class="row-even"><td><p>BUSINESS_CONNECTION_INVALID</p></td>
-<td><p>The business connection is invalid.</p></td>
+<tr class="row-odd"><td><p>BUSINESS_CONNECTION_INVALID</p></td>
+<td><p>The <cite>connection_id</cite> passed to the wrapping [invokeWithBusinessConnection](<a class="reference external" href="https://core.telegram.org/api/business">https://core.telegram.org/api/business</a>) call is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>BUSINESS_CONNECTION_NOT_ALLOWED</p></td>
-<td><p>This business connection is not allowed.</p></td>
+<tr class="row-even"><td><p>BUSINESS_CONNECTION_NOT_ALLOWED</p></td>
+<td><p>This method was invoked over a business connection using [invokeWithBusinessConnection](<a class="reference external" href="https://core.telegram.org/api/business#connected-bots">https://core.telegram.org/api/business#connected-bots</a>), but either (1) we’re a user, and users cannot invoke methods over a business connection; (2) we’re a bot, but business mode was disabled in &#64;botfather or (3); we’re a bot, but this method cannot be invoked over a business connection.</p></td>
 </tr>
-<tr class="row-even"><td><p>BUSINESS_PEER_INVALID</p></td>
+<tr class="row-odd"><td><p>BUSINESS_PEER_INVALID</p></td>
 <td><p>Messages can’t be set to the specified peer through the current [business connection](<a class="reference external" href="https://core.telegram.org/api/business#connected-bots">https://core.telegram.org/api/business#connected-bots</a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p>BUSINESS_PEER_USAGE_MISSING</p></td>
+<tr class="row-even"><td><p>BUSINESS_PEER_USAGE_MISSING</p></td>
 <td><p>You cannot send a message to a user through a [business connection](<a class="reference external" href="https://core.telegram.org/api/business#connected-bots">https://core.telegram.org/api/business#connected-bots</a>) if the user hasn’t recently contacted us.</p></td>
 </tr>
-<tr class="row-even"><td><p>BUSINESS_RECIPIENTS_EMPTY</p></td>
+<tr class="row-odd"><td><p>BUSINESS_RECIPIENTS_EMPTY</p></td>
 <td><p>You didn’t set any flag in inputBusinessBotRecipients, thus the bot cannot work with <em>any</em> peer.</p></td>
 </tr>
-<tr class="row-odd"><td><p>BUSINESS_RECIPIENTS_INVALID</p></td>
+<tr class="row-even"><td><p>BUSINESS_RECIPIENTS_INVALID</p></td>
 <td><p>The specified inputBusinessBotRecipients is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>BUSINESS_WORK_HOURS_EMPTY</p></td>
+<tr class="row-odd"><td><p>BUSINESS_WORK_HOURS_EMPTY</p></td>
 <td><p>No work hours were specified.</p></td>
 </tr>
-<tr class="row-odd"><td><p>BUSINESS_WORK_HOURS_PERIOD_INVALID</p></td>
+<tr class="row-even"><td><p>BUSINESS_WORK_HOURS_PERIOD_INVALID</p></td>
 <td><p>The specified work hours are invalid, see [here](<a class="reference external" href="https://core.telegram.org/api/business#opening-hours">https://core.telegram.org/api/business#opening-hours</a>) for the exact requirements.</p></td>
 </tr>
-<tr class="row-even"><td><p>BUTTON_COPY_TEXT_INVALID</p></td>
+<tr class="row-odd"><td><p>BUTTON_COPY_TEXT_INVALID</p></td>
 <td><p>The specified [keyboardButtonCopy](<a class="reference external" href="https://core.telegram.org/constructor/keyboardButtonCopy">https://core.telegram.org/constructor/keyboardButtonCopy</a>).`copy_text` is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>BUTTON_DATA_INVALID</p></td>
+<tr class="row-even"><td><p>BUTTON_DATA_INVALID</p></td>
 <td><p>The data of one or more of the buttons you provided is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>BUTTON_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>BUTTON_ID_INVALID</p></td>
 <td><p>The specified button ID is invalid.</p></td>
+</tr>
+<tr class="row-even"><td><p>BUTTON_INVALID</p></td>
+<td><p>The specified button is invalid.</p></td>
 </tr>
 <tr class="row-odd"><td><p>BUTTON_POS_INVALID</p></td>
 <td><p>The position of one of the keyboard buttons is invalid (i.e. a Game or Pay button not in the first position, and so on…).</p></td>
@@ -1214,188 +1220,200 @@
 <tr class="row-odd"><td><p>CALL_PROTOCOL_FLAGS_INVALID</p></td>
 <td><p>Call protocol flags invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>CDN_METHOD_INVALID</p></td>
+<tr class="row-even"><td><p>CALL_PROTOCOL_LAYER_INVALID</p></td>
+<td><p>The specified protocol layer version range is invalid.</p></td>
+</tr>
+<tr class="row-odd"><td><p>CDN_METHOD_INVALID</p></td>
 <td><p>You can’t call this method in a CDN DC.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHANNELS_ADMIN_LOCATED_TOO_MUCH</p></td>
+<tr class="row-even"><td><p>CHANNELS_ADMIN_LOCATED_TOO_MUCH</p></td>
 <td><p>The user has reached the limit of public geogroups.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHANNELS_ADMIN_PUBLIC_TOO_MUCH</p></td>
+<tr class="row-odd"><td><p>CHANNELS_ADMIN_PUBLIC_TOO_MUCH</p></td>
 <td><p>You’re admin of too many public channels, make some channels private to change the username of this channel.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHANNELS_TOO_MUCH</p></td>
+<tr class="row-even"><td><p>CHANNELS_TOO_MUCH</p></td>
 <td><p>You have joined too many channels/supergroups.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHANNEL_ADD_INVALID</p></td>
+<tr class="row-odd"><td><p>CHANNEL_ADD_INVALID</p></td>
 <td><p>Internal error.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHANNEL_BANNED</p></td>
+<tr class="row-even"><td><p>CHANNEL_BANNED</p></td>
 <td><p>The channel is banned</p></td>
 </tr>
-<tr class="row-even"><td><p>CHANNEL_FORUM_MISSING</p></td>
+<tr class="row-odd"><td><p>CHANNEL_FORUM_MISSING</p></td>
 <td><p>This supergroup is not a forum.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHANNEL_ID_INVALID</p></td>
+<tr class="row-even"><td><p>CHANNEL_ID_INVALID</p></td>
 <td><p>The specified supergroup ID is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHANNEL_INVALID</p></td>
+<tr class="row-odd"><td><p>CHANNEL_INVALID</p></td>
 <td><p>The provided channel is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHANNEL_MONOFORUM_UNSUPPORTED</p></td>
-<td><p>The provided channel is not supported.</p></td>
+<tr class="row-even"><td><p>CHANNEL_MONOFORUM_UNSUPPORTED</p></td>
+<td><p>[Monoforums](<a class="reference external" href="https://core.telegram.org/api/channel#monoforums">https://core.telegram.org/api/channel#monoforums</a>) do not support this feature.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHANNEL_PARICIPANT_MISSING</p></td>
+<tr class="row-odd"><td><p>CHANNEL_PARICIPANT_MISSING</p></td>
 <td><p>The current user is not in the channel.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHANNEL_PRIVATE</p></td>
+<tr class="row-even"><td><p>CHANNEL_PRIVATE</p></td>
 <td><p>You haven’t joined this channel/supergroup.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHANNEL_TOO_BIG</p></td>
+<tr class="row-odd"><td><p>CHANNEL_TOO_BIG</p></td>
 <td><p>This channel has too many participants (&gt;1000) to be deleted.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHANNEL_TOO_LARGE</p></td>
+<tr class="row-even"><td><p>CHANNEL_TOO_LARGE</p></td>
 <td><p>Channel is too large to be deleted; this error is issued when trying to delete channels with more than 1000 members (subject to change).</p></td>
 </tr>
-<tr class="row-even"><td><p>CHARGE_ALREADY_REFUNDED</p></td>
+<tr class="row-odd"><td><p>CHARGE_ALREADY_REFUNDED</p></td>
 <td><p>The transaction was already refunded.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHATLINKS_TOO_MUCH</p></td>
+<tr class="row-even"><td><p>CHARGE_ID_EMPTY</p></td>
+<td><p>The specified charge_id is empty.</p></td>
+</tr>
+<tr class="row-odd"><td><p>CHARGE_ID_INVALID</p></td>
+<td><p>The specified charge_id is invalid.</p></td>
+</tr>
+<tr class="row-even"><td><p>CHATLINKS_TOO_MUCH</p></td>
 <td><p>Too many [business chat links](<a class="reference external" href="https://core.telegram.org/api/business#business-chat-links">https://core.telegram.org/api/business#business-chat-links</a>) were created, please delete some older links.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHATLINK_SLUG_EMPTY</p></td>
+<tr class="row-odd"><td><p>CHATLINK_SLUG_EMPTY</p></td>
 <td><p>The specified slug is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHATLINK_SLUG_EXPIRED</p></td>
+<tr class="row-even"><td><p>CHATLINK_SLUG_EXPIRED</p></td>
 <td><p>The specified [business chat link](<a class="reference external" href="https://core.telegram.org/api/business#business-chat-links">https://core.telegram.org/api/business#business-chat-links</a>) has expired.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHATLISTS_TOO_MUCH</p></td>
+<tr class="row-odd"><td><p>CHATLISTS_TOO_MUCH</p></td>
 <td><p>You have created too many folder links, hitting the <cite>chatlist_invites_limit_default</cite>/<cite>chatlist_invites_limit_premium</cite> [limits](<a class="reference external" href="https://core.telegram.org/api/config#chatlist-invites-limit-default">https://core.telegram.org/api/config#chatlist-invites-limit-default</a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHATLIST_EXCLUDE_INVALID</p></td>
+<tr class="row-even"><td><p>CHATLIST_EXCLUDE_INVALID</p></td>
 <td><p>The specified <cite>exclude_peers</cite> are invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_ABOUT_NOT_MODIFIED</p></td>
+<tr class="row-odd"><td><p>CHAT_ABOUT_NOT_MODIFIED</p></td>
 <td><p>About text has not changed.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHAT_ABOUT_TOO_LONG</p></td>
+<tr class="row-even"><td><p>CHAT_ABOUT_TOO_LONG</p></td>
 <td><p>Chat about too long.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_ADMIN_REQUIRED</p></td>
+<tr class="row-odd"><td><p>CHAT_ADMIN_REQUIRED</p></td>
 <td><p>You must be an admin in this chat to do this.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHAT_DISCUSSION_UNALLOWED</p></td>
+<tr class="row-even"><td><p>CHAT_DISCUSSION_UNALLOWED</p></td>
 <td><p>You can’t enable forum topics in a discussion group linked to a channel.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_FORWARDS_RESTRICTED</p></td>
+<tr class="row-odd"><td><p>CHAT_FORWARDS_RESTRICTED</p></td>
 <td><p>You can’t forward messages from a protected chat.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHAT_ID_EMPTY</p></td>
+<tr class="row-even"><td><p>CHAT_ID_EMPTY</p></td>
 <td><p>The provided chat ID is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>CHAT_ID_INVALID</p></td>
 <td><p>The provided chat id is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHAT_INVALID</p></td>
+<tr class="row-even"><td><p>CHAT_INVALID</p></td>
 <td><p>Invalid chat.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_INVITE_PERMANENT</p></td>
+<tr class="row-odd"><td><p>CHAT_INVITE_PERMANENT</p></td>
 <td><p>You can’t set an expiration date on permanent invite links.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHAT_LINK_EXISTS</p></td>
+<tr class="row-even"><td><p>CHAT_LINK_EXISTS</p></td>
 <td><p>The chat is public, you can’t hide the history to new users.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_MEMBER_ADD_FAILED</p></td>
+<tr class="row-odd"><td><p>CHAT_MEMBER_ADD_FAILED</p></td>
 <td><p>Could not add participants.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHAT_NOT_MODIFIED</p></td>
+<tr class="row-even"><td><p>CHAT_NOT_MODIFIED</p></td>
 <td><p>No changes were made to chat information because the new information you passed is identical to the current information.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_PUBLIC_REQUIRED</p></td>
+<tr class="row-odd"><td><p>CHAT_PUBLIC_REQUIRED</p></td>
 <td><p>You can only enable join requests in public groups.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHAT_RESTRICTED</p></td>
+<tr class="row-even"><td><p>CHAT_RESTRICTED</p></td>
 <td><p>You can’t send messages in this chat, you were restricted.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_REVOKE_DATE_UNSUPPORTED</p></td>
+<tr class="row-odd"><td><p>CHAT_REVOKE_DATE_UNSUPPORTED</p></td>
 <td><p><cite>min_date</cite> and <cite>max_date</cite> are not available for using with non-user peers.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHAT_SEND_INLINE_FORBIDDEN</p></td>
+<tr class="row-even"><td><p>CHAT_SEND_INLINE_FORBIDDEN</p></td>
 <td><p>You can’t send inline messages in this group.</p></td>
 </tr>
-<tr class="row-even"><td><p>CHAT_TITLE_EMPTY</p></td>
+<tr class="row-odd"><td><p>CHAT_TITLE_EMPTY</p></td>
 <td><p>No chat title provided.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CHAT_TOO_BIG</p></td>
+<tr class="row-even"><td><p>CHAT_TOO_BIG</p></td>
 <td><p>This method is not available for groups with more than <cite>chat_read_mark_size_threshold</cite> members, [see client configuration](<a class="reference external" href="https://core.telegram.org/api/config#client-configuration">https://core.telegram.org/api/config#client-configuration</a>).</p></td>
 </tr>
-<tr class="row-even"><td><p>CODE_EMPTY</p></td>
+<tr class="row-odd"><td><p>CODE_EMPTY</p></td>
 <td><p>The provided code is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CODE_HASH_INVALID</p></td>
+<tr class="row-even"><td><p>CODE_HASH_INVALID</p></td>
 <td><p>Code hash invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>CODE_INVALID</p></td>
+<tr class="row-odd"><td><p>CODE_INVALID</p></td>
 <td><p>Code invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>COLLECTIBLE_INVALID</p></td>
+<tr class="row-even"><td><p>COLLECTIBLE_INVALID</p></td>
 <td><p>The specified collectible is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>COLLECTIBLE_NOT_FOUND</p></td>
+<tr class="row-odd"><td><p>COLLECTIBLE_NOT_FOUND</p></td>
 <td><p>The specified collectible could not be found.</p></td>
 </tr>
-<tr class="row-odd"><td><p>COLOR_INVALID</p></td>
+<tr class="row-even"><td><p>COLOR_INVALID</p></td>
 <td><p>The specified color palette ID was invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>CONNECTION_API_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>CONNECTION_API_ID_INVALID</p></td>
 <td><p>The provided API id is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CONNECTION_APP_VERSION_EMPTY</p></td>
+<tr class="row-even"><td><p>CONNECTION_APP_VERSION_EMPTY</p></td>
 <td><p>App version is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>CONNECTION_DEVICE_MODEL_EMPTY</p></td>
+<tr class="row-odd"><td><p>CONNECTION_DEVICE_MODEL_EMPTY</p></td>
 <td><p>The specified device model is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CONNECTION_ID_INVALID</p></td>
+<tr class="row-even"><td><p>CONNECTION_ID_INVALID</p></td>
 <td><p>The specified connection ID is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>CONNECTION_LANG_PACK_INVALID</p></td>
+<tr class="row-odd"><td><p>CONNECTION_LANG_PACK_INVALID</p></td>
 <td><p>The specified language pack is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CONNECTION_LAYER_INVALID</p></td>
+<tr class="row-even"><td><p>CONNECTION_LAYER_INVALID</p></td>
 <td><p>Layer invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>CONNECTION_NOT_INITED</p></td>
+<tr class="row-odd"><td><p>CONNECTION_NOT_INITED</p></td>
 <td><p>Please initialize the connection using initConnection before making queries.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CONNECTION_SYSTEM_EMPTY</p></td>
+<tr class="row-even"><td><p>CONNECTION_SYSTEM_EMPTY</p></td>
 <td><p>The specified system version is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>CONNECTION_SYSTEM_LANG_CODE_EMPTY</p></td>
+<tr class="row-odd"><td><p>CONNECTION_SYSTEM_LANG_CODE_EMPTY</p></td>
 <td><p>The specified system language code is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CONTACT_ADD_MISSING</p></td>
+<tr class="row-even"><td><p>CONTACT_ADD_MISSING</p></td>
 <td><p>Contact to add is missing.</p></td>
 </tr>
-<tr class="row-even"><td><p>CONTACT_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>CONTACT_ID_INVALID</p></td>
 <td><p>The provided contact ID is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CONTACT_MISSING</p></td>
+<tr class="row-even"><td><p>CONTACT_MISSING</p></td>
 <td><p>The specified user is not a contact.</p></td>
 </tr>
-<tr class="row-even"><td><p>CONTACT_NAME_EMPTY</p></td>
+<tr class="row-odd"><td><p>CONTACT_NAME_EMPTY</p></td>
 <td><p>Contact name empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CONTACT_REQ_MISSING</p></td>
+<tr class="row-even"><td><p>CONTACT_REQ_MISSING</p></td>
 <td><p>Missing contact request.</p></td>
 </tr>
-<tr class="row-even"><td><p>CREATE_CALL_FAILED</p></td>
+<tr class="row-odd"><td><p>CREATE_CALL_FAILED</p></td>
 <td><p>An error occurred while creating the call.</p></td>
 </tr>
-<tr class="row-odd"><td><p>CURRENCY_TOTAL_AMOUNT_INVALID</p></td>
+<tr class="row-even"><td><p>CURRENCY_TOTAL_AMOUNT_INVALID</p></td>
 <td><p>The total amount of all prices is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>CUSTOM_REACTIONS_TOO_MANY</p></td>
+<tr class="row-odd"><td><p>CUSTOM_REACTIONS_TOO_MANY</p></td>
 <td><p>Too many custom reactions were specified.</p></td>
+</tr>
+<tr class="row-even"><td><p>DATA_HASH_SIZE_INVALID</p></td>
+<td><p>The size of the specified secureValueErrorData.data_hash is invalid.</p></td>
 </tr>
 <tr class="row-odd"><td><p>DATA_INVALID</p></td>
 <td><p>Encrypted data invalid.</p></td>
@@ -1419,7 +1437,7 @@
 <td><p>The specified document is invalid.</p></td>
 </tr>
 <tr class="row-even"><td><p>EFFECT_ID_INVALID</p></td>
-<td><p>The effect id is invalid</p></td>
+<td><p>The specified effect ID is invalid.</p></td>
 </tr>
 <tr class="row-odd"><td><p>EMAIL_HASH_EXPIRED</p></td>
 <td><p>Email hash expired.</p></td>
@@ -1487,14 +1505,20 @@
 <tr class="row-even"><td><p>ERROR_TEXT_EMPTY</p></td>
 <td><p>The provided error message is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>EXPIRE_DATE_INVALID</p></td>
+<tr class="row-odd"><td><p>EXPIRES_AT_INVALID</p></td>
+<td><p>The specified <cite>expires_at</cite> timestamp is invalid.</p></td>
+</tr>
+<tr class="row-even"><td><p>EXPIRE_DATE_INVALID</p></td>
 <td><p>The specified expiration date is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>EXPORT_CARD_INVALID</p></td>
+<tr class="row-odd"><td><p>EXPORT_CARD_INVALID</p></td>
 <td><p>Provided card is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>EXTENDED_MEDIA_AMOUNT_INVALID</p></td>
+<tr class="row-even"><td><p>EXTENDED_MEDIA_AMOUNT_INVALID</p></td>
 <td><p>The specified <cite>stars_amount</cite> of the passed [inputMediaPaidMedia](<a class="reference external" href="https://core.telegram.org/constructor/inputMediaPaidMedia">https://core.telegram.org/constructor/inputMediaPaidMedia</a>) is invalid.</p></td>
+</tr>
+<tr class="row-odd"><td><p>EXTENDED_MEDIA_INVALID</p></td>
+<td><p>The specified paid media is invalid.</p></td>
 </tr>
 <tr class="row-even"><td><p>EXTERNAL_URL_INVALID</p></td>
 <td><p>External URL invalid.</p></td>
@@ -1545,19 +1569,19 @@
 <td><p>Part {value} of the file is missing from storage. Try repeating the method call to resave the part.</p></td>
 </tr>
 <tr class="row-even"><td><p>FILE_REFERENCE_EMPTY</p></td>
-<td><p>An empty [file reference](<a class="reference external" href="https://core.telegram.org/api/file_reference">https://core.telegram.org/api/file_reference</a>) was specified.</p></td>
+<td><p>An empty [file reference](<a class="reference external" href="https://core.telegram.org/api/file-references">https://core.telegram.org/api/file-references</a>) was specified.</p></td>
 </tr>
 <tr class="row-odd"><td><p>FILE_REFERENCE_EXPIRED</p></td>
-<td><p>File reference expired, it must be refetched as described in [the documentation](<a class="reference external" href="https://core.telegram.org/api/file_reference">https://core.telegram.org/api/file_reference</a>).</p></td>
+<td><p>File reference expired, it must be refetched as described in [the documentation](<a class="reference external" href="https://core.telegram.org/api/file-references">https://core.telegram.org/api/file-references</a>).</p></td>
 </tr>
 <tr class="row-even"><td><p>FILE_REFERENCE_INVALID</p></td>
-<td><p>The specified [file reference](<a class="reference external" href="https://core.telegram.org/api/file_reference">https://core.telegram.org/api/file_reference</a>) is invalid.</p></td>
+<td><p>The specified [file reference](<a class="reference external" href="https://core.telegram.org/api/file-references">https://core.telegram.org/api/file-references</a>) is invalid.</p></td>
 </tr>
 <tr class="row-odd"><td><p>FILE_REFERENCE_X_EXPIRED</p></td>
-<td><p>The file reference of the media file at index {value} in the passed media array expired, it [must be refreshed](<a class="reference external" href="https://core.telegram.org/api/file_reference">https://core.telegram.org/api/file_reference</a>).</p></td>
+<td><p>The file reference of the media file at index {value} in the passed media array expired, it [must be refreshed as specified in the documentation](<a class="reference external" href="https://core.telegram.org/api/file-references">https://core.telegram.org/api/file-references</a>). .</p></td>
 </tr>
 <tr class="row-even"><td><p>FILE_REFERENCE_X_INVALID</p></td>
-<td><p>The file reference of the media file at index {value} in the passed media array is invalid.</p></td>
+<td><p>The [file reference](<a class="reference external" href="https://core.telegram.org/api/file-references">https://core.telegram.org/api/file-references</a>) of the media file at index {value} in the passed media array is invalid.</p></td>
 </tr>
 <tr class="row-odd"><td><p>FILE_TITLE_EMPTY</p></td>
 <td><p>An empty file title was specified.</p></td>
@@ -1592,32 +1616,38 @@
 <tr class="row-odd"><td><p>FORM_ID_EMPTY</p></td>
 <td><p>The specified form ID is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>FORM_UNSUPPORTED</p></td>
+<tr class="row-even"><td><p>FORM_SUBMIT_DUPLICATE</p></td>
+<td><p>The same payment form was already submitted.  .</p></td>
+</tr>
+<tr class="row-odd"><td><p>FORM_UNSUPPORTED</p></td>
 <td><p>Please update your client.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FORUM_ENABLED</p></td>
+<tr class="row-even"><td><p>FORUM_ENABLED</p></td>
 <td><p>You can’t execute the specified action because the group is a [forum](<a class="reference external" href="https://core.telegram.org/api/forum">https://core.telegram.org/api/forum</a>), disable forum functionality to continue.</p></td>
 </tr>
-<tr class="row-even"><td><p>FRESH_CHANGE_ADMINS_FORBIDDEN</p></td>
+<tr class="row-odd"><td><p>FRESH_CHANGE_ADMINS_FORBIDDEN</p></td>
 <td><p>You were just elected admin, you can’t add or modify other admins yet.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FROM_MESSAGE_BOT_DISABLED</p></td>
+<tr class="row-even"><td><p>FROM_MESSAGE_BOT_DISABLED</p></td>
 <td><p>Bots can’t use fromMessage min constructors.</p></td>
 </tr>
-<tr class="row-even"><td><p>FROM_PEER_INVALID</p></td>
+<tr class="row-odd"><td><p>FROM_PEER_INVALID</p></td>
 <td><p>The specified from_id is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>FROZEN_PARTICIPANT_MISSING</p></td>
-<td><p>The account is frozen and cannot access the chat participant.</p></td>
+<tr class="row-even"><td><p>FROZEN_PARTICIPANT_MISSING</p></td>
+<td><p>The current account is [frozen](<a class="reference external" href="https://core.telegram.org/api/auth#frozen-accounts">https://core.telegram.org/api/auth#frozen-accounts</a>), and cannot access the specified peer.</p></td>
 </tr>
-<tr class="row-even"><td><p>GAME_BOT_INVALID</p></td>
+<tr class="row-odd"><td><p>GAME_BOT_INVALID</p></td>
 <td><p>Bots can’t send another bot’s game.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GENERAL_MODIFY_ICON_FORBIDDEN</p></td>
+<tr class="row-even"><td><p>GENERAL_MODIFY_ICON_FORBIDDEN</p></td>
 <td><p>You can’t modify the icon of the ‘General’ topic.</p></td>
 </tr>
-<tr class="row-even"><td><p>GEO_POINT_INVALID</p></td>
+<tr class="row-odd"><td><p>GEO_POINT_INVALID</p></td>
 <td><p>Invalid geoposition provided.</p></td>
+</tr>
+<tr class="row-even"><td><p>GIFT_MONTHS_INVALID</p></td>
+<td><p>The value passed in invoice.inputInvoicePremiumGiftStars.months is invalid.</p></td>
 </tr>
 <tr class="row-odd"><td><p>GIFT_SLUG_EXPIRED</p></td>
 <td><p>The specified gift slug has expired.</p></td>
@@ -1625,50 +1655,56 @@
 <tr class="row-even"><td><p>GIFT_SLUG_INVALID</p></td>
 <td><p>The specified slug is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GIF_CONTENT_TYPE_INVALID</p></td>
+<tr class="row-odd"><td><p>GIFT_STARS_INVALID</p></td>
+<td><p>The specified amount of stars is invalid.</p></td>
+</tr>
+<tr class="row-even"><td><p>GIF_CONTENT_TYPE_INVALID</p></td>
 <td><p>GIF content-type invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>GIF_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>GIF_ID_INVALID</p></td>
 <td><p>The provided GIF ID is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GRAPH_EXPIRED_RELOAD</p></td>
+<tr class="row-even"><td><p>GRAPH_EXPIRED_RELOAD</p></td>
 <td><p>This graph has expired, please obtain a new graph token.</p></td>
 </tr>
-<tr class="row-even"><td><p>GRAPH_INVALID_RELOAD</p></td>
+<tr class="row-odd"><td><p>GRAPH_INVALID_RELOAD</p></td>
 <td><p>Invalid graph token provided, please reload the stats and provide the updated token.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GRAPH_OUTDATED_RELOAD</p></td>
+<tr class="row-even"><td><p>GRAPH_OUTDATED_RELOAD</p></td>
 <td><p>The graph is outdated, please get a new async token using stats.getBroadcastStats.</p></td>
 </tr>
-<tr class="row-even"><td><p>GROUPCALL_ALREADY_DISCARDED</p></td>
+<tr class="row-odd"><td><p>GROUPCALL_ALREADY_DISCARDED</p></td>
 <td><p>The group call was already discarded.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GROUPCALL_FORBIDDEN</p></td>
+<tr class="row-even"><td><p>GROUPCALL_FORBIDDEN</p></td>
 <td><p>The group call has already ended.</p></td>
 </tr>
-<tr class="row-even"><td><p>GROUPCALL_INVALID</p></td>
+<tr class="row-odd"><td><p>GROUPCALL_INVALID</p></td>
 <td><p>The specified group call is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GROUPCALL_JOIN_MISSING</p></td>
+<tr class="row-even"><td><p>GROUPCALL_JOIN_MISSING</p></td>
 <td><p>You haven’t joined this group call.</p></td>
 </tr>
-<tr class="row-even"><td><p>GROUPCALL_NOT_MODIFIED</p></td>
+<tr class="row-odd"><td><p>GROUPCALL_NOT_MODIFIED</p></td>
 <td><p>Group call settings weren’t modified.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GROUPCALL_SSRC_DUPLICATE_MUCH</p></td>
+<tr class="row-even"><td><p>GROUPCALL_SSRC_DUPLICATE_MUCH</p></td>
 <td><p>The app needs to retry joining the group call with a new SSRC value.</p></td>
 </tr>
-<tr class="row-even"><td><p>GROUPED_MEDIA_INVALID</p></td>
+<tr class="row-odd"><td><p>GROUPED_MEDIA_INVALID</p></td>
 <td><p>Invalid grouped media.</p></td>
 </tr>
-<tr class="row-odd"><td><p>GROUP_CALL_INVALID</p></td>
+<tr class="row-even"><td><p>GROUP_CALL_INVALID</p></td>
 <td><p>The group call is invalid</p></td>
 </tr>
-<tr class="row-even"><td><p>HASHTAG_INVALID</p></td>
+<tr class="row-odd"><td><p>HASHTAG_INVALID</p></td>
 <td><p>The specified hashtag is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>HASH_INVALID</p></td>
+<tr class="row-even"><td><p>HASH_INVALID</p></td>
 <td><p>The provided hash is invalid.</p></td>
+</tr>
+<tr class="row-odd"><td><p>HASH_SIZE_INVALID</p></td>
+<td><p>The size of the specified secureValueError.hash is invalid.</p></td>
 </tr>
 <tr class="row-even"><td><p>HIDE_REQUESTER_MISSING</p></td>
 <td><p>The join request was missing or was already handled.</p></td>
@@ -1730,92 +1766,98 @@
 <tr class="row-odd"><td><p>INPUT_PEERS_EMPTY</p></td>
 <td><p>The specified peer array is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_REQUEST_TOO_LONG</p></td>
+<tr class="row-even"><td><p>INPUT_PURPOSE_INVALID</p></td>
+<td><p>The specified payment purpose is invalid.</p></td>
+</tr>
+<tr class="row-odd"><td><p>INPUT_REQUEST_TOO_LONG</p></td>
 <td><p>The request payload is too long.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_TEXT_EMPTY</p></td>
+<tr class="row-even"><td><p>INPUT_TEXT_EMPTY</p></td>
 <td><p>The specified text is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>INPUT_TEXT_TOO_LONG</p></td>
+<tr class="row-odd"><td><p>INPUT_TEXT_TOO_LONG</p></td>
 <td><p>The specified text is too long.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INPUT_USER_DEACTIVATED</p></td>
+<tr class="row-even"><td><p>INPUT_USER_DEACTIVATED</p></td>
 <td><p>The specified user was deleted.</p></td>
 </tr>
-<tr class="row-even"><td><p>INVITES_TOO_MUCH</p></td>
+<tr class="row-odd"><td><p>INVITES_TOO_MUCH</p></td>
 <td><p>The maximum number of per-folder invites specified by the <cite>chatlist_invites_limit_default</cite>/<cite>chatlist_invites_limit_premium</cite> [client configuration parameters](<a class="reference external" href="https://core.telegram.org/api/config#chatlist-invites-limit-default">https://core.telegram.org/api/config#chatlist-invites-limit-default</a>) was reached.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVITE_FORBIDDEN_WITH_JOINAS</p></td>
+<tr class="row-even"><td><p>INVITE_FORBIDDEN_WITH_JOINAS</p></td>
 <td><p>If the user has anonymously joined a group call as a channel, they can’t invite other users to the group call because that would cause deanonymization, because the invite would be sent using the original user ID, not the anonymized channel ID.</p></td>
 </tr>
-<tr class="row-even"><td><p>INVITE_HASH_EMPTY</p></td>
+<tr class="row-odd"><td><p>INVITE_HASH_EMPTY</p></td>
 <td><p>The invite hash is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVITE_HASH_EXPIRED</p></td>
+<tr class="row-even"><td><p>INVITE_HASH_EXPIRED</p></td>
 <td><p>The invite link has expired.</p></td>
 </tr>
-<tr class="row-even"><td><p>INVITE_HASH_INVALID</p></td>
+<tr class="row-odd"><td><p>INVITE_HASH_INVALID</p></td>
 <td><p>The invite hash is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVITE_REQUEST_SENT</p></td>
+<tr class="row-even"><td><p>INVITE_REQUEST_SENT</p></td>
 <td><p>You have successfully requested to join this chat or channel.</p></td>
 </tr>
-<tr class="row-even"><td><p>INVITE_REVOKED_MISSING</p></td>
+<tr class="row-odd"><td><p>INVITE_REVOKED_MISSING</p></td>
 <td><p>The specified invite link was already revoked or is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVITE_SLUG_EMPTY</p></td>
+<tr class="row-even"><td><p>INVITE_SLUG_EMPTY</p></td>
 <td><p>The specified invite slug is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>INVITE_SLUG_EXPIRED</p></td>
+<tr class="row-odd"><td><p>INVITE_SLUG_EXPIRED</p></td>
 <td><p>The specified chat folder link has expired.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVITE_SLUG_INVALID</p></td>
+<tr class="row-even"><td><p>INVITE_SLUG_INVALID</p></td>
 <td><p>The specified invitation slug is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>INVOICE_INVALID</p></td>
+<tr class="row-odd"><td><p>INVOICE_INVALID</p></td>
 <td><p>The specified invoice is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>INVOICE_PAYLOAD_INVALID</p></td>
+<tr class="row-even"><td><p>INVOICE_PAYLOAD_INVALID</p></td>
 <td><p>The specified invoice payload is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>JOIN_AS_PEER_INVALID</p></td>
+<tr class="row-odd"><td><p>JOIN_AS_PEER_INVALID</p></td>
 <td><p>The specified peer cannot be used to join a group call.</p></td>
 </tr>
-<tr class="row-odd"><td><p>LANGUAGE_INVALID</p></td>
+<tr class="row-even"><td><p>LANGUAGE_INVALID</p></td>
 <td><p>The specified lang_code is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>LANG_CODE_INVALID</p></td>
+<tr class="row-odd"><td><p>LANG_CODE_INVALID</p></td>
 <td><p>The specified language code is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>LANG_CODE_NOT_SUPPORTED</p></td>
+<tr class="row-even"><td><p>LANG_CODE_NOT_SUPPORTED</p></td>
 <td><p>The specified language code is not supported.</p></td>
 </tr>
-<tr class="row-even"><td><p>LANG_PACK_INVALID</p></td>
+<tr class="row-odd"><td><p>LANG_PACK_INVALID</p></td>
 <td><p>The provided language pack is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>LASTNAME_INVALID</p></td>
+<tr class="row-even"><td><p>LASTNAME_INVALID</p></td>
 <td><p>The last name is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>LIMIT_INVALID</p></td>
+<tr class="row-odd"><td><p>LIMIT_INVALID</p></td>
 <td><p>The provided limit is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>LINK_NOT_MODIFIED</p></td>
+<tr class="row-even"><td><p>LINK_NOT_MODIFIED</p></td>
 <td><p>Discussion link not modified.</p></td>
 </tr>
-<tr class="row-even"><td><p>LOCATION_INVALID</p></td>
+<tr class="row-odd"><td><p>LOCATION_INVALID</p></td>
 <td><p>The provided location is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>MAX_DATE_INVALID</p></td>
+<tr class="row-even"><td><p>MAX_DATE_INVALID</p></td>
 <td><p>The specified maximum date is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>MAX_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>MAX_ID_INVALID</p></td>
 <td><p>The provided max ID is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>MAX_QTS_INVALID</p></td>
+<tr class="row-even"><td><p>MAX_QTS_INVALID</p></td>
 <td><p>The specified max_qts is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>MD5_CHECKSUM_INVALID</p></td>
+<tr class="row-odd"><td><p>MD5_CHECKSUM_INVALID</p></td>
 <td><p>The MD5 checksums do not match.</p></td>
+</tr>
+<tr class="row-even"><td><p>MEDIA_ALREADY_PAID</p></td>
+<td><p>You already paid for the specified media.</p></td>
 </tr>
 <tr class="row-odd"><td><p>MEDIA_CAPTION_TOO_LONG</p></td>
 <td><p>The caption is too long.</p></td>
@@ -1895,11 +1937,17 @@
 <tr class="row-even"><td><p>MONOFORUM_FILTER_INVALID</p></td>
 <td><p>The specified filter is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>MSG_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>MONTH_INVALID</p></td>
+<td><p>The number of months specified in inputInvoicePremiumGiftStars.months is invalid.</p></td>
+</tr>
+<tr class="row-even"><td><p>MSG_ID_INVALID</p></td>
 <td><p>Invalid message ID provided.</p></td>
 </tr>
-<tr class="row-even"><td><p>MSG_TOO_OLD</p></td>
+<tr class="row-odd"><td><p>MSG_TOO_OLD</p></td>
 <td><p>[<cite>chat_read_mark_expire_period</cite> seconds](<a class="reference external" href="https://core.telegram.org/api/config#chat-read-mark-expire-period">https://core.telegram.org/api/config#chat-read-mark-expire-period</a>) have passed since the message was sent, read receipts were deleted.</p></td>
+</tr>
+<tr class="row-even"><td><p>MSG_VOICE_MISSING</p></td>
+<td><p>The specified message is not a voice message.</p></td>
 </tr>
 <tr class="row-odd"><td><p>MSG_WAIT_FAILED</p></td>
 <td><p>A waiting call returned an error.</p></td>
@@ -1922,11 +1970,17 @@
 <tr class="row-odd"><td><p>NEXT_OFFSET_INVALID</p></td>
 <td><p>The specified offset is longer than 64 bytes.</p></td>
 </tr>
-<tr class="row-even"><td><p>NOT_ELIGIBLE</p></td>
+<tr class="row-even"><td><p>NOGENERAL_HIDE_FORBIDDEN</p></td>
+<td><p>Only the ‘General’ topic with <cite>id=1</cite> can be hidden.</p></td>
+</tr>
+<tr class="row-odd"><td><p>NOT_ELIGIBLE</p></td>
 <td><p>The current user is not eligible to join the Peer-to-Peer Login Program.</p></td>
 </tr>
-<tr class="row-odd"><td><p>NOT_JOINED</p></td>
+<tr class="row-even"><td><p>NOT_JOINED</p></td>
 <td><p>The current user hasn’t joined the Peer-to-Peer Login Program.</p></td>
+</tr>
+<tr class="row-odd"><td><p>NO_PAYMENT_NEEDED</p></td>
+<td><p>The upgrade/transfer of the specified gift was already paid for or is free.</p></td>
 </tr>
 <tr class="row-even"><td><p>OFFSET_INVALID</p></td>
 <td><p>The provided offset is invalid.</p></td>
@@ -1951,6 +2005,12 @@
 </tr>
 <tr class="row-odd"><td><p>PACK_TITLE_INVALID</p></td>
 <td><p>The stickerpack title is invalid.</p></td>
+</tr>
+<tr class="row-even"><td><p>PACK_TYPE_INVALID</p></td>
+<td><p>The masks and emojis flags are mutually exclusive.</p></td>
+</tr>
+<tr class="row-odd"><td><p>PARENT_PEER_INVALID</p></td>
+<td><p>The specified <cite>parent_peer</cite> is invalid.</p></td>
 </tr>
 <tr class="row-even"><td><p>PARTICIPANTS_TOO_FEW</p></td>
 <td><p>Not enough participants.</p></td>
@@ -1985,8 +2045,14 @@
 <tr class="row-even"><td><p>PASSWORD_TOO_FRESH_X</p></td>
 <td><p>The password was modified less than 24 hours ago, try again in {value} seconds.</p></td>
 </tr>
-<tr class="row-odd"><td><p>PAYMENT_PROVIDER_INVALID</p></td>
+<tr class="row-odd"><td><p>PAYMENT_CREDENTIALS_INVALID</p></td>
+<td><p>The specified payment credentials are invalid.</p></td>
+</tr>
+<tr class="row-even"><td><p>PAYMENT_PROVIDER_INVALID</p></td>
 <td><p>The specified payment provider is invalid.</p></td>
+</tr>
+<tr class="row-odd"><td><p>PAYMENT_REQUIRED</p></td>
+<td><p>Payment is required for this action, see [here](<a class="reference external" href="https://core.telegram.org/api/gifts">https://core.telegram.org/api/gifts</a>) for more info.</p></td>
 </tr>
 <tr class="row-even"><td><p>PEERS_LIST_EMPTY</p></td>
 <td><p>The specified list of peers is empty.</p></td>
@@ -2090,50 +2156,56 @@
 <tr class="row-odd"><td><p>PINNED_DIALOGS_TOO_MUCH</p></td>
 <td><p>Too many pinned dialogs.</p></td>
 </tr>
-<tr class="row-even"><td><p>PIN_RESTRICTED</p></td>
+<tr class="row-even"><td><p>PINNED_TOO_MUCH</p></td>
+<td><p>There are too many pinned topics, unpin some first.</p></td>
+</tr>
+<tr class="row-odd"><td><p>PIN_RESTRICTED</p></td>
 <td><p>You can’t pin messages.</p></td>
 </tr>
-<tr class="row-odd"><td><p>POLL_ANSWERS_INVALID</p></td>
+<tr class="row-even"><td><p>POLL_ANSWERS_INVALID</p></td>
 <td><p>Invalid poll answers were provided.</p></td>
 </tr>
-<tr class="row-even"><td><p>POLL_ANSWER_INVALID</p></td>
+<tr class="row-odd"><td><p>POLL_ANSWER_INVALID</p></td>
 <td><p>One of the poll answers is not acceptable.</p></td>
 </tr>
-<tr class="row-odd"><td><p>POLL_OPTION_DUPLICATE</p></td>
+<tr class="row-even"><td><p>POLL_OPTION_DUPLICATE</p></td>
 <td><p>Duplicate poll options provided.</p></td>
 </tr>
-<tr class="row-even"><td><p>POLL_OPTION_INVALID</p></td>
+<tr class="row-odd"><td><p>POLL_OPTION_INVALID</p></td>
 <td><p>Invalid poll option provided.</p></td>
 </tr>
-<tr class="row-odd"><td><p>POLL_QUESTION_INVALID</p></td>
+<tr class="row-even"><td><p>POLL_QUESTION_INVALID</p></td>
 <td><p>One of the poll questions is not acceptable.</p></td>
 </tr>
-<tr class="row-even"><td><p>POLL_UNSUPPORTED</p></td>
+<tr class="row-odd"><td><p>POLL_UNSUPPORTED</p></td>
 <td><p>This layer does not support polls in the invoked method</p></td>
 </tr>
-<tr class="row-odd"><td><p>POLL_VOTE_REQUIRED</p></td>
+<tr class="row-even"><td><p>POLL_VOTE_REQUIRED</p></td>
 <td><p>Cast a vote in the poll before calling this method</p></td>
 </tr>
-<tr class="row-even"><td><p>PRECHECKOUT_FAILED</p></td>
+<tr class="row-odd"><td><p>PRECHECKOUT_FAILED</p></td>
 <td><p>precheckout failed</p></td>
 </tr>
-<tr class="row-odd"><td><p>PREMIUM_ACCOUNT_REQUIRED</p></td>
+<tr class="row-even"><td><p>PREMIUM_ACCOUNT_REQUIRED</p></td>
 <td><p>A premium account is required to execute this action.</p></td>
 </tr>
-<tr class="row-even"><td><p>PRICING_CHAT_INVALID</p></td>
+<tr class="row-odd"><td><p>PRICING_CHAT_INVALID</p></td>
 <td><p>The pricing for the [subscription](<a class="reference external" href="https://core.telegram.org/api/subscriptions">https://core.telegram.org/api/subscriptions</a>) is invalid, the maximum price is specified in the [<cite>stars_subscription_amount_max</cite> config key](<a class="reference external" href="https://core.telegram.org/api/config#stars-subscription-amount-max">https://core.telegram.org/api/config#stars-subscription-amount-max</a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p>PRIVACY_KEY_INVALID</p></td>
+<tr class="row-even"><td><p>PRIVACY_KEY_INVALID</p></td>
 <td><p>The privacy key is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>PRIVACY_TOO_LONG</p></td>
+<tr class="row-odd"><td><p>PRIVACY_TOO_LONG</p></td>
 <td><p>Too many privacy rules were specified, the current limit is 1000.</p></td>
 </tr>
-<tr class="row-odd"><td><p>PRIVACY_VALUE_INVALID</p></td>
+<tr class="row-even"><td><p>PRIVACY_VALUE_INVALID</p></td>
 <td><p>The specified privacy rule combination is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>PUBLIC_KEY_REQUIRED</p></td>
+<tr class="row-odd"><td><p>PUBLIC_KEY_REQUIRED</p></td>
 <td><p>A public key is required.</p></td>
+</tr>
+<tr class="row-even"><td><p>PURPOSE_INVALID</p></td>
+<td><p>The specified payment purpose is invalid.</p></td>
 </tr>
 <tr class="row-odd"><td><p>QUERY_ID_EMPTY</p></td>
 <td><p>The query ID is empty.</p></td>
@@ -2144,32 +2216,38 @@
 <tr class="row-odd"><td><p>QUERY_TOO_SHORT</p></td>
 <td><p>The query string is too short.</p></td>
 </tr>
-<tr class="row-even"><td><p>QUICK_REPLIES_TOO_MUCH</p></td>
+<tr class="row-even"><td><p>QUICK_REPLIES_BOT_NOT_ALLOWED</p></td>
+<td><p>[Quick replies](<a class="reference external" href="https://core.telegram.org/api/business#quick-reply-shortcuts">https://core.telegram.org/api/business#quick-reply-shortcuts</a>) cannot be used by bots.</p></td>
+</tr>
+<tr class="row-odd"><td><p>QUICK_REPLIES_TOO_MUCH</p></td>
 <td><p>A maximum of [appConfig.`quick_replies_limit`](<a class="reference external" href="https://core.telegram.org/api/config#quick-replies-limit">https://core.telegram.org/api/config#quick-replies-limit</a>) shortcuts may be created, the limit was reached.</p></td>
 </tr>
-<tr class="row-odd"><td><p>QUIZ_ANSWER_MISSING</p></td>
+<tr class="row-even"><td><p>QUIZ_ANSWER_MISSING</p></td>
 <td><p>You can forward a quiz while hiding the original author only after choosing an option in the quiz.</p></td>
 </tr>
-<tr class="row-even"><td><p>QUIZ_CORRECT_ANSWERS_EMPTY</p></td>
+<tr class="row-odd"><td><p>QUIZ_CORRECT_ANSWERS_EMPTY</p></td>
 <td><p>No correct quiz answer was specified.</p></td>
 </tr>
-<tr class="row-odd"><td><p>QUIZ_CORRECT_ANSWERS_TOO_MUCH</p></td>
+<tr class="row-even"><td><p>QUIZ_CORRECT_ANSWERS_TOO_MUCH</p></td>
 <td><p>You specified too many correct answers in a quiz, quizzes can only have one right answer!</p></td>
 </tr>
-<tr class="row-even"><td><p>QUIZ_CORRECT_ANSWER_INVALID</p></td>
+<tr class="row-odd"><td><p>QUIZ_CORRECT_ANSWER_INVALID</p></td>
 <td><p>An invalid value was provided to the correct_answers field.</p></td>
 </tr>
-<tr class="row-odd"><td><p>QUIZ_MULTIPLE_INVALID</p></td>
+<tr class="row-even"><td><p>QUIZ_MULTIPLE_INVALID</p></td>
 <td><p>Quizzes can’t have the multiple_choice flag set!</p></td>
 </tr>
-<tr class="row-even"><td><p>QUOTE_TEXT_INVALID</p></td>
+<tr class="row-odd"><td><p>QUOTE_TEXT_INVALID</p></td>
 <td><p>The specified <cite>reply_to</cite>.`quote_text` field is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>RAISE_HAND_FORBIDDEN</p></td>
+<tr class="row-even"><td><p>RAISE_HAND_FORBIDDEN</p></td>
 <td><p>You cannot raise your hand.</p></td>
 </tr>
-<tr class="row-even"><td><p>RANDOM_ID_EMPTY</p></td>
+<tr class="row-odd"><td><p>RANDOM_ID_EMPTY</p></td>
 <td><p>Random ID empty.</p></td>
+</tr>
+<tr class="row-even"><td><p>RANDOM_ID_EXPIRED</p></td>
+<td><p>The specified <cite>random_id</cite> was expired (most likely it didn’t follow the required <cite>uint64_t random_id = (time() &lt;&lt; 32) | ((uint64_t)random_uint32_t())</cite> format, or the specified time is too far in the past).</p></td>
 </tr>
 <tr class="row-odd"><td><p>RANDOM_ID_INVALID</p></td>
 <td><p>A provided random ID is invalid.</p></td>
@@ -2180,83 +2258,89 @@
 <tr class="row-odd"><td><p>RANGES_INVALID</p></td>
 <td><p>Invalid range provided.</p></td>
 </tr>
-<tr class="row-even"><td><p>REACTIONS_TOO_MANY</p></td>
+<tr class="row-even"><td><p>REACTIONS_COUNT_INVALID</p></td>
+<td><p>The specified number of reactions is invalid.</p></td>
+</tr>
+<tr class="row-odd"><td><p>REACTIONS_TOO_MANY</p></td>
 <td><p>The message already has exactly <cite>reactions_uniq_max</cite> reaction emojis, you can’t react with a new emoji, see [the docs for more info](<a class="reference external" href="https://core.telegram.org/api/config#client-configuration">https://core.telegram.org/api/config#client-configuration</a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p>REACTION_EMPTY</p></td>
+<tr class="row-even"><td><p>REACTION_EMPTY</p></td>
 <td><p>Empty reaction provided.</p></td>
 </tr>
-<tr class="row-even"><td><p>REACTION_INVALID</p></td>
+<tr class="row-odd"><td><p>REACTION_INVALID</p></td>
 <td><p>The specified reaction is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>RECEIPT_EMPTY</p></td>
+<tr class="row-even"><td><p>RECEIPT_EMPTY</p></td>
 <td><p>The specified receipt is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>REFLECTOR_NOT_AVAILABLE</p></td>
+<tr class="row-odd"><td><p>REFLECTOR_NOT_AVAILABLE</p></td>
 <td><p>The call reflector is not available</p></td>
 </tr>
-<tr class="row-odd"><td><p>REPLY_MARKUP_BUY_EMPTY</p></td>
+<tr class="row-even"><td><p>REPLY_MARKUP_BUY_EMPTY</p></td>
 <td><p>Reply markup for buy button empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>REPLY_MARKUP_GAME_EMPTY</p></td>
+<tr class="row-odd"><td><p>REPLY_MARKUP_GAME_EMPTY</p></td>
 <td><p>A game message is being edited, but the newly provided keyboard doesn’t have a keyboardButtonGame button.</p></td>
 </tr>
-<tr class="row-odd"><td><p>REPLY_MARKUP_INVALID</p></td>
+<tr class="row-even"><td><p>REPLY_MARKUP_INVALID</p></td>
 <td><p>The provided reply markup is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>REPLY_MARKUP_TOO_LONG</p></td>
+<tr class="row-odd"><td><p>REPLY_MARKUP_TOO_LONG</p></td>
 <td><p>The specified reply_markup is too long.</p></td>
 </tr>
-<tr class="row-odd"><td><p>REPLY_MESSAGES_TOO_MUCH</p></td>
+<tr class="row-even"><td><p>REPLY_MESSAGES_TOO_MUCH</p></td>
 <td><p>Each shortcut can contain a maximum of [appConfig.`quick_reply_messages_limit`](<a class="reference external" href="https://core.telegram.org/api/config#quick-reply-messages-limit">https://core.telegram.org/api/config#quick-reply-messages-limit</a>) messages, the limit was reached.</p></td>
 </tr>
-<tr class="row-even"><td><p>REPLY_MESSAGE_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>REPLY_MESSAGE_ID_INVALID</p></td>
 <td><p>The specified reply-to message ID is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>REPLY_TO_INVALID</p></td>
+<tr class="row-even"><td><p>REPLY_TO_INVALID</p></td>
 <td><p>The specified <cite>reply_to</cite> field is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>REPLY_TO_MONOFORUM_PEER_INVALID</p></td>
-<td><p>The specified <cite>reply_to</cite> field is invalid.</p></td>
+<tr class="row-odd"><td><p>REPLY_TO_MONOFORUM_PEER_INVALID</p></td>
+<td><p>The specified inputReplyToMonoForum.monoforum_peer_id is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>REPLY_TO_USER_INVALID</p></td>
+<tr class="row-even"><td><p>REPLY_TO_USER_INVALID</p></td>
 <td><p>The replied-to user is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>REQUEST_TOKEN_INVALID</p></td>
+<tr class="row-odd"><td><p>REQUEST_TOKEN_INVALID</p></td>
 <td><p>The master DC did not accept the <cite>request_token</cite> from the CDN DC. Continue downloading the file from the master DC using upload.getFile.</p></td>
 </tr>
-<tr class="row-odd"><td><p>RESET_REQUEST_MISSING</p></td>
+<tr class="row-even"><td><p>RESET_REQUEST_MISSING</p></td>
 <td><p>No password reset is in progress.</p></td>
 </tr>
-<tr class="row-even"><td><p>RESULTS_TOO_MUCH</p></td>
+<tr class="row-odd"><td><p>RESULTS_TOO_MUCH</p></td>
 <td><p>Too many results were provided.</p></td>
 </tr>
-<tr class="row-odd"><td><p>RESULT_ID_DUPLICATE</p></td>
+<tr class="row-even"><td><p>RESULT_ID_DUPLICATE</p></td>
 <td><p>You provided a duplicate result ID.</p></td>
 </tr>
-<tr class="row-even"><td><p>RESULT_ID_EMPTY</p></td>
+<tr class="row-odd"><td><p>RESULT_ID_EMPTY</p></td>
 <td><p>Result ID empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>RESULT_ID_INVALID</p></td>
+<tr class="row-even"><td><p>RESULT_ID_INVALID</p></td>
 <td><p>One of the specified result IDs is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>RESULT_TYPE_INVALID</p></td>
+<tr class="row-odd"><td><p>RESULT_TYPE_INVALID</p></td>
 <td><p>Result type invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>REVOTE_NOT_ALLOWED</p></td>
+<tr class="row-even"><td><p>REVOTE_NOT_ALLOWED</p></td>
 <td><p>You cannot change your vote.</p></td>
 </tr>
-<tr class="row-even"><td><p>RIGHTS_NOT_MODIFIED</p></td>
+<tr class="row-odd"><td><p>RIGHTS_NOT_MODIFIED</p></td>
 <td><p>The new admin rights are equal to the old rights, no change was made.</p></td>
 </tr>
-<tr class="row-odd"><td><p>RINGTONE_INVALID</p></td>
+<tr class="row-even"><td><p>RINGTONE_INVALID</p></td>
 <td><p>The specified ringtone is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>RINGTONE_MIME_INVALID</p></td>
+<tr class="row-odd"><td><p>RINGTONE_MIME_INVALID</p></td>
 <td><p>The MIME type for the ringtone is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>RSA_DECRYPT_FAILED</p></td>
+<tr class="row-even"><td><p>RSA_DECRYPT_FAILED</p></td>
 <td><p>Internal RSA decryption failed.</p></td>
+</tr>
+<tr class="row-odd"><td><p>SAVED_ID_EMPTY</p></td>
+<td><p>The passed inputSavedStarGiftChat.saved_id is empty.</p></td>
 </tr>
 <tr class="row-even"><td><p>SCHEDULE_BOT_NOT_ALLOWED</p></td>
 <td><p>Bots cannot schedule messages.</p></td>
@@ -2288,8 +2372,14 @@
 <tr class="row-odd"><td><p>SECURE_SECRET_REQUIRED</p></td>
 <td><p>A secure secret is required.</p></td>
 </tr>
-<tr class="row-even"><td><p>SEND_AS_PEER_INVALID</p></td>
+<tr class="row-even"><td><p>SELF_DELETE_RESTRICTED</p></td>
+<td><p>Business bots can’t delete messages just for the user, <cite>revoke</cite> <strong>must</strong> be set.</p></td>
+</tr>
+<tr class="row-odd"><td><p>SEND_AS_PEER_INVALID</p></td>
 <td><p>You can’t send messages as the specified peer.</p></td>
+</tr>
+<tr class="row-even"><td><p>SEND_MESSAGE_GAME_INVALID</p></td>
+<td><p>An inputBotInlineMessageGame can only be contained in an inputBotInlineResultGame, not in an inputBotInlineResult/inputBotInlineResultPhoto/etc.</p></td>
 </tr>
 <tr class="row-odd"><td><p>SEND_MESSAGE_MEDIA_INVALID</p></td>
 <td><p>Invalid media provided.</p></td>
@@ -2342,26 +2432,44 @@
 <tr class="row-odd"><td><p>SRP_PASSWORD_CHANGED</p></td>
 <td><p>Password has changed.</p></td>
 </tr>
+<tr class="row-even"><td><p>STARGIFT_ALREADY_CONVERTED</p></td>
+<td><p>The specified star gift was already converted to Stars.</p></td>
+</tr>
+<tr class="row-odd"><td><p>STARGIFT_ALREADY_REFUNDED</p></td>
+<td><p>The specified star gift was already refunded.</p></td>
+</tr>
+<tr class="row-even"><td><p>STARGIFT_ALREADY_TRANSFERRED</p></td>
+<td><p>The provided star gift was already transferred.</p></td>
+</tr>
+<tr class="row-odd"><td><p>STARGIFT_ALREADY_UPGRADED</p></td>
+<td><p>The specified gift was already upgraded to a collectible gift.</p></td>
+</tr>
 <tr class="row-even"><td><p>STARGIFT_CONVERT_TOO_OLD</p></td>
 <td><p>This gift can no longer be converted into stars.</p></td>
 </tr>
-<tr class="row-odd"><td><p>STARGIFT_INVALID</p></td>
-<td><p>The passed [inputInvoiceStarGift](<a class="reference external" href="https://core.telegram.org/constructor/inputInvoiceStarGift">https://core.telegram.org/constructor/inputInvoiceStarGift</a>) is invalid.</p></td>
+<tr class="row-odd"><td><p>STARGIFT_EXPORT_UNAVAILABLE</p></td>
+<td><p>This gift is not available for export yet.</p></td>
 </tr>
-<tr class="row-even"><td><p>STARGIFT_MESSAGE_INVALID</p></td>
+<tr class="row-even"><td><p>STARGIFT_INVALID</p></td>
+<td><p>The passed gift is invalid.</p></td>
+</tr>
+<tr class="row-odd"><td><p>STARGIFT_MESSAGE_INVALID</p></td>
 <td><p>The provided message for this gift is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>STARGIFT_NOT_FOUND</p></td>
-<td><p>The specified star gift was not found.</p></td>
+<tr class="row-even"><td><p>STARGIFT_NOT_FOUND</p></td>
+<td><p>The specified gift was not found.</p></td>
 </tr>
-<tr class="row-even"><td><p>STARGIFT_NOT_OWNER</p></td>
+<tr class="row-odd"><td><p>STARGIFT_NOT_OWNER</p></td>
 <td><p>You cannot control this gift because it does not belong to you.</p></td>
 </tr>
-<tr class="row-odd"><td><p>STARGIFT_OWNER_INVALID</p></td>
-<td><p>The specified gift owner is invalid.</p></td>
+<tr class="row-even"><td><p>STARGIFT_OWNER_INVALID</p></td>
+<td><p>You cannot transfer or sell a gift owned by another user.</p></td>
+</tr>
+<tr class="row-odd"><td><p>STARGIFT_PEER_INVALID</p></td>
+<td><p>The specified inputSavedStarGiftChat.peer is invalid.</p></td>
 </tr>
 <tr class="row-even"><td><p>STARGIFT_RESELL_CURRENCY_NOT_ALLOWED</p></td>
-<td><p>The resell currency is not valid.</p></td>
+<td><p>You can’t buy the gift using the specified currency (i.e. trying to pay in Stars for TON gifts).</p></td>
 </tr>
 <tr class="row-odd"><td><p>STARGIFT_RESELL_NOT_ALLOWED</p></td>
 <td><p>You cannot buy this gift. Someone else may have already bought it.</p></td>
@@ -2370,19 +2478,25 @@
 <td><p>A wait of {value} seconds is required to resell this gift.</p></td>
 </tr>
 <tr class="row-odd"><td><p>STARGIFT_SLUG_INVALID</p></td>
-<td><p>The provided star gift slug is invalid.</p></td>
+<td><p>The specified gift slug is invalid.</p></td>
 </tr>
 <tr class="row-even"><td><p>STARGIFT_TRANSFER_TOO_EARLY_X</p></td>
-<td><p>A wait of {value} seconds is required to transfer this gift.</p></td>
+<td><p>You cannot transfer this gift yet, wait {value} seconds.</p></td>
 </tr>
-<tr class="row-odd"><td><p>STARGIFT_USAGE_LIMITED</p></td>
+<tr class="row-odd"><td><p>STARGIFT_UPGRADE_UNAVAILABLE</p></td>
+<td><p>A received gift can only be upgraded to a collectible gift if the [messageActionStarGift](<a class="reference external" href="https://core.telegram.org/constructor/messageActionStarGift)/[savedStarGift](https://core.telegram.org/constructor/savedStarGift">https://core.telegram.org/constructor/messageActionStarGift)/[savedStarGift](https://core.telegram.org/constructor/savedStarGift</a>).`can_upgrade` flag is set.</p></td>
+</tr>
+<tr class="row-even"><td><p>STARGIFT_USAGE_LIMITED</p></td>
 <td><p>The gift is sold out.</p></td>
+</tr>
+<tr class="row-odd"><td><p>STARGIFT_USER_USAGE_LIMITED</p></td>
+<td><p>You’ve reached the starGift.limited_per_user limit, you can’t buy any more gifts of this type.</p></td>
 </tr>
 <tr class="row-even"><td><p>STARREF_AWAITING_END</p></td>
 <td><p>The previous referral program was terminated less than 24 hours ago: further changes can be made after the date specified in userFull.starref_program.end_date.</p></td>
 </tr>
 <tr class="row-odd"><td><p>STARREF_EXPIRED</p></td>
-<td><p>The specified referral link is expired.</p></td>
+<td><p>The specified referral link is invalid.</p></td>
 </tr>
 <tr class="row-even"><td><p>STARREF_HASH_REVOKED</p></td>
 <td><p>The specified affiliate link was already revoked.</p></td>
@@ -2397,7 +2511,7 @@
 <td><p>The specified commission_permille is too low: the minimum and maximum values for this parameter are contained in the [starref_min_commission_permille](<a class="reference external" href="https://core.telegram.org/api/config#starref-min-commission-permille">https://core.telegram.org/api/config#starref-min-commission-permille</a>) and [starref_max_commission_permille](<a class="reference external" href="https://core.telegram.org/api/config#starref-max-commission-permille">https://core.telegram.org/api/config#starref-max-commission-permille</a>) client configuration parameters.</p></td>
 </tr>
 <tr class="row-even"><td><p>STARS_AMOUNT_INVALID</p></td>
-<td><p>The specified <code class="docutils literal notranslate"><span class="pre">paid_stars</span></code> amount is invalid.</p></td>
+<td><p>The specified amount in stars is invalid.</p></td>
 </tr>
 <tr class="row-odd"><td><p>STARS_FORM_AMOUNT_MISMATCH</p></td>
 <td><p>stars form amount mismatch</p></td>
@@ -2505,37 +2619,49 @@
 <td><p>You’ve hit the monthly story limit as specified by the [<cite>stories_sent_monthly_limit_*</cite> client configuration parameters](<a class="reference external" href="https://core.telegram.org/api/config#stories-sent-monthly-limit-default">https://core.telegram.org/api/config#stories-sent-monthly-limit-default</a>): wait {value} seconds before posting a new story.</p></td>
 </tr>
 <tr class="row-even"><td><p>STORY_SEND_FLOOD_WEEKLY_X</p></td>
-<td><p>You’ve hit the weekly story limit as specified by the [<cite>stories_sent_weekly_limit_*</cite> client configuration parameters](<a class="reference external" href="https://core.telegram.org/api/config#stories-sent-weekly-limit-default">https://core.telegram.org/api/config#stories-sent-weekly-limit-default</a>): wait {value} seconds before posting a new story.</p></td>
+<td><p>You’ve hit the weekly story limit as specified by the [<cite>stories_sent_weekly_limit_*</cite> client configuration parameters](<a class="reference external" href="https://core.telegram.org/api/config#stories-sent-weekly-limit-default">https://core.telegram.org/api/config#stories-sent-weekly-limit-default</a>): wait for {value} seconds before posting a new story.</p></td>
 </tr>
 <tr class="row-odd"><td><p>SUBSCRIPTION_EXPORT_MISSING</p></td>
 <td><p>You cannot send a [bot subscription invoice](<a class="reference external" href="https://core.telegram.org/api/subscriptions#bot-subscriptions">https://core.telegram.org/api/subscriptions#bot-subscriptions</a>) directly, you may only create invoice links using [payments.exportInvoice](<a class="reference external" href="https://core.telegram.org/method/payments.exportInvoice">https://core.telegram.org/method/payments.exportInvoice</a>).</p></td>
 </tr>
-<tr class="row-even"><td><p>SUBSCRIPTION_PERIOD_INVALID</p></td>
+<tr class="row-even"><td><p>SUBSCRIPTION_ID_INVALID</p></td>
+<td><p>The specified subscription_id is invalid.</p></td>
+</tr>
+<tr class="row-odd"><td><p>SUBSCRIPTION_PERIOD_INVALID</p></td>
 <td><p>The specified subscription_pricing.period is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>SWITCH_PM_TEXT_EMPTY</p></td>
+<tr class="row-even"><td><p>SUGGESTED_POST_AMOUNT_INVALID</p></td>
+<td><p>The specified price for the suggested post is invalid.</p></td>
+</tr>
+<tr class="row-odd"><td><p>SUGGESTED_POST_PEER_INVALID</p></td>
+<td><p>You cannot send suggested posts to non-[monoforum](<a class="reference external" href="https://core.telegram.org/api/monoforum">https://core.telegram.org/api/monoforum</a>) peers.</p></td>
+</tr>
+<tr class="row-even"><td><p>SWITCH_PM_TEXT_EMPTY</p></td>
 <td><p>The switch_pm.text field was empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>SWITCH_WEBVIEW_URL_INVALID</p></td>
+<tr class="row-odd"><td><p>SWITCH_WEBVIEW_URL_INVALID</p></td>
 <td><p>The URL specified in switch_webview.url is invalid!</p></td>
 </tr>
-<tr class="row-odd"><td><p>TAKEOUT_INVALID</p></td>
+<tr class="row-even"><td><p>TAKEOUT_INVALID</p></td>
 <td><p>The specified takeout ID is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>TAKEOUT_REQUIRED</p></td>
+<tr class="row-odd"><td><p>TAKEOUT_REQUIRED</p></td>
 <td><p>A [takeout](<a class="reference external" href="https://core.telegram.org/api/takeout">https://core.telegram.org/api/takeout</a>) session needs to be initialized first, [see here for more info](<a class="reference external" href="https://core.telegram.org/api/takeout">https://core.telegram.org/api/takeout</a>).</p></td>
 </tr>
-<tr class="row-odd"><td><p>TASK_ALREADY_EXISTS</p></td>
+<tr class="row-even"><td><p>TASK_ALREADY_EXISTS</p></td>
 <td><p>An email reset was already requested.</p></td>
 </tr>
-<tr class="row-even"><td><p>TEMP_AUTH_KEY_ALREADY_BOUND</p></td>
+<tr class="row-odd"><td><p>TEMP_AUTH_KEY_ALREADY_BOUND</p></td>
 <td><p>The passed temporary key is already bound to another <strong>perm_auth_key_id</strong>.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TEMP_AUTH_KEY_EMPTY</p></td>
+<tr class="row-even"><td><p>TEMP_AUTH_KEY_EMPTY</p></td>
 <td><p>No temporary auth key provided.</p></td>
 </tr>
-<tr class="row-even"><td><p>TERMS_URL_INVALID</p></td>
+<tr class="row-odd"><td><p>TERMS_URL_INVALID</p></td>
 <td><p>The specified [invoice](<a class="reference external" href="https://core.telegram.org/constructor/invoice">https://core.telegram.org/constructor/invoice</a>).`terms_url` is invalid.</p></td>
+</tr>
+<tr class="row-even"><td><p>TEXTDRAFT_PEER_INVALID</p></td>
+<td><p>The specified peer is invalid.</p></td>
 </tr>
 <tr class="row-odd"><td><p>THEME_FILE_INVALID</p></td>
 <td><p>Invalid theme file provided.</p></td>
@@ -2552,20 +2678,32 @@
 <tr class="row-odd"><td><p>THEME_PARAMS_INVALID</p></td>
 <td><p>The specified <cite>theme_params</cite> field is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>THEME_TITLE_INVALID</p></td>
+<tr class="row-even"><td><p>THEME_SLUG_INVALID</p></td>
+<td><p>The specified theme slug is invalid.</p></td>
+</tr>
+<tr class="row-odd"><td><p>THEME_TITLE_INVALID</p></td>
 <td><p>The specified theme title is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TIMEZONE_INVALID</p></td>
+<tr class="row-even"><td><p>TIMEZONE_INVALID</p></td>
 <td><p>The specified timezone does not exist.</p></td>
 </tr>
-<tr class="row-even"><td><p>TITLE_INVALID</p></td>
+<tr class="row-odd"><td><p>TITLE_INVALID</p></td>
 <td><p>The specified stickerpack title is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TMP_PASSWORD_DISABLED</p></td>
+<tr class="row-even"><td><p>TMP_PASSWORD_DISABLED</p></td>
 <td><p>The temporary password is disabled.</p></td>
 </tr>
-<tr class="row-even"><td><p>TMP_PASSWORD_INVALID</p></td>
+<tr class="row-odd"><td><p>TMP_PASSWORD_INVALID</p></td>
 <td><p>The passed tmp_password is invalid.</p></td>
+</tr>
+<tr class="row-even"><td><p>TODO_ITEMS_EMPTY</p></td>
+<td><p>A checklist was specified, but no [checklist items](<a class="reference external" href="https://core.telegram.org/api/todo">https://core.telegram.org/api/todo</a>) were passed.</p></td>
+</tr>
+<tr class="row-odd"><td><p>TODO_ITEM_DUPLICATE</p></td>
+<td><p>Duplicate [checklist items](<a class="reference external" href="https://core.telegram.org/api/todo">https://core.telegram.org/api/todo</a>) detected.</p></td>
+</tr>
+<tr class="row-even"><td><p>TODO_NOT_MODIFIED</p></td>
+<td><p>No todo items were specified, so no changes were made to the todo list.</p></td>
 </tr>
 <tr class="row-odd"><td><p>TOKEN_EMPTY</p></td>
 <td><p>The specified token is empty.</p></td>
@@ -2600,217 +2738,220 @@
 <tr class="row-odd"><td><p>TOPIC_TITLE_EMPTY</p></td>
 <td><p>The specified topic title is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>TO_LANG_INVALID</p></td>
+<tr class="row-even"><td><p>TO_ID_INVALID</p></td>
+<td><p>The specified <cite>to_id</cite> of the passed inputInvoiceStarGiftResale or inputInvoiceStarGiftTransfer is invalid.</p></td>
+</tr>
+<tr class="row-odd"><td><p>TO_LANG_INVALID</p></td>
 <td><p>The specified destination language is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TRANSACTION_ID_INVALID</p></td>
+<tr class="row-even"><td><p>TRANSACTION_ID_INVALID</p></td>
 <td><p>The specified transaction ID is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>TRANSCRIPTION_FAILED</p></td>
+<tr class="row-odd"><td><p>TRANSCRIPTION_FAILED</p></td>
 <td><p>Audio transcription failed.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TRANSLATE_REQ_QUOTA_EXCEEDED</p></td>
+<tr class="row-even"><td><p>TRANSLATE_REQ_QUOTA_EXCEEDED</p></td>
 <td><p>Translation is currently unavailable due to a temporary server-side lack of resources.</p></td>
 </tr>
-<tr class="row-even"><td><p>TRANSLATIONS_DISABLED</p></td>
+<tr class="row-odd"><td><p>TRANSLATIONS_DISABLED</p></td>
 <td><p>Translation is disabled.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TRANSLATIONS_DISABLED_ALT</p></td>
+<tr class="row-even"><td><p>TRANSLATIONS_DISABLED_ALT</p></td>
 <td><p>Translation is disabled.</p></td>
 </tr>
-<tr class="row-even"><td><p>TTL_DAYS_INVALID</p></td>
+<tr class="row-odd"><td><p>TTL_DAYS_INVALID</p></td>
 <td><p>The provided TTL is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TTL_MEDIA_INVALID</p></td>
+<tr class="row-even"><td><p>TTL_MEDIA_INVALID</p></td>
 <td><p>Invalid media Time To Live was provided.</p></td>
 </tr>
-<tr class="row-even"><td><p>TTL_PERIOD_INVALID</p></td>
+<tr class="row-odd"><td><p>TTL_PERIOD_INVALID</p></td>
 <td><p>The specified TTL period is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>TYPES_EMPTY</p></td>
+<tr class="row-even"><td><p>TYPES_EMPTY</p></td>
 <td><p>No top peer type was provided.</p></td>
 </tr>
-<tr class="row-even"><td><p>TYPE_CONSTRUCTOR_INVALID</p></td>
+<tr class="row-odd"><td><p>TYPE_CONSTRUCTOR_INVALID</p></td>
 <td><p>The type constructor is invalid</p></td>
 </tr>
-<tr class="row-odd"><td><p>UNKNOWN_ERROR</p></td>
+<tr class="row-even"><td><p>UNKNOWN_ERROR</p></td>
 <td><p>Unknown error.</p></td>
 </tr>
-<tr class="row-even"><td><p>UNSUPPORTED</p></td>
-<td><p>This method is not supported.</p></td>
+<tr class="row-odd"><td><p>UNSUPPORTED</p></td>
+<td><p><cite>require_payment</cite> cannot be <em>set</em> by users, only by monoforums: users must instead use the [inputPrivacyKeyNoPaidMessages](<a class="reference external" href="https://core.telegram.org/constructor/inputPrivacyKeyNoPaidMessages">https://core.telegram.org/constructor/inputPrivacyKeyNoPaidMessages</a>) privacy setting to remove a previously added exemption.</p></td>
 </tr>
-<tr class="row-odd"><td><p>UNTIL_DATE_INVALID</p></td>
+<tr class="row-even"><td><p>UNTIL_DATE_INVALID</p></td>
 <td><p>Invalid until date provided.</p></td>
 </tr>
-<tr class="row-even"><td><p>URL_INVALID</p></td>
+<tr class="row-odd"><td><p>URL_INVALID</p></td>
 <td><p>Invalid URL provided.</p></td>
 </tr>
-<tr class="row-odd"><td><p>USAGE_LIMIT_INVALID</p></td>
+<tr class="row-even"><td><p>USAGE_LIMIT_INVALID</p></td>
 <td><p>The specified usage limit is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>USERNAMES_ACTIVE_TOO_MUCH</p></td>
+<tr class="row-odd"><td><p>USERNAMES_ACTIVE_TOO_MUCH</p></td>
 <td><p>The maximum number of active usernames was reached.</p></td>
 </tr>
-<tr class="row-odd"><td><p>USERNAME_INVALID</p></td>
+<tr class="row-even"><td><p>USERNAME_INVALID</p></td>
 <td><p>The provided username is not valid.</p></td>
 </tr>
-<tr class="row-even"><td><p>USERNAME_NOT_MODIFIED</p></td>
+<tr class="row-odd"><td><p>USERNAME_NOT_MODIFIED</p></td>
 <td><p>The username was not modified.</p></td>
 </tr>
-<tr class="row-odd"><td><p>USERNAME_NOT_OCCUPIED</p></td>
+<tr class="row-even"><td><p>USERNAME_NOT_OCCUPIED</p></td>
 <td><p>The provided username is not occupied.</p></td>
 </tr>
-<tr class="row-even"><td><p>USERNAME_OCCUPIED</p></td>
+<tr class="row-odd"><td><p>USERNAME_OCCUPIED</p></td>
 <td><p>The provided username is already occupied.</p></td>
 </tr>
-<tr class="row-odd"><td><p>USERNAME_PURCHASE_AVAILABLE</p></td>
+<tr class="row-even"><td><p>USERNAME_PURCHASE_AVAILABLE</p></td>
 <td><p>The specified username can be purchased on <a class="reference external" href="https://fragment.com">https://fragment.com</a>.</p></td>
 </tr>
-<tr class="row-even"><td><p>USERPIC_UPLOAD_REQUIRED</p></td>
+<tr class="row-odd"><td><p>USERPIC_UPLOAD_REQUIRED</p></td>
 <td><p>You must have a profile picture to publish your geolocation.</p></td>
 </tr>
-<tr class="row-odd"><td><p>USERS_TOO_FEW</p></td>
+<tr class="row-even"><td><p>USERS_TOO_FEW</p></td>
 <td><p>Not enough users (to create a chat, for example).</p></td>
 </tr>
-<tr class="row-even"><td><p>USERS_TOO_MUCH</p></td>
+<tr class="row-odd"><td><p>USERS_TOO_MUCH</p></td>
 <td><p>The maximum number of users has been exceeded (to create a chat, for example).</p></td>
 </tr>
-<tr class="row-odd"><td><p>USER_ADMIN_INVALID</p></td>
+<tr class="row-even"><td><p>USER_ADMIN_INVALID</p></td>
 <td><p>You’re not an admin.</p></td>
 </tr>
-<tr class="row-even"><td><p>USER_ALREADY_INVITED</p></td>
+<tr class="row-odd"><td><p>USER_ALREADY_INVITED</p></td>
 <td><p>You have already invited this user.</p></td>
 </tr>
-<tr class="row-odd"><td><p>USER_ALREADY_PARTICIPANT</p></td>
+<tr class="row-even"><td><p>USER_ALREADY_PARTICIPANT</p></td>
 <td><p>The user is already in the group.</p></td>
 </tr>
-<tr class="row-even"><td><p>USER_BANNED_IN_CHANNEL</p></td>
+<tr class="row-odd"><td><p>USER_BANNED_IN_CHANNEL</p></td>
 <td><p>You’re banned from sending messages in supergroups/channels.</p></td>
 </tr>
-<tr class="row-odd"><td><p>USER_BLOCKED</p></td>
+<tr class="row-even"><td><p>USER_BLOCKED</p></td>
 <td><p>User blocked.</p></td>
 </tr>
-<tr class="row-even"><td><p>USER_BOT</p></td>
+<tr class="row-odd"><td><p>USER_BOT</p></td>
 <td><p>Bots can only be admins in channels.</p></td>
 </tr>
-<tr class="row-odd"><td><p>USER_BOT_INVALID</p></td>
+<tr class="row-even"><td><p>USER_BOT_INVALID</p></td>
 <td><p>User accounts must provide the <cite>bot</cite> method parameter when calling this method. If there is no such method parameter, this method can only be invoked by bot accounts.</p></td>
 </tr>
-<tr class="row-even"><td><p>USER_BOT_REQUIRED</p></td>
+<tr class="row-odd"><td><p>USER_BOT_REQUIRED</p></td>
 <td><p>This method can only be called by a bot.</p></td>
 </tr>
-<tr class="row-odd"><td><p>USER_CHANNELS_TOO_MUCH</p></td>
+<tr class="row-even"><td><p>USER_CHANNELS_TOO_MUCH</p></td>
 <td><p>One of the users you tried to add is already in too many channels/supergroups.</p></td>
 </tr>
-<tr class="row-even"><td><p>USER_CREATOR</p></td>
+<tr class="row-odd"><td><p>USER_CREATOR</p></td>
 <td><p>For channels.editAdmin: you’ve tried to edit the admin rights of the owner, but you’re not the owner; for channels.leaveChannel: you can’t leave this channel, because you’re its creator.</p></td>
 </tr>
-<tr class="row-odd"><td><p>USER_GIFT_UNAVAILABLE</p></td>
+<tr class="row-even"><td><p>USER_GIFT_UNAVAILABLE</p></td>
 <td><p>Gifts are not available in the current region ([stars_gifts_enabled](<a class="reference external" href="https://core.telegram.org/api/config#stars-gifts-enabled">https://core.telegram.org/api/config#stars-gifts-enabled</a>) is equal to false).</p></td>
 </tr>
-<tr class="row-even"><td><p>USER_ID_INVALID</p></td>
+<tr class="row-odd"><td><p>USER_ID_INVALID</p></td>
 <td><p>The provided user ID is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>USER_INVALID</p></td>
+<tr class="row-even"><td><p>USER_INVALID</p></td>
 <td><p>Invalid user provided.</p></td>
 </tr>
-<tr class="row-even"><td><p>USER_IS_BLOCKED</p></td>
+<tr class="row-odd"><td><p>USER_IS_BLOCKED</p></td>
 <td><p>You were blocked by this user.</p></td>
 </tr>
-<tr class="row-odd"><td><p>USER_IS_BOT</p></td>
+<tr class="row-even"><td><p>USER_IS_BOT</p></td>
 <td><p>Bots can’t send messages to other bots.</p></td>
 </tr>
-<tr class="row-even"><td><p>USER_KICKED</p></td>
+<tr class="row-odd"><td><p>USER_KICKED</p></td>
 <td><p>This user was kicked from this supergroup/channel.</p></td>
 </tr>
-<tr class="row-odd"><td><p>USER_NOT_MUTUAL_CONTACT</p></td>
+<tr class="row-even"><td><p>USER_NOT_MUTUAL_CONTACT</p></td>
 <td><p>The provided user is not a mutual contact.</p></td>
 </tr>
-<tr class="row-even"><td><p>USER_NOT_PARTICIPANT</p></td>
+<tr class="row-odd"><td><p>USER_NOT_PARTICIPANT</p></td>
 <td><p>You’re not a member of this supergroup/channel.</p></td>
 </tr>
-<tr class="row-odd"><td><p>USER_PUBLIC_MISSING</p></td>
+<tr class="row-even"><td><p>USER_PUBLIC_MISSING</p></td>
 <td><p>Cannot generate a link to stories posted by a peer without a username.</p></td>
 </tr>
-<tr class="row-even"><td><p>USER_VOLUME_INVALID</p></td>
+<tr class="row-odd"><td><p>USER_VOLUME_INVALID</p></td>
 <td><p>The specified user volume is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>VENUE_ID_INVALID</p></td>
+<tr class="row-even"><td><p>VENUE_ID_INVALID</p></td>
 <td><p>The specified venue ID is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>VIDEO_CONTENT_TYPE_INVALID</p></td>
+<tr class="row-odd"><td><p>VIDEO_CONTENT_TYPE_INVALID</p></td>
 <td><p>The video’s content type is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>VIDEO_FILE_INVALID</p></td>
+<tr class="row-even"><td><p>VIDEO_FILE_INVALID</p></td>
 <td><p>The specified video file is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>VIDEO_PAUSE_FORBIDDEN</p></td>
+<tr class="row-odd"><td><p>VIDEO_PAUSE_FORBIDDEN</p></td>
 <td><p>You cannot pause the video stream.</p></td>
 </tr>
-<tr class="row-odd"><td><p>VIDEO_STOP_FORBIDDEN</p></td>
+<tr class="row-even"><td><p>VIDEO_STOP_FORBIDDEN</p></td>
 <td><p>You cannot stop the video stream.</p></td>
 </tr>
-<tr class="row-even"><td><p>VIDEO_TITLE_EMPTY</p></td>
+<tr class="row-odd"><td><p>VIDEO_TITLE_EMPTY</p></td>
 <td><p>The specified video title is empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>VOICE_MESSAGES_FORBIDDEN</p></td>
+<tr class="row-even"><td><p>VOICE_MESSAGES_FORBIDDEN</p></td>
 <td><p>This user’s privacy settings forbid you from sending voice messages.</p></td>
 </tr>
-<tr class="row-even"><td><p>VOLUME_LOC_NOT_FOUND</p></td>
+<tr class="row-odd"><td><p>VOLUME_LOC_NOT_FOUND</p></td>
 <td><p>The volume location can’t be found</p></td>
 </tr>
-<tr class="row-odd"><td><p>WALLPAPER_FILE_INVALID</p></td>
+<tr class="row-even"><td><p>WALLPAPER_FILE_INVALID</p></td>
 <td><p>The specified wallpaper file is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>WALLPAPER_INVALID</p></td>
+<tr class="row-odd"><td><p>WALLPAPER_INVALID</p></td>
 <td><p>The specified wallpaper is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>WALLPAPER_MIME_INVALID</p></td>
+<tr class="row-even"><td><p>WALLPAPER_MIME_INVALID</p></td>
 <td><p>The specified wallpaper MIME type is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>WALLPAPER_NOT_FOUND</p></td>
+<tr class="row-odd"><td><p>WALLPAPER_NOT_FOUND</p></td>
 <td><p>The specified wallpaper could not be found.</p></td>
 </tr>
-<tr class="row-odd"><td><p>WC_CONVERT_URL_INVALID</p></td>
+<tr class="row-even"><td><p>WC_CONVERT_URL_INVALID</p></td>
 <td><p>WC convert URL invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>WEBDOCUMENT_INVALID</p></td>
+<tr class="row-odd"><td><p>WEBDOCUMENT_INVALID</p></td>
 <td><p>Invalid webdocument URL provided.</p></td>
 </tr>
-<tr class="row-odd"><td><p>WEBDOCUMENT_MIME_INVALID</p></td>
+<tr class="row-even"><td><p>WEBDOCUMENT_MIME_INVALID</p></td>
 <td><p>Invalid webdocument mime type provided.</p></td>
 </tr>
-<tr class="row-even"><td><p>WEBDOCUMENT_SIZE_TOO_BIG</p></td>
+<tr class="row-odd"><td><p>WEBDOCUMENT_SIZE_TOO_BIG</p></td>
 <td><p>Webdocument is too big!</p></td>
 </tr>
-<tr class="row-odd"><td><p>WEBDOCUMENT_URL_EMPTY</p></td>
+<tr class="row-even"><td><p>WEBDOCUMENT_URL_EMPTY</p></td>
 <td><p>The passed web document URL is empty.</p></td>
 </tr>
-<tr class="row-even"><td><p>WEBDOCUMENT_URL_INVALID</p></td>
+<tr class="row-odd"><td><p>WEBDOCUMENT_URL_INVALID</p></td>
 <td><p>The specified webdocument URL is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>WEBPAGE_CURL_FAILED</p></td>
+<tr class="row-even"><td><p>WEBPAGE_CURL_FAILED</p></td>
 <td><p>Failure while fetching the webpage with cURL.</p></td>
 </tr>
-<tr class="row-even"><td><p>WEBPAGE_MEDIA_EMPTY</p></td>
+<tr class="row-odd"><td><p>WEBPAGE_MEDIA_EMPTY</p></td>
 <td><p>Webpage media empty.</p></td>
 </tr>
-<tr class="row-odd"><td><p>WEBPAGE_NOT_FOUND</p></td>
+<tr class="row-even"><td><p>WEBPAGE_NOT_FOUND</p></td>
 <td><p>A preview for the specified webpage <cite>url</cite> could not be generated.</p></td>
 </tr>
-<tr class="row-even"><td><p>WEBPAGE_URL_INVALID</p></td>
+<tr class="row-odd"><td><p>WEBPAGE_URL_INVALID</p></td>
 <td><p>The specified webpage <cite>url</cite> is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>WEBPUSH_AUTH_INVALID</p></td>
+<tr class="row-even"><td><p>WEBPUSH_AUTH_INVALID</p></td>
 <td><p>The specified web push authentication secret is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>WEBPUSH_KEY_INVALID</p></td>
+<tr class="row-odd"><td><p>WEBPUSH_KEY_INVALID</p></td>
 <td><p>The specified web push elliptic curve Diffie-Hellman public key is invalid.</p></td>
 </tr>
-<tr class="row-odd"><td><p>WEBPUSH_TOKEN_INVALID</p></td>
+<tr class="row-even"><td><p>WEBPUSH_TOKEN_INVALID</p></td>
 <td><p>The specified web push token is invalid.</p></td>
 </tr>
-<tr class="row-even"><td><p>YOU_BLOCKED_USER</p></td>
+<tr class="row-odd"><td><p>YOU_BLOCKED_USER</p></td>
 <td><p>You blocked this user.</p></td>
 </tr>
 </tbody>
@@ -2854,7 +2995,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

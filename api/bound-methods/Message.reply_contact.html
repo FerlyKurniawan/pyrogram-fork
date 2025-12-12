@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Message.reply_document()" href="Message.reply_document.html" /><link rel="prev" title="Message.reply_chat_action()" href="Message.reply_chat_action.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Message.reply_contact() - PyroTGFork 2.2.16 Layer 214</title>
+        <title>Message.reply_contact() - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -979,13 +979,13 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>phone_number</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Contact’s phone number.</p></li>
-<li><p><strong>first_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Contact’s first name.</p></li>
+<li><p><strong>phone_number</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Phone number of the user.</p></li>
+<li><p><strong>first_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – First name of the user; 1-64 characters.</p></li>
 <li><p><strong>quote</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, the message will be sent as a reply to this message.
 If <em>reply_to_message_id</em> is passed, this parameter will be ignored.
 Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code> in group chats and <code class="docutils literal notranslate"><span class="pre">False</span></code> in private chats.</p></li>
-<li><p><strong>last_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Contact’s last name.</p></li>
-<li><p><strong>vcard</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Additional data about the contact in the form of a vCard, 0-2048 bytes</p></li>
+<li><p><strong>last_name</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Last name of the user; 0-64 characters.</p></li>
+<li><p><strong>vcard</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Additional data about the user in a form of <a class="reference external" href="https://en.wikipedia.org/wiki/VCard">vCard</a>; 0-2048 bytes in length.</p></li>
 <li><p><strong>disable_notification</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Sends the message silently.
 Users will receive a notification with no sound.</p></li>
 <li><p><strong>message_effect_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>) – Unique identifier of the message effect to be added to the message; for private chats only.</p></li>
@@ -995,7 +995,7 @@ You can use this to send the message on behalf of a chat or channel where you ha
 Use the <a class="reference internal" href="../methods/get_send_as_chats.html#pyrogram.Client.get_send_as_chats" title="pyrogram.Client.get_send_as_chats"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_send_as_chats()</span></code></a> to return the list of message sender identifiers, which can be used to send messages in the chat,
 This setting applies to the current message and will remain effective for future messages unless explicitly changed.
 To set this behavior permanently for all messages, use <a class="reference internal" href="../methods/set_send_as_chat.html#pyrogram.Client.set_send_as_chat" title="pyrogram.Client.set_send_as_chat"><code class="xref py py-meth docutils literal notranslate"><span class="pre">set_send_as_chat()</span></code></a>.</p></li>
-<li><p><strong>schedule_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the message will be automatically sent.</p></li>
+<li><p><strong>schedule_date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.14)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">datetime</span></code></a>, <em>optional</em>) – Date when the message will be automatically sent.</p></li>
 <li><p><strong>protect_content</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True if the content of the message must be protected from forwarding and saving; for bots only.</p></li>
 <li><p><strong>allow_paid_broadcast</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to allow the message to ignore regular broadcast limits for a small fee; for bots only</p></li>
 <li><p><strong>reply_markup</strong> (<a class="reference internal" href="../types/InlineKeyboardMarkup.html#pyrogram.types.InlineKeyboardMarkup" title="pyrogram.types.InlineKeyboardMarkup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardMarkup</span></code></a> | <a class="reference internal" href="../types/ReplyKeyboardMarkup.html#pyrogram.types.ReplyKeyboardMarkup" title="pyrogram.types.ReplyKeyboardMarkup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardMarkup</span></code></a> | <a class="reference internal" href="../types/ReplyKeyboardRemove.html#pyrogram.types.ReplyKeyboardRemove" title="pyrogram.types.ReplyKeyboardRemove"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplyKeyboardRemove</span></code></a> | <a class="reference internal" href="../types/ForceReply.html#pyrogram.types.ForceReply" title="pyrogram.types.ForceReply"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForceReply</span></code></a>, <em>optional</em>) – Additional interface options. An object for an inline keyboard, custom reply keyboard,
@@ -1049,7 +1049,7 @@ instructions to remove reply keyboard or to force a reply from the user.</p></li
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

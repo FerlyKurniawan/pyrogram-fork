@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Account" href="account/index.html" /><link rel="prev" title="SetClientDHParams" href="../functions/set-client-dh-params.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Raw Types - PyroTGFork 2.2.16 Layer 214</title>
+        <title>Raw Types - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -977,6 +977,8 @@
 <li class="toctree-l2"><a class="reference internal" href="account/emoji-statuses.html">EmojiStatuses</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/emoji-statuses-not-modified.html">EmojiStatusesNotModified</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/paid-messages-revenue.html">PaidMessagesRevenue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/passkey-registration-options.html">PasskeyRegistrationOptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account/passkeys.html">Passkeys</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/password.html">Password</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/password-input-settings.html">PasswordInputSettings</a></li>
 <li class="toctree-l2"><a class="reference internal" href="account/password-settings.html">PasswordSettings</a></li>
@@ -1014,6 +1016,7 @@
 <li class="toctree-l2"><a class="reference internal" href="auth/login-token.html">LoginToken</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/login-token-migrate-to.html">LoginTokenMigrateTo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/login-token-success.html">LoginTokenSuccess</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auth/passkey-login-options.html">PasskeyLoginOptions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/password-recovery.html">PasswordRecovery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/sent-code.html">SentCode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="auth/sent-code-payment-required.html">SentCodePaymentRequired</a></li>
@@ -1221,8 +1224,13 @@
 <li class="toctree-l2"><a class="reference internal" href="payments/resale-star-gifts.html">ResaleStarGifts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/saved-info.html">SavedInfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/saved-star-gifts.html">SavedStarGifts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/star-gift-active-auctions.html">StarGiftActiveAuctions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/star-gift-active-auctions-not-modified.html">StarGiftActiveAuctionsNotModified</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/star-gift-auction-acquired-gifts.html">StarGiftAuctionAcquiredGifts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/star-gift-auction-state.html">StarGiftAuctionState</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/star-gift-collections.html">StarGiftCollections</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/star-gift-collections-not-modified.html">StarGiftCollectionsNotModified</a></li>
+<li class="toctree-l2"><a class="reference internal" href="payments/star-gift-upgrade-attributes.html">StarGiftUpgradeAttributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/star-gift-upgrade-preview.html">StarGiftUpgradePreview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/star-gift-withdrawal-url.html">StarGiftWithdrawalUrl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="payments/star-gifts.html">StarGifts</a></li>
@@ -1240,6 +1248,7 @@
 <li class="toctree-l1"><a class="reference internal" href="phone/index.html">Phone</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="phone/exported-group-call-invite.html">ExportedGroupCallInvite</a></li>
 <li class="toctree-l2"><a class="reference internal" href="phone/group-call.html">GroupCall</a></li>
+<li class="toctree-l2"><a class="reference internal" href="phone/group-call-stars.html">GroupCallStars</a></li>
 <li class="toctree-l2"><a class="reference internal" href="phone/group-call-stream-channels.html">GroupCallStreamChannels</a></li>
 <li class="toctree-l2"><a class="reference internal" href="phone/group-call-stream-rtmp-url.html">GroupCallStreamRtmpUrl</a></li>
 <li class="toctree-l2"><a class="reference internal" href="phone/group-participants.html">GroupParticipants</a></li>
@@ -1343,6 +1352,7 @@
 <li class="toctree-l1"><a class="reference internal" href="attach-menu-peer-type-chat.html">AttachMenuPeerTypeChat</a></li>
 <li class="toctree-l1"><a class="reference internal" href="attach-menu-peer-type-pm.html">AttachMenuPeerTypePM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="attach-menu-peer-type-same-bot-pm.html">AttachMenuPeerTypeSameBotPM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="auction-bid-level.html">AuctionBidLevel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="authorization.html">Authorization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="auto-download-settings.html">AutoDownloadSettings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="auto-save-exception.html">AutoSaveException</a></li>
@@ -1589,6 +1599,8 @@
 <li class="toctree-l1"><a class="reference internal" href="global-privacy-settings.html">GlobalPrivacySettings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="group-call.html">GroupCall</a></li>
 <li class="toctree-l1"><a class="reference internal" href="group-call-discarded.html">GroupCallDiscarded</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group-call-donor.html">GroupCallDonor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group-call-message.html">GroupCallMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="group-call-participant.html">GroupCallParticipant</a></li>
 <li class="toctree-l1"><a class="reference internal" href="group-call-participant-video.html">GroupCallParticipantVideo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="group-call-participant-video-source-group.html">GroupCallParticipantVideoSourceGroup</a></li>
@@ -1670,10 +1682,13 @@
 <li class="toctree-l1"><a class="reference internal" href="input-invoice-business-bot-transfer-stars.html">InputInvoiceBusinessBotTransferStars</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-invoice-chat-invite-subscription.html">InputInvoiceChatInviteSubscription</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-invoice-message.html">InputInvoiceMessage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-invoice-premium-auth-code.html">InputInvoicePremiumAuthCode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-invoice-premium-gift-code.html">InputInvoicePremiumGiftCode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-invoice-premium-gift-stars.html">InputInvoicePremiumGiftStars</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-invoice-slug.html">InputInvoiceSlug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-invoice-star-gift.html">InputInvoiceStarGift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-invoice-star-gift-auction-bid.html">InputInvoiceStarGiftAuctionBid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-invoice-star-gift-drop-original-details.html">InputInvoiceStarGiftDropOriginalDetails</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-invoice-star-gift-prepaid-upgrade.html">InputInvoiceStarGiftPrepaidUpgrade</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-invoice-star-gift-resale.html">InputInvoiceStarGiftResale</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-invoice-star-gift-transfer.html">InputInvoiceStarGiftTransfer</a></li>
@@ -1730,6 +1745,9 @@
 <li class="toctree-l1"><a class="reference internal" href="input-notify-forum-topic.html">InputNotifyForumTopic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-notify-peer.html">InputNotifyPeer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-notify-users.html">InputNotifyUsers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-passkey-credential-public-key.html">InputPasskeyCredentialPublicKey</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-passkey-response-login.html">InputPasskeyResponseLogin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-passkey-response-register.html">InputPasskeyResponseRegister</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-payment-credentials.html">InputPaymentCredentials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-payment-credentials-apple-pay.html">InputPaymentCredentialsApplePay</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-payment-credentials-google-pay.html">InputPaymentCredentialsGooglePay</a></li>
@@ -1737,6 +1755,7 @@
 <li class="toctree-l1"><a class="reference internal" href="input-peer-channel.html">InputPeerChannel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-peer-channel-from-message.html">InputPeerChannelFromMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-peer-chat.html">InputPeerChat</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-peer-color-collectible.html">InputPeerColorCollectible</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-peer-empty.html">InputPeerEmpty</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-peer-notify-settings.html">InputPeerNotifySettings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-peer-photo-file-location.html">InputPeerPhotoFileLocation</a></li>
@@ -1760,6 +1779,7 @@
 <li class="toctree-l1"><a class="reference internal" href="input-privacy-key-phone-number.html">InputPrivacyKeyPhoneNumber</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-privacy-key-phone-p2-p.html">InputPrivacyKeyPhoneP2P</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-privacy-key-profile-photo.html">InputPrivacyKeyProfilePhoto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-privacy-key-saved-music.html">InputPrivacyKeySavedMusic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-privacy-key-star-gifts-auto-save.html">InputPrivacyKeyStarGiftsAutoSave</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-privacy-key-status-timestamp.html">InputPrivacyKeyStatusTimestamp</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-privacy-key-voice-messages.html">InputPrivacyKeyVoiceMessages</a></li>
@@ -1798,6 +1818,8 @@
 <li class="toctree-l1"><a class="reference internal" href="input-secure-file-uploaded.html">InputSecureFileUploaded</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-secure-value.html">InputSecureValue</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-single-media.html">InputSingleMedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-star-gift-auction.html">InputStarGiftAuction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input-star-gift-auction-slug.html">InputStarGiftAuctionSlug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-stars-transaction.html">InputStarsTransaction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-sticker-set-animated-emoji.html">InputStickerSetAnimatedEmoji</a></li>
 <li class="toctree-l1"><a class="reference internal" href="input-sticker-set-animated-emoji-animations.html">InputStickerSetAnimatedEmojiAnimations</a></li>
@@ -1927,7 +1949,10 @@
 <li class="toctree-l1"><a class="reference internal" href="message-action-set-chat-wall-paper.html">MessageActionSetChatWallPaper</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-set-messages-ttl.html">MessageActionSetMessagesTTL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-star-gift.html">MessageActionStarGift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message-action-star-gift-purchase-offer.html">MessageActionStarGiftPurchaseOffer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message-action-star-gift-purchase-offer-declined.html">MessageActionStarGiftPurchaseOfferDeclined</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-star-gift-unique.html">MessageActionStarGiftUnique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message-action-suggest-birthday.html">MessageActionSuggestBirthday</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-suggest-profile-photo.html">MessageActionSuggestProfilePhoto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-suggested-post-approval.html">MessageActionSuggestedPostApproval</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-action-suggested-post-refund.html">MessageActionSuggestedPostRefund</a></li>
@@ -1979,6 +2004,7 @@
 <li class="toctree-l1"><a class="reference internal" href="message-media-to-do.html">MessageMediaToDo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-media-unsupported.html">MessageMediaUnsupported</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-media-venue.html">MessageMediaVenue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="message-media-video-stream.html">MessageMediaVideoStream</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-media-web-page.html">MessageMediaWebPage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-peer-reaction.html">MessagePeerReaction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="message-peer-vote.html">MessagePeerVote</a></li>
@@ -2061,6 +2087,7 @@
 <li class="toctree-l1"><a class="reference internal" href="paid-reaction-privacy-anonymous.html">PaidReactionPrivacyAnonymous</a></li>
 <li class="toctree-l1"><a class="reference internal" href="paid-reaction-privacy-default.html">PaidReactionPrivacyDefault</a></li>
 <li class="toctree-l1"><a class="reference internal" href="paid-reaction-privacy-peer.html">PaidReactionPrivacyPeer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="passkey.html">Passkey</a></li>
 <li class="toctree-l1"><a class="reference internal" href="password-kdf-algo-sha256-sha256-pbkdf2-hmacsha512iter100000-sha256-mod-pow.html">PasswordKdfAlgoSHA256SHA256PBKDF2HMACSHA512iter100000SHA256ModPow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="password-kdf-algo-unknown.html">PasswordKdfAlgoUnknown</a></li>
 <li class="toctree-l1"><a class="reference internal" href="payment-charge.html">PaymentCharge</a></li>
@@ -2071,6 +2098,7 @@
 <li class="toctree-l1"><a class="reference internal" href="peer-channel.html">PeerChannel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="peer-chat.html">PeerChat</a></li>
 <li class="toctree-l1"><a class="reference internal" href="peer-color.html">PeerColor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="peer-color-collectible.html">PeerColorCollectible</a></li>
 <li class="toctree-l1"><a class="reference internal" href="peer-located.html">PeerLocated</a></li>
 <li class="toctree-l1"><a class="reference internal" href="peer-notify-settings.html">PeerNotifySettings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="peer-self-located.html">PeerSelfLocated</a></li>
@@ -2123,6 +2151,7 @@
 <li class="toctree-l1"><a class="reference internal" href="privacy-key-phone-number.html">PrivacyKeyPhoneNumber</a></li>
 <li class="toctree-l1"><a class="reference internal" href="privacy-key-phone-p2-p.html">PrivacyKeyPhoneP2P</a></li>
 <li class="toctree-l1"><a class="reference internal" href="privacy-key-profile-photo.html">PrivacyKeyProfilePhoto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privacy-key-saved-music.html">PrivacyKeySavedMusic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="privacy-key-star-gifts-auto-save.html">PrivacyKeyStarGiftsAutoSave</a></li>
 <li class="toctree-l1"><a class="reference internal" href="privacy-key-status-timestamp.html">PrivacyKeyStatusTimestamp</a></li>
 <li class="toctree-l1"><a class="reference internal" href="privacy-key-voice-messages.html">PrivacyKeyVoiceMessages</a></li>
@@ -2164,6 +2193,7 @@
 <li class="toctree-l1"><a class="reference internal" href="recent-me-url-sticker-set.html">RecentMeUrlStickerSet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recent-me-url-unknown.html">RecentMeUrlUnknown</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recent-me-url-user.html">RecentMeUrlUser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recent-story.html">RecentStory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reply-inline-markup.html">ReplyInlineMarkup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reply-keyboard-force-reply.html">ReplyKeyboardForceReply</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reply-keyboard-hide.html">ReplyKeyboardHide</a></li>
@@ -2242,6 +2272,7 @@
 <li class="toctree-l1"><a class="reference internal" href="send-message-record-audio-action.html">SendMessageRecordAudioAction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="send-message-record-round-action.html">SendMessageRecordRoundAction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="send-message-record-video-action.html">SendMessageRecordVideoAction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="send-message-text-draft-action.html">SendMessageTextDraftAction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="send-message-typing-action.html">SendMessageTypingAction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="send-message-upload-audio-action.html">SendMessageUploadAudioAction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="send-message-upload-document-action.html">SendMessageUploadDocumentAction</a></li>
@@ -2258,6 +2289,7 @@
 <li class="toctree-l1"><a class="reference internal" href="sponsored-message-report-option.html">SponsoredMessageReportOption</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sponsored-peer.html">SponsoredPeer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="star-gift.html">StarGift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="star-gift-active-auction-state.html">StarGiftActiveAuctionState</a></li>
 <li class="toctree-l1"><a class="reference internal" href="star-gift-attribute-backdrop.html">StarGiftAttributeBackdrop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="star-gift-attribute-counter.html">StarGiftAttributeCounter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="star-gift-attribute-id-backdrop.html">StarGiftAttributeIdBackdrop</a></li>
@@ -2266,8 +2298,17 @@
 <li class="toctree-l1"><a class="reference internal" href="star-gift-attribute-model.html">StarGiftAttributeModel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="star-gift-attribute-original-details.html">StarGiftAttributeOriginalDetails</a></li>
 <li class="toctree-l1"><a class="reference internal" href="star-gift-attribute-pattern.html">StarGiftAttributePattern</a></li>
+<li class="toctree-l1"><a class="reference internal" href="star-gift-auction-acquired-gift.html">StarGiftAuctionAcquiredGift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="star-gift-auction-round.html">StarGiftAuctionRound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="star-gift-auction-round-extendable.html">StarGiftAuctionRoundExtendable</a></li>
+<li class="toctree-l1"><a class="reference internal" href="star-gift-auction-state.html">StarGiftAuctionState</a></li>
+<li class="toctree-l1"><a class="reference internal" href="star-gift-auction-state-finished.html">StarGiftAuctionStateFinished</a></li>
+<li class="toctree-l1"><a class="reference internal" href="star-gift-auction-state-not-modified.html">StarGiftAuctionStateNotModified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="star-gift-auction-user-state.html">StarGiftAuctionUserState</a></li>
+<li class="toctree-l1"><a class="reference internal" href="star-gift-background.html">StarGiftBackground</a></li>
 <li class="toctree-l1"><a class="reference internal" href="star-gift-collection.html">StarGiftCollection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="star-gift-unique.html">StarGiftUnique</a></li>
+<li class="toctree-l1"><a class="reference internal" href="star-gift-upgrade-price.html">StarGiftUpgradePrice</a></li>
 <li class="toctree-l1"><a class="reference internal" href="star-ref-program.html">StarRefProgram</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stars-amount.html">StarsAmount</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stars-gift-option.html">StarsGiftOption</a></li>
@@ -2380,8 +2421,6 @@
 <li class="toctree-l1"><a class="reference internal" href="update-channel-message-forwards.html">UpdateChannelMessageForwards</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-channel-message-views.html">UpdateChannelMessageViews</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-channel-participant.html">UpdateChannelParticipant</a></li>
-<li class="toctree-l1"><a class="reference internal" href="update-channel-pinned-topic.html">UpdateChannelPinnedTopic</a></li>
-<li class="toctree-l1"><a class="reference internal" href="update-channel-pinned-topics.html">UpdateChannelPinnedTopics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-channel-read-messages-contents.html">UpdateChannelReadMessagesContents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-channel-too-long.html">UpdateChannelTooLong</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-channel-user-typing.html">UpdateChannelUserTyping</a></li>
@@ -2399,6 +2438,7 @@
 <li class="toctree-l1"><a class="reference internal" href="update-contacts-reset.html">UpdateContactsReset</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-dc-options.html">UpdateDcOptions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-delete-channel-messages.html">UpdateDeleteChannelMessages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-delete-group-call-messages.html">UpdateDeleteGroupCallMessages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-delete-messages.html">UpdateDeleteMessages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-delete-quick-reply.html">UpdateDeleteQuickReply</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-delete-quick-reply-messages.html">UpdateDeleteQuickReplyMessages</a></li>
@@ -2420,6 +2460,8 @@
 <li class="toctree-l1"><a class="reference internal" href="update-group-call.html">UpdateGroupCall</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-group-call-chain-blocks.html">UpdateGroupCallChainBlocks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-group-call-connection.html">UpdateGroupCallConnection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-group-call-encrypted-message.html">UpdateGroupCallEncryptedMessage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-group-call-message.html">UpdateGroupCallMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-group-call-participants.html">UpdateGroupCallParticipants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-inline-bot-callback-query.html">UpdateInlineBotCallbackQuery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-lang-pack.html">UpdateLangPack</a></li>
@@ -2452,6 +2494,8 @@
 <li class="toctree-l1"><a class="reference internal" href="update-phone-call-signaling-data.html">UpdatePhoneCallSignalingData</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-pinned-channel-messages.html">UpdatePinnedChannelMessages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-pinned-dialogs.html">UpdatePinnedDialogs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-pinned-forum-topic.html">UpdatePinnedForumTopic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-pinned-forum-topics.html">UpdatePinnedForumTopics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-pinned-messages.html">UpdatePinnedMessages</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-pinned-saved-dialogs.html">UpdatePinnedSavedDialogs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-privacy.html">UpdatePrivacy</a></li>
@@ -2485,6 +2529,8 @@
 <li class="toctree-l1"><a class="reference internal" href="update-short-message.html">UpdateShortMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-short-sent-message.html">UpdateShortSentMessage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-sms-job.html">UpdateSmsJob</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-star-gift-auction-state.html">UpdateStarGiftAuctionState</a></li>
+<li class="toctree-l1"><a class="reference internal" href="update-star-gift-auction-user-state.html">UpdateStarGiftAuctionUserState</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-stars-balance.html">UpdateStarsBalance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-stars-revenue-status.html">UpdateStarsRevenueStatus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="update-sticker-sets.html">UpdateStickerSets</a></li>
@@ -2530,6 +2576,7 @@
 <li class="toctree-l1"><a class="reference internal" href="web-document.html">WebDocument</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-document-no-proxy.html">WebDocumentNoProxy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-page.html">WebPage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="web-page-attribute-star-gift-auction.html">WebPageAttributeStarGiftAuction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-page-attribute-star-gift-collection.html">WebPageAttributeStarGiftCollection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-page-attribute-sticker-set.html">WebPageAttributeStickerSet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web-page-attribute-story.html">WebPageAttributeStory</a></li>
@@ -2580,7 +2627,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

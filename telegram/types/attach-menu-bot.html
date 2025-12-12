@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="AttachMenuBotIcon" href="attach-menu-bot-icon.html" /><link rel="prev" title="AccountDaysTTL" href="account-days-ttl.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>AttachMenuBot - PyroTGFork 2.2.16 Layer 214</title>
+        <title>AttachMenuBot - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -963,20 +963,41 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.types.AttachMenuBot">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">AttachMenuBot</span></span><a class="headerlink" href="#pyrogram.raw.types.AttachMenuBot" title="Link to this definition">#</a></dt>
-<dd><p>Represents a bot mini app that can be launched from the attachment menu</p>
-<dl>
-<dt>Constructors:</dt><dd><p>This base type has 1 constructor available.</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrogram.raw.types.AttachMenuBot" title="pyrogram.raw.types.AttachMenuBot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AttachMenuBot</span></code></a></p></td>
-<td><p>Represents a bot mini app that can be launched from the attachment menu</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<dd><p>Represents a bot mini app that can be launched from the attachment/side menu
+At least one of the show_in_attach_menu or the show_in_side_menu flags will always be set.</p>
+<blockquote>
+<div><p>Constructor of <a class="reference internal" href="../base/attach-menu-bot.html#pyrogram.raw.base.AttachMenuBot" title="pyrogram.raw.base.AttachMenuBot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AttachMenuBot</span></code></a>.</p>
+<dl class="simple">
+<dt>Details:</dt><dd><ul class="simple">
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">220</span></code></p></li>
+<li><p>ID: <code class="docutils literal notranslate"><span class="pre">D90D8DFE</span></code></p></li>
+</ul>
+</dd>
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>bot_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>):</dt><dd><p>Bot ID</p>
+</dd>
+<dt>short_name (<code class="docutils literal notranslate"><span class="pre">str</span></code>):</dt><dd><p>Attachment menu item name</p>
+</dd>
+<dt>icons (List of <a class="reference internal" href="../base/attach-menu-bot-icon.html#pyrogram.raw.base.AttachMenuBotIcon" title="pyrogram.raw.base.AttachMenuBotIcon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AttachMenuBotIcon</span></code></a>):</dt><dd><p>List of platform-specific static icons and animations to use for the attachment menu button</p>
+</dd>
+<dt>inactive (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If set, before launching the mini app the client should ask the user to add the mini app to the attachment/side menu, and only if the user accepts, after invoking messages.toggleBotInAttachMenu the app should be opened.</p>
+</dd>
+<dt>has_settings (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Deprecated flag, can be ignored.</p>
+</dd>
+<dt>request_write_access (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether the bot would like to send messages to the user.</p>
+</dd>
+<dt>show_in_attach_menu (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether, when installed, an attachment menu entry should be shown for the Mini App.</p>
+</dd>
+<dt>show_in_side_menu (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether, when installed, an entry in the main view side menu should be shown for the Mini App.</p>
+</dd>
+<dt>side_menu_disclaimer_needed (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If inactive if set and the user hasn’t previously accepted the third-party mini apps Terms of Service for this bot, when showing the mini app installation prompt, an additional mandatory checkbox to accept the mini apps TOS and a disclaimer indicating that this Mini App is not affiliated to Telegram should be shown.</p>
+</dd>
+<dt>peer_types (List of <a class="reference internal" href="../base/attach-menu-peer-type.html#pyrogram.raw.base.AttachMenuPeerType" title="pyrogram.raw.base.AttachMenuPeerType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AttachMenuPeerType</span></code></a>, <em>optional</em>):</dt><dd><p>List of dialog types where this attachment menu entry should be shown</p>
 </dd>
 </dl>
+</dd>
+</dl>
+</div></blockquote>
 </dd></dl>
 
 </section>
@@ -1017,7 +1038,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

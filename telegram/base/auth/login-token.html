@@ -12,10 +12,10 @@
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="https://t.me/PyroTGFork/2" />
     <meta property="article:author" content="@PyroTGFork" />
-    <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="auth.PasswordRecovery" href="password-recovery.html" /><link rel="prev" title="auth.LoggedOut" href="logged-out.html" />
+    <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="auth.PasskeyLoginOptions" href="passkey-login-options.html" /><link rel="prev" title="auth.LoggedOut" href="logged-out.html" />
 
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>auth.LoginToken - PyroTGFork 2.2.16 Layer 214</title>
+        <title>auth.LoginToken - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -960,10 +960,43 @@
             <article role="main" id="furo-main-content" class="article__content">
             <section id="auth-logintoken">
 <h1>auth.LoginToken<a class="headerlink" href="#auth-logintoken" title="Link to this heading">#</a></h1>
-<dl class="py attribute">
+<dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.base.auth.LoginToken">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.raw.base.auth.</span></span><span class="sig-name descname"><span class="pre">LoginToken</span></span><a class="headerlink" href="#pyrogram.raw.base.auth.LoginToken" title="Link to this definition">#</a></dt>
-<dd><p>alias of <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../types/auth/login-token.html#pyrogram.raw.types.auth.LoginToken" title="pyrogram.raw.types.auth.login_token.LoginToken"><code class="xref py py-class docutils literal notranslate"><span class="pre">LoginToken</span></code></a>, <a class="reference internal" href="../../types/auth/login-token-migrate-to.html#pyrogram.raw.types.auth.LoginTokenMigrateTo" title="pyrogram.raw.types.auth.login_token_migrate_to.LoginTokenMigrateTo"><code class="xref py py-class docutils literal notranslate"><span class="pre">LoginTokenMigrateTo</span></code></a>, <a class="reference internal" href="../../types/auth/login-token-success.html#pyrogram.raw.types.auth.LoginTokenSuccess" title="pyrogram.raw.types.auth.login_token_success.LoginTokenSuccess"><code class="xref py py-class docutils literal notranslate"><span class="pre">LoginTokenSuccess</span></code></a>]</p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.base.auth.</span></span><span class="sig-name descname"><span class="pre">LoginToken</span></span><a class="headerlink" href="#pyrogram.raw.base.auth.LoginToken" title="Link to this definition">#</a></dt>
+<dd><p>Login token (for QR code login)</p>
+<dl>
+<dt>Constructors:</dt><dd><p>This base type has 3 constructors available.</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/auth/login-token.html#pyrogram.raw.types.auth.LoginToken" title="pyrogram.raw.types.auth.LoginToken"><code class="xref py py-obj docutils literal notranslate"><span class="pre">auth.LoginToken</span></code></a></p></td>
+<td><p>Login token (for QR code login)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/auth/login-token-migrate-to.html#pyrogram.raw.types.auth.LoginTokenMigrateTo" title="pyrogram.raw.types.auth.LoginTokenMigrateTo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">auth.LoginTokenMigrateTo</span></code></a></p></td>
+<td><p>Repeat the query to the specified DC</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/auth/login-token-success.html#pyrogram.raw.types.auth.LoginTokenSuccess" title="pyrogram.raw.types.auth.LoginTokenSuccess"><code class="xref py py-obj docutils literal notranslate"><span class="pre">auth.LoginTokenSuccess</span></code></a></p></td>
+<td><p>Login via token (QR code) succeeded!</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd>
+<dt>Functions:</dt><dd><p>This object can be returned by 2 functions.</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../functions/auth/export-login-token.html#pyrogram.raw.functions.auth.ExportLoginToken" title="pyrogram.raw.functions.auth.ExportLoginToken"><code class="xref py py-obj docutils literal notranslate"><span class="pre">auth.ExportLoginToken</span></code></a></p></td>
+<td><p>Generate a login token, for login via QR code.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../functions/auth/import-login-token.html#pyrogram.raw.functions.auth.ImportLoginToken" title="pyrogram.raw.functions.auth.ImportLoginToken"><code class="xref py py-obj docutils literal notranslate"><span class="pre">auth.ImportLoginToken</span></code></a></p></td>
+<td><p>Login using a redirected login token, generated in case of DC mismatch during QR code login.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
@@ -974,12 +1007,12 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="password-recovery.html">
+          <a class="next-page" href="passkey-login-options.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">auth.PasswordRecovery</div>
+                <div class="title">auth.PasskeyLoginOptions</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -1004,7 +1037,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

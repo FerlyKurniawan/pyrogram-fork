@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="messages.MessagesNotModified" href="messages-not-modified.html" /><link rel="prev" title="messages.MessageViews" href="message-views.html" />
 
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>messages.Messages - PyroTGFork 2.2.16 Layer 214</title>
+        <title>messages.Messages - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -967,8 +967,8 @@
 <p>Constructor of <a class="reference internal" href="../../base/messages/messages.html#pyrogram.raw.base.messages.Messages" title="pyrogram.raw.base.messages.Messages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Messages</span></code></a>.</p>
 <dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">214</span></code></p></li>
-<li><p>ID: <code class="docutils literal notranslate"><span class="pre">8C718E87</span></code></p></li>
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">220</span></code></p></li>
+<li><p>ID: <code class="docutils literal notranslate"><span class="pre">1D73E7EA</span></code></p></li>
 </ul>
 </dd>
 </dl>
@@ -976,6 +976,7 @@
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>messages</strong> (List of <a class="reference internal" href="../../base/message.html#pyrogram.raw.base.Message" title="pyrogram.raw.base.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>) – List of messages</p></li>
+<li><p><strong>topics</strong> (List of <a class="reference internal" href="../../base/forum-topic.html#pyrogram.raw.base.ForumTopic" title="pyrogram.raw.base.ForumTopic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ForumTopic</span></code></a>) – N/A</p></li>
 <li><p><strong>chats</strong> (List of <a class="reference internal" href="../../base/chat.html#pyrogram.raw.base.Chat" title="pyrogram.raw.base.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>) – List of chats mentioned in dialogs</p></li>
 <li><p><strong>users</strong> (List of <a class="reference internal" href="../../base/user.html#pyrogram.raw.base.User" title="pyrogram.raw.base.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>) – List of users mentioned in messages and chats</p></li>
 </ul>
@@ -1020,7 +1021,7 @@
 <td><p>View and search recently sent media.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../../functions/messages/get-saved-history.html#pyrogram.raw.functions.messages.GetSavedHistory" title="pyrogram.raw.functions.messages.GetSavedHistory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.GetSavedHistory</span></code></a></p></td>
-<td><p>Returns saved messages  forwarded from a specific peer</p></td>
+<td><p>Fetch saved messages  forwarded from a specific peer, or fetch messages from a monoforum topic .</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../functions/messages/get-quick-reply-messages.html#pyrogram.raw.functions.messages.GetQuickReplyMessages" title="pyrogram.raw.functions.messages.GetQuickReplyMessages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.GetQuickReplyMessages</span></code></a></p></td>
 <td><p>Fetch (a subset or all) messages in a quick reply shortcut .</p></td>
@@ -1029,7 +1030,7 @@
 <td><p>Get channel/supergroup messages</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="../../functions/channels/search-posts.html#pyrogram.raw.functions.channels.SearchPosts" title="pyrogram.raw.functions.channels.SearchPosts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.SearchPosts</span></code></a></p></td>
-<td><p>Globally search for posts from public channels  (including those we aren't a member of) containing a specific hashtag.</p></td>
+<td><p>Globally search for posts from public channels  (including those we aren't a member of) containing either a specific hashtag, or a full text query.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1076,7 +1077,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

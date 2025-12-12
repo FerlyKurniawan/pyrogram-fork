@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="help.PeerColorProfileSet" href="peer-color-profile-set.html" /><link rel="prev" title="help.PassportConfigNotModified" href="passport-config-not-modified.html" />
 
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>help.PeerColorOption - PyroTGFork 2.2.16 Layer 214</title>
+        <title>help.PeerColorOption - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -963,25 +963,27 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.types.help.PeerColorOption">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.help.</span></span><span class="sig-name descname"><span class="pre">PeerColorOption</span></span><a class="headerlink" href="#pyrogram.raw.types.help.PeerColorOption" title="Link to this definition">#</a></dt>
-<dd><blockquote>
-<div><p>Contains info about a color palette .</p>
-</div></blockquote>
-<p>Telegram users and channels can change the accent color and background pattern of their profile page and their messages!</p>
-<blockquote>
-<div><dl>
-<dt>Constructors:</dt><dd><p>This base type has 1 constructor available.</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrogram.raw.types.help.PeerColorOption" title="pyrogram.raw.types.help.PeerColorOption"><code class="xref py py-obj docutils literal notranslate"><span class="pre">help.PeerColorOption</span></code></a></p></td>
-<td><p>Contains info about a color palette .</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<dd><p>Contains info about a color palette .</p>
+<p>Constructor of <a class="reference internal" href="../../base/help/peer-color-option.html#pyrogram.raw.base.help.PeerColorOption" title="pyrogram.raw.base.help.PeerColorOption"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColorOption</span></code></a>.</p>
+<dl class="simple">
+<dt>Details:</dt><dd><ul class="simple">
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">220</span></code></p></li>
+<li><p>ID: <code class="docutils literal notranslate"><span class="pre">ADEC6EBE</span></code></p></li>
+</ul>
 </dd>
 </dl>
-</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>color_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>) – Palette ID.</p></li>
+<li><p><strong>hidden</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether this palette should not be displayed as an option to the user when choosing a palette to apply to profile pages or message accents.</p></li>
+<li><p><strong>colors</strong> (<a class="reference internal" href="../../base/help/peer-color-set.html#pyrogram.raw.base.help.PeerColorSet" title="pyrogram.raw.base.help.PeerColorSet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">help.PeerColorSet</span></code></a>, <em>optional</em>) – Light mode palette. Will be empty for IDs 0 to 6 inclusive, in which case a palette containing a single color from the following colors should be used: red, orange, violet, green, cyan, blue, pink for indexes 0 to 6 (i.e. the same colors used for randomized fallback message accent colors).</p></li>
+<li><p><strong>dark_colors</strong> (<a class="reference internal" href="../../base/help/peer-color-set.html#pyrogram.raw.base.help.PeerColorSet" title="pyrogram.raw.base.help.PeerColorSet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">help.PeerColorSet</span></code></a>, <em>optional</em>) – Dark mode palette. Optional, defaults to the palette in colors (or the autogenerated palette for IDs 0 to 6) if absent.</p></li>
+<li><p><strong>channel_min_level</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Channels can use this palette only after reaching at least the boost level specified in this field.</p></li>
+<li><p><strong>group_min_level</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Supergroups can use this palette only after reaching at least the boost level specified in this field.</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
@@ -1022,7 +1024,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

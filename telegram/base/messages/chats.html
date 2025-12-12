@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="messages.CheckedHistoryImportPeer" href="checked-history-import-peer.html" /><link rel="prev" title="messages.ChatInviteImporters" href="chat-invite-importers.html" />
 
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>messages.Chats - PyroTGFork 2.2.16 Layer 214</title>
+        <title>messages.Chats - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -960,10 +960,58 @@
             <article role="main" id="furo-main-content" class="article__content">
             <section id="messages-chats">
 <h1>messages.Chats<a class="headerlink" href="#messages-chats" title="Link to this heading">#</a></h1>
-<dl class="py attribute">
+<dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.base.messages.Chats">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.raw.base.messages.</span></span><span class="sig-name descname"><span class="pre">Chats</span></span><a class="headerlink" href="#pyrogram.raw.base.messages.Chats" title="Link to this definition">#</a></dt>
-<dd><p>alias of <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.13)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../../types/messages/chats.html#pyrogram.raw.types.messages.Chats" title="pyrogram.raw.types.messages.chats.Chats"><code class="xref py py-class docutils literal notranslate"><span class="pre">Chats</span></code></a>, <a class="reference internal" href="../../types/messages/chats-slice.html#pyrogram.raw.types.messages.ChatsSlice" title="pyrogram.raw.types.messages.chats_slice.ChatsSlice"><code class="xref py py-class docutils literal notranslate"><span class="pre">ChatsSlice</span></code></a>]</p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.base.messages.</span></span><span class="sig-name descname"><span class="pre">Chats</span></span><a class="headerlink" href="#pyrogram.raw.base.messages.Chats" title="Link to this definition">#</a></dt>
+<dd><p>Object contains list of chats with auxiliary data.</p>
+<dl>
+<dt>Constructors:</dt><dd><p>This base type has 2 constructors available.</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../types/messages/chats.html#pyrogram.raw.types.messages.Chats" title="pyrogram.raw.types.messages.Chats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.Chats</span></code></a></p></td>
+<td><p>List of chats with auxiliary data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../types/messages/chats-slice.html#pyrogram.raw.types.messages.ChatsSlice" title="pyrogram.raw.types.messages.ChatsSlice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.ChatsSlice</span></code></a></p></td>
+<td><p>Partial list of chats, more would have to be fetched with pagination</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd>
+<dt>Functions:</dt><dd><p>This object can be returned by 8 functions.</p>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../functions/messages/get-chats.html#pyrogram.raw.functions.messages.GetChats" title="pyrogram.raw.functions.messages.GetChats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.GetChats</span></code></a></p></td>
+<td><p>Returns chat basic info on their IDs.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../functions/messages/get-common-chats.html#pyrogram.raw.functions.messages.GetCommonChats" title="pyrogram.raw.functions.messages.GetCommonChats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.GetCommonChats</span></code></a></p></td>
+<td><p>Get chats in common with a user</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../functions/channels/get-channels.html#pyrogram.raw.functions.channels.GetChannels" title="pyrogram.raw.functions.channels.GetChannels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.GetChannels</span></code></a></p></td>
+<td><p>Get info about channels/supergroups</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../functions/channels/get-admined-public-channels.html#pyrogram.raw.functions.channels.GetAdminedPublicChannels" title="pyrogram.raw.functions.channels.GetAdminedPublicChannels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.GetAdminedPublicChannels</span></code></a></p></td>
+<td><p>Get channels/supergroups/geogroups we're admin in.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../functions/channels/get-left-channels.html#pyrogram.raw.functions.channels.GetLeftChannels" title="pyrogram.raw.functions.channels.GetLeftChannels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.GetLeftChannels</span></code></a></p></td>
+<td><p>Get a list of channels/supergroups we left, requires a takeout session, see here  for more info.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../functions/channels/get-groups-for-discussion.html#pyrogram.raw.functions.channels.GetGroupsForDiscussion" title="pyrogram.raw.functions.channels.GetGroupsForDiscussion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.GetGroupsForDiscussion</span></code></a></p></td>
+<td><p>Get all groups that can be used as discussion groups.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../functions/channels/get-channel-recommendations.html#pyrogram.raw.functions.channels.GetChannelRecommendations" title="pyrogram.raw.functions.channels.GetChannelRecommendations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.GetChannelRecommendations</span></code></a></p></td>
+<td><p>Obtain a list of similarly themed public channels, selected based on similarities in their subscriber bases.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../functions/stories/get-chats-to-send.html#pyrogram.raw.functions.stories.GetChatsToSend" title="pyrogram.raw.functions.stories.GetChatsToSend"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stories.GetChatsToSend</span></code></a></p></td>
+<td><p>Obtain a list of channels where the user can post stories</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd>
+</dl>
 </dd></dl>
 
 </section>
@@ -1004,7 +1052,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

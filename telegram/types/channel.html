@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="ChannelAdminLogEvent" href="channel-admin-log-event.html" /><link rel="prev" title="CdnPublicKey" href="cdn-public-key.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Channel - PyroTGFork 2.2.16 Layer 214</title>
+        <title>Channel - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -1041,16 +1041,34 @@ See here  for an implementation of the logic to use when updating the local user
 <div class="line-block">
 <div class="line">autotranslation</div>
 </div>
+<div class="line-block">
+<div class="line">broadcast_messages_allowed</div>
+</div>
+<div class="line-block">
+<div class="line">monoforum</div>
+</div>
+<div class="line-block">
+<div class="line">forum_tabs</div>
+</div>
+<div class="line-block">
+<div class="line">linked_monoforum_id</div>
+</div>
+<div class="line-block">
+<div class="line">send_paid_messages_stars</div>
+</div>
+<div class="line-block">
+<div class="line">bot_verification_icon</div>
+</div>
 </div></blockquote>
 <p>Constructor of <a class="reference internal" href="../base/chat.html#pyrogram.raw.base.Chat" title="pyrogram.raw.base.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>.</p>
-<dl>
+<dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">214</span></code></p></li>
-<li><p>ID: <code class="docutils literal notranslate"><span class="pre">FE685355</span></code></p></li>
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">220</span></code></p></li>
+<li><p>ID: <code class="docutils literal notranslate"><span class="pre">1C32B11C</span></code></p></li>
 </ul>
 </dd>
 <dt>Parameters:</dt><dd><dl class="simple">
-<dt>id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>):</dt><dd><p>ID of the channel, see here » for more info</p>
+<dt>id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>):</dt><dd><p>ID of the channel, see here » for more info and the available ID range.</p>
 </dd>
 <dt>title (<code class="docutils literal notranslate"><span class="pre">str</span></code>):</dt><dd><p>Title</p>
 </dd>
@@ -1106,12 +1124,14 @@ See here  for an implementation of the logic to use when updating the local user
 </dd>
 <dt>signature_profiles (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If set, messages sent by admins to this channel will link to the admin’s profile (just like with groups).</p>
 </dd>
-</dl>
-<p>autotranslation (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</p>
-<p>broadcast_messages_allowed (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</p>
-<p>monoforum (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</p>
-<p>forum_tabs (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</p>
-<dl class="simple">
+<dt>autotranslation (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If set, autotranslation was enabled for all users by the admin of the channel, as specified here ».</p>
+</dd>
+<dt>broadcast_messages_allowed (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If set, this channel has an associated monoforum », and its ID is specified in the linked_monoforum_id flag.</p>
+</dd>
+<dt>monoforum (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If set, this is a monoforum », and the ID of the associated channel is specified in the linked_monoforum_id.</p>
+</dd>
+<dt>forum_tabs (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If set, enables the tabbed forum UI ».</p>
+</dd>
 <dt>access_hash (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>Access hash, see here » for more info</p>
 </dd>
 <dt>username (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>Main active username.</p>
@@ -1128,7 +1148,7 @@ See here  for an implementation of the logic to use when updating the local user
 </dd>
 <dt>usernames (List of <a class="reference internal" href="../base/username.html#pyrogram.raw.base.Username" title="pyrogram.raw.base.Username"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Username</span></code></a>, <em>optional</em>):</dt><dd><p>Additional usernames</p>
 </dd>
-<dt>stories_max_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>ID of the maximum read story.</p>
+<dt>stories_max_id (<a class="reference internal" href="../base/recent-story.html#pyrogram.raw.base.RecentStory" title="pyrogram.raw.base.RecentStory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RecentStory</span></code></a>, <em>optional</em>):</dt><dd><p>ID of the maximum read story.</p>
 </dd>
 <dt>color (<a class="reference internal" href="../base/peer-color.html#pyrogram.raw.base.PeerColor" title="pyrogram.raw.base.PeerColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeerColor</span></code></a>, <em>optional</em>):</dt><dd><p>The channel’s accent color.</p>
 </dd>
@@ -1140,13 +1160,13 @@ See here  for an implementation of the logic to use when updating the local user
 </dd>
 <dt>subscription_until_date (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Expiration date of the Telegram Star subscription » the current user has bought to gain access to this channel.</p>
 </dd>
-</dl>
-<p>bot_verification_icon (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</p>
-<dl class="simple">
+<dt>bot_verification_icon (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>Describes a bot verification icon ».</p>
+</dd>
 <dt>send_paid_messages_stars (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>If set, this supergroup or monoforum has enabled paid messages », we might need to pay the specified amount of Stars to send messages to it, depending on the configured exceptions: check channelFull.send_paid_messages_stars to see if the currently logged in user actually has to pay or not, see here » for the full flow (only set for the monoforum, not the associated channel).</p>
 </dd>
+<dt>linked_monoforum_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>For channels with associated monoforums, the monoforum ID. For Monoforums, the ID of the associated channel.</p>
+</dd>
 </dl>
-<p>linked_monoforum_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</p>
 </dd>
 </dl>
 </div></blockquote>
@@ -1190,7 +1210,7 @@ See here  for an implementation of the logic to use when updating the local user
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

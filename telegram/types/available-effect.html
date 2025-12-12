@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="AvailableReaction" href="available-reaction.html" /><link rel="prev" title="AutoSaveSettings" href="auto-save-settings.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>AvailableEffect - PyroTGFork 2.2.16 Layer 214</title>
+        <title>AvailableEffect - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -963,22 +963,31 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.types.AvailableEffect">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.types.</span></span><span class="sig-name descname"><span class="pre">AvailableEffect</span></span><a class="headerlink" href="#pyrogram.raw.types.AvailableEffect" title="Link to this definition">#</a></dt>
-<dd><blockquote>
-<div><p>Describes a message effect .</p>
-</div></blockquote>
-<p>Telegram allows adding spectacular animated effects to messages you send.</p>
+<dd><p>Represents a message effect .
+All long IDs except for id are document.ids from the containing messages.availableEffects constructor.
+See here  for more info on how to use following fields.</p>
 <blockquote>
-<div><dl>
-<dt>Constructors:</dt><dd><p>This base type has 1 constructor available.</p>
-<div class="table-wrapper autosummary longtable docutils container">
-<table class="autosummary longtable docutils align-default">
-<tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#pyrogram.raw.types.AvailableEffect" title="pyrogram.raw.types.AvailableEffect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AvailableEffect</span></code></a></p></td>
-<td><p>Describes a message effect .</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<div><p>Constructor of <a class="reference internal" href="../base/available-effect.html#pyrogram.raw.base.AvailableEffect" title="pyrogram.raw.base.AvailableEffect"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AvailableEffect</span></code></a>.</p>
+<dl class="simple">
+<dt>Details:</dt><dd><ul class="simple">
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">220</span></code></p></li>
+<li><p>ID: <code class="docutils literal notranslate"><span class="pre">93C3E27E</span></code></p></li>
+</ul>
+</dd>
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>):</dt><dd><p>Unique effect ID.</p>
+</dd>
+<dt>emoticon (<code class="docutils literal notranslate"><span class="pre">str</span></code>):</dt><dd><p>Emoji corresponding to the effect, to be used as icon for the effect if static_icon_id is not set.</p>
+</dd>
+<dt>effect_sticker_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>):</dt><dd><p>Contains the preview animation (TGS format »), used for the effect selection menu.</p>
+</dd>
+<dt>premium_required (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether a Premium subscription is required to use this effect.</p>
+</dd>
+<dt>static_icon_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>ID of the document containing the static icon (WEBP) of the effect.</p>
+</dd>
+<dt>effect_animation_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>If set, contains the actual animated effect (TGS format »). If not set, the animated effect must be set equal to the premium animated sticker effect associated to the animated sticker specified in effect_sticker_id (always different from the preview animation, fetched thanks to the videoSize of type f as specified here »).</p>
+</dd>
+</dl>
 </dd>
 </dl>
 </div></blockquote>
@@ -1022,7 +1031,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

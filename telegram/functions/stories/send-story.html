@@ -12,10 +12,10 @@
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="https://t.me/PyroTGFork/2" />
     <meta property="article:author" content="@PyroTGFork" />
-    <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="stories.ToggleAllStoriesHidden" href="toggle-all-stories-hidden.html" /><link rel="prev" title="stories.SendReaction" href="send-reaction.html" />
+    <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="stories.StartLive" href="start-live.html" /><link rel="prev" title="stories.SendReaction" href="send-reaction.html" />
 
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>stories.SendStory - PyroTGFork 2.2.16 Layer 214</title>
+        <title>stories.SendStory - PyroTGFork 2.2.17 Layer 220</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.16 Layer 214</div></a>
+      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.16 Layer 214</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -963,37 +963,50 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.raw.functions.stories.SendStory">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.stories.</span></span><span class="sig-name descname"><span class="pre">SendStory</span></span><a class="headerlink" href="#pyrogram.raw.functions.stories.SendStory" title="Link to this definition">#</a></dt>
-<dd><p>Uploads a Telegram Story.</p>
-<dl class="simple">
+<dd><p>Uploads a Telegram Story.
+May also be used in a business connection, not by wrapping the query in invokeWithBusinessConnection , but rather by specifying the ID of a controlled business user in peer.</p>
+<blockquote>
+<div><dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">214</span></code></p></li>
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">220</span></code></p></li>
 <li><p>ID: <code class="docutils literal notranslate"><span class="pre">737FC2EC</span></code></p></li>
 </ul>
 </dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>peer</strong> (<a class="reference internal" href="../../base/input-peer.html#pyrogram.raw.base.InputPeer" title="pyrogram.raw.base.InputPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPeer</span></code></a>) – The peer to send the story as.</p></li>
-<li><p><strong>media</strong> (<a class="reference internal" href="../../base/input-media.html#pyrogram.raw.base.InputMedia" title="pyrogram.raw.base.InputMedia"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMedia</span></code></a>) – The story media.</p></li>
-<li><p><strong>privacy_rules</strong> (List of <a class="reference internal" href="../../base/input-privacy-rule.html#pyrogram.raw.base.InputPrivacyRule" title="pyrogram.raw.base.InputPrivacyRule"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPrivacyRule</span></code></a>) – Privacy rules for the story, indicating who can or can’t view the story.</p></li>
-<li><p><strong>random_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>) – Unique client message ID required to prevent message resending.</p></li>
-<li><p><strong>pinned</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Whether to add the story to the profile automatically upon expiration. If not set, the story will only be added to the archive, see here » for more info.</p></li>
-<li><p><strong>noforwards</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If set, disables forwards, screenshots, and downloads.</p></li>
-<li><p><strong>fwd_modified</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Set this flag when reposting stories with fwd_from_id+fwd_from_id, if the media was modified before reposting.</p></li>
-<li><p><strong>media_areas</strong> (List of <a class="reference internal" href="../../base/media-area.html#pyrogram.raw.base.MediaArea" title="pyrogram.raw.base.MediaArea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MediaArea</span></code></a>, <em>optional</em>) – Media areas associated to the story, see here » for more info.</p></li>
-<li><p><strong>caption</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – Story caption.</p></li>
-<li><p><strong>entities</strong> (List of <a class="reference internal" href="../../base/message-entity.html#pyrogram.raw.base.MessageEntity" title="pyrogram.raw.base.MessageEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>) – Message entities for styled text, if allowed by the stories_entities client configuration parameter ».</p></li>
-<li><p><strong>period</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – Period after which the story is moved to archive (and to the profile if pinned is set), in seconds; must be one of 6 * 3600, 12 * 3600, 86400, or 2 * 86400 for Telegram Premium users, and 86400 otherwise.</p></li>
-<li><p><strong>fwd_from_id</strong> (<a class="reference internal" href="../../base/input-peer.html#pyrogram.raw.base.InputPeer" title="pyrogram.raw.base.InputPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPeer</span></code></a>, <em>optional</em>) – If set, indicates that this story is a repost of story with ID fwd_from_story posted by the peer in fwd_from_id.</p></li>
-<li><p><strong>fwd_from_story</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – If set, indicates that this story is a repost of story with ID fwd_from_story posted by the peer in fwd_from_id.</p></li>
-<li><p><strong>albums</strong> (List of <code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>) – N/A</p></li>
-</ul>
+<dt>Parameters:</dt><dd><dl class="simple">
+<dt>peer (<a class="reference internal" href="../../base/input-peer.html#pyrogram.raw.base.InputPeer" title="pyrogram.raw.base.InputPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPeer</span></code></a>):</dt><dd><p>The peer to send the story as.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference internal" href="../../base/updates.html#pyrogram.raw.base.Updates" title="pyrogram.raw.base.Updates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Updates</span></code></a></p>
+<dt>media (<a class="reference internal" href="../../base/input-media.html#pyrogram.raw.base.InputMedia" title="pyrogram.raw.base.InputMedia"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputMedia</span></code></a>):</dt><dd><p>The story media.</p>
+</dd>
+<dt>privacy_rules (List of <a class="reference internal" href="../../base/input-privacy-rule.html#pyrogram.raw.base.InputPrivacyRule" title="pyrogram.raw.base.InputPrivacyRule"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPrivacyRule</span></code></a>):</dt><dd><p>Privacy rules for the story, indicating who can or can’t view the story.</p>
+</dd>
+<dt>random_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>):</dt><dd><p>Unique client message ID required to prevent message resending.</p>
+</dd>
+<dt>pinned (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Whether to add the story to the profile automatically upon expiration. If not set, the story will only be added to the archive, see here » for more info.</p>
+</dd>
+<dt>noforwards (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If set, disables forwards, screenshots, and downloads.</p>
+</dd>
+<dt>fwd_modified (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>Set this flag when reposting stories with fwd_from_id+fwd_from_id, if the media was modified before reposting.</p>
+</dd>
+<dt>media_areas (List of <a class="reference internal" href="../../base/media-area.html#pyrogram.raw.base.MediaArea" title="pyrogram.raw.base.MediaArea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MediaArea</span></code></a>, <em>optional</em>):</dt><dd><p>Media areas associated to the story, see here » for more info.</p>
+</dd>
+<dt>caption (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>Story caption.</p>
+</dd>
+<dt>entities (List of <a class="reference internal" href="../../base/message-entity.html#pyrogram.raw.base.MessageEntity" title="pyrogram.raw.base.MessageEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>, <em>optional</em>):</dt><dd><p>Message entities for styled text, if allowed by the stories_entities client configuration parameter ».</p>
+</dd>
+<dt>period (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>Period after which the story is moved to archive (and to the profile if pinned is set), in seconds; must be one of 6 * 3600, 12 * 3600, 86400, or 2 * 86400 for Telegram Premium users, and 86400 otherwise.</p>
+</dd>
+<dt>fwd_from_id (<a class="reference internal" href="../../base/input-peer.html#pyrogram.raw.base.InputPeer" title="pyrogram.raw.base.InputPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPeer</span></code></a>, <em>optional</em>):</dt><dd><p>If set, indicates that this story is a repost of story with ID fwd_from_story posted by the peer in fwd_from_id.</p>
+</dd>
+<dt>fwd_from_story (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>If set, indicates that this story is a repost of story with ID fwd_from_story posted by the peer in fwd_from_id.</p>
+</dd>
+<dt>albums (List of <code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">32-bit</span></code>, <em>optional</em>):</dt><dd><p>If set, adds the story to the specified albums.</p>
 </dd>
 </dl>
+</dd>
+<dt>Returns:</dt><dd><p><a class="reference internal" href="../../base/updates.html#pyrogram.raw.base.Updates" title="pyrogram.raw.base.Updates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Updates</span></code></a></p>
+</dd>
+</dl>
+</div></blockquote>
 </dd></dl>
 
 </section>
@@ -1004,12 +1017,12 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="toggle-all-stories-hidden.html">
+          <a class="next-page" href="start-live.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">stories.ToggleAllStoriesHidden</div>
+                <div class="title">stories.StartLive</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -1034,7 +1047,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/b552050" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               
