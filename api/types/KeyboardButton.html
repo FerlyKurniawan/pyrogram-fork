@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="KeyboardButtonPollType" href="KeyboardButtonPollType.html" /><link rel="prev" title="InlineKeyboardMarkup" href="InlineKeyboardMarkup.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>KeyboardButton - PyroTGFork 2.2.17 Layer 220</title>
+        <title>KeyboardButton - PyroTGFork 2.2.18 Layer 222</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.18 Layer 222</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.18 Layer 222</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -379,8 +379,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_chat_photos.html">get_chat_photos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_chat_photos_count.html">get_chat_photos_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_users.html">get_users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methods/get_chat_audios.html">get_chat_audios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methods/get_chat_audios_count.html">get_chat_audios_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/set_profile_photo.html">set_profile_photo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/delete_profile_photos.html">delete_profile_photos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methods/add_profile_audio.html">add_profile_audio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methods/remove_profile_audio.html">remove_profile_audio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methods/set_profile_audio_position.html">set_profile_audio_position</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/set_username.html">set_username</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/update_profile.html">update_profile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/block_user.html">block_user</a></li>
@@ -451,10 +456,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_payment_form.html">get_payment_form</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/send_payment_form.html">send_payment_form</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_available_gifts.html">get_available_gifts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../methods/get_received_gifts.html">get_received_gifts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../methods/sell_gift.html">sell_gift</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../methods/send_gift.html">send_gift</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../methods/toggle_gift_is_saved.html">toggle_gift_is_saved</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_owned_star_count.html">get_owned_star_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_business_account_star_balance.html">get_business_account_star_balance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/create_video_chat.html">create_video_chat</a></li>
@@ -481,7 +482,7 @@
 <li class="toctree-l2"><a class="reference internal" href="MessageOriginChannel.html">MessageOriginChannel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="MessageImportInfo.html">MessageImportInfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Photo.html">Photo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="AlternativeVideo.html">AlternativeVideo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VideoQuality.html">VideoQuality</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Animation.html">Animation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Audio.html">Audio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Document.html">Document</a></li>
@@ -509,7 +510,6 @@
 <li class="toctree-l2"><a class="reference internal" href="Location.html">Location</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Venue.html">Venue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Gift.html">Gift</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ReceivedGift.html">ReceivedGift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="UpgradedGift.html">UpgradedGift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="WebAppData.html">WebAppData</a></li>
 <li class="toctree-l2"><a class="reference internal" href="MessageAutoDeleteTimerChanged.html">MessageAutoDeleteTimerChanged</a></li>
@@ -754,7 +754,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.translate.html">translate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.pay.html">pay</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.star.html">star</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../bound-methods/ReceivedGift.toggle.html">toggle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/ExternalReplyInfo.download.html">download</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Chat.archive.html">archive</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Chat.unarchive.html">unarchive</a></li>
@@ -963,14 +962,21 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="pyrogram.types.KeyboardButton">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.types.</span></span><span class="sig-name descname"><span class="pre">KeyboardButton</span></span><a class="headerlink" href="#pyrogram.types.KeyboardButton" title="Link to this definition">#</a></dt>
-<dd><p>One button of the reply keyboard.
-For simple text buttons String can be used instead of this object to specify text of the button.
-Optional fields are mutually exclusive.</p>
+<dd><p>One button of the reply keyboard.</p>
+<p>At most one of the fields other than <code class="docutils literal notranslate"><span class="pre">text</span></code>, <code class="docutils literal notranslate"><span class="pre">icon_custom_emoji_id</span></code>, and <code class="docutils literal notranslate"><span class="pre">style</span></code> must be used to specify the type of the button.</p>
+<p>For simple text buttons String can be used instead of this object to specify text of the button.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>text</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>) – Text of the button. If none of the optional fields are used, it will be sent as a message when
 the button is pressed.</p></li>
+<li><p><strong>icon_custom_emoji_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Unique identifier of the custom emoji shown before the text of the button. Can only be used by bots that purchased additional usernames on Fragment or in the messages directly sent by the bot to private, group and supergroup chats if the owner of the bot has a Telegram Premium subscription..</p></li>
+<li><p><strong>style</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">ButtonStyle</span></code>, <em>optional</em>) – Style of the button.
+If omitted, then an app-specific style is used.</p></li>
+<li><p><strong>request_users</strong> (<a class="reference internal" href="KeyboardButtonRequestUsers.html#pyrogram.types.KeyboardButtonRequestUsers" title="pyrogram.types.KeyboardButtonRequestUsers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonRequestUsers</span></code></a>, <em>optional</em>) – If specified, pressing the button will open a list of suitable users. Identifiers of selected users will be sent to the bot in a “users_shared” service message.
+Available in private chats only.</p></li>
+<li><p><strong>request_chat</strong> (<a class="reference internal" href="KeyboardButtonRequestChat.html#pyrogram.types.KeyboardButtonRequestChat" title="pyrogram.types.KeyboardButtonRequestChat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonRequestChat</span></code></a>, <em>optional</em>) – If specified, pressing the button will open a list of suitable chats. Tapping on a chat will send its identifier to the bot in a “chat_shared” service message.
+Available in private chats only.</p></li>
 <li><p><strong>request_contact</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, the user’s phone number will be sent as a contact when the button is pressed.
 Available in private chats only.</p></li>
 <li><p><strong>request_location</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – If True, the user’s current location will be sent when the button is pressed.
@@ -980,10 +986,6 @@ Available in private chats only</p></li>
 <li><p><strong>web_app</strong> (<a class="reference internal" href="WebAppInfo.html#pyrogram.types.WebAppInfo" title="pyrogram.types.WebAppInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">WebAppInfo</span></code></a>, <em>optional</em>) – If specified, the described <a class="reference external" href="https://core.telegram.org/bots/webapps">Web App</a> will be launched when the
 button is pressed. The Web App will be able to send a “web_app_data” service message. Available in private
 chats only.</p></li>
-<li><p><strong>request_users</strong> (<a class="reference internal" href="KeyboardButtonRequestUsers.html#pyrogram.types.KeyboardButtonRequestUsers" title="pyrogram.types.KeyboardButtonRequestUsers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonRequestUsers</span></code></a>, <em>optional</em>) – If specified, pressing the button will open a list of suitable users. Identifiers of selected users will be sent to the bot in a “users_shared” service message.
-Available in private chats only.</p></li>
-<li><p><strong>request_chat</strong> (<a class="reference internal" href="KeyboardButtonRequestChat.html#pyrogram.types.KeyboardButtonRequestChat" title="pyrogram.types.KeyboardButtonRequestChat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButtonRequestChat</span></code></a>, <em>optional</em>) – If specified, pressing the button will open a list of suitable chats. Tapping on a chat will send its identifier to the bot in a “chat_shared” service message.
-Available in private chats only.</p></li>
 </ul>
 </dd>
 </dl>
@@ -1027,7 +1029,7 @@ Available in private chats only.</p></li>
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/d5dcd02" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

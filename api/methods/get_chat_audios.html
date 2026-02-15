@@ -12,10 +12,10 @@
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="https://t.me/PyroTGFork/2" />
     <meta property="article:author" content="@PyroTGFork" />
-    <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="get_owned_star_count()" href="get_owned_star_count.html" /><link rel="prev" title="send_gift()" href="send_gift.html" />
+    <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="get_chat_audios_count()" href="get_chat_audios_count.html" /><link rel="prev" title="get_users()" href="get_users.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>toggle_gift_is_saved() - PyroTGFork 2.2.17 Layer 220</title>
+        <title>get_chat_audios() - PyroTGFork 2.2.18 Layer 222</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.18 Layer 222</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.18 Layer 222</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -379,8 +379,13 @@
 <li class="toctree-l2"><a class="reference internal" href="get_chat_photos.html">get_chat_photos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_chat_photos_count.html">get_chat_photos_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_users.html">get_users</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">get_chat_audios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_chat_audios_count.html">get_chat_audios_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="set_profile_photo.html">set_profile_photo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="delete_profile_photos.html">delete_profile_photos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="add_profile_audio.html">add_profile_audio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="remove_profile_audio.html">remove_profile_audio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_profile_audio_position.html">set_profile_audio_position</a></li>
 <li class="toctree-l2"><a class="reference internal" href="set_username.html">set_username</a></li>
 <li class="toctree-l2"><a class="reference internal" href="update_profile.html">update_profile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="block_user.html">block_user</a></li>
@@ -451,10 +456,6 @@
 <li class="toctree-l2"><a class="reference internal" href="get_payment_form.html">get_payment_form</a></li>
 <li class="toctree-l2"><a class="reference internal" href="send_payment_form.html">send_payment_form</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_available_gifts.html">get_available_gifts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_received_gifts.html">get_received_gifts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sell_gift.html">sell_gift</a></li>
-<li class="toctree-l2"><a class="reference internal" href="send_gift.html">send_gift</a></li>
-<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">toggle_gift_is_saved</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_owned_star_count.html">get_owned_star_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_business_account_star_balance.html">get_business_account_star_balance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="create_video_chat.html">create_video_chat</a></li>
@@ -481,7 +482,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../types/MessageOriginChannel.html">MessageOriginChannel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/MessageImportInfo.html">MessageImportInfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Photo.html">Photo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../types/AlternativeVideo.html">AlternativeVideo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types/VideoQuality.html">VideoQuality</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Animation.html">Animation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Audio.html">Audio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Document.html">Document</a></li>
@@ -509,7 +510,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../types/Location.html">Location</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Venue.html">Venue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Gift.html">Gift</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../types/ReceivedGift.html">ReceivedGift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/UpgradedGift.html">UpgradedGift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/WebAppData.html">WebAppData</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/MessageAutoDeleteTimerChanged.html">MessageAutoDeleteTimerChanged</a></li>
@@ -754,7 +754,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.translate.html">translate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.pay.html">pay</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.star.html">star</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../bound-methods/ReceivedGift.toggle.html">toggle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/ExternalReplyInfo.download.html">download</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Chat.archive.html">archive</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Chat.unarchive.html">unarchive</a></li>
@@ -958,28 +957,32 @@
         </div>
         <div class="article">
             <article role="main" id="furo-main-content" class="article__content">
-            <section id="toggle-gift-is-saved">
-<h1>toggle_gift_is_saved()<a class="headerlink" href="#toggle-gift-is-saved" title="Link to this heading">#</a></h1>
+            <section id="get-chat-audios">
+<h1>get_chat_audios()<a class="headerlink" href="#get-chat-audios" title="Link to this heading">#</a></h1>
 <dl class="py method">
-<dt class="sig sig-object py" id="pyrogram.Client.toggle_gift_is_saved">
-<span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">toggle_gift_is_saved</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.toggle_gift_is_saved" title="Link to this definition">#</a></dt>
-<dd><p>Toggles whether a gift is shown on the current user’s profile page.</p>
+<dt class="sig sig-object py" id="pyrogram.Client.get_chat_audios">
+<span class="sig-prename descclassname"><span class="pre">Client.</span></span><span class="sig-name descname"><span class="pre">get_chat_audios</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.Client.get_chat_audios" title="Link to this definition">#</a></dt>
+<dd><p>Get a user profile audios sequentially.</p>
 <strong>Usable by</strong>
 <span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Users</span>
-<span class="usable-by"><i class="fa-solid fa-xmark" style="color: var(--color-red)"></i> Bots</span><dl class="field-list simple">
+<span class="usable-by"><i class="fa-solid fa-check" style="color: var(--color-green)"></i> Bots</span><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>message_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>) – Unique message identifier of the message with the gift in the chat with the user.</p></li>
-<li><p><strong>is_saved</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>) – Pass True to display the gift on the user’s profile page; pass False to remove it from the profile page.</p></li>
+<li><p><strong>chat_id</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>) – Unique identifier (int) or username (str) of the target chat.
+For your personal cloud (Saved Messages) you can simply use “me” or “self”.
+For a contact that exists in your Telegram address book you can use his phone number (str).</p></li>
+<li><p><strong>offset</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Sequential number of the first audio to be returned. By default, all audios are returned.</p></li>
+<li><p><strong>limit</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Limits the number of audios to be retrieved.
+By default, no limit is applied and all profile audios are returned.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">bool</span></code> – On success, True is returned.</p>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">Generator</span></code> – A generator yielding <a class="reference internal" href="../types/Audio.html#pyrogram.types.Audio" title="pyrogram.types.Audio"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Audio</span></code></a> objects.</p>
 </dd>
 </dl>
 <p class="rubric">Example</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Hide gift</span>
-<span class="n">app</span><span class="o">.</span><span class="n">toggle_gift_is_saved</span><span class="p">(</span><span class="n">message_id</span><span class="o">=</span><span class="mi">123</span><span class="p">,</span> <span class="n">is_saved</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">for</span> <span class="n">audio</span> <span class="ow">in</span> <span class="n">app</span><span class="o">.</span><span class="n">get_chat_audios</span><span class="p">(</span><span class="s2">&quot;me&quot;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">audio</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -992,23 +995,23 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="get_owned_star_count.html">
+          <a class="next-page" href="get_chat_audios_count.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">get_owned_star_count()</div>
+                <div class="title">get_chat_audios_count()</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="send_gift.html">
+          <a class="prev-page" href="get_users.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">send_gift()</div>
+                <div class="title">get_users()</div>
                 
               </div>
             </a>
@@ -1022,7 +1025,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/d5dcd02" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               
@@ -1044,8 +1047,8 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">toggle_gift_is_saved()</a><ul>
-<li><a class="reference internal" href="#pyrogram.Client.toggle_gift_is_saved"><code class="docutils literal notranslate"><span class="pre">Client.toggle_gift_is_saved()</span></code></a></li>
+<li><a class="reference internal" href="#">get_chat_audios()</a><ul>
+<li><a class="reference internal" href="#pyrogram.Client.get_chat_audios"><code class="docutils literal notranslate"><span class="pre">Client.get_chat_audios()</span></code></a></li>
 </ul>
 </li>
 </ul>

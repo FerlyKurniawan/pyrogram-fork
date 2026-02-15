@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="run()" href="run.html" /><link rel="prev" title="Pyrogram Client" href="../client.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Available Methods - PyroTGFork 2.2.17 Layer 220</title>
+        <title>Available Methods - PyroTGFork 2.2.18 Layer 222</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.18 Layer 222</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.18 Layer 222</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -379,8 +379,13 @@
 <li class="toctree-l2"><a class="reference internal" href="get_chat_photos.html">get_chat_photos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_chat_photos_count.html">get_chat_photos_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_users.html">get_users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_chat_audios.html">get_chat_audios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_chat_audios_count.html">get_chat_audios_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="set_profile_photo.html">set_profile_photo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="delete_profile_photos.html">delete_profile_photos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="add_profile_audio.html">add_profile_audio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="remove_profile_audio.html">remove_profile_audio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_profile_audio_position.html">set_profile_audio_position</a></li>
 <li class="toctree-l2"><a class="reference internal" href="set_username.html">set_username</a></li>
 <li class="toctree-l2"><a class="reference internal" href="update_profile.html">update_profile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="block_user.html">block_user</a></li>
@@ -451,10 +456,6 @@
 <li class="toctree-l2"><a class="reference internal" href="get_payment_form.html">get_payment_form</a></li>
 <li class="toctree-l2"><a class="reference internal" href="send_payment_form.html">send_payment_form</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_available_gifts.html">get_available_gifts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="get_received_gifts.html">get_received_gifts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sell_gift.html">sell_gift</a></li>
-<li class="toctree-l2"><a class="reference internal" href="send_gift.html">send_gift</a></li>
-<li class="toctree-l2"><a class="reference internal" href="toggle_gift_is_saved.html">toggle_gift_is_saved</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_owned_star_count.html">get_owned_star_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_business_account_star_balance.html">get_business_account_star_balance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="create_video_chat.html">create_video_chat</a></li>
@@ -481,7 +482,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../types/MessageOriginChannel.html">MessageOriginChannel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/MessageImportInfo.html">MessageImportInfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Photo.html">Photo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../types/AlternativeVideo.html">AlternativeVideo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types/VideoQuality.html">VideoQuality</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Animation.html">Animation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Audio.html">Audio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Document.html">Document</a></li>
@@ -509,7 +510,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../types/Location.html">Location</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Venue.html">Venue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Gift.html">Gift</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../types/ReceivedGift.html">ReceivedGift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/UpgradedGift.html">UpgradedGift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/WebAppData.html">WebAppData</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/MessageAutoDeleteTimerChanged.html">MessageAutoDeleteTimerChanged</a></li>
@@ -754,7 +754,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.translate.html">translate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.pay.html">pay</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.star.html">star</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../bound-methods/ReceivedGift.toggle.html">toggle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/ExternalReplyInfo.download.html">download</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Chat.archive.html">archive</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Chat.unarchive.html">unarchive</a></li>
@@ -1134,7 +1133,7 @@ the main package directly.</p>
 <td><p>Use this method to send paid media.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="send_media_group.html#pyrogram.Client.send_media_group" title="pyrogram.Client.send_media_group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_media_group</span></code></a></p></td>
-<td><p>Send a group of photos or videos as an album.</p></td>
+<td><p>Use this method to send a group of photos, videos, documents or audios as an album.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="get_media_group.html#pyrogram.Client.get_media_group" title="pyrogram.Client.get_media_group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_media_group</span></code></a></p></td>
 <td><p>Get the media group a message belongs to.</p></td>
@@ -1512,10 +1511,10 @@ the main package directly.</p>
 <td><p>Use this method to get custom emoji stickers, which can be used as a forum topic icon by any user.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="create_forum_topic.html#pyrogram.Client.create_forum_topic" title="pyrogram.Client.create_forum_topic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_forum_topic</span></code></a></p></td>
-<td><p>Use this method to create a topic in a forum supergroup chat.</p></td>
+<td><p>Use this method to create a topic in a forum supergroup chat or a private chat with a user.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="edit_forum_topic.html#pyrogram.Client.edit_forum_topic" title="pyrogram.Client.edit_forum_topic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">edit_forum_topic</span></code></a></p></td>
-<td><p>Use this method to edit name and icon of a topic in a forum supergroup chat.</p></td>
+<td><p>Use this method to edit name and icon of a topic in a forum supergroup chat or a private chat with a user.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="close_forum_topic.html#pyrogram.Client.close_forum_topic" title="pyrogram.Client.close_forum_topic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">close_forum_topic</span></code></a></p></td>
 <td><p>Use this method to close an open topic in a forum supergroup chat.</p></td>
@@ -1524,7 +1523,7 @@ the main package directly.</p>
 <td><p>Use this method to reopen a closed topic in a forum supergroup chat.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="delete_forum_topic.html#pyrogram.Client.delete_forum_topic" title="pyrogram.Client.delete_forum_topic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_forum_topic</span></code></a></p></td>
-<td><p>Use this method to delete a forum topic along with all its messages in a forum supergroup chat.</p></td>
+<td><p>Use this method to delete a forum topic along with all its messages in a forum supergroup chat or a private chat with a user.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="hide_forum_topic.html#pyrogram.Client.hide_forum_topic" title="pyrogram.Client.hide_forum_topic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hide_forum_topic</span></code></a></p></td>
 <td><p>Use this method to hide a topic in a forum supergroup chat.</p></td>
@@ -1561,43 +1560,58 @@ the main package directly.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="get_users.html#pyrogram.Client.get_users" title="pyrogram.Client.get_users"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_users</span></code></a></p></td>
 <td><p>Get information about a user.</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="get_chat_audios.html#pyrogram.Client.get_chat_audios" title="pyrogram.Client.get_chat_audios"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat_audios</span></code></a></p></td>
+<td><p>Get a user profile audios sequentially.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="get_chat_audios_count.html#pyrogram.Client.get_chat_audios_count" title="pyrogram.Client.get_chat_audios_count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat_audios_count</span></code></a></p></td>
+<td><p>Get the total count of audios for a chat.</p></td>
+</tr>
 <tr class="row-even"><td><p><a class="reference internal" href="set_profile_photo.html#pyrogram.Client.set_profile_photo" title="pyrogram.Client.set_profile_photo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_profile_photo</span></code></a></p></td>
 <td><p>Set a new profile photo or video (H.264/MPEG-4 AVC video, max 5 seconds).</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="delete_profile_photos.html#pyrogram.Client.delete_profile_photos" title="pyrogram.Client.delete_profile_photos"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_profile_photos</span></code></a></p></td>
 <td><p>Delete your own profile photos.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="set_username.html#pyrogram.Client.set_username" title="pyrogram.Client.set_username"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_username</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="add_profile_audio.html#pyrogram.Client.add_profile_audio" title="pyrogram.Client.add_profile_audio"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_profile_audio</span></code></a></p></td>
+<td><p>Adds an audio file to the beginning of the profile audio files of the current user.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="remove_profile_audio.html#pyrogram.Client.remove_profile_audio" title="pyrogram.Client.remove_profile_audio"><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove_profile_audio</span></code></a></p></td>
+<td><p>Removes an audio file from the profile audio files of the current user.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="set_profile_audio_position.html#pyrogram.Client.set_profile_audio_position" title="pyrogram.Client.set_profile_audio_position"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_profile_audio_position</span></code></a></p></td>
+<td><p>Changes position of an audio file in the profile audio files of the current user.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="set_username.html#pyrogram.Client.set_username" title="pyrogram.Client.set_username"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_username</span></code></a></p></td>
 <td><p>Changes the editable username of the current user.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="update_profile.html#pyrogram.Client.update_profile" title="pyrogram.Client.update_profile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">update_profile</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="update_profile.html#pyrogram.Client.update_profile" title="pyrogram.Client.update_profile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">update_profile</span></code></a></p></td>
 <td><p>Update your profile details such as first name, last name and bio.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="block_user.html#pyrogram.Client.block_user" title="pyrogram.Client.block_user"><code class="xref py py-obj docutils literal notranslate"><span class="pre">block_user</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="block_user.html#pyrogram.Client.block_user" title="pyrogram.Client.block_user"><code class="xref py py-obj docutils literal notranslate"><span class="pre">block_user</span></code></a></p></td>
 <td><p>Block a user.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="unblock_user.html#pyrogram.Client.unblock_user" title="pyrogram.Client.unblock_user"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unblock_user</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="unblock_user.html#pyrogram.Client.unblock_user" title="pyrogram.Client.unblock_user"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unblock_user</span></code></a></p></td>
 <td><p>Unblock a user.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="get_common_chats.html#pyrogram.Client.get_common_chats" title="pyrogram.Client.get_common_chats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_common_chats</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="get_common_chats.html#pyrogram.Client.get_common_chats" title="pyrogram.Client.get_common_chats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_common_chats</span></code></a></p></td>
 <td><p>Get the common chats you have with a user.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="get_default_emoji_statuses.html#pyrogram.Client.get_default_emoji_statuses" title="pyrogram.Client.get_default_emoji_statuses"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_default_emoji_statuses</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="get_default_emoji_statuses.html#pyrogram.Client.get_default_emoji_statuses" title="pyrogram.Client.get_default_emoji_statuses"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_default_emoji_statuses</span></code></a></p></td>
 <td><p>Get the default emoji statuses.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="set_emoji_status.html#pyrogram.Client.set_emoji_status" title="pyrogram.Client.set_emoji_status"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_emoji_status</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="set_emoji_status.html#pyrogram.Client.set_emoji_status" title="pyrogram.Client.set_emoji_status"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_emoji_status</span></code></a></p></td>
 <td><p>Set the emoji status.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="set_birthdate.html#pyrogram.Client.set_birthdate" title="pyrogram.Client.set_birthdate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_birthdate</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="set_birthdate.html#pyrogram.Client.set_birthdate" title="pyrogram.Client.set_birthdate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_birthdate</span></code></a></p></td>
 <td><p>Changes the birthdate of the current user</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="set_personal_chat.html#pyrogram.Client.set_personal_chat" title="pyrogram.Client.set_personal_chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_personal_chat</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="set_personal_chat.html#pyrogram.Client.set_personal_chat" title="pyrogram.Client.set_personal_chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_personal_chat</span></code></a></p></td>
 <td><p>Changes the personal chat of the current user</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="delete_account.html#pyrogram.Client.delete_account" title="pyrogram.Client.delete_account"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_account</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="delete_account.html#pyrogram.Client.delete_account" title="pyrogram.Client.delete_account"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_account</span></code></a></p></td>
 <td><p>Deletes the account of the current user, deleting all information associated with the user from the server.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="update_status.html#pyrogram.Client.update_status" title="pyrogram.Client.update_status"><code class="xref py py-obj docutils literal notranslate"><span class="pre">update_status</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="update_status.html#pyrogram.Client.update_status" title="pyrogram.Client.update_status"><code class="xref py py-obj docutils literal notranslate"><span class="pre">update_status</span></code></a></p></td>
 <td><p>Updates online user status.</p></td>
 </tr>
 </tbody>
@@ -1843,18 +1857,6 @@ the main package directly.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="get_available_gifts.html#pyrogram.Client.get_available_gifts" title="pyrogram.Client.get_available_gifts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_available_gifts</span></code></a></p></td>
 <td><p>Get all gifts that can be sent to other users.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="get_received_gifts.html#pyrogram.Client.get_received_gifts" title="pyrogram.Client.get_received_gifts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_received_gifts</span></code></a></p></td>
-<td><p>Returns gifts received by the given user or chat.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="sell_gift.html#pyrogram.Client.sell_gift" title="pyrogram.Client.sell_gift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sell_gift</span></code></a></p></td>
-<td><p>Sells a gift received by the current user for Telegram Stars.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="send_gift.html#pyrogram.Client.send_gift" title="pyrogram.Client.send_gift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_gift</span></code></a></p></td>
-<td><p>Sends a gift to the given user or channel chat.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="toggle_gift_is_saved.html#pyrogram.Client.toggle_gift_is_saved" title="pyrogram.Client.toggle_gift_is_saved"><code class="xref py py-obj docutils literal notranslate"><span class="pre">toggle_gift_is_saved</span></code></a></p></td>
-<td><p>Toggles whether a gift is shown on the current user's profile page.</p></td>
-</tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="get_owned_star_count.html#pyrogram.Client.get_owned_star_count" title="pyrogram.Client.get_owned_star_count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_owned_star_count</span></code></a></p></td>
 <td><p>Get the number of Telegram Stars count owned by the current account or the specified bot.</p></td>
 </tr>
@@ -1956,7 +1958,7 @@ Learn more about how to use the raw API at <a class="reference internal" href=".
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/d5dcd02" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

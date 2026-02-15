@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Using Filters" href="../topics/use-filters.html" /><link rel="prev" title="500 - InternalServerError" href="errors/internal-server-error.html" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Update Filters - PyroTGFork 2.2.17 Layer 220</title>
+        <title>Update Filters - PyroTGFork 2.2.18 Layer 222</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
+      <a href="../index.html"><div class="brand">PyroTGFork 2.2.18 Layer 222</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.18 Layer 222</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -379,8 +379,13 @@
 <li class="toctree-l2"><a class="reference internal" href="methods/get_chat_photos.html">get_chat_photos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="methods/get_chat_photos_count.html">get_chat_photos_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="methods/get_users.html">get_users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="methods/get_chat_audios.html">get_chat_audios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="methods/get_chat_audios_count.html">get_chat_audios_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="methods/set_profile_photo.html">set_profile_photo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="methods/delete_profile_photos.html">delete_profile_photos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="methods/add_profile_audio.html">add_profile_audio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="methods/remove_profile_audio.html">remove_profile_audio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="methods/set_profile_audio_position.html">set_profile_audio_position</a></li>
 <li class="toctree-l2"><a class="reference internal" href="methods/set_username.html">set_username</a></li>
 <li class="toctree-l2"><a class="reference internal" href="methods/update_profile.html">update_profile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="methods/block_user.html">block_user</a></li>
@@ -451,10 +456,6 @@
 <li class="toctree-l2"><a class="reference internal" href="methods/get_payment_form.html">get_payment_form</a></li>
 <li class="toctree-l2"><a class="reference internal" href="methods/send_payment_form.html">send_payment_form</a></li>
 <li class="toctree-l2"><a class="reference internal" href="methods/get_available_gifts.html">get_available_gifts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="methods/get_received_gifts.html">get_received_gifts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="methods/sell_gift.html">sell_gift</a></li>
-<li class="toctree-l2"><a class="reference internal" href="methods/send_gift.html">send_gift</a></li>
-<li class="toctree-l2"><a class="reference internal" href="methods/toggle_gift_is_saved.html">toggle_gift_is_saved</a></li>
 <li class="toctree-l2"><a class="reference internal" href="methods/get_owned_star_count.html">get_owned_star_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="methods/get_business_account_star_balance.html">get_business_account_star_balance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="methods/create_video_chat.html">create_video_chat</a></li>
@@ -481,7 +482,7 @@
 <li class="toctree-l2"><a class="reference internal" href="types/MessageOriginChannel.html">MessageOriginChannel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="types/MessageImportInfo.html">MessageImportInfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="types/Photo.html">Photo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="types/AlternativeVideo.html">AlternativeVideo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types/VideoQuality.html">VideoQuality</a></li>
 <li class="toctree-l2"><a class="reference internal" href="types/Animation.html">Animation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="types/Audio.html">Audio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="types/Document.html">Document</a></li>
@@ -509,7 +510,6 @@
 <li class="toctree-l2"><a class="reference internal" href="types/Location.html">Location</a></li>
 <li class="toctree-l2"><a class="reference internal" href="types/Venue.html">Venue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="types/Gift.html">Gift</a></li>
-<li class="toctree-l2"><a class="reference internal" href="types/ReceivedGift.html">ReceivedGift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="types/UpgradedGift.html">UpgradedGift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="types/WebAppData.html">WebAppData</a></li>
 <li class="toctree-l2"><a class="reference internal" href="types/MessageAutoDeleteTimerChanged.html">MessageAutoDeleteTimerChanged</a></li>
@@ -754,7 +754,6 @@
 <li class="toctree-l2"><a class="reference internal" href="bound-methods/Message.translate.html">translate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bound-methods/Message.pay.html">pay</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bound-methods/Message.star.html">star</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bound-methods/ReceivedGift.toggle.html">toggle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bound-methods/ExternalReplyInfo.download.html">download</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bound-methods/Chat.archive.html">archive</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bound-methods/Chat.unarchive.html">unarchive</a></li>
@@ -1094,12 +1093,6 @@ Defaults to “CustomFilter”.</p></li>
 <dt class="sig sig-object py" id="pyrogram.filters.gift_code">
 <span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">gift_code</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.gift_code_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.gift_code" title="Link to this definition">#</a></dt>
 <dd><p>Filter messages that contain <a class="reference internal" href="types/GiftCode.html#pyrogram.types.GiftCode" title="pyrogram.types.GiftCode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GiftCode</span></code></a> objects.</p>
-</dd></dl>
-
-<dl class="py data">
-<dt class="sig sig-object py" id="pyrogram.filters.received_gift">
-<span class="sig-prename descclassname"><span class="pre">pyrogram.filters.</span></span><span class="sig-name descname"><span class="pre">received_gift</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;pyrogram.filters.received_gift_filter</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#pyrogram.filters.received_gift" title="Link to this definition">#</a></dt>
-<dd><p>Filter messages that contain <a class="reference internal" href="types/ReceivedGift.html#pyrogram.types.ReceivedGift" title="pyrogram.types.ReceivedGift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReceivedGift</span></code></a> objects.</p>
 </dd></dl>
 
 <dl class="py data">
@@ -1516,7 +1509,7 @@ Defaults to None (no threads).</p>
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/d5dcd02" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               
@@ -1559,7 +1552,6 @@ Defaults to None (no threads).</p>
 <li><a class="reference internal" href="#pyrogram.filters.giveaway"><code class="docutils literal notranslate"><span class="pre">giveaway</span></code></a></li>
 <li><a class="reference internal" href="#pyrogram.filters.giveaway_result"><code class="docutils literal notranslate"><span class="pre">giveaway_result</span></code></a></li>
 <li><a class="reference internal" href="#pyrogram.filters.gift_code"><code class="docutils literal notranslate"><span class="pre">gift_code</span></code></a></li>
-<li><a class="reference internal" href="#pyrogram.filters.received_gift"><code class="docutils literal notranslate"><span class="pre">received_gift</span></code></a></li>
 <li><a class="reference internal" href="#pyrogram.filters.video"><code class="docutils literal notranslate"><span class="pre">video</span></code></a></li>
 <li><a class="reference internal" href="#pyrogram.filters.media_group"><code class="docutils literal notranslate"><span class="pre">media_group</span></code></a></li>
 <li><a class="reference internal" href="#pyrogram.filters.voice"><code class="docutils literal notranslate"><span class="pre">voice</span></code></a></li>

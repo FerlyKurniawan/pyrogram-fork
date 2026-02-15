@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Storage - PyroTGFork 2.2.17 Layer 220</title>
+        <title>Storage - PyroTGFork 2.2.18 Layer 222</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.17 Layer 220</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.18 Layer 222</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.17 Layer 220</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.18 Layer 222</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -379,8 +379,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_chat_photos.html">get_chat_photos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_chat_photos_count.html">get_chat_photos_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_users.html">get_users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methods/get_chat_audios.html">get_chat_audios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methods/get_chat_audios_count.html">get_chat_audios_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/set_profile_photo.html">set_profile_photo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/delete_profile_photos.html">delete_profile_photos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methods/add_profile_audio.html">add_profile_audio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methods/remove_profile_audio.html">remove_profile_audio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methods/set_profile_audio_position.html">set_profile_audio_position</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/set_username.html">set_username</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/update_profile.html">update_profile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/block_user.html">block_user</a></li>
@@ -451,10 +456,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_payment_form.html">get_payment_form</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/send_payment_form.html">send_payment_form</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_available_gifts.html">get_available_gifts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../methods/get_received_gifts.html">get_received_gifts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../methods/sell_gift.html">sell_gift</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../methods/send_gift.html">send_gift</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../methods/toggle_gift_is_saved.html">toggle_gift_is_saved</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_owned_star_count.html">get_owned_star_count</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_business_account_star_balance.html">get_business_account_star_balance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/create_video_chat.html">create_video_chat</a></li>
@@ -481,7 +482,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../types/MessageOriginChannel.html">MessageOriginChannel</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/MessageImportInfo.html">MessageImportInfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Photo.html">Photo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../types/AlternativeVideo.html">AlternativeVideo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types/VideoQuality.html">VideoQuality</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Animation.html">Animation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Audio.html">Audio</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Document.html">Document</a></li>
@@ -509,7 +510,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../types/Location.html">Location</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Venue.html">Venue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Gift.html">Gift</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../types/ReceivedGift.html">ReceivedGift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/UpgradedGift.html">UpgradedGift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/WebAppData.html">WebAppData</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/MessageAutoDeleteTimerChanged.html">MessageAutoDeleteTimerChanged</a></li>
@@ -754,7 +754,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.translate.html">translate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.pay.html">pay</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Message.star.html">star</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../bound-methods/ReceivedGift.toggle.html">toggle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/ExternalReplyInfo.download.html">download</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Chat.archive.html">archive</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../bound-methods/Chat.unarchive.html">unarchive</a></li>
@@ -990,35 +989,49 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="pyrogram.storage.Storage.delete">
 <em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.storage.Storage.delete" title="Link to this definition">#</a></dt>
-<dd><p>Deletes the storage.</p>
+<dd><p>Deletes the storage file.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pyrogram.storage.Storage.update_peers">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">update_peers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">peers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.14)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.storage.Storage.update_peers" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">update_peers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">peers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.14)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#pyrogram.storage.Storage.update_peers" title="Link to this definition">#</a></dt>
 <dd><p>Update the peers table with the provided information.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>peers</strong> (<code class="docutils literal notranslate"><span class="pre">list[tuple[int,</span> <span class="pre">int,</span> <span class="pre">str,</span> <span class="pre">list[str],</span> <span class="pre">str]]</span></code>) – A list of tuples containing the
+<dd class="field-odd"><p><strong>peers</strong> (<code class="docutils literal notranslate"><span class="pre">list[tuple[int,</span> <span class="pre">int,</span> <span class="pre">str,</span> <span class="pre">str]]</span></code>) – A list of tuples containing the
 information of the peers to be updated. Each tuple must contain the following
 information:
 - <code class="docutils literal notranslate"><span class="pre">int</span></code>: The peer id.
 - <code class="docutils literal notranslate"><span class="pre">int</span></code>: The peer access hash.
 - <code class="docutils literal notranslate"><span class="pre">str</span></code>: The peer type (user, chat or channel).
-- List of <code class="docutils literal notranslate"><span class="pre">str</span></code>: The peer username (if any).
 - <code class="docutils literal notranslate"><span class="pre">str</span></code>: The peer phone number (if any).</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="pyrogram.storage.Storage.update_usernames">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">update_usernames</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">usernames</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.14)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.14)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#pyrogram.storage.Storage.update_usernames" title="Link to this definition">#</a></dt>
+<dd><p>Update the usernames table with the provided information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>usernames</strong> (<code class="docutils literal notranslate"><span class="pre">list[tuple[int,</span> <span class="pre">list[str]]]</span></code>) – A list of tuples containing the
+information of the usernames to be updated. Each tuple must contain the following
+information:
+- <code class="docutils literal notranslate"><span class="pre">int</span></code>: The peer id.
+- list of <code class="docutils literal notranslate"><span class="pre">str</span></code>: The peer username (if any).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="pyrogram.storage.Storage.update_state">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">update_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update_state:</span> <span class="pre">tuple[int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int]</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.storage.Storage.update_state" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">update_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update_state:</span> <span class="pre">tuple[int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">int]</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.14)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pyrogram.storage.Storage.update_state" title="Link to this definition">#</a></dt>
 <dd><p>Get or set the update state of the current session.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>update_state</strong> (<code class="docutils literal notranslate"><span class="pre">tuple[int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int,</span> <span class="pre">int]</span></code>) – A tuple containing the update state to set.
-Tuple must contain the following information:
+tuple must contain the following information:
 - <code class="docutils literal notranslate"><span class="pre">int</span></code>: The id of the entity.
 - <code class="docutils literal notranslate"><span class="pre">int</span></code>: The pts.
 - <code class="docutils literal notranslate"><span class="pre">int</span></code>: The qts.
@@ -1030,7 +1043,7 @@ Tuple must contain the following information:
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pyrogram.storage.Storage.get_peer_by_id">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_peer_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">peer_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.storage.Storage.get_peer_by_id" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_peer_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">peer_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../../telegram/base/input-peer.html#pyrogram.raw.base.InputPeer" title="pyrogram.raw.base.input_peer.InputPeer"><span class="pre">InputPeer</span></a></span></span><a class="headerlink" href="#pyrogram.storage.Storage.get_peer_by_id" title="Link to this definition">#</a></dt>
 <dd><p>Retrieve a peer by its ID.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1041,7 +1054,7 @@ Tuple must contain the following information:
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pyrogram.storage.Storage.get_peer_by_username">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_peer_by_username</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">username</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.storage.Storage.get_peer_by_username" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_peer_by_username</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">username</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../../telegram/base/input-peer.html#pyrogram.raw.base.InputPeer" title="pyrogram.raw.base.input_peer.InputPeer"><span class="pre">InputPeer</span></a></span></span><a class="headerlink" href="#pyrogram.storage.Storage.get_peer_by_username" title="Link to this definition">#</a></dt>
 <dd><p>Retrieve a peer by its username.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1052,7 +1065,7 @@ Tuple must contain the following information:
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pyrogram.storage.Storage.get_peer_by_phone_number">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_peer_by_phone_number</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">phone_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.storage.Storage.get_peer_by_phone_number" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_peer_by_phone_number</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">phone_number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../../telegram/base/input-peer.html#pyrogram.raw.base.InputPeer" title="pyrogram.raw.base.input_peer.InputPeer"><span class="pre">InputPeer</span></a></span></span><a class="headerlink" href="#pyrogram.storage.Storage.get_peer_by_phone_number" title="Link to this definition">#</a></dt>
 <dd><p>Retrieve a peer by its phone number.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1063,7 +1076,7 @@ Tuple must contain the following information:
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pyrogram.storage.Storage.dc_id">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dc_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.storage.Storage.dc_id" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dc_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#pyrogram.storage.Storage.dc_id" title="Link to this definition">#</a></dt>
 <dd><p>Get or set the DC ID of the current session.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1074,7 +1087,7 @@ Tuple must contain the following information:
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pyrogram.storage.Storage.api_id">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">api_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.storage.Storage.api_id" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">api_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#pyrogram.storage.Storage.api_id" title="Link to this definition">#</a></dt>
 <dd><p>Get or set the API ID of the current session.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1085,7 +1098,7 @@ Tuple must contain the following information:
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pyrogram.storage.Storage.test_mode">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.storage.Storage.test_mode" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#pyrogram.storage.Storage.test_mode" title="Link to this definition">#</a></dt>
 <dd><p>Get or set the test mode of the current session.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1096,7 +1109,7 @@ Tuple must contain the following information:
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pyrogram.storage.Storage.auth_key">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">auth_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value:</span> <span class="pre">bytes</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.storage.Storage.auth_key" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">auth_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value:</span> <span class="pre">bytes</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.14)"><span class="pre">bytes</span></a></span></span><a class="headerlink" href="#pyrogram.storage.Storage.auth_key" title="Link to this definition">#</a></dt>
 <dd><p>Get or set the authorization key of the current session.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1107,7 +1120,7 @@ Tuple must contain the following information:
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pyrogram.storage.Storage.date">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.storage.Storage.date" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#pyrogram.storage.Storage.date" title="Link to this definition">#</a></dt>
 <dd><p>Get or set the date of the current session.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1118,7 +1131,7 @@ Tuple must contain the following information:
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pyrogram.storage.Storage.user_id">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">user_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.storage.Storage.user_id" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">user_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a></span></span><a class="headerlink" href="#pyrogram.storage.Storage.user_id" title="Link to this definition">#</a></dt>
 <dd><p>Get or set the user ID of the current session.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1129,7 +1142,7 @@ Tuple must contain the following information:
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pyrogram.storage.Storage.is_bot">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_bot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.storage.Storage.is_bot" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_bot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value:</span> <span class="pre">bool</span> <span class="pre">=</span> <span class="pre">&lt;class</span> <span class="pre">'object'&gt;</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.14)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#pyrogram.storage.Storage.is_bot" title="Link to this definition">#</a></dt>
 <dd><p>Get or set the bot flag of the current session.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1140,7 +1153,7 @@ Tuple must contain the following information:
 
 <dl class="py method">
 <dt class="sig sig-object py" id="pyrogram.storage.Storage.export_session_string">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">export_session_string</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyrogram.storage.Storage.export_session_string" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">export_session_string</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span></span><a class="headerlink" href="#pyrogram.storage.Storage.export_session_string" title="Link to this definition">#</a></dt>
 <dd><p>Exports the session string for the current session.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -1171,7 +1184,7 @@ Tuple must contain the following information:
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/ee93136" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/d5dcd02" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               
@@ -1200,6 +1213,7 @@ Tuple must contain the following information:
 <li><a class="reference internal" href="#pyrogram.storage.Storage.close"><code class="docutils literal notranslate"><span class="pre">Storage.close()</span></code></a></li>
 <li><a class="reference internal" href="#pyrogram.storage.Storage.delete"><code class="docutils literal notranslate"><span class="pre">Storage.delete()</span></code></a></li>
 <li><a class="reference internal" href="#pyrogram.storage.Storage.update_peers"><code class="docutils literal notranslate"><span class="pre">Storage.update_peers()</span></code></a></li>
+<li><a class="reference internal" href="#pyrogram.storage.Storage.update_usernames"><code class="docutils literal notranslate"><span class="pre">Storage.update_usernames()</span></code></a></li>
 <li><a class="reference internal" href="#pyrogram.storage.Storage.update_state"><code class="docutils literal notranslate"><span class="pre">Storage.update_state()</span></code></a></li>
 <li><a class="reference internal" href="#pyrogram.storage.Storage.get_peer_by_id"><code class="docutils literal notranslate"><span class="pre">Storage.get_peer_by_id()</span></code></a></li>
 <li><a class="reference internal" href="#pyrogram.storage.Storage.get_peer_by_username"><code class="docutils literal notranslate"><span class="pre">Storage.get_peer_by_username()</span></code></a></li>
