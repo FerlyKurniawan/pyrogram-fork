@@ -507,6 +507,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../types/InputChecklist.html">InputChecklist</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/ChecklistTasksDone.html">ChecklistTasksDone</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/ChecklistTasksAdded.html">ChecklistTasksAdded</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../types/ChatLocation.html">ChatLocation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Location.html">Location</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Venue.html">Venue</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../types/Gift.html">Gift</a></li>
@@ -977,6 +978,8 @@
 <li><p><strong>description</strong> (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>) – The supergroup description.</p></li>
 <li><p><strong>message_auto_delete_time</strong> (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <em>optional</em>) – Message auto-delete time value, in seconds; must be from 0 up to 365 * 86400 and be divisible by 86400. If 0, then messages aren’t deleted automatically.</p></li>
 <li><p><strong>is_forum</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to create a forum supergroup chat. Defaults to False.</p></li>
+<li><p><strong>for_import</strong> (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>) – Pass True to create a supergroup for <a class="reference external" href="https://core.telegram.org/api/import">importing messages</a>.</p></li>
+<li><p><strong>location</strong> (<a class="reference internal" href="../types/ChatLocation.html#pyrogram.types.ChatLocation" title="pyrogram.types.ChatLocation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatLocation</span></code></a>, <em>optional</em>) – Chat location if a location-basAlekzumed supergroup is being created; pass None to create an ordinary supergroup chat.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -1027,7 +1030,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/e8e68ce" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/674f4d4" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               
