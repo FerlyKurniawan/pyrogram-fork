@@ -13,9 +13,10 @@
     <meta property="og:site_name" content="https://t.me/PyroTGFork/2" />
     <meta property="article:author" content="@PyroTGFork" />
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="run()" href="run.html" /><link rel="prev" title="Pyrogram Client" href="../client.html" />
+        <link rel="canonical" href="/pyrogram/api/methods/index.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Available Methods - PyroTGFork 2.2.18 Layer 222</title>
+        <title>Available Methods - PyroTGFork 2.2.19 Layer 223</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.18 Layer 222</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.19 Layer 223</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.18 Layer 222</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.19 Layer 223</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -307,6 +308,7 @@
 <li class="toctree-l2"><a class="reference internal" href="restrict_chat_member.html">restrict_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="promote_chat_member.html">promote_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="set_administrator_title.html">set_administrator_title</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_chat_member_tag.html">set_chat_member_tag</a></li>
 <li class="toctree-l2"><a class="reference internal" href="set_chat_permissions.html">set_chat_permissions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="set_chat_photo.html">set_chat_photo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="delete_chat_photo.html">delete_chat_photo</a></li>
@@ -346,6 +348,7 @@
 <li class="toctree-l2"><a class="reference internal" href="get_send_as_chats.html">get_send_as_chats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="set_send_as_chat.html">set_send_as_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="set_chat_protected_content.html">set_chat_protected_content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="process_chat_protected_content_disable_request.html">process_chat_protected_content_disable_request</a></li>
 <li class="toctree-l2"><a class="reference internal" href="get_created_chats.html">get_created_chats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="transfer_chat_ownership.html">transfer_chat_ownership</a></li>
 <li class="toctree-l2"><a class="reference internal" href="export_chat_invite_link.html">export_chat_invite_link</a></li>
@@ -798,6 +801,7 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../enums/index.html">Enumerations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Enumerations</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../enums/ButtonStyle.html">ButtonStyle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../enums/ChatAction.html">ChatAction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../enums/ChatEventAction.html">ChatEventAction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../enums/ChatMemberStatus.html">ChatMemberStatus</a></li>
@@ -1312,122 +1316,128 @@ the main package directly.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="set_administrator_title.html#pyrogram.Client.set_administrator_title" title="pyrogram.Client.set_administrator_title"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_administrator_title</span></code></a></p></td>
 <td><p>Set a custom title (rank) to an administrator of a supergroup.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="set_chat_permissions.html#pyrogram.Client.set_chat_permissions" title="pyrogram.Client.set_chat_permissions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_permissions</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="set_chat_member_tag.html#pyrogram.Client.set_chat_member_tag" title="pyrogram.Client.set_chat_member_tag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_member_tag</span></code></a></p></td>
+<td><p>Set a tag or custom title for a regular member in a group or a supergroup.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="set_chat_permissions.html#pyrogram.Client.set_chat_permissions" title="pyrogram.Client.set_chat_permissions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_permissions</span></code></a></p></td>
 <td><p>Set default chat permissions for all members.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="set_chat_photo.html#pyrogram.Client.set_chat_photo" title="pyrogram.Client.set_chat_photo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_photo</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="set_chat_photo.html#pyrogram.Client.set_chat_photo" title="pyrogram.Client.set_chat_photo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_photo</span></code></a></p></td>
 <td><p>Set a new chat photo or video (H.264/MPEG-4 AVC video, max 5 seconds).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="delete_chat_photo.html#pyrogram.Client.delete_chat_photo" title="pyrogram.Client.delete_chat_photo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_chat_photo</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="delete_chat_photo.html#pyrogram.Client.delete_chat_photo" title="pyrogram.Client.delete_chat_photo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_chat_photo</span></code></a></p></td>
 <td><p>Delete a chat photo.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="set_chat_title.html#pyrogram.Client.set_chat_title" title="pyrogram.Client.set_chat_title"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_title</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="set_chat_title.html#pyrogram.Client.set_chat_title" title="pyrogram.Client.set_chat_title"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_title</span></code></a></p></td>
 <td><p>Change the title of a chat.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="set_chat_description.html#pyrogram.Client.set_chat_description" title="pyrogram.Client.set_chat_description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_description</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="set_chat_description.html#pyrogram.Client.set_chat_description" title="pyrogram.Client.set_chat_description"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_description</span></code></a></p></td>
 <td><p>Change the description of a supergroup or a channel.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="pin_chat_message.html#pyrogram.Client.pin_chat_message" title="pyrogram.Client.pin_chat_message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pin_chat_message</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="pin_chat_message.html#pyrogram.Client.pin_chat_message" title="pyrogram.Client.pin_chat_message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pin_chat_message</span></code></a></p></td>
 <td><p>Pin a message in a group, channel or your own chat.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="unpin_chat_message.html#pyrogram.Client.unpin_chat_message" title="pyrogram.Client.unpin_chat_message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unpin_chat_message</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="unpin_chat_message.html#pyrogram.Client.unpin_chat_message" title="pyrogram.Client.unpin_chat_message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unpin_chat_message</span></code></a></p></td>
 <td><p>Unpin a message in a group, channel or your own chat.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="unpin_all_chat_messages.html#pyrogram.Client.unpin_all_chat_messages" title="pyrogram.Client.unpin_all_chat_messages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unpin_all_chat_messages</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="unpin_all_chat_messages.html#pyrogram.Client.unpin_all_chat_messages" title="pyrogram.Client.unpin_all_chat_messages"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unpin_all_chat_messages</span></code></a></p></td>
 <td><p>Use this method to clear the list of pinned messages in a chat.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="search_chats.html#pyrogram.Client.search_chats" title="pyrogram.Client.search_chats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">search_chats</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="search_chats.html#pyrogram.Client.search_chats" title="pyrogram.Client.search_chats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">search_chats</span></code></a></p></td>
 <td><p>Searches for the specified query in the title and username of already known chats via request to the server.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="join_chat.html#pyrogram.Client.join_chat" title="pyrogram.Client.join_chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">join_chat</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="join_chat.html#pyrogram.Client.join_chat" title="pyrogram.Client.join_chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">join_chat</span></code></a></p></td>
 <td><p>Join a group chat or channel.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="leave_chat.html#pyrogram.Client.leave_chat" title="pyrogram.Client.leave_chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leave_chat</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="leave_chat.html#pyrogram.Client.leave_chat" title="pyrogram.Client.leave_chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leave_chat</span></code></a></p></td>
 <td><p>Leave a group chat or channel.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="get_chat.html#pyrogram.Client.get_chat" title="pyrogram.Client.get_chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="get_chat.html#pyrogram.Client.get_chat" title="pyrogram.Client.get_chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat</span></code></a></p></td>
 <td><p>Get up to date information about a chat.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="get_chat_members.html#pyrogram.Client.get_chat_members" title="pyrogram.Client.get_chat_members"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat_members</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="get_chat_members.html#pyrogram.Client.get_chat_members" title="pyrogram.Client.get_chat_members"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat_members</span></code></a></p></td>
 <td><p>Get the members list of a chat.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="get_chat_members_count.html#pyrogram.Client.get_chat_members_count" title="pyrogram.Client.get_chat_members_count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat_members_count</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="get_chat_members_count.html#pyrogram.Client.get_chat_members_count" title="pyrogram.Client.get_chat_members_count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat_members_count</span></code></a></p></td>
 <td><p>Get the number of members in a chat.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="get_chat_member.html#pyrogram.Client.get_chat_member" title="pyrogram.Client.get_chat_member"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat_member</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="get_chat_member.html#pyrogram.Client.get_chat_member" title="pyrogram.Client.get_chat_member"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat_member</span></code></a></p></td>
 <td><p>Get information about one member of a chat.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="get_direct_messages_topics_by_id.html#pyrogram.Client.get_direct_messages_topics_by_id" title="pyrogram.Client.get_direct_messages_topics_by_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_direct_messages_topics_by_id</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="get_direct_messages_topics_by_id.html#pyrogram.Client.get_direct_messages_topics_by_id" title="pyrogram.Client.get_direct_messages_topics_by_id"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_direct_messages_topics_by_id</span></code></a></p></td>
 <td><p>Get one or more direct message topic from a chat by using topic identifiers.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="get_direct_messages_topics.html#pyrogram.Client.get_direct_messages_topics" title="pyrogram.Client.get_direct_messages_topics"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_direct_messages_topics</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="get_direct_messages_topics.html#pyrogram.Client.get_direct_messages_topics" title="pyrogram.Client.get_direct_messages_topics"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_direct_messages_topics</span></code></a></p></td>
 <td><p>Get one or more topic from a direct messages channel chat.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="set_chat_direct_messages_group.html#pyrogram.Client.set_chat_direct_messages_group" title="pyrogram.Client.set_chat_direct_messages_group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_direct_messages_group</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="set_chat_direct_messages_group.html#pyrogram.Client.set_chat_direct_messages_group" title="pyrogram.Client.set_chat_direct_messages_group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_direct_messages_group</span></code></a></p></td>
 <td><p>Change direct messages group settings for a channel chat.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="get_dialogs.html#pyrogram.Client.get_dialogs" title="pyrogram.Client.get_dialogs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_dialogs</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="get_dialogs.html#pyrogram.Client.get_dialogs" title="pyrogram.Client.get_dialogs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_dialogs</span></code></a></p></td>
 <td><p>Get a user's dialogs sequentially.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="get_dialogs_count.html#pyrogram.Client.get_dialogs_count" title="pyrogram.Client.get_dialogs_count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_dialogs_count</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="get_dialogs_count.html#pyrogram.Client.get_dialogs_count" title="pyrogram.Client.get_dialogs_count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_dialogs_count</span></code></a></p></td>
 <td><p>Get the total count of your dialogs.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="set_chat_username.html#pyrogram.Client.set_chat_username" title="pyrogram.Client.set_chat_username"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_username</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="set_chat_username.html#pyrogram.Client.set_chat_username" title="pyrogram.Client.set_chat_username"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_username</span></code></a></p></td>
 <td><p>Set a channel or a supergroup username.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="get_nearby_chats.html#pyrogram.Client.get_nearby_chats" title="pyrogram.Client.get_nearby_chats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_nearby_chats</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="get_nearby_chats.html#pyrogram.Client.get_nearby_chats" title="pyrogram.Client.get_nearby_chats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_nearby_chats</span></code></a></p></td>
 <td><p>Returns a list of users and location-based supergroups nearby.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="archive_chats.html#pyrogram.Client.archive_chats" title="pyrogram.Client.archive_chats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">archive_chats</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="archive_chats.html#pyrogram.Client.archive_chats" title="pyrogram.Client.archive_chats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">archive_chats</span></code></a></p></td>
 <td><p>Archive one or more chats.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="unarchive_chats.html#pyrogram.Client.unarchive_chats" title="pyrogram.Client.unarchive_chats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unarchive_chats</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="unarchive_chats.html#pyrogram.Client.unarchive_chats" title="pyrogram.Client.unarchive_chats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unarchive_chats</span></code></a></p></td>
 <td><p>Unarchive one or more chats.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="add_chat_members.html#pyrogram.Client.add_chat_members" title="pyrogram.Client.add_chat_members"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_chat_members</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="add_chat_members.html#pyrogram.Client.add_chat_members" title="pyrogram.Client.add_chat_members"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_chat_members</span></code></a></p></td>
 <td><p>Add new chat members to a group, supergroup or channel</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="create_channel.html#pyrogram.Client.create_channel" title="pyrogram.Client.create_channel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_channel</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="create_channel.html#pyrogram.Client.create_channel" title="pyrogram.Client.create_channel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_channel</span></code></a></p></td>
 <td><p>Create a new broadcast channel.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="create_group.html#pyrogram.Client.create_group" title="pyrogram.Client.create_group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_group</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="create_group.html#pyrogram.Client.create_group" title="pyrogram.Client.create_group"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_group</span></code></a></p></td>
 <td><p>Create a new basic group.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="create_supergroup.html#pyrogram.Client.create_supergroup" title="pyrogram.Client.create_supergroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_supergroup</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="create_supergroup.html#pyrogram.Client.create_supergroup" title="pyrogram.Client.create_supergroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_supergroup</span></code></a></p></td>
 <td><p>Create a new supergroup.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="delete_channel.html#pyrogram.Client.delete_channel" title="pyrogram.Client.delete_channel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_channel</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="delete_channel.html#pyrogram.Client.delete_channel" title="pyrogram.Client.delete_channel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_channel</span></code></a></p></td>
 <td><p>Delete a channel.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="delete_supergroup.html#pyrogram.Client.delete_supergroup" title="pyrogram.Client.delete_supergroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_supergroup</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="delete_supergroup.html#pyrogram.Client.delete_supergroup" title="pyrogram.Client.delete_supergroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_supergroup</span></code></a></p></td>
 <td><p>Delete a supergroup.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="delete_user_history.html#pyrogram.Client.delete_user_history" title="pyrogram.Client.delete_user_history"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_user_history</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="delete_user_history.html#pyrogram.Client.delete_user_history" title="pyrogram.Client.delete_user_history"><code class="xref py py-obj docutils literal notranslate"><span class="pre">delete_user_history</span></code></a></p></td>
 <td><p>Delete all messages sent by a certain user in a supergroup.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="set_slow_mode.html#pyrogram.Client.set_slow_mode" title="pyrogram.Client.set_slow_mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_slow_mode</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="set_slow_mode.html#pyrogram.Client.set_slow_mode" title="pyrogram.Client.set_slow_mode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_slow_mode</span></code></a></p></td>
 <td><p>Set the slow mode interval for a chat.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="set_chat_message_auto_delete_time.html#pyrogram.Client.set_chat_message_auto_delete_time" title="pyrogram.Client.set_chat_message_auto_delete_time"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_message_auto_delete_time</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="set_chat_message_auto_delete_time.html#pyrogram.Client.set_chat_message_auto_delete_time" title="pyrogram.Client.set_chat_message_auto_delete_time"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_message_auto_delete_time</span></code></a></p></td>
 <td><p>Changes the message auto-delete or self-destruct (for secret chats) time in a chat.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="mark_chat_unread.html#pyrogram.Client.mark_chat_unread" title="pyrogram.Client.mark_chat_unread"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mark_chat_unread</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="mark_chat_unread.html#pyrogram.Client.mark_chat_unread" title="pyrogram.Client.mark_chat_unread"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mark_chat_unread</span></code></a></p></td>
 <td><p>Mark a chat as unread.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="get_chat_event_log.html#pyrogram.Client.get_chat_event_log" title="pyrogram.Client.get_chat_event_log"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat_event_log</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="get_chat_event_log.html#pyrogram.Client.get_chat_event_log" title="pyrogram.Client.get_chat_event_log"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat_event_log</span></code></a></p></td>
 <td><p>Get the actions taken by chat members and administrators in the last 48h.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="get_chat_online_count.html#pyrogram.Client.get_chat_online_count" title="pyrogram.Client.get_chat_online_count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat_online_count</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="get_chat_online_count.html#pyrogram.Client.get_chat_online_count" title="pyrogram.Client.get_chat_online_count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_chat_online_count</span></code></a></p></td>
 <td><p>Get the number of members that are currently online in a chat.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="get_send_as_chats.html#pyrogram.Client.get_send_as_chats" title="pyrogram.Client.get_send_as_chats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_send_as_chats</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="get_send_as_chats.html#pyrogram.Client.get_send_as_chats" title="pyrogram.Client.get_send_as_chats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_send_as_chats</span></code></a></p></td>
 <td><p>Get the list of &quot;send_as&quot; chats available.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="set_send_as_chat.html#pyrogram.Client.set_send_as_chat" title="pyrogram.Client.set_send_as_chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_send_as_chat</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="set_send_as_chat.html#pyrogram.Client.set_send_as_chat" title="pyrogram.Client.set_send_as_chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_send_as_chat</span></code></a></p></td>
 <td><p>Set the default &quot;send_as&quot; chat for a chat.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="set_chat_protected_content.html#pyrogram.Client.set_chat_protected_content" title="pyrogram.Client.set_chat_protected_content"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_protected_content</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="set_chat_protected_content.html#pyrogram.Client.set_chat_protected_content" title="pyrogram.Client.set_chat_protected_content"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_chat_protected_content</span></code></a></p></td>
 <td><p>Set the chat protected content setting.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="process_chat_protected_content_disable_request.html#pyrogram.Client.process_chat_protected_content_disable_request" title="pyrogram.Client.process_chat_protected_content_disable_request"><code class="xref py py-obj docutils literal notranslate"><span class="pre">process_chat_protected_content_disable_request</span></code></a></p></td>
+<td><p>Processes request to disable <code class="docutils literal notranslate"><span class="pre">has_protected_content</span></code> in a chat.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="get_created_chats.html#pyrogram.Client.get_created_chats" title="pyrogram.Client.get_created_chats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_created_chats</span></code></a></p></td>
 <td><p>Get a list of chats of the specified type of the current user account</p></td>
@@ -1959,7 +1969,7 @@ Learn more about how to use the raw API at <a class="reference internal" href=".
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/01c337a" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/7cd5a8c" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

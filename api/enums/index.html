@@ -12,10 +12,11 @@
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="https://t.me/PyroTGFork/2" />
     <meta property="article:author" content="@PyroTGFork" />
-    <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="ChatAction" href="ChatAction.html" /><link rel="prev" title="ActiveSession.terminate()" href="../bound-methods/ActiveSession.terminate.html" />
+    <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="ButtonStyle" href="ButtonStyle.html" /><link rel="prev" title="ActiveSession.terminate()" href="../bound-methods/ActiveSession.terminate.html" />
+        <link rel="canonical" href="/pyrogram/api/enums/index.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Enumerations - PyroTGFork 2.2.18 Layer 222</title>
+        <title>Enumerations - PyroTGFork 2.2.19 Layer 223</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.18 Layer 222</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.19 Layer 223</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.18 Layer 222</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.19 Layer 223</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -307,6 +308,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../methods/restrict_chat_member.html">restrict_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/promote_chat_member.html">promote_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/set_administrator_title.html">set_administrator_title</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methods/set_chat_member_tag.html">set_chat_member_tag</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/set_chat_permissions.html">set_chat_permissions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/set_chat_photo.html">set_chat_photo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/delete_chat_photo.html">delete_chat_photo</a></li>
@@ -346,6 +348,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_send_as_chats.html">get_send_as_chats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/set_send_as_chat.html">set_send_as_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/set_chat_protected_content.html">set_chat_protected_content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../methods/process_chat_protected_content_disable_request.html">process_chat_protected_content_disable_request</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/get_created_chats.html">get_created_chats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/transfer_chat_ownership.html">transfer_chat_ownership</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../methods/export_chat_invite_link.html">export_chat_invite_link</a></li>
@@ -798,6 +801,7 @@
 </ul>
 </li>
 <li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">Enumerations</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Enumerations</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ButtonStyle.html">ButtonStyle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ChatAction.html">ChatAction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ChatEventAction.html">ChatEventAction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ChatMemberStatus.html">ChatMemberStatus</a></li>
@@ -968,61 +972,64 @@ to apply only a valid value among the expected ones.</p>
 <div class="table-wrapper autosummary longtable docutils container">
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="ChatAction.html#pyrogram.enums.ChatAction" title="pyrogram.enums.ChatAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatAction</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="ButtonStyle.html#pyrogram.enums.ButtonStyle" title="pyrogram.enums.ButtonStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ButtonStyle</span></code></a></p></td>
+<td><p>Button style type enumeration used in <a class="reference internal" href="../types/KeyboardButton.html#pyrogram.types.KeyboardButton" title="pyrogram.types.KeyboardButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">KeyboardButton</span></code></a> and <a class="reference internal" href="../types/InlineKeyboardButton.html#pyrogram.types.InlineKeyboardButton" title="pyrogram.types.InlineKeyboardButton"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InlineKeyboardButton</span></code></a> to describe the style of a button.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="ChatAction.html#pyrogram.enums.ChatAction" title="pyrogram.enums.ChatAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatAction</span></code></a></p></td>
 <td><p>Chat action enumeration used in <a class="reference internal" href="../types/ChatEvent.html#pyrogram.types.ChatEvent" title="pyrogram.types.ChatEvent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatEvent</span></code></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="ChatEventAction.html#pyrogram.enums.ChatEventAction" title="pyrogram.enums.ChatEventAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatEventAction</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="ChatEventAction.html#pyrogram.enums.ChatEventAction" title="pyrogram.enums.ChatEventAction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatEventAction</span></code></a></p></td>
 <td><p>Chat event action enumeration used in <a class="reference internal" href="../methods/get_chat_event_log.html#pyrogram.Client.get_chat_event_log" title="pyrogram.Client.get_chat_event_log"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_chat_event_log()</span></code></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="ChatMemberStatus.html#pyrogram.enums.ChatMemberStatus" title="pyrogram.enums.ChatMemberStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatMemberStatus</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="ChatMemberStatus.html#pyrogram.enums.ChatMemberStatus" title="pyrogram.enums.ChatMemberStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatMemberStatus</span></code></a></p></td>
 <td><p>Chat member status enumeration used in <a class="reference internal" href="../types/ChatMember.html#pyrogram.types.ChatMember" title="pyrogram.types.ChatMember"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatMember</span></code></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="ChatMembersFilter.html#pyrogram.enums.ChatMembersFilter" title="pyrogram.enums.ChatMembersFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatMembersFilter</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="ChatMembersFilter.html#pyrogram.enums.ChatMembersFilter" title="pyrogram.enums.ChatMembersFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatMembersFilter</span></code></a></p></td>
 <td><p>Chat members filter enumeration used in <a class="reference internal" href="../methods/get_chat_members.html#pyrogram.Client.get_chat_members" title="pyrogram.Client.get_chat_members"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_chat_members()</span></code></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="ChatType.html#pyrogram.enums.ChatType" title="pyrogram.enums.ChatType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatType</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="ChatType.html#pyrogram.enums.ChatType" title="pyrogram.enums.ChatType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatType</span></code></a></p></td>
 <td><p>Chat type enumeration used in <a class="reference internal" href="../types/Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="ChatJoinType.html#pyrogram.enums.ChatJoinType" title="pyrogram.enums.ChatJoinType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatJoinType</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="ChatJoinType.html#pyrogram.enums.ChatJoinType" title="pyrogram.enums.ChatJoinType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatJoinType</span></code></a></p></td>
 <td><p>How the service message <a class="reference internal" href="MessageServiceType.html#pyrogram.enums.MessageServiceType.NEW_CHAT_MEMBERS" title="pyrogram.enums.MessageServiceType.NEW_CHAT_MEMBERS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NEW_CHAT_MEMBERS</span></code></a> was used for the member to join the chat.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="ClientPlatform.html#pyrogram.enums.ClientPlatform" title="pyrogram.enums.ClientPlatform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientPlatform</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="ClientPlatform.html#pyrogram.enums.ClientPlatform" title="pyrogram.enums.ClientPlatform"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ClientPlatform</span></code></a></p></td>
 <td><p>Valid platforms for a <a class="reference internal" href="../client.html#pyrogram.Client" title="pyrogram.Client"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Client</span></code></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="MessageEntityType.html#pyrogram.enums.MessageEntityType" title="pyrogram.enums.MessageEntityType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityType</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="MessageEntityType.html#pyrogram.enums.MessageEntityType" title="pyrogram.enums.MessageEntityType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntityType</span></code></a></p></td>
 <td><p>Message entity type enumeration used in <a class="reference internal" href="../types/MessageEntity.html#pyrogram.types.MessageEntity" title="pyrogram.types.MessageEntity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageEntity</span></code></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="MessageMediaType.html#pyrogram.enums.MessageMediaType" title="pyrogram.enums.MessageMediaType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaType</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="MessageMediaType.html#pyrogram.enums.MessageMediaType" title="pyrogram.enums.MessageMediaType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageMediaType</span></code></a></p></td>
 <td><p>Message media type enumeration used in <a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="MessageOriginType.html#pyrogram.enums.MessageOriginType" title="pyrogram.enums.MessageOriginType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageOriginType</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="MessageOriginType.html#pyrogram.enums.MessageOriginType" title="pyrogram.enums.MessageOriginType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageOriginType</span></code></a></p></td>
 <td><p>Message origin type enumeration used in <a class="reference internal" href="../types/MessageOrigin.html#pyrogram.types.MessageOrigin" title="pyrogram.types.MessageOrigin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageOrigin</span></code></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="MessageServiceType.html#pyrogram.enums.MessageServiceType" title="pyrogram.enums.MessageServiceType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageServiceType</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="MessageServiceType.html#pyrogram.enums.MessageServiceType" title="pyrogram.enums.MessageServiceType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageServiceType</span></code></a></p></td>
 <td><p>Message service type enumeration used in <a class="reference internal" href="../types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="MessagesFilter.html#pyrogram.enums.MessagesFilter" title="pyrogram.enums.MessagesFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessagesFilter</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="MessagesFilter.html#pyrogram.enums.MessagesFilter" title="pyrogram.enums.MessagesFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessagesFilter</span></code></a></p></td>
 <td><p>Messages filter enumeration used in <a class="reference internal" href="../methods/search_messages.html#pyrogram.Client.search_messages" title="pyrogram.Client.search_messages"><code class="xref py py-meth docutils literal notranslate"><span class="pre">search_messages()</span></code></a> and <a class="reference internal" href="../methods/search_global.html#pyrogram.Client.search_global" title="pyrogram.Client.search_global"><code class="xref py py-meth docutils literal notranslate"><span class="pre">search_global()</span></code></a></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="ParseMode.html#pyrogram.enums.ParseMode" title="pyrogram.enums.ParseMode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ParseMode</span></code></a></p></td>
 <td><p>Parse mode enumeration used in various places to set a specific parse mode</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="PollType.html#pyrogram.enums.PollType" title="pyrogram.enums.PollType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PollType</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="PollType.html#pyrogram.enums.PollType" title="pyrogram.enums.PollType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PollType</span></code></a></p></td>
 <td><p>Poll type enumeration used in <a class="reference internal" href="../types/Poll.html#pyrogram.types.Poll" title="pyrogram.types.Poll"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Poll</span></code></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="ProfileColor.html#pyrogram.enums.ProfileColor" title="pyrogram.enums.ProfileColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ProfileColor</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="ProfileColor.html#pyrogram.enums.ProfileColor" title="pyrogram.enums.ProfileColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ProfileColor</span></code></a></p></td>
 <td><p>Profile color enumeration used in <a class="reference internal" href="../types/ChatColor.html#pyrogram.types.ChatColor" title="pyrogram.types.ChatColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatColor</span></code></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="AccentColor.html#pyrogram.enums.AccentColor" title="pyrogram.enums.AccentColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AccentColor</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="AccentColor.html#pyrogram.enums.AccentColor" title="pyrogram.enums.AccentColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AccentColor</span></code></a></p></td>
 <td><p>Accent color enumeration used in <a class="reference internal" href="../types/ChatColor.html#pyrogram.types.ChatColor" title="pyrogram.types.ChatColor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatColor</span></code></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="SentCodeType.html#pyrogram.enums.SentCodeType" title="pyrogram.enums.SentCodeType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SentCodeType</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="SentCodeType.html#pyrogram.enums.SentCodeType" title="pyrogram.enums.SentCodeType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SentCodeType</span></code></a></p></td>
 <td><p>Sent code type enumeration used in <a class="reference internal" href="../types/SentCode.html#pyrogram.types.SentCode" title="pyrogram.types.SentCode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SentCode</span></code></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="NextCodeType.html#pyrogram.enums.NextCodeType" title="pyrogram.enums.NextCodeType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NextCodeType</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="NextCodeType.html#pyrogram.enums.NextCodeType" title="pyrogram.enums.NextCodeType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">NextCodeType</span></code></a></p></td>
 <td><p>Next code type enumeration used in <a class="reference internal" href="../types/SentCode.html#pyrogram.types.SentCode" title="pyrogram.types.SentCode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SentCode</span></code></a>.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="UserStatus.html#pyrogram.enums.UserStatus" title="pyrogram.enums.UserStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UserStatus</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="UserStatus.html#pyrogram.enums.UserStatus" title="pyrogram.enums.UserStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">UserStatus</span></code></a></p></td>
 <td><p>User status enumeration used in <a class="reference internal" href="../types/User.html#pyrogram.types.User" title="pyrogram.types.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>.</p></td>
 </tr>
 </tbody>
@@ -1038,12 +1045,12 @@ to apply only a valid value among the expected ones.</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="ChatAction.html">
+          <a class="next-page" href="ButtonStyle.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">ChatAction</div>
+                <div class="title">ButtonStyle</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -1068,7 +1075,7 @@ to apply only a valid value among the expected ones.</p>
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/01c337a" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/7cd5a8c" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

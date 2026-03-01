@@ -13,9 +13,10 @@
     <meta property="og:site_name" content="https://t.me/PyroTGFork/2" />
     <meta property="article:author" content="@PyroTGFork" />
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="UserEmpty" href="user-empty.html" /><link rel="prev" title="UrlAuthResultRequest" href="url-auth-result-request.html" />
+        <link rel="canonical" href="/pyrogram/telegram/types/user.html" />
 
     <link rel="shortcut icon" href="../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>User - PyroTGFork 2.2.18 Layer 222</title>
+        <title>User - PyroTGFork 2.2.19 Layer 223</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.18 Layer 222</div></a>
+      <a href="../../index.html"><div class="brand">PyroTGFork 2.2.19 Layer 223</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.18 Layer 222</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.19 Layer 223</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -307,6 +308,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/restrict_chat_member.html">restrict_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/promote_chat_member.html">promote_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_administrator_title.html">set_administrator_title</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_member_tag.html">set_chat_member_tag</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_permissions.html">set_chat_permissions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_photo.html">set_chat_photo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/delete_chat_photo.html">delete_chat_photo</a></li>
@@ -346,6 +348,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_send_as_chats.html">get_send_as_chats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_send_as_chat.html">set_send_as_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/set_chat_protected_content.html">set_chat_protected_content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api/methods/process_chat_protected_content_disable_request.html">process_chat_protected_content_disable_request</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/get_created_chats.html">get_created_chats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/transfer_chat_ownership.html">transfer_chat_ownership</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/methods/export_chat_invite_link.html">export_chat_invite_link</a></li>
@@ -798,6 +801,7 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../api/enums/index.html">Enumerations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Enumerations</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../api/enums/ButtonStyle.html">ButtonStyle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/enums/ChatAction.html">ChatAction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/enums/ChatEventAction.html">ChatEventAction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../api/enums/ChatMemberStatus.html">ChatMemberStatus</a></li>
@@ -970,7 +974,7 @@ See here  for an implementation of the logic to use when updating the local user
 <div><p>Constructor of <a class="reference internal" href="../base/user.html#pyrogram.raw.base.User" title="pyrogram.raw.base.User"><code class="xref py py-obj docutils literal notranslate"><span class="pre">User</span></code></a>.</p>
 <dl>
 <dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">222</span></code></p></li>
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">223</span></code></p></li>
 <li><p>ID: <code class="docutils literal notranslate"><span class="pre">31774388</span></code></p></li>
 </ul>
 </dd>
@@ -1027,10 +1031,10 @@ See here  for an implementation of the logic to use when updating the local user
 </dd>
 <dt>bot_has_main_app (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>If set, this bot has configured a Main Mini App ».</p>
 </dd>
-<dt>bot_forum_view (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>N/A</p>
-</dd>
-<dt>bot_forum_can_manage_topics (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</dt><dd><p>N/A</p>
-</dd>
+</dl>
+<p>bot_forum_view (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</p>
+<p>bot_forum_can_manage_topics (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>optional</em>):</p>
+<dl class="simple">
 <dt>access_hash (<code class="docutils literal notranslate"><span class="pre">int</span></code> <code class="docutils literal notranslate"><span class="pre">64-bit</span></code>, <em>optional</em>):</dt><dd><p>Access hash of the user, see here » for more info. If this flag is set, when updating the local peer database, generate a virtual flag called min_access_hash, which is: - Set to true if min is set AND – The phone flag is not set OR – The phone flag is set and the associated phone number string is non-empty - Set to false otherwise. Then, apply both access_hash and min_access_hash to the local database if: - min_access_hash is false OR - min_access_hash is true AND – There is no locally cached object for this user OR – There is no access_hash in the local cache OR – The cached object’s min_access_hash is also true If the final merged object stored to the database has the min_access_hash field set to true, the related access_hash is only suitable to use in inputPeerPhotoFileLocation », to directly download the profile pictures of users, everywhere else a inputPeer*FromMessage constructor will have to be generated as specified here ». Bots can also use min access hashes in some conditions, by passing 0 instead of the min access hash.</p>
 </dd>
 <dt>first_name (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>First name. When updating the local peer database, apply changes to this field only if: - The min flag is not set OR - The min flag is set AND – The min flag of the locally cached user entry is set.</p>
@@ -1090,11 +1094,11 @@ See here  for an implementation of the logic to use when updating the local user
 <tr class="row-odd"><td><p><a class="reference internal" href="../functions/contacts/import-contact-token.html#pyrogram.raw.functions.contacts.ImportContactToken" title="pyrogram.raw.functions.contacts.ImportContactToken"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contacts.ImportContactToken</span></code></a></p></td>
 <td><p>Obtain user info from a temporary profile link.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../functions/channels/get-message-author.html#pyrogram.raw.functions.channels.GetMessageAuthor" title="pyrogram.raw.functions.channels.GetMessageAuthor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.GetMessageAuthor</span></code></a></p></td>
-<td><p>Can only be invoked by non-bot admins of a monoforum , obtains the original sender of a message sent by other monoforum admins to the monoforum, on behalf of the channel associated to the monoforum.</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/get-future-creator-after-leave.html#pyrogram.raw.functions.channels.GetFutureCreatorAfterLeave" title="pyrogram.raw.functions.channels.GetFutureCreatorAfterLeave"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.GetFutureCreatorAfterLeave</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="../functions/messages/get-future-chat-creator-after-leave.html#pyrogram.raw.functions.messages.GetFutureChatCreatorAfterLeave" title="pyrogram.raw.functions.messages.GetFutureChatCreatorAfterLeave"><code class="xref py py-obj docutils literal notranslate"><span class="pre">messages.GetFutureChatCreatorAfterLeave</span></code></a></p></td>
 <td><p>Details:</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../functions/channels/get-message-author.html#pyrogram.raw.functions.channels.GetMessageAuthor" title="pyrogram.raw.functions.channels.GetMessageAuthor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channels.GetMessageAuthor</span></code></a></p></td>
+<td><p>Can only be invoked by non-bot admins of a monoforum , obtains the original sender of a message sent by other monoforum admins to the monoforum, on behalf of the channel associated to the monoforum.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="../functions/bots/get-admined-bots.html#pyrogram.raw.functions.bots.GetAdminedBots" title="pyrogram.raw.functions.bots.GetAdminedBots"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bots.GetAdminedBots</span></code></a></p></td>
 <td><p>Get a list of bots owned by the current user</p></td>
@@ -1145,7 +1149,7 @@ See here  for an implementation of the logic to use when updating the local user
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/01c337a" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/7cd5a8c" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

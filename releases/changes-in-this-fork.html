@@ -13,9 +13,10 @@
     <meta property="og:site_name" content="https://t.me/PyroTGFork/2" />
     <meta property="article:author" content="@PyroTGFork" />
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" />
+        <link rel="canonical" href="/pyrogram/releases/changes-in-this-fork.html" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Changes in this Fork - PyroTGFork 2.2.18 Layer 222</title>
+        <title>Changes in this Fork - PyroTGFork 2.2.19 Layer 223</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../index.html"><div class="brand">PyroTGFork 2.2.18 Layer 222</div></a>
+      <a href="../index.html"><div class="brand">PyroTGFork 2.2.19 Layer 223</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.18 Layer 222</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.19 Layer 223</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -307,6 +308,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/restrict_chat_member.html">restrict_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/promote_chat_member.html">promote_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/set_administrator_title.html">set_administrator_title</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/methods/set_chat_member_tag.html">set_chat_member_tag</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/set_chat_permissions.html">set_chat_permissions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/set_chat_photo.html">set_chat_photo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/delete_chat_photo.html">delete_chat_photo</a></li>
@@ -346,6 +348,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/get_send_as_chats.html">get_send_as_chats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/set_send_as_chat.html">set_send_as_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/set_chat_protected_content.html">set_chat_protected_content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/methods/process_chat_protected_content_disable_request.html">process_chat_protected_content_disable_request</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/get_created_chats.html">get_created_chats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/transfer_chat_ownership.html">transfer_chat_ownership</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/methods/export_chat_invite_link.html">export_chat_invite_link</a></li>
@@ -798,6 +801,7 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../api/enums/index.html">Enumerations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Enumerations</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../api/enums/ButtonStyle.html">ButtonStyle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/enums/ChatAction.html">ChatAction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/enums/ChatEventAction.html">ChatEventAction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/enums/ChatMemberStatus.html">ChatMemberStatus</a></li>
@@ -987,15 +991,31 @@ it can take advantage of new goodies!</p>
 <div class="table-wrapper docutils container">
 <table class="docutils align-default">
 <tbody>
+<tr class="row-odd"><td><p>Scheme layer used: 223</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li><p>Added the field <code class="docutils literal notranslate"><span class="pre">can_edit_tag</span></code> to the class <a class="reference internal" href="../api/types/ChatPermissions.html#pyrogram.types.ChatPermissions" title="pyrogram.types.ChatPermissions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPermissions</span></code></a>.</p></li>
+<li><p>Added the field <code class="docutils literal notranslate"><span class="pre">tag</span></code> to the class <a class="reference internal" href="../api/types/ChatMember.html#pyrogram.types.ChatMember" title="pyrogram.types.ChatMember"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatMember</span></code></a>.</p></li>
+<li><p>Added the field <code class="docutils literal notranslate"><span class="pre">can_manage_tags</span></code> to the class <a class="reference internal" href="../api/types/ChatPrivileges.html#pyrogram.types.ChatPrivileges" title="pyrogram.types.ChatPrivileges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ChatPrivileges</span></code></a>.</p></li>
+<li><p>Added the methods <a class="reference internal" href="../api/methods/set_chat_member_tag.html#pyrogram.Client.set_chat_member_tag" title="pyrogram.Client.set_chat_member_tag"><code class="xref py py-meth docutils literal notranslate"><span class="pre">set_chat_member_tag()</span></code></a> and <a class="reference internal" href="../api/methods/process_chat_protected_content_disable_request.html#pyrogram.Client.process_chat_protected_content_disable_request" title="pyrogram.Client.process_chat_protected_content_disable_request"><code class="xref py py-meth docutils literal notranslate"><span class="pre">process_chat_protected_content_disable_request()</span></code></a>. Updated the method <code class="xref py py-meth docutils literal notranslate"><span class="pre">set_chat_protected_content()</span></code> to return the appropriate service message, if available.</p></li>
+<li><p>Added the field <code class="docutils literal notranslate"><span class="pre">sender_tag</span></code> to the class <a class="reference internal" href="../api/types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a>.</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">location</span></code> in <a class="reference internal" href="../api/types/Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a> and add missing parameters in <a class="reference internal" href="../api/methods/create_supergroup.html#pyrogram.Client.create_supergroup" title="pyrogram.Client.create_supergroup"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create_supergroup()</span></code></a>.</p></li>
+<li><p>fix: <a class="reference internal" href="../api/methods/get_media_group.html#pyrogram.Client.get_media_group" title="pyrogram.Client.get_media_group"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_media_group()</span></code></a> concurrent logic (contributed by &#64;Alekzum).</p></li>
+<li><p>properly implement in_memory arg in client to support session string. (contributed by &#64;anonymousx97 in <a class="reference external" href="https://github.com/KurimuzonAkuma/kurigram/pull/222">#222</a>).</p></li>
+<li><p>View <a class="reference external" href="https://telegramplayground.github.io/TG-APIs/TL/diff/tdlib.html?from=222&amp;to=223">new and changed</a> <a class="reference external" href="https://telegramplayground.github.io/TG-APIs/TL/diff/tdesktop.html?from=222&amp;to=223">raw API methods</a>.</p></li>
+</ul>
+<div class="table-wrapper docutils container">
+<table class="docutils align-default">
+<tbody>
 <tr class="row-odd"><td><p>Scheme layer used: 222</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <ul class="simple">
-<li><p>Add <code class="docutils literal notranslate"><span class="pre">location</span></code> in <a class="reference internal" href="../api/types/Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a> and add missing parameters in <a class="reference internal" href="../api/methods/create_supergroup.html#pyrogram.Client.create_supergroup" title="pyrogram.Client.create_supergroup"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create_supergroup()</span></code></a>.</p></li>
-<li><p>fix: <a class="reference internal" href="../api/methods/get_media_group.html#pyrogram.Client.get_media_group" title="pyrogram.Client.get_media_group"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_media_group()</span></code></a> concurrent logic (contributed by &#64;Alekzum).</p></li>
-<li><p>properly implement in_memory arg in client to support session string. (contributed by &#64;anonymousx97 in <a class="reference external" href="https://github.com/KurimuzonAkuma/kurigram/pull/222">#222</a>).</p></li>
 <li><p>Added the field <code class="docutils literal notranslate"><span class="pre">first_profile_audio</span></code> to the class <a class="reference internal" href="../api/types/Chat.html#pyrogram.types.Chat" title="pyrogram.types.Chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chat</span></code></a> and the methods <a class="reference internal" href="../api/methods/get_chat_audios.html#pyrogram.Client.get_chat_audios" title="pyrogram.Client.get_chat_audios"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_chat_audios()</span></code></a>, <a class="reference internal" href="../api/methods/get_chat_audios_count.html#pyrogram.Client.get_chat_audios_count" title="pyrogram.Client.get_chat_audios_count"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_chat_audios_count()</span></code></a>, <a class="reference internal" href="../api/methods/add_profile_audio.html#pyrogram.Client.add_profile_audio" title="pyrogram.Client.add_profile_audio"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_profile_audio()</span></code></a>, <a class="reference internal" href="../api/methods/remove_profile_audio.html#pyrogram.Client.remove_profile_audio" title="pyrogram.Client.remove_profile_audio"><code class="xref py py-meth docutils literal notranslate"><span class="pre">remove_profile_audio()</span></code></a>, <a class="reference internal" href="../api/methods/set_profile_audio_position.html#pyrogram.Client.set_profile_audio_position" title="pyrogram.Client.set_profile_audio_position"><code class="xref py py-meth docutils literal notranslate"><span class="pre">set_profile_audio_position()</span></code></a>.</p></li>
 <li><p>Removed the methods <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_received_gifts()</span></code>, <code class="xref py py-meth docutils literal notranslate"><span class="pre">sell_gift()</span></code>, <code class="xref py py-meth docutils literal notranslate"><span class="pre">send_gift()</span></code>, <code class="xref py py-meth docutils literal notranslate"><span class="pre">toggle_gift_is_saved()</span></code> and the <code class="xref py py-obj docutils literal notranslate"><span class="pre">ReceivedGift</span></code>.</p></li>
 <li><p>Removed the field <code class="docutils literal notranslate"><span class="pre">alternative_videos</span></code> from the class <a class="reference internal" href="../api/types/Message.html#pyrogram.types.Message" title="pyrogram.types.Message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Message</span></code></a> and added the class <a class="reference internal" href="../api/types/VideoQuality.html#pyrogram.types.VideoQuality" title="pyrogram.types.VideoQuality"><code class="xref py py-obj docutils literal notranslate"><span class="pre">VideoQuality</span></code></a> and the field <code class="docutils literal notranslate"><span class="pre">qualities</span></code> to the class <a class="reference internal" href="../api/types/Video.html#pyrogram.types.Video" title="pyrogram.types.Video"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Video</span></code></a> allowing to get information about other available qualities of a video.</p></li>
@@ -1739,7 +1759,7 @@ it can take advantage of new goodies!</p>
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/01c337a" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/7cd5a8c" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

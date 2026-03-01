@@ -12,10 +12,11 @@
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="https://t.me/PyroTGFork/2" />
     <meta property="article:author" content="@PyroTGFork" />
-    <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="channels.EditLocation" href="edit-location.html" /><link rel="prev" title="channels.EditBanned" href="edit-banned.html" />
+    <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="../../../genindex.html" /><link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="messages.EditChatDefaultBannedRights" href="edit-chat-default-banned-rights.html" /><link rel="prev" title="messages.EditChatAdmin" href="edit-chat-admin.html" />
+        <link rel="canonical" href="/pyrogram/telegram/functions/messages/edit-chat-creator.html" />
 
     <link rel="shortcut icon" href="../../../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>channels.EditCreator - PyroTGFork 2.2.18 Layer 222</title>
+        <title>messages.EditChatCreator - PyroTGFork 2.2.19 Layer 223</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -139,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.18 Layer 222</div></a>
+      <a href="../../../index.html"><div class="brand">PyroTGFork 2.2.19 Layer 223</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.18 Layer 222</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.19 Layer 223</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../../../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -307,6 +308,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/restrict_chat_member.html">restrict_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/promote_chat_member.html">promote_chat_member</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/set_administrator_title.html">set_administrator_title</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/methods/set_chat_member_tag.html">set_chat_member_tag</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/set_chat_permissions.html">set_chat_permissions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/set_chat_photo.html">set_chat_photo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/delete_chat_photo.html">delete_chat_photo</a></li>
@@ -346,6 +348,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_send_as_chats.html">get_send_as_chats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/set_send_as_chat.html">set_send_as_chat</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/set_chat_protected_content.html">set_chat_protected_content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/methods/process_chat_protected_content_disable_request.html">process_chat_protected_content_disable_request</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/get_created_chats.html">get_created_chats</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/transfer_chat_ownership.html">transfer_chat_ownership</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/methods/export_chat_invite_link.html">export_chat_invite_link</a></li>
@@ -798,6 +801,7 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../../api/enums/index.html">Enumerations</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of Enumerations</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../api/enums/ButtonStyle.html">ButtonStyle</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/enums/ChatAction.html">ChatAction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/enums/ChatEventAction.html">ChatEventAction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../api/enums/ChatMemberStatus.html">ChatMemberStatus</a></li>
@@ -958,25 +962,24 @@
         </div>
         <div class="article">
             <article role="main" id="furo-main-content" class="article__content">
-            <section id="channels-editcreator">
-<h1>channels.EditCreator<a class="headerlink" href="#channels-editcreator" title="Link to this heading">#</a></h1>
+            <section id="messages-editchatcreator">
+<h1>messages.EditChatCreator<a class="headerlink" href="#messages-editchatcreator" title="Link to this heading">#</a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="pyrogram.raw.functions.channels.EditCreator">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.channels.</span></span><span class="sig-name descname"><span class="pre">EditCreator</span></span><a class="headerlink" href="#pyrogram.raw.functions.channels.EditCreator" title="Link to this definition">#</a></dt>
-<dd><p>Transfer channel ownership</p>
-<dl class="simple">
+<dt class="sig sig-object py" id="pyrogram.raw.functions.messages.EditChatCreator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyrogram.raw.functions.messages.</span></span><span class="sig-name descname"><span class="pre">EditChatCreator</span></span><a class="headerlink" href="#pyrogram.raw.functions.messages.EditChatCreator" title="Link to this definition">#</a></dt>
+<dd><dl class="simple">
 <dt>Details:</dt><dd><ul class="simple">
-<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">222</span></code></p></li>
-<li><p>ID: <code class="docutils literal notranslate"><span class="pre">8F38CD1F</span></code></p></li>
+<li><p>Layer: <code class="docutils literal notranslate"><span class="pre">223</span></code></p></li>
+<li><p>ID: <code class="docutils literal notranslate"><span class="pre">F743B857</span></code></p></li>
 </ul>
 </dd>
 </dl>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>channel</strong> (<a class="reference internal" href="../../base/input-channel.html#pyrogram.raw.base.InputChannel" title="pyrogram.raw.base.InputChannel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputChannel</span></code></a>) – Channel</p></li>
-<li><p><strong>user_id</strong> (<a class="reference internal" href="../../base/input-user.html#pyrogram.raw.base.InputUser" title="pyrogram.raw.base.InputUser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputUser</span></code></a>) – New channel owner</p></li>
-<li><p><strong>password</strong> (<a class="reference internal" href="../../base/input-check-password-srp.html#pyrogram.raw.base.InputCheckPasswordSRP" title="pyrogram.raw.base.InputCheckPasswordSRP"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputCheckPasswordSRP</span></code></a>) – 2FA password of account</p></li>
+<li><p><strong>peer</strong> (<a class="reference internal" href="../../base/input-peer.html#pyrogram.raw.base.InputPeer" title="pyrogram.raw.base.InputPeer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputPeer</span></code></a>) – N/A</p></li>
+<li><p><strong>user_id</strong> (<a class="reference internal" href="../../base/input-user.html#pyrogram.raw.base.InputUser" title="pyrogram.raw.base.InputUser"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputUser</span></code></a>) – N/A</p></li>
+<li><p><strong>password</strong> (<a class="reference internal" href="../../base/input-check-password-srp.html#pyrogram.raw.base.InputCheckPasswordSRP" title="pyrogram.raw.base.InputCheckPasswordSRP"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InputCheckPasswordSRP</span></code></a>) – N/A</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -993,23 +996,23 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="edit-location.html">
+          <a class="next-page" href="edit-chat-default-banned-rights.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">channels.EditLocation</div>
+                <div class="title">messages.EditChatDefaultBannedRights</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="edit-banned.html">
+          <a class="prev-page" href="edit-chat-admin.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">channels.EditBanned</div>
+                <div class="title">messages.EditChatAdmin</div>
                 
               </div>
             </a>
@@ -1023,7 +1026,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/01c337a" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/7cd5a8c" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               
@@ -1045,8 +1048,8 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">channels.EditCreator</a><ul>
-<li><a class="reference internal" href="#pyrogram.raw.functions.channels.EditCreator"><code class="docutils literal notranslate"><span class="pre">EditCreator</span></code></a></li>
+<li><a class="reference internal" href="#">messages.EditChatCreator</a><ul>
+<li><a class="reference internal" href="#pyrogram.raw.functions.messages.EditChatCreator"><code class="docutils literal notranslate"><span class="pre">EditChatCreator</span></code></a></li>
 </ul>
 </li>
 </ul>
