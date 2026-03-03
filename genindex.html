@@ -15,7 +15,7 @@
     <meta property="telegram:channel" content="@PyroTGFork" /><link rel="index" title="Index" href="#" /><link rel="search" title="Search" href="search.html" />
         <link rel="canonical" href="/pyrogram/genindex.html" />
 
-    <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 --><title>Index - PyroTGFork 2.2.19 Layer 223</title>
+    <link rel="shortcut icon" href="_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 --><title>Index - PyroTGFork 2.2.20 Layer 223</title>
 <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -139,7 +139,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="index.html"><div class="brand">PyroTGFork 2.2.19 Layer 223</div></a>
+      <a href="index.html"><div class="brand">PyroTGFork 2.2.20 Layer 223</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -168,7 +168,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.19 Layer 223</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.20 Layer 223</span-->
     
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -545,6 +545,10 @@
 <li class="toctree-l2"><a class="reference internal" href="api/types/ContactRegistered.html">ContactRegistered</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/types/ScreenshotTaken.html">ScreenshotTaken</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/types/DraftMessage.html">DraftMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/types/ChatOwnerLeft.html">ChatOwnerLeft</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/types/ChatOwnerChanged.html">ChatOwnerChanged</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/types/ChatHasProtectedContentToggled.html">ChatHasProtectedContentToggled</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api/types/Chat.html">Chat</a></li>
@@ -2016,9 +2020,17 @@
 </li>
         <li><a href="api/enums/ChatEventAction.html#pyrogram.enums.ChatEventAction.CHAT_FORUM_TOPIC_PINNED">CHAT_FORUM_TOPIC_PINNED (pyrogram.enums.ChatEventAction attribute)</a>
 </li>
+        <li><a href="api/enums/MessageServiceType.html#pyrogram.enums.MessageServiceType.CHAT_HAS_PROTECTED_CONTENT_DISABLE_REQUESTED">CHAT_HAS_PROTECTED_CONTENT_DISABLE_REQUESTED (pyrogram.enums.MessageServiceType attribute)</a>
+</li>
+        <li><a href="api/enums/MessageServiceType.html#pyrogram.enums.MessageServiceType.CHAT_HAS_PROTECTED_CONTENT_TOGGLED">CHAT_HAS_PROTECTED_CONTENT_TOGGLED (pyrogram.enums.MessageServiceType attribute)</a>
+</li>
         <li><a href="api/enums/ChatEventAction.html#pyrogram.enums.ChatEventAction.CHAT_IS_FORUM_TOGGLED">CHAT_IS_FORUM_TOGGLED (pyrogram.enums.ChatEventAction attribute)</a>
 </li>
         <li><a href="api/enums/ChatEventAction.html#pyrogram.enums.ChatEventAction.CHAT_MEMBER_TAG_CHANGED">CHAT_MEMBER_TAG_CHANGED (pyrogram.enums.ChatEventAction attribute)</a>
+</li>
+        <li><a href="api/enums/MessageServiceType.html#pyrogram.enums.MessageServiceType.CHAT_OWNER_CHANGED">CHAT_OWNER_CHANGED (pyrogram.enums.MessageServiceType attribute)</a>
+</li>
+        <li><a href="api/enums/MessageServiceType.html#pyrogram.enums.MessageServiceType.CHAT_OWNER_LEFT">CHAT_OWNER_LEFT (pyrogram.enums.MessageServiceType attribute)</a>
 </li>
         <li><a href="api/enums/ChatEventAction.html#pyrogram.enums.ChatEventAction.CHAT_PERMISSIONS_CHANGED">CHAT_PERMISSIONS_CHANGED (pyrogram.enums.ChatEventAction attribute)</a>
 </li>
@@ -2082,6 +2094,10 @@
           <li><a href="telegram/types/messages/chat-full.html#pyrogram.raw.types.messages.ChatFull">(class in pyrogram.raw.types.messages)</a>
 </li>
         </ul></li>
+        <li><a href="api/types/ChatHasProtectedContentDisableRequested.html#pyrogram.types.ChatHasProtectedContentDisableRequested">ChatHasProtectedContentDisableRequested (class in pyrogram.types)</a>
+</li>
+        <li><a href="api/types/ChatHasProtectedContentToggled.html#pyrogram.types.ChatHasProtectedContentToggled">ChatHasProtectedContentToggled (class in pyrogram.types)</a>
+</li>
         <li><a href="telegram/base/chat-invite.html#pyrogram.raw.base.ChatInvite">ChatInvite (class in pyrogram.raw.base)</a>
 
         <ul>
@@ -2112,12 +2128,12 @@
 </li>
         <li><a href="api/types/ChatJoiner.html#pyrogram.types.ChatJoiner">ChatJoiner (class in pyrogram.types)</a>
 </li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="api/types/ChatJoinRequest.html#pyrogram.types.ChatJoinRequest">ChatJoinRequest (class in pyrogram.types)</a>
 </li>
         <li><a href="api/handlers.html#pyrogram.handlers.ChatJoinRequestHandler">ChatJoinRequestHandler (class in pyrogram.handlers)</a>
 </li>
-    </ul></td>
-    <td style="width: 33%; vertical-align: top;"><ul>
         <li><a href="api/enums/ChatJoinType.html#pyrogram.enums.ChatJoinType">ChatJoinType (class in pyrogram.enums)</a>
 </li>
         <li><a href="telegram/base/chatlists/chatlist-invite.html#pyrogram.raw.base.chatlists.ChatlistInvite">ChatlistInvite (class in pyrogram.raw.base.chatlists)</a>
@@ -2152,6 +2168,10 @@
           <li><a href="telegram/types/chat-onlines.html#pyrogram.raw.types.ChatOnlines">(class in pyrogram.raw.types)</a>
 </li>
         </ul></li>
+        <li><a href="api/types/ChatOwnerChanged.html#pyrogram.types.ChatOwnerChanged">ChatOwnerChanged (class in pyrogram.types)</a>
+</li>
+        <li><a href="api/types/ChatOwnerLeft.html#pyrogram.types.ChatOwnerLeft">ChatOwnerLeft (class in pyrogram.types)</a>
+</li>
         <li><a href="telegram/base/chat-participant.html#pyrogram.raw.base.ChatParticipant">ChatParticipant (class in pyrogram.raw.base)</a>
 
         <ul>
@@ -2572,6 +2592,8 @@
         </ul></li>
         <li><a href="api/storage/Storage.html#pyrogram.storage.Storage.date">date() (pyrogram.storage.Storage method)</a>
 </li>
+        <li><a href="api/enums/MessageEntityType.html#pyrogram.enums.MessageEntityType.DATE_TIME">DATE_TIME (pyrogram.enums.MessageEntityType attribute)</a>
+</li>
         <li><a href="api/storage/Storage.html#pyrogram.storage.Storage.dc_id">dc_id() (pyrogram.storage.Storage method)</a>
 </li>
         <li><a href="telegram/base/dc-option.html#pyrogram.raw.base.DcOption">DcOption (class in pyrogram.raw.base)</a>
@@ -2736,10 +2758,10 @@
 </li>
         <li><a href="telegram/types/destroy-auth-key-fail.html#pyrogram.raw.types.DestroyAuthKeyFail">DestroyAuthKeyFail (class in pyrogram.raw.types)</a>
 </li>
-        <li><a href="telegram/types/destroy-auth-key-none.html#pyrogram.raw.types.DestroyAuthKeyNone">DestroyAuthKeyNone (class in pyrogram.raw.types)</a>
-</li>
     </ul></td>
     <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="telegram/types/destroy-auth-key-none.html#pyrogram.raw.types.DestroyAuthKeyNone">DestroyAuthKeyNone (class in pyrogram.raw.types)</a>
+</li>
         <li><a href="telegram/types/destroy-auth-key-ok.html#pyrogram.raw.types.DestroyAuthKeyOk">DestroyAuthKeyOk (class in pyrogram.raw.types)</a>
 </li>
         <li><a href="telegram/base/destroy-auth-key-res.html#pyrogram.raw.base.DestroyAuthKeyRes">DestroyAuthKeyRes (class in pyrogram.raw.base)</a>
@@ -10877,7 +10899,7 @@
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/7cd5a8c" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/18f2d25" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               

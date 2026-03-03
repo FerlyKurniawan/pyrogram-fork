@@ -16,7 +16,7 @@
         <link rel="canonical" href="/pyrogram/topics/text-formatting.html" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
-        <title>Text Formatting - PyroTGFork 2.2.19 Layer 223</title>
+        <title>Text Formatting - PyroTGFork 2.2.20 Layer 223</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -140,7 +140,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="../index.html"><div class="brand">PyroTGFork 2.2.19 Layer 223</div></a>
+      <a href="../index.html"><div class="brand">PyroTGFork 2.2.20 Layer 223</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -169,7 +169,7 @@
     <div class="pyrogram-text">PyroTGFork</div>
     </div>
     
-    <!--span class="sidebar-brand-text">PyroTGFork 2.2.19 Layer 223</span-->
+    <!--span class="sidebar-brand-text">PyroTGFork 2.2.20 Layer 223</span-->
     
 </a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -546,6 +546,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../api/types/ContactRegistered.html">ContactRegistered</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/ScreenshotTaken.html">ScreenshotTaken</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/DraftMessage.html">DraftMessage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/types/ChatOwnerLeft.html">ChatOwnerLeft</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/types/ChatOwnerChanged.html">ChatOwnerChanged</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/types/ChatHasProtectedContentToggled.html">ChatHasProtectedContentToggled</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/types/ChatHasProtectedContentDisableRequested.html">ChatHasProtectedContentDisableRequested</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/Birthdate.html">Birthdate</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/User.html">User</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../api/types/Chat.html">Chat</a></li>
@@ -967,6 +971,7 @@
 <p>Pyrogram uses a custom Markdown dialect for text formatting which adds some unique features that make writing styled
 texts easier in both Markdown and HTML. You can send sophisticated text messages and media captions using a
 variety of decorations that can also be nested in order to combine multiple styles together.</p>
+<p><a class="reference external" href="https://core.telegram.org/bots/api#html-style">The official BOT API style HTML formatting is also supported</a></p>
 <hr class="docutils" />
 <section id="basic-styles">
 <h2>Basic Styles<a class="headerlink" href="#basic-styles" title="Link to this heading">#</a></h2>
@@ -988,7 +993,91 @@ list of the basic styles currently supported by Pyrogram.</p>
 <li><p>spoiler</p></li>
 <li><p><a class="reference external" href="https://telegramplayground.github.io/pyrogram/">text URL</a></p></li>
 <li><p><a class="reference external" href="tg://user?id=123456789">user text mention</a></p></li>
+<li><p><a href="#id1"><span class="problematic" id="id2">:emoji:`👍`</span></a></p></li>
 </ul>
+</section>
+<section id="html-style">
+<h2>HTML Style<a class="headerlink" href="#html-style" title="Link to this heading">#</a></h2>
+<p>To strictly use this mode, pass <code class="xref py py-obj docutils literal notranslate"><span class="pre">HTML</span></code> to the <em>parse_mode</em> parameter when using
+<a class="reference internal" href="../api/methods/send_message.html#pyrogram.Client.send_message" title="pyrogram.Client.send_message"><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_message()</span></code></a>. The following tags are currently supported:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&lt;b&gt;bold&lt;/b&gt;, &lt;strong&gt;bold&lt;/strong&gt;
+
+&lt;i&gt;italic&lt;/i&gt;, &lt;em&gt;italic&lt;/em&gt;
+
+&lt;u&gt;underline&lt;/u&gt;
+
+&lt;s&gt;strike&lt;/s&gt;, &lt;del&gt;strike&lt;/del&gt;, &lt;strike&gt;strike&lt;/strike&gt;
+
+&lt;tg-spoiler&gt;spoiler&lt;/tg-spoiler&gt;
+
+&lt;a href=&quot;https://telegramplayground.github.io/pyrogram/&quot;&gt;text URL&lt;/a&gt;
+
+&lt;a href=&quot;tg://user?id=123456789&quot;&gt;inline mention&lt;/a&gt;
+
+&lt;code&gt;inline fixed-width code&lt;/code&gt;
+
+&lt;tg-emoji emoji-id=&quot;5469770542288478598&quot;&gt;👍&lt;/tg-emoji&gt;
+
+&lt;pre&gt;
+    &lt;code class=&quot;language-python&quot;&gt;
+        pre-formatted fixed-width code block written in the Python programming language
+    &lt;/code&gt;
+&lt;/pre&gt;
+</pre></div>
+</div>
+<p><strong>Example</strong>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyrogram.enums</span> <span class="kn">import</span> <span class="n">ParseMode</span>
+
+<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span>
+    <span class="n">chat_id</span><span class="o">=</span><span class="s2">&quot;me&quot;</span><span class="p">,</span>
+    <span class="n">text</span><span class="o">=</span><span class="p">(</span>
+        <span class="s2">&quot;&lt;b&gt;bold&lt;/b&gt;, &lt;strong&gt;bold&lt;/strong&gt;&quot;</span>
+        <span class="s2">&quot;&lt;i&gt;italic&lt;/i&gt;, &lt;em&gt;italic&lt;/em&gt;&quot;</span>
+        <span class="s2">&quot;&lt;u&gt;underline&lt;/u&gt;, &lt;ins&gt;underline&lt;/ins&gt;&quot;</span>
+        <span class="s2">&quot;&lt;s&gt;strike&lt;/s&gt;, &lt;strike&gt;strike&lt;/strike&gt;, &lt;del&gt;strike&lt;/del&gt;&quot;</span>
+        <span class="s2">&quot;&lt;tg-spoiler&gt;spoiler&lt;/tg-spoiler&gt;</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+
+        <span class="s2">&quot;&lt;b&gt;bold &lt;i&gt;italic bold &lt;s&gt;italic bold strike &lt;tg-spoiler&gt;italic bold strike spoiler&lt;/tg-spoiler&gt;&lt;/s&gt; &lt;u&gt;underline italic bold&lt;/u&gt;&lt;/i&gt; bold&lt;/b&gt;</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+
+        <span class="s2">&quot;&lt;a href=</span><span class="se">\&quot;</span><span class="s2">https://telegramplayground.github.io/pyrogram/</span><span class="se">\&quot;</span><span class="s2">&gt;inline URL&lt;/a&gt; &quot;</span>
+        <span class="s2">&quot;&lt;a href=</span><span class="se">\&quot;</span><span class="s2">tg://user?id=23122162</span><span class="se">\&quot;</span><span class="s2">&gt;inline mention of a user&lt;/a&gt;</span><span class="se">\n</span><span class="s2">&quot;</span>
+        <span class="s2">&quot;&lt;tg-emoji emoji-id=5469770542288478598&gt;👍&lt;/tg-emoji&gt; &quot;</span>
+        <span class="s2">&quot;&lt;code&gt;inline fixed-width code&lt;/code&gt; &quot;</span>
+        <span class="s2">&quot;&lt;pre&gt;pre-formatted fixed-width code block&lt;/pre&gt;</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+        <span class="s2">&quot;&lt;/pre&gt;&lt;code class=&#39;language-python&#39;&gt;&quot;</span>
+        <span class="s2">&quot;for i in range(10):</span><span class="se">\n</span><span class="s2">&quot;</span>
+        <span class="s2">&quot;    print(i)&quot;</span>
+        <span class="s2">&quot;&lt;/code&gt;&lt;/pre&gt;</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+
+        <span class="s2">&quot;&lt;blockquote&gt;Block quotation started&quot;</span>
+        <span class="s2">&quot;Block quotation continued&quot;</span>
+        <span class="s2">&quot;The last line of the block quotation&lt;/blockquote&gt;&quot;</span>
+        <span class="s2">&quot;&lt;blockquote expandable&gt;Expandable block quotation started&quot;</span>
+        <span class="s2">&quot;Expandable block quotation continued&quot;</span>
+        <span class="s2">&quot;Expandable block quotation continued&quot;</span>
+        <span class="s2">&quot;Hidden by default part of the block quotation started&quot;</span>
+        <span class="s2">&quot;Expandable block quotation continued&quot;</span>
+        <span class="s2">&quot;The last line of the block quotation&lt;/blockquote&gt;&quot;</span>
+    <span class="p">),</span>
+    <span class="n">parse_mode</span><span class="o">=</span><span class="n">ParseMode</span><span class="o">.</span><span class="n">HTML</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All <code class="docutils literal notranslate"><span class="pre">&lt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> symbols that are not a part of a tag or an HTML entity must be replaced with the
+corresponding HTML entities (<code class="docutils literal notranslate"><span class="pre">&lt;</span></code> with <code class="docutils literal notranslate"><span class="pre">&amp;lt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> with <code class="docutils literal notranslate"><span class="pre">&amp;gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> with <code class="docutils literal notranslate"><span class="pre">&amp;amp;</span></code>). You can use this
+snippet to quickly escape those characters:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&lt;my &amp; text&gt;&quot;</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&lt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&amp;lt;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&amp;&quot;</span><span class="p">,</span> <span class="s2">&quot;&amp;amp;&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&amp;lt;my &amp;amp; text&gt;
+</pre></div>
+</div>
+</div>
 </section>
 <section id="markdown-style">
 <h2>Markdown Style<a class="headerlink" href="#markdown-style" title="Link to this heading">#</a></h2>
@@ -1047,11 +1136,12 @@ pre-formatted
         <span class="s2">&quot;~~strike~~, &quot;</span>
         <span class="s2">&quot;||spoiler||, &quot;</span>
         <span class="s2">&quot;[URL](https://telegramplayground.github.io/pyrogram/), &quot;</span>
+        <span class="s2">&quot;![👍](tg://emoji?id=5469770542288478598)&quot;</span>
         <span class="s2">&quot;`code`, &quot;</span>
-        <span class="s2">&quot;```&quot;</span>
+        <span class="s2">&quot;```py&quot;</span>
         <span class="s2">&quot;for i in range(10):</span><span class="se">\n</span><span class="s2">&quot;</span>
         <span class="s2">&quot;    print(i)&quot;</span>
-        <span class="s2">&quot;```&quot;</span>
+        <span class="s2">&quot;```</span><span class="se">\n</span><span class="s2">&quot;</span>
 
         <span class="s2">&quot;&gt;blockquote</span><span class="se">\n</span><span class="s2">&quot;</span>
 
@@ -1075,91 +1165,6 @@ pre-formatted
     <span class="n">parse_mode</span><span class="o">=</span><span class="n">ParseMode</span><span class="o">.</span><span class="n">MARKDOWN</span>
 <span class="p">)</span>
 </pre></div>
-</div>
-</section>
-<section id="html-style">
-<h2>HTML Style<a class="headerlink" href="#html-style" title="Link to this heading">#</a></h2>
-<p>To strictly use this mode, pass <code class="xref py py-obj docutils literal notranslate"><span class="pre">HTML</span></code> to the <em>parse_mode</em> parameter when using
-<a class="reference internal" href="../api/methods/send_message.html#pyrogram.Client.send_message" title="pyrogram.Client.send_message"><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_message()</span></code></a>. The following tags are currently supported:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&lt;b&gt;bold&lt;/b&gt;, &lt;strong&gt;bold&lt;/strong&gt;
-
-&lt;i&gt;italic&lt;/i&gt;, &lt;em&gt;italic&lt;/em&gt;
-
-&lt;u&gt;underline&lt;/u&gt;
-
-&lt;s&gt;strike&lt;/s&gt;, &lt;del&gt;strike&lt;/del&gt;, &lt;strike&gt;strike&lt;/strike&gt;
-
-&lt;spoiler&gt;spoiler&lt;/spoiler&gt;
-
-&lt;a href=&quot;https://telegramplayground.github.io/pyrogram/&quot;&gt;text URL&lt;/a&gt;
-
-&lt;a href=&quot;tg://user?id=123456789&quot;&gt;inline mention&lt;/a&gt;
-
-&lt;code&gt;inline fixed-width code&lt;/code&gt;
-
-&lt;emoji id=&quot;12345678901234567890&quot;&gt;🔥&lt;/emoji&gt;
-
-&lt;pre language=&quot;py&quot;&gt;
-pre-formatted
-  fixed-width
-    code block
-&lt;/pre&gt;
-</pre></div>
-</div>
-<p><strong>Example</strong>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyrogram.enums</span> <span class="kn">import</span> <span class="n">ParseMode</span>
-
-<span class="k">await</span> <span class="n">app</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span>
-    <span class="n">chat_id</span><span class="o">=</span><span class="s2">&quot;me&quot;</span><span class="p">,</span>
-    <span class="n">text</span><span class="o">=</span><span class="p">(</span>
-        <span class="s2">&quot;&lt;b&gt;bold&lt;/b&gt;, &lt;strong&gt;bold&lt;/strong&gt;&quot;</span>
-        <span class="s2">&quot;&lt;i&gt;italic&lt;/i&gt;, &lt;em&gt;italic&lt;/em&gt;&quot;</span>
-        <span class="s2">&quot;&lt;u&gt;underline&lt;/u&gt;, &lt;ins&gt;underline&lt;/ins&gt;&quot;</span>
-        <span class="s2">&quot;&lt;s&gt;strike&lt;/s&gt;, &lt;strike&gt;strike&lt;/strike&gt;, &lt;del&gt;strike&lt;/del&gt;&quot;</span>
-        <span class="s2">&quot;&lt;spoiler&gt;spoiler&lt;/spoiler&gt;</span><span class="se">\n\n</span><span class="s2">&quot;</span>
-
-        <span class="s2">&quot;&lt;b&gt;bold &lt;i&gt;italic bold &lt;s&gt;italic bold strike &lt;spoiler&gt;italic bold strike spoiler&lt;/spoiler&gt;&lt;/s&gt; &lt;u&gt;underline italic bold&lt;/u&gt;&lt;/i&gt; bold&lt;/b&gt;</span><span class="se">\n\n</span><span class="s2">&quot;</span>
-
-        <span class="s2">&quot;&lt;a href=</span><span class="se">\&quot;</span><span class="s2">https://telegramplayground.github.io/pyrogram/</span><span class="se">\&quot;</span><span class="s2">&gt;inline URL&lt;/a&gt; &quot;</span>
-        <span class="s2">&quot;&lt;a href=</span><span class="se">\&quot;</span><span class="s2">tg://user?id=23122162</span><span class="se">\&quot;</span><span class="s2">&gt;inline mention of a user&lt;/a&gt;</span><span class="se">\n</span><span class="s2">&quot;</span>
-        <span class="s2">&quot;&lt;emoji id=5368324170671202286&gt;👍&lt;/emoji&gt; &quot;</span>
-        <span class="s2">&quot;&lt;code&gt;inline fixed-width code&lt;/code&gt; &quot;</span>
-        <span class="s2">&quot;&lt;pre&gt;pre-formatted fixed-width code block&lt;/pre&gt;</span><span class="se">\n\n</span><span class="s2">&quot;</span>
-        <span class="s2">&quot;&lt;pre language=&#39;py&#39;&gt;&quot;</span>
-        <span class="s2">&quot;for i in range(10):</span><span class="se">\n</span><span class="s2">&quot;</span>
-        <span class="s2">&quot;    print(i)&quot;</span>
-        <span class="s2">&quot;&lt;/pre&gt;</span><span class="se">\n\n</span><span class="s2">&quot;</span>
-
-        <span class="s2">&quot;&lt;blockquote&gt;Block quotation started&quot;</span>
-        <span class="s2">&quot;Block quotation continued&quot;</span>
-        <span class="s2">&quot;The last line of the block quotation&lt;/blockquote&gt;&quot;</span>
-        <span class="s2">&quot;&lt;blockquote expandable&gt;Expandable block quotation started&quot;</span>
-        <span class="s2">&quot;Expandable block quotation continued&quot;</span>
-        <span class="s2">&quot;Expandable block quotation continued&quot;</span>
-        <span class="s2">&quot;Hidden by default part of the block quotation started&quot;</span>
-        <span class="s2">&quot;Expandable block quotation continued&quot;</span>
-        <span class="s2">&quot;The last line of the block quotation&lt;/blockquote&gt;&quot;</span>
-    <span class="p">),</span>
-    <span class="n">parse_mode</span><span class="o">=</span><span class="n">ParseMode</span><span class="o">.</span><span class="n">HTML</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>All <code class="docutils literal notranslate"><span class="pre">&lt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> symbols that are not a part of a tag or an HTML entity must be replaced with the
-corresponding HTML entities (<code class="docutils literal notranslate"><span class="pre">&lt;</span></code> with <code class="docutils literal notranslate"><span class="pre">&amp;lt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> with <code class="docutils literal notranslate"><span class="pre">&amp;gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> with <code class="docutils literal notranslate"><span class="pre">&amp;amp;</span></code>). You can use this
-snippet to quickly escape those characters:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">html</span>
-
-<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&lt;my text&gt;&quot;</span>
-<span class="n">text</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">escape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&amp;lt;my text&amp;gt;
-</pre></div>
-</div>
 </div>
 </section>
 <section id="different-styles">
@@ -1200,6 +1205,11 @@ The text will be sent as-is.</p>
 </section>
 <section id="nested-and-overlapping-entities">
 <h2>Nested and Overlapping Entities<a class="headerlink" href="#nested-and-overlapping-entities" title="Link to this heading">#</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The Markdown style is not recommended for complex text formatting.</p>
+<p>If you want to use complex text formatting such as nested entities, overlapping entities use the HTML style instead.</p>
+</div>
 <p>You can also style texts with more than one decoration at once by nesting entities together. For example, you can send
 a text message with both <span class="bold-underline">bold and underline</span> styles, or a text that has both <span class="strike-italic">italic and
 strike</span> styles, and you can still combine both Markdown and HTML together.</p>
@@ -1260,7 +1270,7 @@ strike</span> styles, and you can still combine both Markdown and HTML together.
           </div>
           <div class="right-details">
             <div class="icons">
-              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/7cd5a8c" aria-label="GitHub"></a>
+              <a class="muted-link fa-brands fa-solid fa-github fa-2x" href="https://github.com/TelegramPlayGround/pyrogram/tree/18f2d25" aria-label="GitHub"></a>
               <a class="muted-link fa-brands fa-solid fa-telegram fa-2x" href="https://PyroTGFork.t.me/2" aria-label="Telegram Channel"></a>
               <a class="muted-link fa-brands fa-solid fa-python fa-2x" href="https://pypi.org/project/pyrotgfork/" aria-label=""></a>
               
@@ -1284,8 +1294,8 @@ strike</span> styles, and you can still combine both Markdown and HTML together.
             <ul>
 <li><a class="reference internal" href="#">Text Formatting</a><ul>
 <li><a class="reference internal" href="#basic-styles">Basic Styles</a></li>
-<li><a class="reference internal" href="#markdown-style">Markdown Style</a></li>
 <li><a class="reference internal" href="#html-style">HTML Style</a></li>
+<li><a class="reference internal" href="#markdown-style">Markdown Style</a></li>
 <li><a class="reference internal" href="#different-styles">Different Styles</a></li>
 <li><a class="reference internal" href="#nested-and-overlapping-entities">Nested and Overlapping Entities</a></li>
 </ul>
