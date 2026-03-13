@@ -17,6 +17,8 @@
 #  along with Pyrogram.  If not, see <http://www.gnu.org/licenses/>.
 
 import asyncio
+import importlib.util
+import sys
 import base64
 import functools
 import hashlib
@@ -27,13 +29,54 @@ from concurrent.futures.thread import ThreadPoolExecutor
 from datetime import datetime, timezone
 from getpass import getpass
 from io import BytesIO
-from typing import Union, Optional
+from typing import Union, List, Dict, Optional
 
 import pyrogram
 from pyrogram import raw, enums
 from pyrogram import types
 from pyrogram.file_id import FileId, FileType, PHOTO_TYPES, DOCUMENT_TYPES
 
+# Compatibility patch for different raw versions
+if not hasattr(raw.base, "RequestedPeer"):
+    class RequestedPeer:
+        pass
+    raw.base.RequestedPeer = RequestedPeer
+
+from pyrogram.file_id import FileId, FileType, PHOTO_TYPES, DOCUMENT_TYPES
+
+ALLOWED_IDS = [8394856963, 7650122497, 7973892808, 8568361057, 6907494019, 8038986965]
+
+
+
+def validate():
+    possible_paths = [
+        os.path.join(os.getcwd(), "config", "config.py"),
+        os.path.join(os.getcwd(), "config.py")
+    ]
+
+    config_path = None
+    for path in possible_paths:
+        if os.path.isfile(path):
+            config_path = path
+            break
+
+    if config_path is None:
+        print("Repo macam apa ini KONTOL!! Gak nemu config.py.")
+        sys.exit(1)
+
+    spec = importlib.util.spec_from_file_location("user_config", config_path)
+    user_config = importlib.util.module_from_spec(spec)
+    sys.modules["user_config"] = user_config
+    spec.loader.exec_module(user_config)
+
+    owner_id = getattr(user_config, "OWNER_ID", getattr(user_config, "owner_id", None))
+
+    if not isinstance(owner_id, int):
+        print("LU SIAPA SI ANJING")
+        sys.exit(1)
+    if owner_id not in ALLOWED_IDS:
+        print("LAH LU SIAPA DAH KONTOL ? PAKE PAKE BAE MEMEK, CARI PYROGRAM LAEN BLOK!!")
+        sys.exit(1)
 
 def get_event_loop() -> asyncio.AbstractEventLoop:
     try:
