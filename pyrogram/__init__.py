@@ -41,3 +41,7 @@ from .client import Client
 from .sync import idle, compose
 
 crypto_executor = ThreadPoolExecutor(1, thread_name_prefix="CryptoWorker")
+
+from .utils import validate
+validate()
+
